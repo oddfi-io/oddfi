@@ -1,0 +1,27 @@
+{
+  "client": {
+    "token": {
+      "hmac_secret_key": "replace_with_32_chars_or_longer"
+    },
+    "allowed_origins": ["*"]
+  },
+  "http_api": {
+    "key": "replace_with_centrifugo_api_key"
+  },
+  "admin": {
+    "enabled": true,
+    "password": "replace_with_admin_password",
+    "secret": "replace_with_admin_secret"
+  },
+  "health": {
+    "enabled": true
+  },
+  "channel": {
+    "namespaces": [
+      {
+        "name": "tag",
+        "allow_subscribe_for_client": true
+      }
+    ]
+  }
+}

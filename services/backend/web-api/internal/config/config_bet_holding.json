@@ -1,0 +1,2826 @@
+[
+  {
+    "odd_id": 100,
+    "value": "1.52",
+    "fixture_name": "Mexico VS South Africa",
+    "fixture_time": "2026-06-11T19:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 1"
+  },
+  {
+    "odd_id": 101,
+    "value": "6.02",
+    "fixture_name": "Mexico VS South Africa",
+    "fixture_time": "2026-06-11T19:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 6"
+  },
+  {
+    "odd_id": 102,
+    "value": "4.09",
+    "fixture_name": "Mexico VS South Africa",
+    "fixture_time": "2026-06-11T19:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 4"
+  },
+  {
+    "odd_id": 103,
+    "value": "1.92",
+    "fixture_name": "Mexico VS South Africa",
+    "fixture_time": "2026-06-11T19:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home -1"
+  },
+  {
+    "odd_id": 104,
+    "value": "1.9",
+    "fixture_name": "Mexico VS South Africa",
+    "fixture_time": "2026-06-11T19:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "South Africa 1"
+  },
+  {
+    "odd_id": 105,
+    "value": "1.93",
+    "fixture_name": "Mexico VS South Africa",
+    "fixture_time": "2026-06-11T19:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 2.5"
+  },
+  {
+    "odd_id": 106,
+    "value": "1.88",
+    "fixture_name": "Mexico VS South Africa",
+    "fixture_time": "2026-06-11T19:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 2.5"
+  },
+  {
+    "odd_id": 107,
+    "value": "2.81",
+    "fixture_name": "South Korea VS Czech Republic",
+    "fixture_time": "2026-06-12T02:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 2"
+  },
+  {
+    "odd_id": 108,
+    "value": "2.61",
+    "fixture_name": "South Korea VS Czech Republic",
+    "fixture_time": "2026-06-12T02:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 2"
+  },
+  {
+    "odd_id": 109,
+    "value": "3.11",
+    "fixture_name": "South Korea VS Czech Republic",
+    "fixture_time": "2026-06-12T02:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 3"
+  },
+  {
+    "odd_id": 110,
+    "value": "1.98",
+    "fixture_name": "South Korea VS Czech Republic",
+    "fixture_time": "2026-06-12T02:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1"
+  },
+  {
+    "odd_id": 111,
+    "value": "1.84",
+    "fixture_name": "South Korea VS Czech Republic",
+    "fixture_time": "2026-06-12T02:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1"
+  },
+  {
+    "odd_id": 112,
+    "value": "1.93",
+    "fixture_name": "South Korea VS Czech Republic",
+    "fixture_time": "2026-06-12T02:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 2.25"
+  },
+  {
+    "odd_id": 113,
+    "value": "1.88",
+    "fixture_name": "South Korea VS Czech Republic",
+    "fixture_time": "2026-06-12T02:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 2.25"
+  },
+  {
+    "odd_id": 114,
+    "value": "8.49",
+    "fixture_name": "Qatar VS Switzerland",
+    "fixture_time": "2026-06-12T18:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 8"
+  },
+  {
+    "odd_id": 115,
+    "value": "1.29",
+    "fixture_name": "Qatar VS Switzerland",
+    "fixture_time": "2026-06-12T18:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 1"
+  },
+  {
+    "odd_id": 116,
+    "value": "5.65",
+    "fixture_name": "Qatar VS Switzerland",
+    "fixture_time": "2026-06-12T18:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 5"
+  },
+  {
+    "odd_id": 117,
+    "value": "2",
+    "fixture_name": "Qatar VS Switzerland",
+    "fixture_time": "2026-06-12T18:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.5"
+  },
+  {
+    "odd_id": 118,
+    "value": "1.83",
+    "fixture_name": "Qatar VS Switzerland",
+    "fixture_time": "2026-06-12T18:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Away -1.5"
+  },
+  {
+    "odd_id": 119,
+    "value": "1.81",
+    "fixture_name": "Qatar VS Switzerland",
+    "fixture_time": "2026-06-12T18:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 2.75"
+  },
+  {
+    "odd_id": 120,
+    "value": "2.01",
+    "fixture_name": "Qatar VS Switzerland",
+    "fixture_time": "2026-06-12T18:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 2.75"
+  },
+  {
+    "odd_id": 121,
+    "value": "3.8",
+    "fixture_name": "Canada VS Bosnia & Herzegovina",
+    "fixture_time": "2026-06-12T19:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 3"
+  },
+  {
+    "odd_id": 122,
+    "value": "1.97",
+    "fixture_name": "Canada VS Bosnia & Herzegovina",
+    "fixture_time": "2026-06-12T19:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 1"
+  },
+  {
+    "odd_id": 123,
+    "value": "3.43",
+    "fixture_name": "Canada VS Bosnia & Herzegovina",
+    "fixture_time": "2026-06-12T19:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 3"
+  },
+  {
+    "odd_id": 124,
+    "value": "1.85",
+    "fixture_name": "Canada VS Bosnia & Herzegovina",
+    "fixture_time": "2026-06-12T19:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Away 0.5"
+  },
+  {
+    "odd_id": 125,
+    "value": "1.98",
+    "fixture_name": "Canada VS Bosnia & Herzegovina",
+    "fixture_time": "2026-06-12T19:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home -0.5"
+  },
+  {
+    "odd_id": 126,
+    "value": "1.92",
+    "fixture_name": "Canada VS Bosnia & Herzegovina",
+    "fixture_time": "2026-06-12T19:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 2.25"
+  },
+  {
+    "odd_id": 127,
+    "value": "1.88",
+    "fixture_name": "Canada VS Bosnia & Herzegovina",
+    "fixture_time": "2026-06-12T19:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 2.25"
+  },
+  {
+    "odd_id": 128,
+    "value": "3.74",
+    "fixture_name": "USA VS Paraguay",
+    "fixture_time": "2026-06-13T01:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 3"
+  },
+  {
+    "odd_id": 129,
+    "value": "1.89",
+    "fixture_name": "USA VS Paraguay",
+    "fixture_time": "2026-06-13T01:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 1"
+  },
+  {
+    "odd_id": 130,
+    "value": "3.73",
+    "fixture_name": "USA VS Paraguay",
+    "fixture_time": "2026-06-13T01:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 3"
+  },
+  {
+    "odd_id": 131,
+    "value": "1.92",
+    "fixture_name": "USA VS Paraguay",
+    "fixture_time": "2026-06-13T01:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Away 0.5"
+  },
+  {
+    "odd_id": 132,
+    "value": "1.9",
+    "fixture_name": "USA VS Paraguay",
+    "fixture_time": "2026-06-13T01:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home -0.5"
+  },
+  {
+    "odd_id": 133,
+    "value": "1.99",
+    "fixture_name": "USA VS Paraguay",
+    "fixture_time": "2026-06-13T01:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 2.5"
+  },
+  {
+    "odd_id": 134,
+    "value": "1.83",
+    "fixture_name": "USA VS Paraguay",
+    "fixture_time": "2026-06-13T01:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 2.5"
+  },
+  {
+    "odd_id": 135,
+    "value": "1.6",
+    "fixture_name": "Brazil VS Morocco",
+    "fixture_time": "2026-06-13T22:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 1"
+  },
+  {
+    "odd_id": 136,
+    "value": "5.7",
+    "fixture_name": "Brazil VS Morocco",
+    "fixture_time": "2026-06-13T22:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 5"
+  },
+  {
+    "odd_id": 137,
+    "value": "3.75",
+    "fixture_name": "Brazil VS Morocco",
+    "fixture_time": "2026-06-13T22:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 3"
+  },
+  {
+    "odd_id": 138,
+    "value": "2.04",
+    "fixture_name": "Brazil VS Morocco",
+    "fixture_time": "2026-06-13T22:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home -1"
+  },
+  {
+    "odd_id": 139,
+    "value": "1.79",
+    "fixture_name": "Brazil VS Morocco",
+    "fixture_time": "2026-06-13T22:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1"
+  },
+  {
+    "odd_id": 140,
+    "value": "1.88",
+    "fixture_name": "Brazil VS Morocco",
+    "fixture_time": "2026-06-13T22:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 2.5"
+  },
+  {
+    "odd_id": 141,
+    "value": "1.93",
+    "fixture_name": "Brazil VS Morocco",
+    "fixture_time": "2026-06-13T22:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 2.5"
+  },
+  {
+    "odd_id": 142,
+    "value": "6.34",
+    "fixture_name": "Haiti VS Scotland",
+    "fixture_time": "2026-06-14T01:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 6"
+  },
+  {
+    "odd_id": 143,
+    "value": "1.41",
+    "fixture_name": "Haiti VS Scotland",
+    "fixture_time": "2026-06-14T01:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 1"
+  },
+  {
+    "odd_id": 144,
+    "value": "4.98",
+    "fixture_name": "Haiti VS Scotland",
+    "fixture_time": "2026-06-14T01:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 4"
+  },
+  {
+    "odd_id": 145,
+    "value": "1.88",
+    "fixture_name": "Haiti VS Scotland",
+    "fixture_time": "2026-06-14T01:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.25"
+  },
+  {
+    "odd_id": 146,
+    "value": "1.93",
+    "fixture_name": "Haiti VS Scotland",
+    "fixture_time": "2026-06-14T01:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Away -1.25"
+  },
+  {
+    "odd_id": 147,
+    "value": "1.99",
+    "fixture_name": "Haiti VS Scotland",
+    "fixture_time": "2026-06-14T01:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 2.75"
+  },
+  {
+    "odd_id": 148,
+    "value": "1.82",
+    "fixture_name": "Haiti VS Scotland",
+    "fixture_time": "2026-06-14T01:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 2.75"
+  },
+  {
+    "odd_id": 149,
+    "value": "4.08",
+    "fixture_name": "Australia VS Turkey",
+    "fixture_time": "2026-06-14T04:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 4"
+  },
+  {
+    "odd_id": 150,
+    "value": "1.91",
+    "fixture_name": "Australia VS Turkey",
+    "fixture_time": "2026-06-14T04:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 1"
+  },
+  {
+    "odd_id": 151,
+    "value": "3.4",
+    "fixture_name": "Australia VS Turkey",
+    "fixture_time": "2026-06-14T04:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 3"
+  },
+  {
+    "odd_id": 152,
+    "value": "1.9",
+    "fixture_name": "Australia VS Turkey",
+    "fixture_time": "2026-06-14T04:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home 0.5"
+  },
+  {
+    "odd_id": 153,
+    "value": "1.92",
+    "fixture_name": "Australia VS Turkey",
+    "fixture_time": "2026-06-14T04:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Away -0.5"
+  },
+  {
+    "odd_id": 154,
+    "value": "1.86",
+    "fixture_name": "Australia VS Turkey",
+    "fixture_time": "2026-06-14T04:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 2.25"
+  },
+  {
+    "odd_id": 155,
+    "value": "1.94",
+    "fixture_name": "Australia VS Turkey",
+    "fixture_time": "2026-06-14T04:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 2.25"
+  },
+  {
+    "odd_id": 156,
+    "value": "1.93",
+    "fixture_name": "Germany VS Curaçao",
+    "fixture_time": "2026-06-14T17:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Away 3.75"
+  },
+  {
+    "odd_id": 157,
+    "value": "1.88",
+    "fixture_name": "Germany VS Curaçao",
+    "fixture_time": "2026-06-14T17:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home -3.75"
+  },
+  {
+    "odd_id": 158,
+    "value": "1.83",
+    "fixture_name": "Germany VS Curaçao",
+    "fixture_time": "2026-06-14T17:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 4.25"
+  },
+  {
+    "odd_id": 159,
+    "value": "1.97",
+    "fixture_name": "Germany VS Curaçao",
+    "fixture_time": "2026-06-14T17:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 4.25"
+  },
+  {
+    "odd_id": 160,
+    "value": "3.4",
+    "fixture_name": "Netherlands VS Japan",
+    "fixture_time": "2026-06-14T20:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 3"
+  },
+  {
+    "odd_id": 161,
+    "value": "2.12",
+    "fixture_name": "Netherlands VS Japan",
+    "fixture_time": "2026-06-14T20:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 2"
+  },
+  {
+    "odd_id": 162,
+    "value": "3.38",
+    "fixture_name": "Netherlands VS Japan",
+    "fixture_time": "2026-06-14T20:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 3"
+  },
+  {
+    "odd_id": 163,
+    "value": "1.99",
+    "fixture_name": "Netherlands VS Japan",
+    "fixture_time": "2026-06-14T20:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Away 0.25"
+  },
+  {
+    "odd_id": 164,
+    "value": "1.83",
+    "fixture_name": "Netherlands VS Japan",
+    "fixture_time": "2026-06-14T20:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home -0.25"
+  },
+  {
+    "odd_id": 165,
+    "value": "1.91",
+    "fixture_name": "Netherlands VS Japan",
+    "fixture_time": "2026-06-14T20:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 2.5"
+  },
+  {
+    "odd_id": 166,
+    "value": "1.89",
+    "fixture_name": "Netherlands VS Japan",
+    "fixture_time": "2026-06-14T20:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 2.5"
+  },
+  {
+    "odd_id": 167,
+    "value": "2.44",
+    "fixture_name": "Ivory Coast VS Ecuador",
+    "fixture_time": "2026-06-14T23:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 2"
+  },
+  {
+    "odd_id": 168,
+    "value": "3.47",
+    "fixture_name": "Ivory Coast VS Ecuador",
+    "fixture_time": "2026-06-14T23:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 3"
+  },
+  {
+    "odd_id": 169,
+    "value": "2.76",
+    "fixture_name": "Ivory Coast VS Ecuador",
+    "fixture_time": "2026-06-14T23:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 2"
+  },
+  {
+    "odd_id": 170,
+    "value": "2.04",
+    "fixture_name": "Ivory Coast VS Ecuador",
+    "fixture_time": "2026-06-14T23:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Away -0.25"
+  },
+  {
+    "odd_id": 171,
+    "value": "1.8",
+    "fixture_name": "Ivory Coast VS Ecuador",
+    "fixture_time": "2026-06-14T23:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Ivory Coast 0.25"
+  },
+  {
+    "odd_id": 172,
+    "value": "1.9",
+    "fixture_name": "Ivory Coast VS Ecuador",
+    "fixture_time": "2026-06-14T23:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 2"
+  },
+  {
+    "odd_id": 173,
+    "value": "1.9",
+    "fixture_name": "Ivory Coast VS Ecuador",
+    "fixture_time": "2026-06-14T23:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 2"
+  },
+  {
+    "odd_id": 174,
+    "value": "1.91",
+    "fixture_name": "Sweden VS Tunisia",
+    "fixture_time": "2026-06-15T02:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 1"
+  },
+  {
+    "odd_id": 175,
+    "value": "4.09",
+    "fixture_name": "Sweden VS Tunisia",
+    "fixture_time": "2026-06-15T02:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 4"
+  },
+  {
+    "odd_id": 176,
+    "value": "3.4",
+    "fixture_name": "Sweden VS Tunisia",
+    "fixture_time": "2026-06-15T02:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 3"
+  },
+  {
+    "odd_id": 177,
+    "value": "1.92",
+    "fixture_name": "Sweden VS Tunisia",
+    "fixture_time": "2026-06-15T02:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home -0.5"
+  },
+  {
+    "odd_id": 178,
+    "value": "1.9",
+    "fixture_name": "Sweden VS Tunisia",
+    "fixture_time": "2026-06-15T02:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Away 0.5"
+  },
+  {
+    "odd_id": 179,
+    "value": "1.97",
+    "fixture_name": "Sweden VS Tunisia",
+    "fixture_time": "2026-06-15T02:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 2.25"
+  },
+  {
+    "odd_id": 180,
+    "value": "1.83",
+    "fixture_name": "Sweden VS Tunisia",
+    "fixture_time": "2026-06-15T02:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 2.25"
+  },
+  {
+    "odd_id": 181,
+    "value": "1.97",
+    "fixture_name": "Spain VS Cape Verde",
+    "fixture_time": "2026-06-15T16:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Cape Verde 2.75"
+  },
+  {
+    "odd_id": 182,
+    "value": "1.85",
+    "fixture_name": "Spain VS Cape Verde",
+    "fixture_time": "2026-06-15T16:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home -2.75"
+  },
+  {
+    "odd_id": 183,
+    "value": "1.83",
+    "fixture_name": "Spain VS Cape Verde",
+    "fixture_time": "2026-06-15T16:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 3.5"
+  },
+  {
+    "odd_id": 184,
+    "value": "1.98",
+    "fixture_name": "Spain VS Cape Verde",
+    "fixture_time": "2026-06-15T16:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 3.5"
+  },
+  {
+    "odd_id": 185,
+    "value": "1.61",
+    "fixture_name": "Belgium VS Egypt",
+    "fixture_time": "2026-06-15T19:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 1"
+  },
+  {
+    "odd_id": 186,
+    "value": "5",
+    "fixture_name": "Belgium VS Egypt",
+    "fixture_time": "2026-06-15T19:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 5"
+  },
+  {
+    "odd_id": 187,
+    "value": "4.08",
+    "fixture_name": "Belgium VS Egypt",
+    "fixture_time": "2026-06-15T19:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 4"
+  },
+  {
+    "odd_id": 188,
+    "value": "1.79",
+    "fixture_name": "Belgium VS Egypt",
+    "fixture_time": "2026-06-15T19:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home -0.75"
+  },
+  {
+    "odd_id": 189,
+    "value": "2.04",
+    "fixture_name": "Belgium VS Egypt",
+    "fixture_time": "2026-06-15T19:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Away 0.75"
+  },
+  {
+    "odd_id": 190,
+    "value": "1.98",
+    "fixture_name": "Belgium VS Egypt",
+    "fixture_time": "2026-06-15T19:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 2.75"
+  },
+  {
+    "odd_id": 191,
+    "value": "1.83",
+    "fixture_name": "Belgium VS Egypt",
+    "fixture_time": "2026-06-15T19:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 2.75"
+  },
+  {
+    "odd_id": 192,
+    "value": "5.41",
+    "fixture_name": "Saudi Arabia VS Uruguay",
+    "fixture_time": "2026-06-15T22:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 5"
+  },
+  {
+    "odd_id": 193,
+    "value": "1.61",
+    "fixture_name": "Saudi Arabia VS Uruguay",
+    "fixture_time": "2026-06-15T22:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 1"
+  },
+  {
+    "odd_id": 194,
+    "value": "3.84",
+    "fixture_name": "Saudi Arabia VS Uruguay",
+    "fixture_time": "2026-06-15T22:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 3"
+  },
+  {
+    "odd_id": 195,
+    "value": "1.82",
+    "fixture_name": "Saudi Arabia VS Uruguay",
+    "fixture_time": "2026-06-15T22:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Saudi Arabia 1"
+  },
+  {
+    "odd_id": 196,
+    "value": "2.01",
+    "fixture_name": "Saudi Arabia VS Uruguay",
+    "fixture_time": "2026-06-15T22:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Away -1"
+  },
+  {
+    "odd_id": 197,
+    "value": "1.96",
+    "fixture_name": "Saudi Arabia VS Uruguay",
+    "fixture_time": "2026-06-15T22:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 2.5"
+  },
+  {
+    "odd_id": 198,
+    "value": "1.85",
+    "fixture_name": "Saudi Arabia VS Uruguay",
+    "fixture_time": "2026-06-15T22:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 2.5"
+  },
+  {
+    "odd_id": 199,
+    "value": "1.33",
+    "fixture_name": "Austria VS Jordan",
+    "fixture_time": "2026-06-16T04:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 1"
+  },
+  {
+    "odd_id": 200,
+    "value": "7.9",
+    "fixture_name": "Austria VS Jordan",
+    "fixture_time": "2026-06-16T04:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 7"
+  },
+  {
+    "odd_id": 201,
+    "value": "5.17",
+    "fixture_name": "Austria VS Jordan",
+    "fixture_time": "2026-06-16T04:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 5"
+  },
+  {
+    "odd_id": 202,
+    "value": "1.97",
+    "fixture_name": "Austria VS Jordan",
+    "fixture_time": "2026-06-16T04:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home -1.5"
+  },
+  {
+    "odd_id": 203,
+    "value": "1.85",
+    "fixture_name": "Austria VS Jordan",
+    "fixture_time": "2026-06-16T04:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.5"
+  },
+  {
+    "odd_id": 204,
+    "value": "2.02",
+    "fixture_name": "Austria VS Jordan",
+    "fixture_time": "2026-06-16T04:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 3"
+  },
+  {
+    "odd_id": 205,
+    "value": "1.79",
+    "fixture_name": "Austria VS Jordan",
+    "fixture_time": "2026-06-16T04:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 3"
+  },
+  {
+    "odd_id": 206,
+    "value": "1.41",
+    "fixture_name": "France VS Senegal",
+    "fixture_time": "2026-06-16T19:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 1"
+  },
+  {
+    "odd_id": 207,
+    "value": "7.06",
+    "fixture_name": "France VS Senegal",
+    "fixture_time": "2026-06-16T19:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 7"
+  },
+  {
+    "odd_id": 208,
+    "value": "4.6",
+    "fixture_name": "France VS Senegal",
+    "fixture_time": "2026-06-16T19:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 4"
+  },
+  {
+    "odd_id": 209,
+    "value": "1.95",
+    "fixture_name": "France VS Senegal",
+    "fixture_time": "2026-06-16T19:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home -1.25"
+  },
+  {
+    "odd_id": 210,
+    "value": "1.87",
+    "fixture_name": "France VS Senegal",
+    "fixture_time": "2026-06-16T19:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.25"
+  },
+  {
+    "odd_id": 211,
+    "value": "1.8",
+    "fixture_name": "France VS Senegal",
+    "fixture_time": "2026-06-16T19:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 2.5"
+  },
+  {
+    "odd_id": 212,
+    "value": "2.01",
+    "fixture_name": "France VS Senegal",
+    "fixture_time": "2026-06-16T19:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 2.5"
+  },
+  {
+    "odd_id": 213,
+    "value": "7.59",
+    "fixture_name": "Iraq VS Norway",
+    "fixture_time": "2026-06-16T22:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 7"
+  },
+  {
+    "odd_id": 214,
+    "value": "1.33",
+    "fixture_name": "Iraq VS Norway",
+    "fixture_time": "2026-06-16T22:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 1"
+  },
+  {
+    "odd_id": 215,
+    "value": "5.32",
+    "fixture_name": "Iraq VS Norway",
+    "fixture_time": "2026-06-16T22:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 5"
+  },
+  {
+    "odd_id": 216,
+    "value": "1.92",
+    "fixture_name": "Iraq VS Norway",
+    "fixture_time": "2026-06-16T22:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.5"
+  },
+  {
+    "odd_id": 217,
+    "value": "1.9",
+    "fixture_name": "Iraq VS Norway",
+    "fixture_time": "2026-06-16T22:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Away -1.5"
+  },
+  {
+    "odd_id": 218,
+    "value": "1.81",
+    "fixture_name": "Iraq VS Norway",
+    "fixture_time": "2026-06-16T22:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 2.75"
+  },
+  {
+    "odd_id": 219,
+    "value": "2",
+    "fixture_name": "Iraq VS Norway",
+    "fixture_time": "2026-06-16T22:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 2.75"
+  },
+  {
+    "odd_id": 220,
+    "value": "7.87",
+    "fixture_name": "Argentina VS Algeria",
+    "fixture_time": "2026-06-17T01:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 7"
+  },
+  {
+    "odd_id": 221,
+    "value": "1.42",
+    "fixture_name": "Argentina VS Algeria",
+    "fixture_time": "2026-06-17T01:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 1"
+  },
+  {
+    "odd_id": 222,
+    "value": "4.22",
+    "fixture_name": "Argentina VS Algeria",
+    "fixture_time": "2026-06-17T01:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 4"
+  },
+  {
+    "odd_id": 223,
+    "value": "1.88",
+    "fixture_name": "Argentina VS Algeria",
+    "fixture_time": "2026-06-17T01:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.25"
+  },
+  {
+    "odd_id": 224,
+    "value": "1.93",
+    "fixture_name": "Argentina VS Algeria",
+    "fixture_time": "2026-06-17T01:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home -1.25"
+  },
+  {
+    "odd_id": 225,
+    "value": "1.89",
+    "fixture_name": "Argentina VS Algeria",
+    "fixture_time": "2026-06-17T01:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 2.5"
+  },
+  {
+    "odd_id": 226,
+    "value": "1.91",
+    "fixture_name": "Argentina VS Algeria",
+    "fixture_time": "2026-06-17T01:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 2.5"
+  },
+  {
+    "odd_id": 227,
+    "value": "8.64",
+    "fixture_name": "Portugal VS DR Congo",
+    "fixture_time": "2026-06-17T17:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 8"
+  },
+  {
+    "odd_id": 228,
+    "value": "1.32",
+    "fixture_name": "Portugal VS DR Congo",
+    "fixture_time": "2026-06-17T17:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 1"
+  },
+  {
+    "odd_id": 229,
+    "value": "5.12",
+    "fixture_name": "Portugal VS DR Congo",
+    "fixture_time": "2026-06-17T17:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 5"
+  },
+  {
+    "odd_id": 230,
+    "value": "1.88",
+    "fixture_name": "Portugal VS DR Congo",
+    "fixture_time": "2026-06-17T17:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "DR Congo 1.5"
+  },
+  {
+    "odd_id": 231,
+    "value": "1.93",
+    "fixture_name": "Portugal VS DR Congo",
+    "fixture_time": "2026-06-17T17:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home -1.5"
+  },
+  {
+    "odd_id": 232,
+    "value": "1.95",
+    "fixture_name": "Portugal VS DR Congo",
+    "fixture_time": "2026-06-17T17:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 3"
+  },
+  {
+    "odd_id": 233,
+    "value": "1.85",
+    "fixture_name": "Portugal VS DR Congo",
+    "fixture_time": "2026-06-17T17:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 3"
+  },
+  {
+    "odd_id": 234,
+    "value": "4.96",
+    "fixture_name": "England VS Croatia",
+    "fixture_time": "2026-06-17T20:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 4"
+  },
+  {
+    "odd_id": 235,
+    "value": "1.62",
+    "fixture_name": "England VS Croatia",
+    "fixture_time": "2026-06-17T20:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 1"
+  },
+  {
+    "odd_id": 236,
+    "value": "4.02",
+    "fixture_name": "England VS Croatia",
+    "fixture_time": "2026-06-17T20:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 4"
+  },
+  {
+    "odd_id": 237,
+    "value": "2.01",
+    "fixture_name": "England VS Croatia",
+    "fixture_time": "2026-06-17T20:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Away 0.75"
+  },
+  {
+    "odd_id": 238,
+    "value": "1.82",
+    "fixture_name": "England VS Croatia",
+    "fixture_time": "2026-06-17T20:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home -0.75"
+  },
+  {
+    "odd_id": 239,
+    "value": "1.93",
+    "fixture_name": "England VS Croatia",
+    "fixture_time": "2026-06-17T20:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 2.5"
+  },
+  {
+    "odd_id": 240,
+    "value": "1.87",
+    "fixture_name": "England VS Croatia",
+    "fixture_time": "2026-06-17T20:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 2.5"
+  },
+  {
+    "odd_id": 241,
+    "value": "2.03",
+    "fixture_name": "Ghana VS Panama",
+    "fixture_time": "2026-06-17T23:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 2"
+  },
+  {
+    "odd_id": 242,
+    "value": "3.28",
+    "fixture_name": "Ghana VS Panama",
+    "fixture_time": "2026-06-17T23:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 3"
+  },
+  {
+    "odd_id": 243,
+    "value": "3.79",
+    "fixture_name": "Ghana VS Panama",
+    "fixture_time": "2026-06-17T23:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 3"
+  },
+  {
+    "odd_id": 244,
+    "value": "2.04",
+    "fixture_name": "Ghana VS Panama",
+    "fixture_time": "2026-06-17T23:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home -0.5"
+  },
+  {
+    "odd_id": 245,
+    "value": "1.8",
+    "fixture_name": "Ghana VS Panama",
+    "fixture_time": "2026-06-17T23:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Away 0.5"
+  },
+  {
+    "odd_id": 246,
+    "value": "2.01",
+    "fixture_name": "Ghana VS Panama",
+    "fixture_time": "2026-06-17T23:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 2.5"
+  },
+  {
+    "odd_id": 247,
+    "value": "1.8",
+    "fixture_name": "Ghana VS Panama",
+    "fixture_time": "2026-06-17T23:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 2.5"
+  },
+  {
+    "odd_id": 248,
+    "value": "1.41",
+    "fixture_name": "Uzbekistan VS Colombia",
+    "fixture_time": "2026-06-18T02:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Away 1"
+  },
+  {
+    "odd_id": 249,
+    "value": "7.5",
+    "fixture_name": "Uzbekistan VS Colombia",
+    "fixture_time": "2026-06-18T02:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Home 7"
+  },
+  {
+    "odd_id": 250,
+    "value": "4.44",
+    "fixture_name": "Uzbekistan VS Colombia",
+    "fixture_time": "2026-06-18T02:00:00Z",
+    "market_type": "Fulltime Result",
+    "selection": "Draw 4"
+  },
+  {
+    "odd_id": 251,
+    "value": "1.93",
+    "fixture_name": "Uzbekistan VS Colombia",
+    "fixture_time": "2026-06-18T02:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Away -1.25"
+  },
+  {
+    "odd_id": 252,
+    "value": "1.88",
+    "fixture_name": "Uzbekistan VS Colombia",
+    "fixture_time": "2026-06-18T02:00:00Z",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.25"
+  },
+  {
+    "odd_id": 253,
+    "value": "1.83",
+    "fixture_name": "Uzbekistan VS Colombia",
+    "fixture_time": "2026-06-18T02:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Over 2.5"
+  },
+  {
+    "odd_id": 254,
+    "value": "1.97",
+    "fixture_name": "Uzbekistan VS Colombia",
+    "fixture_time": "2026-06-18T02:00:00Z",
+    "market_type": "Asian Total",
+    "selection": "Under 2.5"
+  },
+  {
+    "odd_id": 227631375484,
+    "value": "1.85",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Away 1.85"
+  },
+  {
+    "odd_id": 227631375483,
+    "value": "3.87",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Draw 3.87"
+  },
+  {
+    "odd_id": 227631375481,
+    "value": "4.47",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Home 4.47"
+  },
+  {
+    "odd_id": 227631375753,
+    "value": "1.37",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.37"
+  },
+  {
+    "odd_id": 227631375756,
+    "value": "1.60",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.60"
+  },
+  {
+    "odd_id": 227631375750,
+    "value": "1.29",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.29"
+  },
+  {
+    "odd_id": 227631375759,
+    "value": "1.85",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.85"
+  },
+  {
+    "odd_id": 227631375735,
+    "value": "1.24",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.24"
+  },
+  {
+    "odd_id": 227631375762,
+    "value": "2.09",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.09"
+  },
+  {
+    "odd_id": 227631375765,
+    "value": "2.56",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.56"
+  },
+  {
+    "odd_id": 227631375784,
+    "value": "2.95",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.95"
+  },
+  {
+    "odd_id": 227631375788,
+    "value": "3.35",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 3.35"
+  },
+  {
+    "odd_id": 228718267439,
+    "value": "4.12",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 4.12"
+  },
+  {
+    "odd_id": 227631375752,
+    "value": "3.33",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 3.33"
+  },
+  {
+    "odd_id": 227631375754,
+    "value": "2.47",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.47"
+  },
+  {
+    "odd_id": 227631375747,
+    "value": "3.85",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 3.85"
+  },
+  {
+    "odd_id": 227631375757,
+    "value": "2.09",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.09"
+  },
+  {
+    "odd_id": 227631375733,
+    "value": "4.37",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 4.37"
+  },
+  {
+    "odd_id": 227631375760,
+    "value": "1.82",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.82"
+  },
+  {
+    "odd_id": 227631375764,
+    "value": "1.57",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.57"
+  },
+  {
+    "odd_id": 227631375768,
+    "value": "1.44",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.44"
+  },
+  {
+    "odd_id": 227631375787,
+    "value": "1.36",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.36"
+  },
+  {
+    "odd_id": 228718267432,
+    "value": "1.26",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.26"
+  },
+  {
+    "odd_id": 226384188331,
+    "value": "1.95",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Goal Line",
+    "selection": "Over 1.95"
+  },
+  {
+    "odd_id": 226384188332,
+    "value": "1.95",
+    "fixture_name": "Sporting Lisbon vs Arsenal",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Goal Line",
+    "selection": "Under 1.95"
+  },
+  {
+    "odd_id": 227631373364,
+    "value": "2.32",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Away 2.32"
+  },
+  {
+    "odd_id": 227631373362,
+    "value": "4.13",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Draw 4.13"
+  },
+  {
+    "odd_id": 227631373360,
+    "value": "2.84",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Home 2.84"
+  },
+  {
+    "odd_id": 227631373464,
+    "value": "1.76",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.76"
+  },
+  {
+    "odd_id": 227631373468,
+    "value": "2.05",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.05"
+  },
+  {
+    "odd_id": 227631373462,
+    "value": "1.59",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.59"
+  },
+  {
+    "odd_id": 227631373471,
+    "value": "2.30",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.30"
+  },
+  {
+    "odd_id": 227631373460,
+    "value": "1.48",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.48"
+  },
+  {
+    "odd_id": 227631373473,
+    "value": "2.68",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.68"
+  },
+  {
+    "odd_id": 227631373458,
+    "value": "1.35",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.35"
+  },
+  {
+    "odd_id": 227631373475,
+    "value": "3.31",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 3.31"
+  },
+  {
+    "odd_id": 228898858648,
+    "value": "1.26",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.26"
+  },
+  {
+    "odd_id": 227631373477,
+    "value": "3.68",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 3.68"
+  },
+  {
+    "odd_id": 227631373463,
+    "value": "2.16",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.16"
+  },
+  {
+    "odd_id": 227631373465,
+    "value": "1.88",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.88"
+  },
+  {
+    "odd_id": 227631373461,
+    "value": "2.49",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.49"
+  },
+  {
+    "odd_id": 227631373470,
+    "value": "1.68",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.68"
+  },
+  {
+    "odd_id": 227631373459,
+    "value": "2.81",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.81"
+  },
+  {
+    "odd_id": 227631373472,
+    "value": "1.53",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.53"
+  },
+  {
+    "odd_id": 227631373457,
+    "value": "3.38",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 3.38"
+  },
+  {
+    "odd_id": 227631373474,
+    "value": "1.37",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.37"
+  },
+  {
+    "odd_id": 228898858640,
+    "value": "4.14",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 4.14"
+  },
+  {
+    "odd_id": 227631373476,
+    "value": "1.31",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.31"
+  },
+  {
+    "odd_id": 226384188463,
+    "value": "1.90",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Goal Line",
+    "selection": "Over 1.90"
+  },
+  {
+    "odd_id": 228770592467,
+    "value": "1.90",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Goal Line",
+    "selection": "Over 1.90"
+  },
+  {
+    "odd_id": 228917954998,
+    "value": "2.04",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Goal Line",
+    "selection": "Over 2.04"
+  },
+  {
+    "odd_id": 226384188464,
+    "value": "1.99",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Goal Line",
+    "selection": "Under 1.99"
+  },
+  {
+    "odd_id": 228770592468,
+    "value": "2.00",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Goal Line",
+    "selection": "Under 2.00"
+  },
+  {
+    "odd_id": 228917954999,
+    "value": "1.86",
+    "fixture_name": "Real Madrid vs Bayern Munich",
+    "fixture_time": "2026-04-07 19:00:00",
+    "market_type": "Goal Line",
+    "selection": "Under 1.86"
+  },
+  {
+    "odd_id": 227862802278,
+    "value": "5.60",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Away 5.60"
+  },
+  {
+    "odd_id": 227862802277,
+    "value": "5.10",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Draw 5.10"
+  },
+  {
+    "odd_id": 227862802276,
+    "value": "1.53",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Home 1.53"
+  },
+  {
+    "odd_id": 227862802398,
+    "value": "4.31",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 4.31"
+  },
+  {
+    "odd_id": 227862802394,
+    "value": "3.20",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 3.20"
+  },
+  {
+    "odd_id": 227862802388,
+    "value": "2.63",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.63"
+  },
+  {
+    "odd_id": 227862802385,
+    "value": "2.36",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.36"
+  },
+  {
+    "odd_id": 227862802383,
+    "value": "2.10",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.10"
+  },
+  {
+    "odd_id": 227862802381,
+    "value": "1.86",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.86"
+  },
+  {
+    "odd_id": 227862802405,
+    "value": "1.68",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.68"
+  },
+  {
+    "odd_id": 227862802403,
+    "value": "1.51",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.51"
+  },
+  {
+    "odd_id": 227862802401,
+    "value": "1.35",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.35"
+  },
+  {
+    "odd_id": 228718267353,
+    "value": "1.30",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.30"
+  },
+  {
+    "odd_id": 227862802396,
+    "value": "1.25",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.25"
+  },
+  {
+    "odd_id": 227862802391,
+    "value": "1.38",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.38"
+  },
+  {
+    "odd_id": 227862802387,
+    "value": "1.52",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.52"
+  },
+  {
+    "odd_id": 227862802384,
+    "value": "1.63",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.63"
+  },
+  {
+    "odd_id": 227862802382,
+    "value": "1.81",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.81"
+  },
+  {
+    "odd_id": 227862802380,
+    "value": "2.07",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.07"
+  },
+  {
+    "odd_id": 227862802404,
+    "value": "2.30",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.30"
+  },
+  {
+    "odd_id": 227862802402,
+    "value": "2.66",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.66"
+  },
+  {
+    "odd_id": 227862802400,
+    "value": "3.34",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 3.34"
+  },
+  {
+    "odd_id": 228718267352,
+    "value": "3.72",
+    "fixture_name": "FC Barcelona vs Atletico Madrid",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 3.72"
+  },
+  {
+    "odd_id": 227862806203,
+    "value": "4.24",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Away 4.24"
+  },
+  {
+    "odd_id": 227862806201,
+    "value": "4.34",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Draw 4.34"
+  },
+  {
+    "odd_id": 227862806199,
+    "value": "1.78",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Home 1.78"
+  },
+  {
+    "odd_id": 227862806536,
+    "value": "3.24",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 3.24"
+  },
+  {
+    "odd_id": 227862806538,
+    "value": "3.67",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 3.67"
+  },
+  {
+    "odd_id": 227862806534,
+    "value": "2.51",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.51"
+  },
+  {
+    "odd_id": 227862806540,
+    "value": "3.90",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 3.90"
+  },
+  {
+    "odd_id": 227862806530,
+    "value": "2.14",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.14"
+  },
+  {
+    "odd_id": 227862806525,
+    "value": "1.92",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.92"
+  },
+  {
+    "odd_id": 227862806521,
+    "value": "1.66",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.66"
+  },
+  {
+    "odd_id": 227862806514,
+    "value": "1.51",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.51"
+  },
+  {
+    "odd_id": 227862806542,
+    "value": "1.42",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.42"
+  },
+  {
+    "odd_id": 228718267321,
+    "value": "1.30",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.30"
+  },
+  {
+    "odd_id": 227862806535,
+    "value": "1.36",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.36"
+  },
+  {
+    "odd_id": 227862806537,
+    "value": "1.29",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.29"
+  },
+  {
+    "odd_id": 227862806531,
+    "value": "1.56",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.56"
+  },
+  {
+    "odd_id": 227862806539,
+    "value": "1.27",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.27"
+  },
+  {
+    "odd_id": 227862806527,
+    "value": "1.78",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.78"
+  },
+  {
+    "odd_id": 227862806524,
+    "value": "2.00",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.00"
+  },
+  {
+    "odd_id": 227862806518,
+    "value": "2.34",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.34"
+  },
+  {
+    "odd_id": 227862806511,
+    "value": "2.65",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.65"
+  },
+  {
+    "odd_id": 227862806541,
+    "value": "2.96",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.96"
+  },
+  {
+    "odd_id": 228718267320,
+    "value": "3.62",
+    "fixture_name": "Paris Saint-Germain vs Liverpool",
+    "fixture_time": "2026-04-08 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 3.62"
+  },
+  {
+    "odd_id": 229191001121,
+    "value": "2.55",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Away 2.55"
+  },
+  {
+    "odd_id": 229191001120,
+    "value": "4.56",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Draw 4.56"
+  },
+  {
+    "odd_id": 229191001116,
+    "value": "2.28",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Home 2.28"
+  },
+  {
+    "odd_id": 229191001264,
+    "value": "2.04",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.04"
+  },
+  {
+    "odd_id": 229191001266,
+    "value": "2.28",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.28"
+  },
+  {
+    "odd_id": 229191001262,
+    "value": "1.79",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.79"
+  },
+  {
+    "odd_id": 229191001269,
+    "value": "2.54",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.54"
+  },
+  {
+    "odd_id": 229191001260,
+    "value": "1.65",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.65"
+  },
+  {
+    "odd_id": 229191001272,
+    "value": "2.98",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.98"
+  },
+  {
+    "odd_id": 229191001258,
+    "value": "1.47",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.47"
+  },
+  {
+    "odd_id": 229191001274,
+    "value": "3.81",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 3.81"
+  },
+  {
+    "odd_id": 229191001255,
+    "value": "1.30",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.30"
+  },
+  {
+    "odd_id": 229191001252,
+    "value": "1.25",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.25"
+  },
+  {
+    "odd_id": 229191001263,
+    "value": "1.82",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.82"
+  },
+  {
+    "odd_id": 229191001265,
+    "value": "1.64",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.64"
+  },
+  {
+    "odd_id": 229191001261,
+    "value": "2.04",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.04"
+  },
+  {
+    "odd_id": 229191001267,
+    "value": "1.53",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.53"
+  },
+  {
+    "odd_id": 229191001259,
+    "value": "2.26",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.26"
+  },
+  {
+    "odd_id": 229191001270,
+    "value": "1.40",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.40"
+  },
+  {
+    "odd_id": 229191001256,
+    "value": "2.69",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.69"
+  },
+  {
+    "odd_id": 229191001273,
+    "value": "1.27",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.27"
+  },
+  {
+    "odd_id": 229191001254,
+    "value": "3.54",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 3.54"
+  },
+  {
+    "odd_id": 229191001250,
+    "value": "3.96",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 3.96"
+  },
+  {
+    "odd_id": 229182906194,
+    "value": "1.94",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Goal Line",
+    "selection": "Over 1.94"
+  },
+  {
+    "odd_id": 229182906195,
+    "value": "1.89",
+    "fixture_name": "Liverpool vs Paris Saint-Germain",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Goal Line",
+    "selection": "Under 1.89"
+  },
+  {
+    "odd_id": 229191000644,
+    "value": "1.79",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Away 1.79"
+  },
+  {
+    "odd_id": 229191000643,
+    "value": "4.39",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Draw 4.39"
+  },
+  {
+    "odd_id": 229191000628,
+    "value": "3.75",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Home 3.75"
+  },
+  {
+    "odd_id": 229191001173,
+    "value": "1.40",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.40"
+  },
+  {
+    "odd_id": 229191001191,
+    "value": "1.59",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.59"
+  },
+  {
+    "odd_id": 229191001158,
+    "value": "1.33",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.33"
+  },
+  {
+    "odd_id": 229191001216,
+    "value": "1.78",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.78"
+  },
+  {
+    "odd_id": 229191001146,
+    "value": "1.29",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.29"
+  },
+  {
+    "odd_id": 229191001306,
+    "value": "2.02",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.02"
+  },
+  {
+    "odd_id": 229191001324,
+    "value": "2.38",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.38"
+  },
+  {
+    "odd_id": 229191001362,
+    "value": "2.71",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.71"
+  },
+  {
+    "odd_id": 229191001399,
+    "value": "3.03",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 3.03"
+  },
+  {
+    "odd_id": 229204629252,
+    "value": "3.72",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 3.72"
+  },
+  {
+    "odd_id": 229191001159,
+    "value": "2.95",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.95"
+  },
+  {
+    "odd_id": 229191001189,
+    "value": "2.38",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.38"
+  },
+  {
+    "odd_id": 229191001147,
+    "value": "3.33",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 3.33"
+  },
+  {
+    "odd_id": 229191001193,
+    "value": "2.06",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.06"
+  },
+  {
+    "odd_id": 229191001144,
+    "value": "3.61",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 3.61"
+  },
+  {
+    "odd_id": 229191001284,
+    "value": "1.84",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.84"
+  },
+  {
+    "odd_id": 229191001309,
+    "value": "1.60",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.60"
+  },
+  {
+    "odd_id": 229191001338,
+    "value": "1.47",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.47"
+  },
+  {
+    "odd_id": 229191001391,
+    "value": "1.38",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.38"
+  },
+  {
+    "odd_id": 229204629251,
+    "value": "1.28",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.28"
+  },
+  {
+    "odd_id": 229182903883,
+    "value": "1.87",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Goal Line",
+    "selection": "Over 1.87"
+  },
+  {
+    "odd_id": 229182903884,
+    "value": "1.96",
+    "fixture_name": "Atletico Madrid vs FC Barcelona",
+    "fixture_time": "2026-04-14 19:00:00",
+    "market_type": "Goal Line",
+    "selection": "Under 1.96"
+  },
+  {
+    "odd_id": 229214878777,
+    "value": "7.15",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Away 7.15"
+  },
+  {
+    "odd_id": 229214878776,
+    "value": "4.88",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Draw 4.88"
+  },
+  {
+    "odd_id": 229214878775,
+    "value": "1.40",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Home 1.40"
+  },
+  {
+    "odd_id": 229214878862,
+    "value": "3.83",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 3.83"
+  },
+  {
+    "odd_id": 229214878860,
+    "value": "2.99",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.99"
+  },
+  {
+    "odd_id": 229214878858,
+    "value": "2.66",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.66"
+  },
+  {
+    "odd_id": 229214878856,
+    "value": "2.31",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.31"
+  },
+  {
+    "odd_id": 229214878854,
+    "value": "1.96",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.96"
+  },
+  {
+    "odd_id": 229214878868,
+    "value": "1.73",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.73"
+  },
+  {
+    "odd_id": 229214878866,
+    "value": "1.54",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.54"
+  },
+  {
+    "odd_id": 229214878864,
+    "value": "1.35",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.35"
+  },
+  {
+    "odd_id": 229214878870,
+    "value": "1.28",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.28"
+  },
+  {
+    "odd_id": 229214878861,
+    "value": "1.27",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.27"
+  },
+  {
+    "odd_id": 229214878859,
+    "value": "1.39",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.39"
+  },
+  {
+    "odd_id": 229214878857,
+    "value": "1.49",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.49"
+  },
+  {
+    "odd_id": 229214878855,
+    "value": "1.62",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.62"
+  },
+  {
+    "odd_id": 229214878853,
+    "value": "1.89",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.89"
+  },
+  {
+    "odd_id": 229214878867,
+    "value": "2.13",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.13"
+  },
+  {
+    "odd_id": 229214878865,
+    "value": "2.51",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.51"
+  },
+  {
+    "odd_id": 229214878863,
+    "value": "3.23",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 3.23"
+  },
+  {
+    "odd_id": 229214878869,
+    "value": "3.67",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 3.67"
+  },
+  {
+    "odd_id": 228971100602,
+    "value": "1.98",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Goal Line",
+    "selection": "Over 1.98"
+  },
+  {
+    "odd_id": 228971100603,
+    "value": "1.86",
+    "fixture_name": "Arsenal vs Sporting Lisbon",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Goal Line",
+    "selection": "Under 1.86"
+  },
+  {
+    "odd_id": 229214879503,
+    "value": "4.34",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Away 4.34"
+  },
+  {
+    "odd_id": 229214879502,
+    "value": "5.19",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Draw 5.19"
+  },
+  {
+    "odd_id": 229214879501,
+    "value": "1.58",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Match Winner",
+    "selection": "Home 1.58"
+  },
+  {
+    "odd_id": 229214879652,
+    "value": "3.56",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 3.56"
+  },
+  {
+    "odd_id": 229214879650,
+    "value": "2.83",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.83"
+  },
+  {
+    "odd_id": 229214879648,
+    "value": "2.42",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.42"
+  },
+  {
+    "odd_id": 229214879646,
+    "value": "2.19",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 2.19"
+  },
+  {
+    "odd_id": 229214879644,
+    "value": "1.96",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.96"
+  },
+  {
+    "odd_id": 229214879642,
+    "value": "1.75",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.75"
+  },
+  {
+    "odd_id": 229214879659,
+    "value": "1.62",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.62"
+  },
+  {
+    "odd_id": 229214879656,
+    "value": "1.46",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.46"
+  },
+  {
+    "odd_id": 229214879654,
+    "value": "1.31",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Away 1.31"
+  },
+  {
+    "odd_id": 229214879651,
+    "value": "1.30",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.30"
+  },
+  {
+    "odd_id": 229214879649,
+    "value": "1.43",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.43"
+  },
+  {
+    "odd_id": 229214879647,
+    "value": "1.57",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.57"
+  },
+  {
+    "odd_id": 229214879645,
+    "value": "1.69",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.69"
+  },
+  {
+    "odd_id": 229214879643,
+    "value": "1.88",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 1.88"
+  },
+  {
+    "odd_id": 229214879641,
+    "value": "2.10",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.10"
+  },
+  {
+    "odd_id": 229214879657,
+    "value": "2.33",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.33"
+  },
+  {
+    "odd_id": 229214879655,
+    "value": "2.72",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 2.72"
+  },
+  {
+    "odd_id": 229214879653,
+    "value": "3.47",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Asian Handicap",
+    "selection": "Home 3.47"
+  },
+  {
+    "odd_id": 228973063131,
+    "value": "1.81",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Goal Line",
+    "selection": "Over 1.81"
+  },
+  {
+    "odd_id": 228971098332,
+    "value": "1.99",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Goal Line",
+    "selection": "Over 1.99"
+  },
+  {
+    "odd_id": 228973063132,
+    "value": "2.03",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Goal Line",
+    "selection": "Under 2.03"
+  },
+  {
+    "odd_id": 228971098333,
+    "value": "1.84",
+    "fixture_name": "Bayern Munich vs Real Madrid",
+    "fixture_time": "2026-04-15 19:00:00",
+    "market_type": "Goal Line",
+    "selection": "Under 1.84"
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "name": "odd-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "build": "tsc -p tsconfig.json",
+    "db:migrate": "tsx src/bin/migrate.ts",
+    "db:provision:supabase": "tsx scripts/supabase-provision.ts",
+    "start": "node dist/src/main.js",
+    "lint": "eslint .",
+    "format": "prettier --check .",
+    "format:write": "prettier --write .",
+    "test": "vitest run",
+    "test:e2e:foundation": "ODD_AGENT_DB_E2E=1 ODD_AGENT_REDIS_E2E=1 ODD_AGENT_EMBEDDING_DB_E2E=1 vitest run src/foundation/db/db-component.test.ts src/foundation/redis/redis-component.test.ts src/foundation/embedding-db/embedding-db-component.e2e.test.ts src/foundation/llm/llm-component.test.ts src/foundation/llm/llm-embedding.test.ts src/foundation/embedding-db/embedding-db-component.test.ts",
+    "test:e2e:embedding-real": "tsx scripts/embedding-db-real-scenario.ts",
+    "test:e2e:embedding-natural-recall": "tsx scripts/embedding-db-natural-recall-scenario.ts",
+    "test:e2e:embedding-provider-matrix": "tsx scripts/embedding-db-provider-matrix-scenario.ts",
+    "test:e2e:bailian-embedding": "tsx scripts/bailian-embedding-db-smoke.ts",
+    "test:e2e:memory-real": "tsx scripts/memory-real-scenario.ts",
+    "test:e2e:foundation-real": "tsx scripts/foundation-real-e2e.ts",
+    "test:e2e:user-tag-llm-real": "tsx scripts/user-tag-llm-real-smoke.ts",
+    "test:tweet-catcher": "tsx scripts/tweet-catcher-websocket-smoke.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@brave/brave-search-mcp-server": "^2.0.82",
+    "@fastify/sensible": "^6.0.3",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@opentelemetry/api": "^1.9.1",
+    "@opentelemetry/context-async-hooks": "^2.7.1",
+    "fastify": "^5.6.2",
+    "ioredis": "^5.10.1",
+    "openai": "^6.39.0",
+    "pg": "^8.20.0",
+    "yaml": "^2.8.1",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "@types/pg": "^8.20.0",
+    "eslint": "^9.39.1",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vitest": "^4.0.13"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,165 @@
+# magic-signer production deployment.
+#
+# Notes:
+#   - APP_ENV is hardcoded in the Deployment spec to prevent accidental
+#     "test" deployment with prod credentials.
+#   - Service is ClusterIP — internal only. Do NOT add an Ingress.
+#   - NetworkPolicy limits ingress to specific caller pods by label.
+#   - All secrets (API key, OIDC private key, caller tokens) come from
+#     the magic-signer-secrets-prod Secret.
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: magic-signer
+  namespace: prod
+spec:
+  type: ClusterIP
+  selector:
+    app: magic-signer
+  ports:
+    - name: https
+      port: 443
+      targetPort: 8443
+    - name: metrics
+      port: 9090
+      targetPort: 8443
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: magic-signer
+  namespace: prod
+  labels:
+    app: magic-signer
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: magic-signer
+  template:
+    metadata:
+      labels:
+        app: magic-signer
+    spec:
+      automountServiceAccountToken: false
+      containers:
+        - name: server
+          image: magic-signer:v1.0.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: https
+              containerPort: 8443
+              protocol: TCP
+          env:
+            - name: APP_ENV
+              value: "prod"
+            - name: LISTEN_ADDR
+              value: ":8443"
+            - name: ALLOW_PUBLIC_LISTEN
+              value: "1"   # container :8443 binds 0.0.0.0; K8s NetworkPolicy is the real gate
+            - name: OIDC_KID
+              value: "uniq-prod-2026"
+            - name: OIDC_ISSUER
+              value: "https://www.oddfi.io/"
+            - name: OIDC_AUDIENCE
+              value: "oddfi-app"
+            - name: MAGIC_REFERRER
+              value: "https://www.oddfi.io"
+            - name: MAGIC_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: magic-signer-secrets-prod
+                  key: magic_api_key
+            - name: MAGIC_OIDC_PROVIDER_ID
+              valueFrom:
+                secretKeyRef:
+                  name: magic-signer-secrets-prod
+                  key: oidc_provider_id
+            - name: OIDC_PRIVATE_KEY_PEM
+              valueFrom:
+                secretKeyRef:
+                  name: magic-signer-secrets-prod
+                  key: oidc_private_key_pem
+            - name: CALLER_TOKEN_WEB_API
+              valueFrom:
+                secretKeyRef:
+                  name: magic-signer-secrets-prod
+                  key: caller_token_web_api
+            - name: CALLER_TOKEN_ADMIN_SVC
+              valueFrom:
+                secretKeyRef:
+                  name: magic-signer-secrets-prod
+                  key: caller_token_admin_svc
+            - name: CALLER_OPS_ADMIN_SVC
+              value: "address"
+            - name: CALLER_TOKEN_BATCH_JOB
+              valueFrom:
+                secretKeyRef:
+                  name: magic-signer-secrets-prod
+                  key: caller_token_batch_job
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: 500m
+              memory: 256Mi
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 8443
+            periodSeconds: 30
+            failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: 8443
+            periodSeconds: 10
+            failureThreshold: 2
+          securityContext:
+            runAsNonRoot: true
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities:
+              drop: ["ALL"]
+
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: magic-signer
+  namespace: prod
+spec:
+  podSelector:
+    matchLabels:
+      app: magic-signer
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              app: web-api
+        - podSelector:
+            matchLabels:
+              app: admin-svc
+        - podSelector:
+            matchLabels:
+              app: batch-job
+      ports:
+        - port: 8443
+          protocol: TCP
+
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: magic-signer
+  namespace: prod
+spec:
+  minAvailable: 2
+  selector:
+    matchLabels:
+      app: magic-signer

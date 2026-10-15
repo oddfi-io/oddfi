@@ -1,0 +1,32 @@
+.git
+.gitignore
+.github
+.claude
+.progress
+.omc
+.idea
+.vscode
+.DS_Store
+
+# 环境与本地数据（绝不能进镜像）
+.env
+.env.*
+.env.example
+data/
+*.db
+*.db-wal
+*.db-shm
+
+# 本地构建产物
+oddfi-agent-backend
+main
+bin/
+tmp/
+
+# 文档（避免大量 md 进 build context）
+docs/
+*.md
+Makefile
+
+# 部署脚本（服务器上单独分发，不打进镜像）
+deploy/

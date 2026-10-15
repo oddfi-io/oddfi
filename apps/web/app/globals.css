@@ -1,0 +1,659 @@
+/* Pilat Extended — local font */
+@font-face {
+  font-family: "Pilat Extended";
+  src: url("/fonts/pilat-extended/PilatExtended-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pilat Extended";
+  src: url("/fonts/pilat-extended/PilatExtended-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pilat Extended";
+  src: url("/fonts/pilat-extended/PilatExtended-Book.woff2") format("woff2");
+  font-weight: 350;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pilat Extended";
+  src: url("/fonts/pilat-extended/PilatExtended-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pilat Extended";
+  src: url("/fonts/pilat-extended/PilatExtended-DemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pilat Extended";
+  src: url("/fonts/pilat-extended/PilatExtended-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pilat Extended";
+  src: url("/fonts/pilat-extended/PilatExtended-Heavy.woff2") format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pilat Extended";
+  src: url("/fonts/pilat-extended/PilatExtended-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-display: swap;
+}
+
+@import "./design-tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Footer 装饰区动画（DD-088 §13）— 直接在 globals.css 定义
+   原因：Tailwind config 中 keyframes 改动 dev server 不一定立刻重编，
+        放 globals.css 走 Next.js HMR 立即生效
+   ============================================================ */
+@keyframes drift1 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(60px, -40px) scale(1.05);
+  }
+  50% {
+    transform: translate(-40px, -60px) scale(0.97);
+  }
+  75% {
+    transform: translate(40px, 40px) scale(1.03);
+  }
+}
+@keyframes drift2 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  30% {
+    transform: translate(-50px, 30px) scale(1.06);
+  }
+  60% {
+    transform: translate(40px, -50px) scale(0.95);
+  }
+  85% {
+    transform: translate(-20px, 20px) scale(1.02);
+  }
+}
+@keyframes drift3 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  20% {
+    transform: translate(70px, 20px) scale(1.04);
+  }
+  55% {
+    transform: translate(-30px, -30px) scale(0.98);
+  }
+  80% {
+    transform: translate(20px, 50px) scale(1.05);
+  }
+}
+@keyframes drift4 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  35% {
+    transform: translate(-60px, -20px) scale(1.05);
+  }
+  65% {
+    transform: translate(30px, 50px) scale(0.96);
+  }
+  90% {
+    transform: translate(-10px, -40px) scale(1.03);
+  }
+}
+@keyframes oddMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-drift-1 {
+  animation: drift1 18s ease-in-out infinite;
+}
+.animate-drift-2 {
+  animation: drift2 22s ease-in-out infinite;
+}
+.animate-drift-3 {
+  animation: drift3 16s ease-in-out infinite;
+}
+.animate-drift-4 {
+  animation: drift4 24s ease-in-out infinite;
+}
+.animate-marquee-slow {
+  /* duration 取 80s 而非 30s：ODDFI 单组宽 ~5000px 远大于 partners 单组 ~1850px，
+     相同 duration 下视觉速度差 2.7 倍；80s 让 ODDFI 实际位移速度（~62px/s）与 partners 对齐 */
+  animation: oddMarquee 80s linear infinite;
+}
+
+/* ============================================================
+   AI Agent — 科技感动画（2026-05-18 Figma 6364:90683/90684）
+   纯装饰循环 keyframe（无 React 生命周期，符合 animation.md 例外）
+   ============================================================ */
+@keyframes ai-pulse-float {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow:
+      0 4px 16px rgba(0, 0, 0, 0.32),
+      0 0 0 0 rgba(74, 231, 221, 0);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow:
+      0 8px 24px rgba(0, 0, 0, 0.38),
+      0 0 28px 4px rgba(121, 50, 234, 0.45);
+  }
+}
+
+/* hover 态：基线放大 1.08，脉冲幅度增到 1.18，紫红光晕加强 */
+@keyframes ai-pulse-float-hover {
+  0%,
+  100% {
+    transform: scale(1.08);
+    box-shadow:
+      0 6px 22px rgba(0, 0, 0, 0.42),
+      0 0 18px 2px rgba(74, 231, 221, 0.4);
+  }
+  50% {
+    transform: scale(1.18);
+    box-shadow:
+      0 12px 36px rgba(0, 0, 0, 0.5),
+      0 0 40px 8px rgba(225, 50, 234, 0.55);
+  }
+}
+
+@keyframes ai-pulse-sparkle {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+
+@keyframes ai-text-shimmer {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-ai-pulse-float {
+  animation: ai-pulse-float 3.6s ease-in-out infinite;
+}
+.animate-ai-pulse-float:hover {
+  /* 切到更大幅度的 hover 关键帧 + 提速到 1.6s + 鼠标指针 */
+  animation-name: ai-pulse-float-hover;
+  animation-duration: 1.6s;
+  cursor: pointer;
+}
+
+.animate-ai-pulse-sparkle {
+  transform-origin: center;
+  animation: ai-pulse-sparkle 2.4s ease-in-out infinite;
+}
+
+.animate-ai-text-shimmer {
+  background-size: 200% auto;
+  animation: ai-text-shimmer 5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ai-pulse-float,
+  .animate-ai-pulse-sparkle,
+  .animate-ai-text-shimmer {
+    animation: none;
+  }
+}
+
+/* ============================================================
+   News Push AI 解读 delta（DD-110 §2.4 D9）
+   后端 PushCard.aiAnalysis 仅允许 <b class="delta-up|delta-down">±N%</b>
+   ============================================================ */
+.delta-up {
+  color: var(--text-green);
+  font-weight: 600;
+}
+.delta-down {
+  color: var(--text-red);
+  font-weight: 600;
+}
+
+/* ============================================================
+   Base resets
+   ============================================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent double-tap zoom on mobile (important for YES/NO buttons) */
+html {
+  touch-action: manipulation;
+}
+
+/* ============================================================
+   Scrollbar — thin dark style
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+}
+
+/* ============================================================
+   Component utilities
+   ============================================================ */
+@layer components {
+  /* Glassmorphism card base */
+  .glass-card {
+    @apply rounded-card border border-border-card;
+    background:
+      radial-gradient(circle at top left, rgba(255, 43, 58, 0.18), transparent 55%),
+      radial-gradient(circle at bottom right, rgba(16, 98, 255, 0.18), transparent 55%),
+      rgba(10, 10, 10, 0.75);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+  }
+
+  /* Full-screen modal overlay */
+  .modal-overlay {
+    @apply fixed inset-0 z-50 flex items-center justify-center;
+    background: rgba(0, 0, 0, 0.72);
+    backdrop-filter: blur(4px);
+  }
+
+  /* Bottom sheet for mobile modals */
+  .bottom-sheet {
+    @apply fixed bottom-0 left-0 right-0 z-50 rounded-t-shell;
+    background: rgba(10, 10, 10, 0.95);
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* Mobile tab bar safe area */
+  .mobile-tab-bar {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* Prevent text selection on interactive cards */
+  .no-select {
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* 面板高亮渐变描边（顶部白色高光 → 下淡）+ bg/secondary(#111114) 底。
+     复用：认购面板 / 我的邀请 / 金库信息 / 交易记录 等所有 bg-secondary 卡片，
+     替代 `border border-white/10 bg-secondary`（自带底色，无需再写 bg-secondary）。
+     原理：border-box 双背景（padding-box 纯色底 + border-box 渐变描边）。
+     @figma-hardcoded: white gradient stroke + #111114 padding — pending design token。 */
+  .panel-gradient-border {
+    border: 1px solid transparent;
+    background:
+      linear-gradient(#111114, #111114) padding-box,
+      linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.55) 0%,
+          rgba(255, 255, 255, 0.12) 40%,
+          rgba(255, 255, 255, 0.04) 100%
+        )
+        border-box;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ============================================================
+   UI Component Keyframes
+   ============================================================ */
+
+/* Toast：从右侧滑入 */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Toast（OKX风格）：从顶部落下 */
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Modal（桌面端）：从上方缓缓落下 */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Modal（移动端 Bottom Sheet）：从下方上滑 */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Backdrop fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Odds movement flash — green (up) / red (down) */
+@keyframes oddsFlashUp {
+  0% {
+    background-color: rgba(31, 208, 122, 0.25);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+@keyframes oddsFlashDown {
+  0% {
+    background-color: rgba(255, 43, 58, 0.25);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+/* ============================================================
+   BetSlip H5 Flying Chip & Ripple (imperative DOM)
+   ============================================================ */
+
+.flying-chip {
+  position: fixed;
+  z-index: 1000;
+  height: 20px;
+  padding: 0 8px;
+  background: var(--fn-brand);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-static-black);
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--fn-brand) 40%, transparent);
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+.fab-ripple-effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  background: var(--fn-brand);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+/* PC flying chip — slightly larger than H5 */
+.flying-chip-pc {
+  position: fixed;
+  z-index: 1000;
+  height: 24px;
+  padding: 0 10px;
+  background: var(--fn-brand);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-static-black);
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--fn-brand) 40%, transparent);
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+/* ============================================================
+   3D Animation Keyframes (Feature Section visuals)
+   ============================================================ */
+
+/* 轨道星环：整体倾斜摇摆 */
+@keyframes orbitTilt {
+  0% {
+    transform: rotateX(18deg) rotateY(-25deg);
+  }
+  100% {
+    transform: rotateX(32deg) rotateY(35deg);
+  }
+}
+
+/* 轨道星环：轨道自旋 */
+@keyframes orbitSpin {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+/* 风险柱状条：高度脉冲 */
+@keyframes barPulse {
+  0%,
+  100% {
+    height: 22%;
+    opacity: 0.8;
+  }
+  50% {
+    height: 80%;
+    opacity: 1;
+  }
+}
+
+/* 旋转立方体 */
+@keyframes cubeRotate {
+  0% {
+    transform: rotateX(26deg) rotateY(-32deg);
+  }
+  100% {
+    transform: rotateX(26deg) rotateY(328deg);
+  }
+}
+
+/* ============================================================
+   Sonner Toast — Figma-matched custom styling
+   Sonner DOM order: close-btn → icon → content → action-btn
+   Visual order via CSS order: icon → content → action → close
+   ============================================================ */
+
+/* Toast root container */
+[data-sonner-toast].oddfi-toast {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  width: 320px;
+  max-width: 90vw;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--line-divider-primary);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon wrapper — 16px status icon */
+[data-sonner-toast].oddfi-toast [data-icon] {
+  order: 1;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Content wrapper */
+[data-sonner-toast].oddfi-toast [data-content] {
+  order: 2;
+  flex: 1;
+  min-width: 0;
+  margin-left: 8px;
+}
+
+/* Title text — 14/500/primary */
+[data-sonner-toast].oddfi-toast [data-title] {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  color: var(--text-primary);
+}
+
+/* Description text (optional second line) */
+[data-sonner-toast].oddfi-toast [data-description] {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+/* Action button (e.g. "Deposit" on insufficient balance) */
+[data-sonner-toast].oddfi-toast [data-button] {
+  order: 3;
+  flex-shrink: 0;
+  margin-left: 8px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 150ms;
+  white-space: nowrap;
+}
+
+[data-sonner-toast].oddfi-toast [data-button]:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+/* Close button — reflow from DOM-first to visual-last */
+[data-sonner-toast].oddfi-toast [data-close-button] {
+  order: 99;
+  position: static;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin-left: 24px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 150ms;
+}
+
+[data-sonner-toast].oddfi-toast [data-close-button]:hover {
+  opacity: 1;
+}
+
+[data-sonner-toast].oddfi-toast [data-close-button] svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* Top-left color accent bar — 2px × 136px */
+[data-sonner-toast].oddfi-toast::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 136px;
+  height: 2px;
+}
+
+[data-sonner-toast][data-type="success"].oddfi-toast::before {
+  background: var(--fn-green);
+}
+
+[data-sonner-toast][data-type="error"].oddfi-toast::before {
+  background: var(--fn-red);
+}
+
+[data-sonner-toast][data-type="warning"].oddfi-toast::before {
+  background: var(--fn-orange);
+}
+
+[data-sonner-toast][data-type="info"].oddfi-toast::before {
+  background: var(--fn-brand);
+}

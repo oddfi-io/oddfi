@@ -1,0 +1,146 @@
+export const STAKING_POOL_ABI = [
+  // ── Read ─────────────────────────────────────────────────────
+  {
+    type: "function",
+    name: "positions",
+    stateMutability: "view",
+    inputs: [{ name: "positionId", type: "uint256" }],
+    outputs: [
+      {
+        type: "tuple",
+        components: [
+          { name: "owner", type: "address" },
+          { name: "principal", type: "uint256" },
+          { name: "weight", type: "uint256" },
+          { name: "unlockAt", type: "uint64" },
+          { name: "rewardDebt", type: "uint256" },
+          { name: "planId", type: "uint16" },
+          { name: "sourceType", type: "uint8" },
+          { name: "active", type: "bool" },
+        ],
+      },
+    ],
+  },
+  {
+    type: "function",
+    name: "accRewardPerShare",
+    stateMutability: "view",
+    inputs: [],
+    outputs: [{ type: "uint256" }],
+  },
+  {
+    type: "function",
+    name: "totalWeightedShares",
+    stateMutability: "view",
+    inputs: [],
+    outputs: [{ type: "uint256" }],
+  },
+  {
+    type: "function",
+    name: "accountedOddBalance",
+    stateMutability: "view",
+    inputs: [],
+    outputs: [{ type: "uint256" }],
+  },
+  {
+    type: "function",
+    name: "minStakeAmount",
+    stateMutability: "view",
+    inputs: [],
+    outputs: [{ type: "uint256" }],
+  },
+  {
+    type: "function",
+    name: "nextPositionId",
+    stateMutability: "view",
+    inputs: [],
+    outputs: [{ type: "uint256" }],
+  },
+  {
+    type: "function",
+    name: "getActiveStakeAmount",
+    stateMutability: "view",
+    inputs: [{ name: "user", type: "address" }],
+    outputs: [{ type: "uint256" }],
+  },
+  {
+    type: "function",
+    name: "getUserTier",
+    stateMutability: "view",
+    inputs: [{ name: "user", type: "address" }],
+    outputs: [{ type: "uint8" }],
+  },
+  {
+    type: "function",
+    name: "getUserDailyLimit",
+    stateMutability: "view",
+    inputs: [{ name: "user", type: "address" }],
+    outputs: [{ type: "uint256" }],
+  },
+  {
+    type: "function",
+    name: "isActiveStaker",
+    stateMutability: "view",
+    inputs: [{ name: "user", type: "address" }],
+    outputs: [{ type: "bool" }],
+  },
+  // ── Write ─────────────────────────────────────────────────────
+  {
+    type: "function",
+    name: "stake",
+    stateMutability: "nonpayable",
+    inputs: [
+      { name: "amount", type: "uint256" },
+      { name: "planId", type: "uint16" },
+    ],
+    outputs: [{ name: "positionId", type: "uint256" }],
+  },
+  {
+    type: "function",
+    name: "unstake",
+    stateMutability: "nonpayable",
+    inputs: [{ name: "positionId", type: "uint256" }],
+    outputs: [],
+  },
+  {
+    type: "function",
+    name: "earlyUnstake",
+    stateMutability: "nonpayable",
+    inputs: [{ name: "positionId", type: "uint256" }],
+    outputs: [],
+  },
+  // ── Events ────────────────────────────────────────────────────
+  {
+    type: "event",
+    name: "StakeCreated",
+    inputs: [
+      { name: "positionId", type: "uint256", indexed: true },
+      { name: "user", type: "address", indexed: true },
+      { name: "principal", type: "uint256", indexed: false },
+      { name: "planId", type: "uint16", indexed: false },
+      { name: "sourceType", type: "uint8", indexed: false },
+      { name: "weight", type: "uint256", indexed: false },
+      { name: "unlockAt", type: "uint64", indexed: false },
+    ],
+  },
+  {
+    type: "event",
+    name: "StakeWithdrawn",
+    inputs: [
+      { name: "positionId", type: "uint256", indexed: true },
+      { name: "user", type: "address", indexed: true },
+      { name: "principal", type: "uint256", indexed: false },
+      { name: "reward", type: "uint256", indexed: false },
+      { name: "early", type: "bool", indexed: false },
+    ],
+  },
+  {
+    type: "event",
+    name: "RewardNotified",
+    inputs: [
+      { name: "caller", type: "address", indexed: true },
+      { name: "amount", type: "uint256", indexed: false },
+      { name: "newAccRewardPerShare", type: "uint256", indexed: false },
+    ],
+  },
+] as const;

@@ -1,0 +1,32 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.28;
+
+error MarketTemplateNotAllowed(uint8 marketType, uint8 line);
+error MarketAlreadyExists(bytes32 marketId);
+error MarketNotOpen(bytes32 marketId);
+error MarketClosed(bytes32 marketId);
+error MarketLocked(bytes32 marketId);
+error InvalidOddsValue(uint256 odds, uint256 minimumOdds, uint256 step);
+error OddsStale(bytes32 marketId, uint64 quotedAt, uint64 currentUpdatedAt);
+error DailyLimitExceeded(address user, uint256 attempted, uint256 remaining);
+error OpenPositionExceeded(address user, uint256 attempted, uint256 allowed);
+error MatchPayoutExceeded(address user, bytes32 marketId, uint256 attempted, uint256 allowed);
+error PoolLiquidityInsufficient(uint256 requestedPayout, uint256 availableLiquidity);
+error InvalidQuoteGuard();
+error RefundAmountExceeded(bytes32 betId, uint256 requested, uint256 refundable);
+error InvalidBetState(bytes32 betId, uint8 currentState);
+error RefundBatchTooLarge(uint256 provided, uint256 hardCap);
+error BetAmountBelowMinimum(uint256 amount, uint256 minimum);
+error BetNotOwner(bytes32 betId, address caller);
+error PayoutNotClaimable(bytes32 betId);
+error PayoutAlreadyClaimed(bytes32 betId);
+error PayoutTooSmall();
+error InvalidReferrerBinding();
+error InvalidReferralClaim();
+error InvalidReferralClaimSignature();
+error ReferralClaimSignatureExpired(uint256 deadline, uint256 currentTimestamp);
+error InvalidTaxConfig();
+error UnexpectedFundsOnlyKeeper(address caller);
+error InsufficientBalanceForRefund(uint256 requested, uint256 currentBalance);
+error SettlementCannotClose(bytes32 marketId);
+error AccountedBalanceExceedsActualBalance(uint256 actualBalance, uint256 accountedBalance);

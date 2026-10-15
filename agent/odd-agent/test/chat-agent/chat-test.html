@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Odd Agent Chat Test</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family:
+          Inter,
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        background: #f6f7f9;
+        color: #17202a;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+      }
+      main {
+        width: min(920px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 32px 0;
+      }
+      h1 {
+        margin: 0 0 20px;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      label {
+        display: block;
+        margin: 14px 0 6px;
+        font-size: 13px;
+        font-weight: 650;
+      }
+      input,
+      textarea {
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #cfd6df;
+        border-radius: 6px;
+        padding: 10px 12px;
+        font: inherit;
+        background: #ffffff;
+      }
+      textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+      button {
+        margin-top: 16px;
+        border: 0;
+        border-radius: 6px;
+        padding: 10px 16px;
+        background: #1663d8;
+        color: #ffffff;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      button:disabled {
+        cursor: wait;
+        opacity: 0.65;
+      }
+      .scenarios {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
+        margin: 16px 0 4px;
+      }
+      .scenario-button {
+        margin-top: 0;
+        background: #ffffff;
+        color: #17202a;
+        border: 1px solid #cfd6df;
+        text-align: left;
+      }
+      .hint {
+        margin: 8px 0 0;
+        color: #5c6b7a;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+      .status {
+        margin-top: 10px;
+        color: #9a3412;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+      .toolbar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .toolbar button {
+        margin-top: 0;
+        background: #eef4ff;
+        color: #124b9b;
+        border: 1px solid #c4d7f4;
+      }
+      pre {
+        min-height: 220px;
+        margin-top: 18px;
+        padding: 16px;
+        border: 1px solid #d9e0e8;
+        border-radius: 8px;
+        background: #ffffff;
+        white-space: pre-wrap;
+        word-break: break-word;
+      }
+      .meta {
+        margin-top: 12px;
+        color: #5c6b7a;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Odd Agent Chat Test</h1>
+      <label for="userId">User ID</label>
+      <input id="userId" value="local_user_1" autocomplete="off" />
+      <label for="conversationId">Conversation ID</label>
+      <input id="conversationId" value="" autocomplete="off" />
+      <div class="toolbar">
+        <button id="createConversationButton" type="button">Create Conversation</button>
+        <span id="conversationStatus" class="hint">页面打开后会自动创建一个会话。</span>
+      </div>
+      <label for="message">Message</label>
+      <textarea id="message">请结合我的偏好，分析一下今晚比赛相关的交易风险。</textarea>
+      <div class="scenarios">
+        <button class="scenario-button" type="button" data-scenario="remember">
+          1. 写入记忆：我喜欢C罗
+        </button>
+        <button class="scenario-button" type="button" data-scenario="recall">
+          2. 召回记忆：我最喜欢的足球运动员是谁
+        </button>
+        <button class="scenario-button" type="button" data-scenario="blocked">
+          3. 阻拦验证：1+2
+        </button>
+        <button class="scenario-button" type="button" data-scenario="webSearch">
+          4. 搜索验证：今天的篮球比赛有哪些？
+        </button>
+      </div>
+      <div id="scenarioHint" class="hint">
+        推荐顺序：先发送“我喜欢C罗”，等待 SSE 输出完成并给 Memory
+        异步写入留几秒；再发送“我最喜欢的足球运动员是谁”，应回答
+        C罗相关；发送“1+2”应输出被阻拦信息；发送“今天的篮球比赛有哪些？”应触发 web_search
+        并输出搜索结果。
+      </div>
+      <div id="pageStatus" class="status"></div>
+      <button id="sendButton" type="button">Send</button>
+      <div id="meta" class="meta"></div>
+      <pre id="output"></pre>
+    </main>
+    <script>
+      const sendButton = document.getElementById("sendButton");
+      const output = document.getElementById("output");
+      const meta = document.getElementById("meta");
+      const messageInput = document.getElementById("message");
+      const scenarioHint = document.getElementById("scenarioHint");
+      const pageStatus = document.getElementById("pageStatus");
+      const conversationStatus = document.getElementById("conversationStatus");
+      const createConversationButton = document.getElementById("createConversationButton");
+      const apiBaseUrl = "http://127.0.0.1:3000";
+      const scenarios = {
+        remember: {
+          message: "我喜欢C罗",
+          hint: "预期：SSE 正常输出 LLM 回复；Memory.write 会在后台异步记录“用户喜欢C罗”。"
+        },
+        recall: {
+          message: "我最喜欢的足球运动员是谁",
+          hint: "预期：Memory.search 召回前一轮记忆，回答应和 C罗 相关。"
+        },
+        blocked: {
+          message: "1+2",
+          hint: "预期：该问题不属于运动、赛事或交易范围，应输出被阻拦/拒答信息。"
+        },
+        webSearch: {
+          message: "今天的篮球比赛有哪些？",
+          hint: "预期：该问题属于赛事范围，应触发 web_search；输出不应包含“搜索失败”或“无法获取实时比赛信息”。"
+        }
+      };
+
+      if (window.location.origin !== apiBaseUrl) {
+        pageStatus.textContent =
+          "请从 " +
+          apiBaseUrl +
+          "/chat-test 打开本页面。当前来源是 " +
+          window.location.origin +
+          "，直接用 file:// 或其它预览地址打开会导致 Failed to fetch。";
+      }
+
+      const createConversation = async () => {
+        const userId = document.getElementById("userId").value.trim();
+        if (!userId) {
+          conversationStatus.textContent = "请先填写 User ID，再创建会话。";
+          return;
+        }
+        createConversationButton.disabled = true;
+        conversationStatus.textContent = "正在创建会话...";
+        try {
+          const response = await fetch(apiBaseUrl + "/api/create/conversation", {
+            method: "POST",
+            headers: {
+              "content-type": "application/json",
+              "x-user-id": userId
+            },
+            body: JSON.stringify({
+              name: "Chat Test " + new Date().toISOString()
+            })
+          });
+          const payload = await response.json();
+          if (!response.ok || payload.code !== 0) {
+            throw new Error(payload.msg || payload.message || response.statusText);
+          }
+          document.getElementById("conversationId").value = payload.data.conversation_id;
+          conversationStatus.textContent = "已创建会话：" + payload.data.conversation_id;
+        } catch (error) {
+          conversationStatus.textContent = "创建会话失败：" + String(error);
+        } finally {
+          createConversationButton.disabled = false;
+        }
+      };
+
+      createConversationButton.addEventListener("click", () => {
+        void createConversation();
+      });
+
+      void createConversation();
+
+      document.querySelectorAll("[data-scenario]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const scenario = scenarios[button.dataset.scenario];
+          if (!scenario) {
+            return;
+          }
+          messageInput.value = scenario.message;
+          scenarioHint.textContent = scenario.hint;
+          output.textContent = "";
+          meta.textContent = "";
+        });
+      });
+
+      const parseSseBlocks = (buffer) => {
+        const blocks = buffer.split("\n\n");
+        return { ready: blocks.slice(0, -1), rest: blocks.at(-1) ?? "" };
+      };
+
+      const handleBlock = (block) => {
+        const event = block
+          .split("\n")
+          .find((line) => line.startsWith("event:"))
+          ?.slice(6)
+          .trim();
+        const dataText = block
+          .split("\n")
+          .filter((line) => line.startsWith("data:"))
+          .map((line) => line.slice(5).trimStart())
+          .join("\n");
+        if (!event || !dataText) {
+          return;
+        }
+        const data = JSON.parse(dataText);
+        if (event === "meta") {
+          meta.textContent =
+            "trace_id: " + data.trace_id + " | conversation_id: " + data.conversation_id;
+        }
+        if (event === "token") {
+          output.textContent += data.delta;
+        }
+        if (event === "error") {
+          output.textContent += "\n[" + data.code + "] " + data.message;
+        }
+      };
+
+      sendButton.addEventListener("click", async () => {
+        sendButton.disabled = true;
+        output.textContent = "";
+        meta.textContent = "";
+        try {
+          const conversationId = document.getElementById("conversationId").value.trim();
+          if (!conversationId) {
+            throw new Error("conversation_id 为空，请先创建会话。");
+          }
+          const response = await fetch(apiBaseUrl + "/api/chat", {
+            method: "POST",
+            headers: {
+              "content-type": "application/json",
+              "x-user-id": document.getElementById("userId").value
+            },
+            body: JSON.stringify({
+              conversation_id: conversationId,
+              message: messageInput.value
+            })
+          });
+          const reader = response.body.getReader();
+          const decoder = new TextDecoder();
+          let buffer = "";
+          while (true) {
+            const { done, value } = await reader.read();
+            if (done) {
+              break;
+            }
+            buffer += decoder.decode(value, { stream: true });
+            const parsed = parseSseBlocks(buffer);
+            buffer = parsed.rest;
+            parsed.ready.forEach(handleBlock);
+          }
+          if (buffer.trim().length > 0) {
+            handleBlock(buffer);
+          }
+        } catch (error) {
+          output.textContent += "\n" + String(error);
+        } finally {
+          sendButton.disabled = false;
+        }
+      });
+    </script>
+  </body>
+</html>

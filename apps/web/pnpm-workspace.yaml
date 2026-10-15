@@ -1,0 +1,11 @@
+allowBuilds:
+  '@parcel/watcher': true
+  '@sentry/cli': true
+  '@swc/core': true
+  bufferutil: true
+  esbuild: true
+  keccak: true
+  msw: true
+  sharp: true
+  unrs-resolver: true
+  utf-8-validate: true

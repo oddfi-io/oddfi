@@ -1,0 +1,69 @@
+# ── AI Agent 工作目录（不纳入版本管理）──────────────────
+.progress/
+CLAUDE.local.md
+rules.md
+.temp
+# ── Claude Code 配置（白名单入库）────────────────────
+.claude/*
+!.claude/settings.json
+!.claude/rules/
+!.claude/hooks/
+!.claude/commands/
+!.claude/agents/
+!.claude/editor-link-templates.md
+
+# 二层排除（上面白名单目录下的敏感子项）
+.claude/**/.DS_Store
+
+.agents
+.mcp.json
+.omc
+
+# ── Playwright MCP  ────────────────────────────────
+.screenshots/
+.playwright-mcp
+
+# ── Git Worktree 并行开发目录 ─────────────────────────────
+.worktrees/
+
+# ── Node ────────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# ── Next.js ─────────────────────────────────────────────
+.next/
+out/
+build/
+
+# ── Testing ─────────────────────────────────────────────
+/coverage
+
+# ── 环境变量 ─────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Vercel ──────────────────────────────────────────────
+.vercel
+.env.vercel.*
+
+# ── TypeScript ──────────────────────────────────────────
+*.tsbuildinfo
+next-env.d.ts
+
+# ── 系统 / 编辑器 ─────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log
+*.pem
+.vscode/
+.idea/
+.zed/
+.pencil/
+
+# ── Debug logs ──────────────────────────────────────────
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

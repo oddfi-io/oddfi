@@ -1,0 +1,1738 @@
+[
+  {
+    "id": "80d82d1113934bfbea4ce8daf37a2433",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-11T19:00:00Z",
+    "home_team": "Mexico",
+    "away_team": "South Africa",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "odd_id": 100,
+                "name": "Mexico",
+                "price": 1.52
+              },
+              {
+                "odd_id": 101,
+                "name": "South Africa",
+                "price": 6.02
+              },
+              {
+                "odd_id": 102,
+                "name": "Draw",
+                "price": 4.09
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "odd_id": 103,
+                "name": "Mexico",
+                "price": 1.92,
+                "point": -1
+              },
+              {
+                "odd_id": 104,
+                "name": "South Africa",
+                "price": 1.9,
+                "point": 1
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "odd_id": 105,
+                "name": "Over",
+                "price": 1.93,
+                "point": 2.5
+              },
+              {
+                "odd_id": 106,
+                "name": "Under",
+                "price": 1.88,
+                "point": 2.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "384cbb5d76b535896a24fe65f93cfac8",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-12T02:00:00Z",
+    "home_team": "South Korea",
+    "away_team": "Czech Republic",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "odd_id": 107,
+                "name": "Czech Republic",
+                "price": 2.81
+              },
+              {
+                "odd_id": 108,
+                "name": "South Korea",
+                "price": 2.61
+              },
+              {
+                "odd_id": 109,
+                "name": "Draw",
+                "price": 3.11
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "odd_id": 110,
+                "name": "Czech Republic",
+                "price": 1.98,
+                "point": 0
+              },
+              {
+                "odd_id": 111,
+                "name": "South Korea",
+                "price": 1.84,
+                "point": 0
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "odd_id": 112,
+                "name": "Over",
+                "price": 1.93,
+                "point": 2.25
+              },
+              {
+                "odd_id": 113,
+                "name": "Under",
+                "price": 1.88,
+                "point": 2.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "26634922d3f78c146440816023e40de8",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-12T18:00:00Z",
+    "home_team": "Qatar",
+    "away_team": "Switzerland",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "odd_id": 114,
+                "name": "Qatar",
+                "price": 8.49
+              },
+              {
+                "odd_id": 115,
+                "name": "Switzerland",
+                "price": 1.29
+              },
+              {
+                "odd_id": 116,
+                "name": "Draw",
+                "price": 5.65
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "odd_id": 117,
+                "name": "Qatar",
+                "price": 2,
+                "point": 1.5
+              },
+              {
+                "odd_id": 118,
+                "name": "Switzerland",
+                "price": 1.83,
+                "point": -1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "odd_id": 119,
+                "name": "Over",
+                "price": 1.81,
+                "point": 2.75
+              },
+              {
+                "odd_id": 120,
+                "name": "Under",
+                "price": 2.01,
+                "point": 2.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d1f4f946c70a0b4e81f5d43e9d32361c",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-12T19:00:00Z",
+    "home_team": "Canada",
+    "away_team": "Bosnia & Herzegovina",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "odd_id": 121,
+                "name": "Bosnia & Herzegovina",
+                "price": 3.8
+              },
+              {
+                "odd_id": 122,
+                "name": "Canada",
+                "price": 1.97
+              },
+              {
+                "odd_id": 123,
+                "name": "Draw",
+                "price": 3.43
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "odd_id": 124,
+                "name": "Bosnia & Herzegovina",
+                "price": 1.85,
+                "point": 0.5
+              },
+              {
+                "odd_id": 125,
+                "name": "Canada",
+                "price": 1.98,
+                "point": -0.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "odd_id": 126,
+                "name": "Over",
+                "price": 1.92,
+                "point": 2.25
+              },
+              {
+                "odd_id": 127,
+                "name": "Under",
+                "price": 1.88,
+                "point": 2.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c12986f447a515fbe641addd786dbb24",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-13T01:00:00Z",
+    "home_team": "USA",
+    "away_team": "Paraguay",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "odd_id": 128,
+                "name": "Paraguay",
+                "price": 3.74
+              },
+              {
+                "odd_id": 129,
+                "name": "USA",
+                "price": 1.89
+              },
+              {
+                "odd_id": 130,
+                "name": "Draw",
+                "price": 3.73
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Paraguay",
+                "price": 1.92,
+                "point": 0.5,
+                "odd_id": 131
+              },
+              {
+                "name": "USA",
+                "price": 1.9,
+                "point": -0.5,
+                "odd_id": 132
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.99,
+                "point": 2.5,
+                "odd_id": 133
+              },
+              {
+                "name": "Under",
+                "price": 1.83,
+                "point": 2.5,
+                "odd_id": 134
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f6c8748a16516e0998f95de14235432a",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-13T22:00:00Z",
+    "home_team": "Brazil",
+    "away_team": "Morocco",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Brazil",
+                "price": 1.6,
+                "odd_id": 135
+              },
+              {
+                "name": "Morocco",
+                "price": 5.7,
+                "odd_id": 136
+              },
+              {
+                "name": "Draw",
+                "price": 3.75,
+                "odd_id": 137
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Brazil",
+                "price": 2.04,
+                "point": -1,
+                "odd_id": 138
+              },
+              {
+                "name": "Morocco",
+                "price": 1.79,
+                "point": 1,
+                "odd_id": 139
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.88,
+                "point": 2.5,
+                "odd_id": 140
+              },
+              {
+                "name": "Under",
+                "price": 1.93,
+                "point": 2.5,
+                "odd_id": 141
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5ae41a06735c926eeb7f74006933adce",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-14T01:00:00Z",
+    "home_team": "Haiti",
+    "away_team": "Scotland",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Haiti",
+                "price": 6.34,
+                "odd_id": 142
+              },
+              {
+                "name": "Scotland",
+                "price": 1.41,
+                "odd_id": 143
+              },
+              {
+                "name": "Draw",
+                "price": 4.98,
+                "odd_id": 144
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Haiti",
+                "price": 1.88,
+                "point": 1.25,
+                "odd_id": 145
+              },
+              {
+                "name": "Scotland",
+                "price": 1.93,
+                "point": -1.25,
+                "odd_id": 146
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.99,
+                "point": 2.75,
+                "odd_id": 147
+              },
+              {
+                "name": "Under",
+                "price": 1.82,
+                "point": 2.75,
+                "odd_id": 148
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "564084f52cc9f1abcc18187c168a7cdc",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-14T04:00:00Z",
+    "home_team": "Australia",
+    "away_team": "Turkey",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Australia",
+                "price": 4.08,
+                "odd_id": 149
+              },
+              {
+                "name": "Turkey",
+                "price": 1.91,
+                "odd_id": 150
+              },
+              {
+                "name": "Draw",
+                "price": 3.4,
+                "odd_id": 151
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Australia",
+                "price": 1.9,
+                "point": 0.5,
+                "odd_id": 152
+              },
+              {
+                "name": "Turkey",
+                "price": 1.92,
+                "point": -0.5,
+                "odd_id": 153
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.86,
+                "point": 2.25,
+                "odd_id": 154
+              },
+              {
+                "name": "Under",
+                "price": 1.94,
+                "point": 2.25,
+                "odd_id": 155
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d79edbd6aaeb578d33e313446b18d333",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-14T17:00:00Z",
+    "home_team": "Germany",
+    "away_team": "Curaçao",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Curaçao",
+                "price": 1.93,
+                "point": 3.75,
+                "odd_id": 156
+              },
+              {
+                "name": "Germany",
+                "price": 1.88,
+                "point": -3.75,
+                "odd_id": 157
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.83,
+                "point": 4.25,
+                "odd_id": 158
+              },
+              {
+                "name": "Under",
+                "price": 1.97,
+                "point": 4.25,
+                "odd_id": 159
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "32ec06abda2398ac41501c86eb9aa376",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-14T20:00:00Z",
+    "home_team": "Netherlands",
+    "away_team": "Japan",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Japan",
+                "price": 3.4,
+                "odd_id": 160
+              },
+              {
+                "name": "Netherlands",
+                "price": 2.12,
+                "odd_id": 161
+              },
+              {
+                "name": "Draw",
+                "price": 3.38,
+                "odd_id": 162
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Japan",
+                "price": 1.99,
+                "point": 0.25,
+                "odd_id": 163
+              },
+              {
+                "name": "Netherlands",
+                "price": 1.83,
+                "point": -0.25,
+                "odd_id": 164
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.91,
+                "point": 2.5,
+                "odd_id": 165
+              },
+              {
+                "name": "Under",
+                "price": 1.89,
+                "point": 2.5,
+                "odd_id": 166
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "05752bb341e197001387b64f3a06b9b2",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-14T23:00:00Z",
+    "home_team": "Ivory Coast",
+    "away_team": "Ecuador",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Ecuador",
+                "price": 2.44,
+                "odd_id": 167
+              },
+              {
+                "name": "Ivory Coast",
+                "price": 3.47,
+                "odd_id": 168
+              },
+              {
+                "name": "Draw",
+                "price": 2.76,
+                "odd_id": 169
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Ecuador",
+                "price": 2.04,
+                "point": -0.25,
+                "odd_id": 170
+              },
+              {
+                "name": "Ivory Coast",
+                "price": 1.8,
+                "point": 0.25,
+                "odd_id": 171
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.9,
+                "point": 2,
+                "odd_id": 172
+              },
+              {
+                "name": "Under",
+                "price": 1.9,
+                "point": 2,
+                "odd_id": 173
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b55f9569de3f4d731bc5537ff5ff43e4",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-15T02:00:00Z",
+    "home_team": "Sweden",
+    "away_team": "Tunisia",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Sweden",
+                "price": 1.91,
+                "odd_id": 174
+              },
+              {
+                "name": "Tunisia",
+                "price": 4.09,
+                "odd_id": 175
+              },
+              {
+                "name": "Draw",
+                "price": 3.4,
+                "odd_id": 176
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Sweden",
+                "price": 1.92,
+                "point": -0.5,
+                "odd_id": 177
+              },
+              {
+                "name": "Tunisia",
+                "price": 1.9,
+                "point": 0.5,
+                "odd_id": 178
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.97,
+                "point": 2.25,
+                "odd_id": 179
+              },
+              {
+                "name": "Under",
+                "price": 1.83,
+                "point": 2.25,
+                "odd_id": 180
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c54f00b11925751d2b62988775c6c239",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-15T16:00:00Z",
+    "home_team": "Spain",
+    "away_team": "Cape Verde",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Cape Verde",
+                "price": 1.97,
+                "point": 2.75,
+                "odd_id": 181
+              },
+              {
+                "name": "Spain",
+                "price": 1.85,
+                "point": -2.75,
+                "odd_id": 182
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.83,
+                "point": 3.5,
+                "odd_id": 183
+              },
+              {
+                "name": "Under",
+                "price": 1.98,
+                "point": 3.5,
+                "odd_id": 184
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec51b9c44ad5e34552f3ab53f7262813",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-15T18:00:00Z",
+    "home_team": "Iran",
+    "away_team": "New Zealand",
+    "bookmakers": [
+      {
+          "key": "h2h",
+          "last_update": "2026-04-07T11:23:29Z",
+          "outcomes": [
+              {
+                  "name": "Iran",
+                  "price": 1.65,
+                  "odd_id": 255
+              },
+              {
+                  "name": "New Zealand",
+                  "price": 4.8,
+                  "odd_id": 256
+              },
+              {
+                  "name": "Draw",
+                  "price": 3.4,
+                  "odd_id": 257
+              }
+          ]
+      },
+      {
+          "key": "spreads",
+          "last_update": "2026-04-07T11:23:29Z",
+          "outcomes": [
+              {
+                  "name": "Iran",
+                  "price": 1.65,
+                  "point": -0.5,
+                  "odd_id": 258
+              },
+              {
+                  "name": "New Zealand",
+                  "price": 4.8,
+                  "point": 0.5,
+                  "odd_id": 259
+              }
+          ]
+      },
+      {
+          "key": "totals",
+          "last_update": "2026-04-07T11:23:29Z",
+          "outcomes": [
+              {
+                  "name": "Over",
+                  "price": 1.97,
+                  "point": 2.25,
+                  "odd_id": 260
+              },
+              {
+                  "name": "Under",
+                  "price": 1.83,
+                  "point": 2.25,
+                  "odd_id": 261
+              }
+          ]
+      }
+    ]
+  },
+  {
+    "id": "fbfb95c62003fd6d828b309f96ee1f9b",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-15T19:00:00Z",
+    "home_team": "Belgium",
+    "away_team": "Egypt",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Belgium",
+                "price": 1.61,
+                "odd_id": 185
+              },
+              {
+                "name": "Egypt",
+                "price": 5,
+                "odd_id": 186
+              },
+              {
+                "name": "Draw",
+                "price": 4.08,
+                "odd_id": 187
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Belgium",
+                "price": 1.79,
+                "point": -0.75,
+                "odd_id": 188
+              },
+              {
+                "name": "Egypt",
+                "price": 2.04,
+                "point": 0.75,
+                "odd_id": 189
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.98,
+                "point": 2.75,
+                "odd_id": 190
+              },
+              {
+                "name": "Under",
+                "price": 1.83,
+                "point": 2.75,
+                "odd_id": 191
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "64b91c5f2db61c7358a4f05459e83c52",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-15T22:00:00Z",
+    "home_team": "Saudi Arabia",
+    "away_team": "Uruguay",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Saudi Arabia",
+                "price": 5.41,
+                "odd_id": 192
+              },
+              {
+                "name": "Uruguay",
+                "price": 1.61,
+                "odd_id": 193
+              },
+              {
+                "name": "Draw",
+                "price": 3.84,
+                "odd_id": 194
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Saudi Arabia",
+                "price": 1.82,
+                "point": 1,
+                "odd_id": 195
+              },
+              {
+                "name": "Uruguay",
+                "price": 2.01,
+                "point": -1,
+                "odd_id": 196
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.96,
+                "point": 2.5,
+                "odd_id": 197
+              },
+              {
+                "name": "Under",
+                "price": 1.85,
+                "point": 2.5,
+                "odd_id": 198
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "25161cf6cf0cd9be17ae2e7e224a1f45",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-16T04:00:00Z",
+    "home_team": "Austria",
+    "away_team": "Jordan",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Austria",
+                "price": 1.33,
+                "odd_id": 199
+              },
+              {
+                "name": "Jordan",
+                "price": 7.9,
+                "odd_id": 200
+              },
+              {
+                "name": "Draw",
+                "price": 5.17,
+                "odd_id": 201
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Austria",
+                "price": 1.97,
+                "point": -1.5,
+                "odd_id": 202
+              },
+              {
+                "name": "Jordan",
+                "price": 1.85,
+                "point": 1.5,
+                "odd_id": 203
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 2.02,
+                "point": 3,
+                "odd_id": 204
+              },
+              {
+                "name": "Under",
+                "price": 1.79,
+                "point": 3,
+                "odd_id": 205
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "73a4fcd14cc9766b9b9bfd50b8ca153a",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-16T19:00:00Z",
+    "home_team": "France",
+    "away_team": "Senegal",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "France",
+                "price": 1.41,
+                "odd_id": 206
+              },
+              {
+                "name": "Senegal",
+                "price": 7.06,
+                "odd_id": 207
+              },
+              {
+                "name": "Draw",
+                "price": 4.6,
+                "odd_id": 208
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "France",
+                "price": 1.95,
+                "point": -1.25,
+                "odd_id": 209
+              },
+              {
+                "name": "Senegal",
+                "price": 1.87,
+                "point": 1.25,
+                "odd_id": 210
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.8,
+                "point": 2.5,
+                "odd_id": 211
+              },
+              {
+                "name": "Under",
+                "price": 2.01,
+                "point": 2.5,
+                "odd_id": 212
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4d4f2b9b78182b557d4fbf8dcf4f4af2",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-16T22:00:00Z",
+    "home_team": "Iraq",
+    "away_team": "Norway",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Iraq",
+                "price": 7.59,
+                "odd_id": 213
+              },
+              {
+                "name": "Norway",
+                "price": 1.33,
+                "odd_id": 214
+              },
+              {
+                "name": "Draw",
+                "price": 5.32,
+                "odd_id": 215
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Iraq",
+                "price": 1.92,
+                "point": 1.5,
+                "odd_id": 216
+              },
+              {
+                "name": "Norway",
+                "price": 1.9,
+                "point": -1.5,
+                "odd_id": 217
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.81,
+                "point": 2.75,
+                "odd_id": 218
+              },
+              {
+                "name": "Under",
+                "price": 2,
+                "point": 2.75,
+                "odd_id": 219
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f31b2ee9e1cc6f7e641467f8237eaa21",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-17T01:00:00Z",
+    "home_team": "Argentina",
+    "away_team": "Algeria",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Algeria",
+                "price": 7.87,
+                "odd_id": 220
+              },
+              {
+                "name": "Argentina",
+                "price": 1.42,
+                "odd_id": 221
+              },
+              {
+                "name": "Draw",
+                "price": 4.22,
+                "odd_id": 222
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Algeria",
+                "price": 1.88,
+                "point": 1.25,
+                "odd_id": 223
+              },
+              {
+                "name": "Argentina",
+                "price": 1.93,
+                "point": -1.25,
+                "odd_id": 224
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.89,
+                "point": 2.5,
+                "odd_id": 225
+              },
+              {
+                "name": "Under",
+                "price": 1.91,
+                "point": 2.5,
+                "odd_id": 226
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6cc871c121a1869b4612d3fb22fa9d55",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-17T17:00:00Z",
+    "home_team": "Portugal",
+    "away_team": "DR Congo",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "DR Congo",
+                "price": 8.64,
+                "odd_id": 227
+              },
+              {
+                "name": "Portugal",
+                "price": 1.32,
+                "odd_id": 228
+              },
+              {
+                "name": "Draw",
+                "price": 5.12,
+                "odd_id": 229
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "DR Congo",
+                "price": 1.88,
+                "point": 1.5,
+                "odd_id": 230
+              },
+              {
+                "name": "Portugal",
+                "price": 1.93,
+                "point": -1.5,
+                "odd_id": 231
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.95,
+                "point": 3,
+                "odd_id": 232
+              },
+              {
+                "name": "Under",
+                "price": 1.85,
+                "point": 3,
+                "odd_id": 233
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "689096c8cd7e2753b9fec95321943c5d",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-17T20:00:00Z",
+    "home_team": "England",
+    "away_team": "Croatia",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Croatia",
+                "price": 4.96,
+                "odd_id": 234
+              },
+              {
+                "name": "England",
+                "price": 1.62,
+                "odd_id": 235
+              },
+              {
+                "name": "Draw",
+                "price": 4.02,
+                "odd_id": 236
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Croatia",
+                "price": 2.01,
+                "point": 0.75,
+                "odd_id": 237
+              },
+              {
+                "name": "England",
+                "price": 1.82,
+                "point": -0.75,
+                "odd_id": 238
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.93,
+                "point": 2.5,
+                "odd_id": 239
+              },
+              {
+                "name": "Under",
+                "price": 1.87,
+                "point": 2.5,
+                "odd_id": 240
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "87afdb85c977b451e1c00f5e3e632601",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-17T23:00:00Z",
+    "home_team": "Ghana",
+    "away_team": "Panama",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Ghana",
+                "price": 2.03,
+                "odd_id": 241
+              },
+              {
+                "name": "Panama",
+                "price": 3.28,
+                "odd_id": 242
+              },
+              {
+                "name": "Draw",
+                "price": 3.79,
+                "odd_id": 243
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Ghana",
+                "price": 2.04,
+                "point": -0.5,
+                "odd_id": 244
+              },
+              {
+                "name": "Panama",
+                "price": 1.8,
+                "point": 0.5,
+                "odd_id": 245
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 2.01,
+                "point": 2.5,
+                "odd_id": 246
+              },
+              {
+                "name": "Under",
+                "price": 1.8,
+                "point": 2.5,
+                "odd_id": 247
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "22083e7a8e5362c711bc05c1e1319a1f",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-18T02:00:00Z",
+    "home_team": "Uzbekistan",
+    "away_team": "Colombia",
+    "bookmakers": [
+      {
+        "key": "pinnacle",
+        "title": "Pinnacle",
+        "last_update": "2026-04-07T11:23:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Colombia",
+                "price": 1.41,
+                "odd_id": 248
+              },
+              {
+                "name": "Uzbekistan",
+                "price": 7.5,
+                "odd_id": 249
+              },
+              {
+                "name": "Draw",
+                "price": 4.44,
+                "odd_id": 250
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Colombia",
+                "price": 1.93,
+                "point": -1.25,
+                "odd_id": 251
+              },
+              {
+                "name": "Uzbekistan",
+                "price": 1.88,
+                "point": 1.25,
+                "odd_id": 252
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-07T11:23:29Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.83,
+                "point": 2.5,
+                "odd_id": 253
+              },
+              {
+                "name": "Under",
+                "price": 1.97,
+                "point": 2.5,
+                "odd_id": 254
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "065b3573e875f8d23803357f73e5b99e",
+    "sport_key": "soccer_fifa_world_cup",
+    "sport_title": "FIFA World Cup",
+    "commence_time": "2026-06-19T19:00:00Z",
+    "home_team": "USA",
+    "away_team": "Australia",
+    "bookmakers": []
+  }
+]

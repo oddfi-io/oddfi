@@ -1,0 +1,22 @@
+# Compiler output
+cache/
+out/
+
+# Coverage
+lcov.info
+
+# macOS
+.DS_Store
+
+# OMC state
+.omc/
+
+# Foundry lock & broadcast
+foundry.lock
+broadcast/
+
+# Node
+node_modules/
+
+# Local Python test env
+.venv-web3/

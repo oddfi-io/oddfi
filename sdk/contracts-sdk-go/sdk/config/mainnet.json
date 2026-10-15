@@ -1,0 +1,14 @@
+{
+  "name": "mainnet",
+  "chainId": 56,
+  "contracts": {
+    "bettingPool": "0x0000000000000000000000000000000000000000",
+    "usdt":        "0x55d398326f99059fF775485246999027B3197955"
+  },
+  "expectedRoles": {
+    "admin":    "0x0000000000000000000000000000000000000000",
+    "multisig": "0x0000000000000000000000000000000000000000"
+  },
+  "deployBlock": 0,
+  "explorer":    "https://bscscan.com"
+}

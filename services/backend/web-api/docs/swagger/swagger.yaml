@@ -1,0 +1,1492 @@
+basePath: /
+definitions:
+  handler.swaggerAssetLedgersResponse:
+    properties:
+      code:
+        type: integer
+      data:
+        $ref: '#/definitions/model.AssetLedgersResponse'
+      message:
+        type: string
+    type: object
+  handler.swaggerBalanceResponse:
+    properties:
+      code:
+        type: integer
+      data:
+        allOf:
+        - $ref: '#/definitions/model.BalanceResponse'
+        description: 金额字段统一按字符串展示，避免前端误用浮点数处理资产精度。
+      message:
+        type: string
+    type: object
+  handler.swaggerBannerBetHoldingResponse:
+    properties:
+      code:
+        type: integer
+      data:
+        $ref: '#/definitions/model.BannerBetHoldingResponse'
+      message:
+        type: string
+    type: object
+  handler.swaggerBannerBetPlaceResponse:
+    properties:
+      code:
+        type: integer
+      data:
+        $ref: '#/definitions/model.BannerBetPlaceResponse'
+      message:
+        type: string
+    type: object
+  handler.swaggerBetClaimResponse:
+    properties:
+      code:
+        type: integer
+      data:
+        $ref: '#/definitions/model.BetClaimResponse'
+      message:
+        type: string
+    type: object
+  handler.swaggerBetHistoryResponse:
+    properties:
+      code:
+        type: integer
+      data:
+        $ref: '#/definitions/model.BetHistoryResponse'
+      message:
+        type: string
+    type: object
+  handler.swaggerBetHoldingResponse:
+    properties:
+      code:
+        type: integer
+      data:
+        $ref: '#/definitions/model.BetHoldingResponse'
+      message:
+        type: string
+    type: object
+  handler.swaggerDepositAddressResponse:
+    properties:
+      code:
+        type: integer
+      data:
+        $ref: '#/definitions/model.DepositAddressResponse'
+      message:
+        type: string
+    type: object
+  handler.swaggerEmptyResponse:
+    properties:
+      code:
+        type: integer
+      data: {}
+      message:
+        type: string
+    type: object
+  handler.swaggerGetPriceResponse:
+    properties:
+      code:
+        type: integer
+      data:
+        allOf:
+        - $ref: '#/definitions/model.GetPriceResponse'
+        description: 行情价格来自 Redis decimal 字符串，文档保持字符串语义，减少前端精度损失。
+      message:
+        type: string
+    type: object
+  handler.swaggerHealthResponse:
+    properties:
+      status:
+        type: string
+    type: object
+  handler.swaggerLogoutResponse:
+    properties:
+      code:
+        type: integer
+      data:
+        $ref: '#/definitions/model.LogoutResponse'
+      message:
+        type: string
+    type: object
+  handler.swaggerModifyBalanceResponse:
+    properties:
+      code:
+        type: integer
+      data:
+        $ref: '#/definitions/model.ModifyBalanceRespnse'
+      message:
+        type: string
+    type: object
+  handler.swaggerOrderInfoResponse:
+    properties:
+      code:
+        type: integer
+      data:
+        $ref: '#/definitions/model.OrderInfoResponse'
+      message:
+        type: string
+    type: object
+  handler.swaggerPendingOrdersResponse:
+    properties:
+      code:
+        type: integer
+      data:
+        $ref: '#/definitions/model.PendingOrdersResponse'
+      message:
+        type: string
+    type: object
+  handler.swaggerTokenPairResponse:
+    properties:
+      code:
+        type: integer
+      data:
+        $ref: '#/definitions/model.TokenPair'
+      message:
+        type: string
+    type: object
+  handler.swaggerWalletLoginResponse:
+    properties:
+      code:
+        type: integer
+      data:
+        $ref: '#/definitions/model.WalletLoginResponse'
+      message:
+        type: string
+    type: object
+  handler.swaggerWithdrawApplyResponse:
+    properties:
+      code:
+        type: integer
+      data:
+        $ref: '#/definitions/model.WithDrawApplyResponse'
+      message:
+        type: string
+    type: object
+  handler.swaggerWithdrawCancelResponse:
+    properties:
+      code:
+        type: integer
+      data:
+        $ref: '#/definitions/model.WithdrawCancelResponse'
+      message:
+        type: string
+    type: object
+  handler.swaggerWithdrawFeeResponse:
+    properties:
+      code:
+        type: integer
+      data:
+        $ref: '#/definitions/model.WithdrawFeeResponse'
+      message:
+        type: string
+    type: object
+  handler.swaggerWithdrawRecordsResponse:
+    properties:
+      code:
+        type: integer
+      data:
+        $ref: '#/definitions/model.WithDrawRecordsRes'
+      message:
+        type: string
+    type: object
+  model.ApproveOrderRequest:
+    properties:
+      approve:
+        description: true=批准, false=拒绝
+        type: boolean
+      order:
+        description: 对应 WithdrawRecord.OrderSn
+        type: string
+      password:
+        type: string
+      remark:
+        type: string
+      user:
+        type: string
+    required:
+    - order
+    - password
+    - remark
+    - user
+    type: object
+  model.AssetLedgerResponse:
+    properties:
+      amount:
+        type: string
+      balance_after:
+        type: string
+      balance_before:
+        type: string
+      business_type:
+        type: string
+      created_at:
+        type: string
+      enable_claim:
+        description: History 领取入口开关；默认 false，只有 service 确认注单未领取且金额可领时才置 true。
+        type: boolean
+      error_msg:
+        type: string
+      event_info:
+        $ref: '#/definitions/model.BetHoldingResult'
+      ref_id:
+        type: string
+      status:
+        type: integer
+    type: object
+  model.AssetLedgersResponse:
+    properties:
+      asset_ledgers:
+        items:
+          $ref: '#/definitions/model.AssetLedgerResponse'
+        type: array
+    type: object
+  model.BalanceResponse:
+    properties:
+      available_balance:
+        description: UserID           uint64          `json:"user_id"`
+        type: string
+      bet_lock_balance:
+        type: string
+      claimable_balance:
+        type: string
+      frozen_balance:
+        type: string
+      liq_lock_balance:
+        type: string
+      stake_lock_balance:
+        type: string
+      total_balance:
+        type: string
+    type: object
+  model.BannerBetHoldingItem:
+    properties:
+      banner_code:
+        type: string
+      bet_id:
+        type: integer
+      created_at:
+        type: string
+      market:
+        type: string
+      market_id:
+        type: integer
+      odds:
+        type: string
+      payout:
+        type: string
+      ref_id:
+        type: string
+      selection:
+        type: string
+      selection_id:
+        type: integer
+      stake:
+        type: string
+      status:
+        type: string
+      type:
+        type: string
+    type: object
+  model.BannerBetHoldingResponse:
+    properties:
+      results:
+        items:
+          $ref: '#/definitions/model.BannerBetHoldingItem'
+        type: array
+      user_id:
+        type: integer
+    type: object
+  model.BannerBetPlaceRequest:
+    properties:
+      banner_code:
+        description: B1~B5
+        type: string
+      market:
+        description: '玩法: champion_winner / golden_ball / golden_boot ...'
+        type: string
+      market_id:
+        description: Banner 对应 market_id
+        type: integer
+      odds:
+        description: 赔率快照
+        type: string
+      ref_id:
+        description: 幂等键
+        type: string
+      selection:
+        description: 用户实际下注对象
+        type: string
+      selection_id:
+        description: Banner 对应 selection_id
+        type: integer
+      stake:
+        description: 下注金额
+        type: string
+    required:
+    - banner_code
+    - market
+    - market_id
+    - odds
+    - ref_id
+    - selection
+    - selection_id
+    - stake
+    type: object
+  model.BannerBetPlaceResponse:
+    properties:
+      banner_code:
+        type: string
+      bet_id:
+        type: integer
+      market_id:
+        type: integer
+      odds:
+        type: string
+      payout:
+        type: string
+      selection_id:
+        type: integer
+      stake:
+        type: string
+      status:
+        type: string
+    type: object
+  model.BetClaimRequest:
+    properties:
+      amount:
+        description: 前端可传展示金额做一致性校验，实际入账金额以后端 actual_payout 为准
+        type: string
+      bet_id:
+        type: integer
+      user_id:
+        description: 兼容旧请求体；实际用户以 JWT 鉴权上下文为准
+        type: integer
+    required:
+    - bet_id
+    type: object
+  model.BetClaimResponse:
+    properties:
+      already_claimed:
+        type: boolean
+      amount:
+        type: string
+      bet_id:
+        type: integer
+      status:
+        type: string
+    type: object
+  model.BetHistoryResponse:
+    properties:
+      asset_ledgers:
+        items:
+          $ref: '#/definitions/model.AssetLedgerResponse'
+        type: array
+      total:
+        type: integer
+    type: object
+  model.BetHoldingResponse:
+    properties:
+      results:
+        items:
+          $ref: '#/definitions/model.BetHoldingResult'
+        type: array
+      user_id:
+        type: integer
+    type: object
+  model.BetHoldingResult:
+    properties:
+      actual_payout:
+        description: worker 结算后的实际派彩，WON/PUSH/VOID/LOST 展示以它为准
+        type: string
+      away_team_logo:
+        description: 下注的客队logo
+        type: string
+      fixture_name:
+        description: 下注的赛事名称
+        type: string
+      fixture_time:
+        description: 下注的赛事时间
+        type: string
+      home_team_logo:
+        description: 下注的主队logo
+        type: string
+      market_type:
+        description: 下注的市场类型
+        type: string
+      odd_id:
+        description: 下注的市场ID
+        type: integer
+      odds:
+        description: 下注时锁定的服务端赔率快照，不能用赛后赔率表当前值覆盖
+        type: string
+      payout:
+        description: 下注时预计回报，用于 active 阶段展示
+        type: string
+      selection:
+        description: 下注的选项
+        type: string
+      settled_at:
+        description: worker 写入结算状态的时间；未结注单也返回 null，方便前端列展示保持稳定
+        type: string
+      stake:
+        description: '下注金额:  单位 odd 代币'
+        type: string
+      status:
+        description: 注单状态：live/pending=未结算；WON/LOST/PUSH/VOID=已结算；CANCELLED=已撤单；CLAIMED=历史领取状态；History
+          响应会统一转大写
+        type: string
+      type:
+        description: 下注类型 单注（single）;串注（parlay）
+        type: string
+    type: object
+  model.BetResult:
+    properties:
+      bet_id:
+        type: integer
+      error:
+        type: string
+      odd_id:
+        type: integer
+      status:
+        description: '"SUCCESS" 或 "FAILED"'
+        type: string
+    type: object
+  model.CancelBalanceRequest:
+    properties:
+      bet_ids:
+        items:
+          type: integer
+        type: array
+    required:
+    - bet_ids
+    type: object
+  model.DepositAddressResponse:
+    properties:
+      address:
+        type: string
+      chain:
+        type: string
+    type: object
+  model.GetPriceResponse:
+    properties:
+      price:
+        type: string
+    type: object
+  model.GetRecordByOrderSnsRequest:
+    properties:
+      orders:
+        description: OrderSn 数组
+        items:
+          type: string
+        minItems: 1
+        type: array
+    required:
+    - orders
+    type: object
+  model.LogoutResponse:
+    properties:
+      message:
+        type: string
+    type: object
+  model.ModifyBalanceRequest:
+    properties:
+      handicap_line:
+        description: 盘口线：例如 -0.5, 2.5 (大小球线也复用此字段)
+        items:
+          type: string
+        type: array
+      label:
+        description: 投注项：1(主), 2(客), over(大), under(小)
+        items:
+          type: string
+        type: array
+      market:
+        description: 【新增】玩法与盘口特征（对应文档 judgeBet 依赖）
+        items:
+          type: string
+        type: array
+      odd_ids:
+        description: 下注投注的市场ID
+        items:
+          type: integer
+        type: array
+      odds:
+        description: 下注的赔率
+        items:
+          type: string
+        type: array
+      ref_id:
+        description: 相关id ref_id
+        type: string
+      stakes:
+        description: '下注金额:  单位 odd 代币'
+        items:
+          type: string
+        type: array
+      type:
+        description: 下注类型 单注（single）;串注（parlay）
+        type: string
+    required:
+    - label
+    - market
+    - odd_ids
+    - odds
+    - ref_id
+    - stakes
+    - type
+    type: object
+  model.ModifyBalanceRespnse:
+    properties:
+      error:
+        type: string
+      msg:
+        description: '"ALL_SUCCESS", "PARTIAL_SUCCESS", "FAILED"'
+        type: string
+      results:
+        items:
+          $ref: '#/definitions/model.BetResult'
+        type: array
+    type: object
+  model.OrderInfoRequest:
+    properties:
+      orders:
+        description: OrderSn 数组
+        items:
+          type: string
+        minItems: 1
+        type: array
+      password:
+        type: string
+      user:
+        type: string
+    required:
+    - orders
+    - password
+    - user
+    type: object
+  model.OrderInfoResponse:
+    properties:
+      list: {}
+      total:
+        type: integer
+    type: object
+  model.PendingOrdersResponse:
+    properties:
+      list:
+        items:
+          $ref: '#/definitions/model.WithdrawRecordItem'
+        type: array
+      total:
+        type: integer
+    type: object
+  model.RefreshAccessTokenByRefreshRequest:
+    properties:
+      refresh_token:
+        type: string
+    required:
+    - refresh_token
+    type: object
+  model.TokenPair:
+    properties:
+      access_token:
+        type: string
+      expires_in:
+        type: integer
+      refresh_token:
+        type: string
+    type: object
+  model.WalletLoginRequest:
+    properties:
+      address:
+        type: string
+      chain:
+        type: string
+      message:
+        type: string
+      session_id:
+        type: string
+      signature:
+        type: string
+      wallet_type:
+        type: string
+    required:
+    - address
+    - chain
+    - wallet_type
+    type: object
+  model.WalletLoginResponse:
+    properties:
+      data: {}
+      done:
+        type: boolean
+      require:
+        items:
+          type: string
+        type: array
+      session_id:
+        type: string
+      step:
+        type: integer
+    type: object
+  model.WithDrawApplyRequest:
+    properties:
+      amount:
+        type: string
+      chain:
+        type: string
+      sig_time:
+        type: integer
+      withdraw_address:
+        type: string
+      withdraw_sign:
+        description: 提现地址签名，使用注册 eoa 钱包签名
+        type: string
+    required:
+    - amount
+    - chain
+    - sig_time
+    - withdraw_address
+    - withdraw_sign
+    type: object
+  model.WithDrawApplyResponse:
+    properties:
+      fee:
+        type: string
+      order_sn:
+        type: string
+      real_amount:
+        type: string
+      withdraw_address:
+        type: string
+    type: object
+  model.WithDrawRecordRes:
+    properties:
+      amount:
+        type: string
+      chain:
+        type: string
+      created_at:
+        type: string
+      fee:
+        type: string
+      order_sn:
+        type: string
+      real_amount:
+        type: string
+      status:
+        description: 审核状态
+        type: integer
+      to_address:
+        description: 提现地址
+        type: string
+      tx_hash:
+        type: string
+    type: object
+  model.WithDrawRecordsRes:
+    properties:
+      records:
+        items:
+          $ref: '#/definitions/model.WithDrawRecordRes'
+        type: array
+    type: object
+  model.WithdrawCancelReqest:
+    properties:
+      order:
+        type: string
+    required:
+    - order
+    type: object
+  model.WithdrawCancelResponse:
+    properties:
+      status:
+        type: string
+    type: object
+  model.WithdrawFeeResponse:
+    properties:
+      fee:
+        description: 手续费
+        type: string
+      real_amount:
+        description: 实际提现金额
+        type: string
+      total_amount:
+        description: 总提现金额
+        type: string
+    type: object
+  model.WithdrawRecordItem:
+    properties:
+      amount:
+        type: string
+      chain:
+        type: string
+      coin_symbol:
+        type: string
+      created_at:
+        type: string
+      fee:
+        type: string
+      id:
+        type: integer
+      order_sn:
+        type: string
+      real_amount:
+        type: string
+      risk_level:
+        type: integer
+      status:
+        type: integer
+      to_address:
+        type: string
+      user_id:
+        type: integer
+    type: object
+info:
+  contact: {}
+  description: Oddfi 钱包登录、资产、下注、提现、后台订单和行情价格相关接口文档。
+  title: Oddfi Account Web API
+  version: "1.0"
+paths:
+  /account/asset_ledger:
+    get:
+      parameters:
+      - description: 排序字段，可选 created_at / amount，默认 created_at
+        in: query
+        name: order_by
+        type: string
+      - description: 排序方向，可选 asc / desc，默认 desc
+        in: query
+        name: sort
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerAssetLedgersResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      security:
+      - BearerAuth: []
+      summary: 查询用户资产流水
+      tags:
+      - account
+  /account/balance:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerBalanceResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      security:
+      - BearerAuth: []
+      summary: 查询用户余额
+      tags:
+      - account
+  /account/banner_bet_holding:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerBannerBetHoldingResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      security:
+      - BearerAuth: []
+      summary: 查询 Banner 下注记录
+      tags:
+      - bet
+  /account/banner_bet_place:
+    post:
+      consumes:
+      - application/json
+      description: Banner 下注使用独立市场配置，不复用普通赛事盘口表。
+      parameters:
+      - description: Banner 下注请求
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/model.BannerBetPlaceRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerBannerBetPlaceResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      security:
+      - BearerAuth: []
+      summary: 首页 Banner 下注
+      tags:
+      - bet
+  /account/bet_cancel:
+    post:
+      consumes:
+      - application/json
+      description: 撤单用户以 JWT 鉴权上下文为准，不能信任请求体里的用户身份。
+      parameters:
+      - description: 撤单请求
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/model.CancelBalanceRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerModifyBalanceResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      security:
+      - BearerAuth: []
+      summary: 用户撤单
+      tags:
+      - bet
+  /account/bet_claim:
+    post:
+      consumes:
+      - application/json
+      description: 实际领取金额以后端结算写入的 actual_payout 为准，避免前端传入金额影响资金结果。
+      parameters:
+      - description: 领取请求
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/model.BetClaimRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerBetClaimResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.swaggerBetClaimResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "409":
+          description: Conflict
+          schema:
+            $ref: '#/definitions/handler.swaggerBetClaimResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerBetClaimResponse'
+      security:
+      - BearerAuth: []
+      summary: 领取已结算注单派奖
+      tags:
+      - bet
+  /account/bet_holding:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerBetHoldingResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      security:
+      - BearerAuth: []
+      summary: 查询用户持仓
+      tags:
+      - bet
+  /account/bet_place:
+    post:
+      consumes:
+      - application/json
+      description: 创建单注或串关注单，赔率快照、盘口线和余额扣减均由后端校验。
+      parameters:
+      - description: 下注请求
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/model.ModifyBalanceRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerModifyBalanceResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      security:
+      - BearerAuth: []
+      summary: 用户下注
+      tags:
+      - bet
+  /account/deposit_address:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerDepositAddressResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      security:
+      - BearerAuth: []
+      summary: 查询用户充值地址
+      tags:
+      - account
+  /account/login_by_wallet:
+    post:
+      consumes:
+      - application/json
+      description: 第一次请求生成登录 nonce 和 session_id；第二次携带 message/signature 完成签名校验并返回
+        token。
+      parameters:
+      - description: 钱包登录请求
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/model.WalletLoginRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerWalletLoginResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      summary: 钱包登录
+      tags:
+      - account
+  /account/logout:
+    post:
+      description: 将当前 access token 加入黑名单，并撤销用户 refresh token。
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerLogoutResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      security:
+      - BearerAuth: []
+      summary: 退出登录
+      tags:
+      - account
+  /account/portfolio/history:
+    get:
+      description: 聚合资金流水、普通注单和 Banner 注单，用于前端资产 History 列表。
+      parameters:
+      - description: 排序字段，可选 created_at / amount
+        in: query
+        name: order_by
+        type: string
+      - description: 排序方向，可选 asc / desc
+        in: query
+        name: sort
+        type: string
+      - description: 搜索关键词，模糊匹配赛事或市场信息
+        in: query
+        name: search
+        type: string
+      - description: 交易类型筛选，支持逗号分隔多选；合法枚举：all / bet / bet_cancel / bet_won / bet_lost / bet_banner / claim_prize / withdraw / deposit / stake / unstake / add_lp / remove_lp / cancel_withdraw。type=bet 表示所有下注流水，不按结算状态过滤；示例：type=bet,bet_cancel,claim_prize
+        in: query
+        name: type
+        type: string
+      - description: 赛果筛选，可选 all / won / lost / push / void
+        in: query
+        name: result
+        type: string
+      - description: 开始日期，格式 YYYY-MM-DD
+        in: query
+        name: begin_date
+        type: string
+      - description: 结束日期，格式 YYYY-MM-DD
+        in: query
+        name: end_date
+        type: string
+      - description: 页码，默认 1
+        in: query
+        name: page
+        type: integer
+      - description: 每页条数，默认 20，最大 50
+        in: query
+        name: page_size
+        type: integer
+      - description: My Bets 场景：active / settled
+        in: query
+        name: tab
+        type: string
+      - description: 兼容旧前端 status=active/settled
+        in: query
+        name: status
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerBetHistoryResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      security:
+      - BearerAuth: []
+      summary: 查询 Portfolio History
+      tags:
+      - account
+  /account/refresh_access_token_by_refresh:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 刷新 token 请求
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/model.RefreshAccessTokenByRefreshRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerTokenPairResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      summary: 使用 refresh token 刷新 access token
+      tags:
+      - account
+  /account/withdraw/apply:
+    post:
+      consumes:
+      - application/json
+      description: 提现金额、手续费和实际到账都按 decimal 字符串处理，避免链上资产精度损失。
+      parameters:
+      - description: 提现申请
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/model.WithDrawApplyRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerWithdrawApplyResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      security:
+      - BearerAuth: []
+      summary: 申请提现
+      tags:
+      - withdraw
+  /account/withdraw/cancel:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 取消提现请求
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/model.WithdrawCancelReqest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerWithdrawCancelResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      security:
+      - BearerAuth: []
+      summary: 取消提现
+      tags:
+      - withdraw
+  /account/withdraw/fee:
+    get:
+      parameters:
+      - description: 提现金额
+        in: query
+        name: amount
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerWithdrawFeeResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      security:
+      - BearerAuth: []
+      summary: 预估提现手续费
+      tags:
+      - withdraw
+  /account/withdraw/get_record:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerWithdrawRecordsResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      security:
+      - BearerAuth: []
+      summary: 查询提现记录
+      tags:
+      - withdraw
+  /account/withdraw/get_record_info:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 提现订单号数组
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/model.GetRecordByOrderSnsRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerOrderInfoResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      security:
+      - BearerAuth: []
+      summary: 查询提现订单详情
+      tags:
+      - withdraw
+  /admin/order/approve_order:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 审批请求
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/model.ApproveOrderRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      summary: 管理后台审批提现订单
+      tags:
+      - admin
+  /admin/order/order_info:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 订单详情请求
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/model.OrderInfoRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerOrderInfoResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      summary: 管理后台查询订单详情
+      tags:
+      - admin
+  /admin/order/pending_orders:
+    get:
+      parameters:
+      - description: 管理员用户名
+        in: query
+        name: user
+        required: true
+        type: string
+      - description: 管理员密码
+        in: query
+        name: password
+        required: true
+        type: string
+      - description: 空或不传为全部，risk 为高风险
+        in: query
+        name: type
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerPendingOrdersResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      summary: 管理后台查询待审核提现订单
+      tags:
+      - admin
+  /health:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerHealthResponse'
+      summary: 健康检查
+      tags:
+      - health
+  /market/price:
+    get:
+      description: 从 Redis 查询指定链和 token 的价格，当前只支持 chain=bsc、symbol=odd。
+      parameters:
+      - description: 链名称，例如 bsc
+        in: query
+        name: chain
+        required: true
+        type: string
+      - description: token 符号，例如 odd
+        in: query
+        name: symbol
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.swaggerGetPriceResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.swaggerEmptyResponse'
+      summary: 查询市场价格
+      tags:
+      - market
+schemes:
+- http
+- https
+securityDefinitions:
+  BearerAuth:
+    description: JWT 鉴权头格式：Bearer <access_token>
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"

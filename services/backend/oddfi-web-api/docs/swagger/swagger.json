@@ -1,0 +1,1167 @@
+{
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "swagger": "2.0",
+    "info": {
+        "description": "Oddfi 详情页、赛事、盘口、流动池、Banner 和 token price 相关接口文档。",
+        "title": "Oddfi Market Web API",
+        "contact": {},
+        "version": "1.0"
+    },
+    "basePath": "/",
+    "paths": {
+        "/api/v1/detail/fixture/{fixture_id}": {
+            "get": {
+                "description": "type=preview 返回预览数据，type=statis 返回统计数据，type=live 只查进行中赛事。",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "detail"
+                ],
+                "summary": "获取指定 fixture 详情",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "Fixture ID",
+                        "name": "fixture_id",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "statis / preview / live",
+                        "name": "type",
+                        "in": "query",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "语言，默认 zh",
+                        "name": "locale",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerFixturesResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerErrorResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerErrorResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/detail/fixture_between/{start_date}/{end_date}": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "detail"
+                ],
+                "summary": "按日期区间获取 fixture",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "开始日期，格式 YYYY-MM-DD",
+                        "name": "start_date",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "结束日期，格式 YYYY-MM-DD",
+                        "name": "end_date",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "live 表示只返回进行中赛事",
+                        "name": "type",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "语言，默认 zh",
+                        "name": "locale",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerFixturesResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerErrorResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerErrorResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/detail/fixture_date/{date}": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "detail"
+                ],
+                "summary": "按日期获取 fixture",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "日期，格式 YYYY-MM-DD",
+                        "name": "date",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "live 表示只返回进行中赛事",
+                        "name": "type",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "语言，默认 zh",
+                        "name": "locale",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerFixturesResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerErrorResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerErrorResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/detail/sports_all": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "detail"
+                ],
+                "summary": "按联赛获取赛事",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "联赛 ID，默认 2；0 表示其他小国比赛",
+                        "name": "league",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "页码，默认 1",
+                        "name": "page",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "live 表示只返回进行中赛事",
+                        "name": "type",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "国家/地区筛选",
+                        "name": "country_id",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "语言，默认 zh",
+                        "name": "locale",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerFixturesResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerErrorResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerErrorResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/detail/stages_all/{stage_id}": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "detail"
+                ],
+                "summary": "按阶段获取赛事",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "阶段 ID",
+                        "name": "stage_id",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "live 表示只返回进行中赛事",
+                        "name": "type",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "语言，默认 zh",
+                        "name": "locale",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerFixturesResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerErrorResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerErrorResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/detail/ws": {
+            "get": {
+                "description": "升级为 WebSocket 后推送详情页 K 线数据。",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "detail"
+                ],
+                "summary": "K 线 WebSocket",
+                "responses": {
+                    "101": {
+                        "description": "Switching Protocols",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/liquidity/details/market_all": {
+            "get": {
+                "description": "按下注热度和开赛时间排序未开赛赛事，Redis 热度异常时降级为 0，不影响列表可用性。",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "liquidity"
+                ],
+                "summary": "获取流动池精选赛事",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "页码，默认 1",
+                        "name": "page",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "每页条数，默认 25，最大 100",
+                        "name": "page_size",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "语言，默认 zh",
+                        "name": "locale",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerLiquidityResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerErrorResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerErrorResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/liquidity/details/market_search": {
+            "get": {
+                "description": "按当前 locale 下的队伍名称搜索未开赛赛事。",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "liquidity"
+                ],
+                "summary": "搜索流动池赛事",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "队伍名称关键词",
+                        "name": "name",
+                        "in": "query",
+                        "required": true
+                    },
+                    {
+                        "type": "integer",
+                        "description": "页码，默认 1",
+                        "name": "page",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "每页条数，默认 25，最大 100",
+                        "name": "page_size",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "语言，默认 zh",
+                        "name": "locale",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerLiquidityResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerErrorResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerErrorResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/market/banners": {
+            "get": {
+                "description": "返回首页/Market 顶部 Banner 配置和可下注选项。",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "banner"
+                ],
+                "summary": "获取 Market Banner 列表",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "语言，默认 en；支持 en/zh/pt/ja/es/tr/de/fr/hi",
+                        "name": "lang",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerMarketBannerResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/market/banners/{banner_id}": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "banner"
+                ],
+                "summary": "获取指定 Banner 详情",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Banner 模板 ID",
+                        "name": "banner_id",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "语言，默认 en",
+                        "name": "lang",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerMarketBannerDetailResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerErrorResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/token/batch_price": {
+            "post": {
+                "description": "单次最多 100 个 token；服务端会按链分组并发查询并写入 Redis 缓存。",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "token"
+                ],
+                "summary": "批量查询 token 价格",
+                "parameters": [
+                    {
+                        "description": "批量 token 查询请求",
+                        "name": "request",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerBatchTokenPriceRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerBatchTokenPriceResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerErrorResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerErrorResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/token/price": {
+            "get": {
+                "description": "通过 GeckoTerminal 查询 token price，价格以字符串返回，避免链上价格精度损失。",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "token"
+                ],
+                "summary": "查询单个 token 价格",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "链 ID/网络名，例如 bsc、polygon_pos、base、eth、arbitrum",
+                        "name": "chain_id",
+                        "in": "query",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "token 合约地址",
+                        "name": "address",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerTokenPriceResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerErrorResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerErrorResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/health_check": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "health"
+                ],
+                "summary": "健康检查",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/handler.swaggerMarketResponse"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "handler.TokenIdentifier": {
+            "type": "object",
+            "properties": {
+                "address": {
+                    "type": "string"
+                },
+                "chain_id": {
+                    "type": "string"
+                }
+            }
+        },
+        "handler.TokenPriceData": {
+            "type": "object",
+            "properties": {
+                "address": {
+                    "type": "string"
+                },
+                "chain_id": {
+                    "type": "string"
+                },
+                "chain_image_url": {
+                    "type": "string"
+                },
+                "price": {
+                    "type": "string"
+                },
+                "symbol": {
+                    "type": "string"
+                },
+                "token_image_url": {
+                    "type": "string"
+                }
+            }
+        },
+        "handler.swaggerBatchTokenPriceRequest": {
+            "type": "object",
+            "properties": {
+                "tokens": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/handler.TokenIdentifier"
+                    }
+                }
+            }
+        },
+        "handler.swaggerBatchTokenPriceResponse": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "integer"
+                },
+                "data": {
+                    "description": "token price 是链上行情数据，价格保持字符串，避免前端用浮点数造成精度和展示误差。",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/handler.TokenPriceData"
+                    }
+                },
+                "msg": {
+                    "type": "string"
+                }
+            }
+        },
+        "handler.swaggerErrorResponse": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "integer"
+                },
+                "data": {},
+                "msg": {
+                    "type": "string"
+                }
+            }
+        },
+        "handler.swaggerFixturesResponse": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "integer"
+                },
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/model.Fixture"
+                    }
+                },
+                "msg": {
+                    "type": "string"
+                }
+            }
+        },
+        "handler.swaggerLiquidityMarketListResponse": {
+            "type": "object",
+            "properties": {
+                "fixtures": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/model.Fixture"
+                    }
+                },
+                "pagination": {
+                    "$ref": "#/definitions/model.Pagination"
+                }
+            }
+        },
+        "handler.swaggerLiquidityResponse": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "integer"
+                },
+                "data": {
+                    "$ref": "#/definitions/handler.swaggerLiquidityMarketListResponse"
+                },
+                "msg": {
+                    "type": "string"
+                }
+            }
+        },
+        "handler.swaggerMarketBanner": {
+            "type": "object",
+            "properties": {
+                "banner_id": {
+                    "type": "string"
+                },
+                "decoration_key": {
+                    "type": "string"
+                },
+                "end_time": {
+                    "type": "string"
+                },
+                "is_active": {
+                    "type": "boolean"
+                },
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/handler.swaggerMarketBannerItem"
+                    }
+                },
+                "sort_order": {
+                    "type": "integer"
+                },
+                "subtitle": {
+                    "type": "string"
+                },
+                "tag_color": {
+                    "type": "string"
+                },
+                "tag_text": {
+                    "type": "string"
+                },
+                "template_id": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                }
+            }
+        },
+        "handler.swaggerMarketBannerDetailResponse": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "integer"
+                },
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/handler.swaggerMarketBannerItem"
+                    }
+                },
+                "msg": {
+                    "type": "string"
+                }
+            }
+        },
+        "handler.swaggerMarketBannerItem": {
+            "type": "object",
+            "properties": {
+                "bet_mode": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "country_code": {
+                    "type": "string"
+                },
+                "extra": {
+                    "type": "object",
+                    "additionalProperties": {}
+                },
+                "image_url": {
+                    "type": "string"
+                },
+                "implied_probability": {
+                    "type": "number"
+                },
+                "market_id": {
+                    "type": "integer"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "odds": {
+                    "type": "number"
+                },
+                "player_id": {
+                    "type": "string"
+                },
+                "selection_id": {
+                    "type": "integer"
+                }
+            }
+        },
+        "handler.swaggerMarketBannerResponse": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "integer"
+                },
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/handler.swaggerMarketBanner"
+                    }
+                }
+            }
+        },
+        "handler.swaggerMarketResponse": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "integer"
+                },
+                "data": {},
+                "msg": {
+                    "type": "string"
+                }
+            }
+        },
+        "handler.swaggerTokenPriceData": {
+            "type": "object",
+            "properties": {
+                "chain": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "price": {
+                    "type": "string"
+                },
+                "symbol": {
+                    "type": "string"
+                }
+            }
+        },
+        "handler.swaggerTokenPriceResponse": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "integer"
+                },
+                "data": {
+                    "$ref": "#/definitions/handler.swaggerTokenPriceData"
+                },
+                "msg": {
+                    "type": "string"
+                }
+            }
+        },
+        "model.APILeague": {
+            "type": "object",
+            "properties": {
+                "active": {
+                    "description": "是否启用",
+                    "type": "boolean"
+                },
+                "category": {
+                    "description": "联赛分类",
+                    "type": "integer"
+                },
+                "country_id": {
+                    "description": "国家/地区ID",
+                    "type": "integer"
+                },
+                "has_jerseys": {
+                    "description": "是否拥有球队球衣数据",
+                    "type": "boolean"
+                },
+                "id": {
+                    "description": "联赛ID",
+                    "type": "integer"
+                },
+                "image_path": {
+                    "description": "联赛图标地址",
+                    "type": "string"
+                },
+                "last_played_at": {
+                    "description": "最近比赛时间",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "联赛名称",
+                    "type": "string"
+                },
+                "short_code": {
+                    "description": "联赛缩写",
+                    "type": "string"
+                },
+                "sport_id": {
+                    "description": "运动类型ID(1=足球)",
+                    "type": "integer"
+                },
+                "sub_type": {
+                    "description": "子类型(cup_international=国际杯赛)",
+                    "type": "string"
+                },
+                "type": {
+                    "description": "基础类型",
+                    "type": "string"
+                }
+            }
+        },
+        "model.APIOdd": {
+            "type": "object",
+            "properties": {
+                "bookmaker_id": {
+                    "description": "做市商 ID",
+                    "type": "integer"
+                },
+                "fixture_id": {
+                    "description": "关联的联赛ID",
+                    "type": "integer"
+                },
+                "handicap": {
+                    "description": "亚让球线（\"−0.5\" 等，前端已归一化分裂盘）",
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "label": {
+                    "description": "投注按钮文字（\"Home\"/\"Draw\"/\"Away\"/\"Over\"/\"Under\"）",
+                    "type": "string"
+                },
+                "market_description": {
+                    "description": "盘口说明标题（\"Fulltime Result\" 等）",
+                    "type": "string"
+                },
+                "market_id": {
+                    "description": "按盘口分组（1=1X2, 6=亚让, 7=亚大小）",
+                    "type": "integer"
+                },
+                "selection": {
+                    "description": "服务端标准选项，下注时前端可直接透传",
+                    "type": "string"
+                },
+                "stopped": {
+                    "description": "投注暂停标记（赛事中断/临开赛时禁投）",
+                    "type": "boolean"
+                },
+                "total": {
+                    "description": "大小球线（\"2.5\" 等，前端已归一化分裂盘）",
+                    "type": "string"
+                },
+                "value": {
+                    "description": "赔率值，用 string",
+                    "type": "string"
+                },
+                "winning": {
+                    "description": "已结算赢注标记（赛后结算 UI 会需要）",
+                    "type": "boolean"
+                }
+            }
+        },
+        "model.APIParticipant": {
+            "type": "object",
+            "properties": {
+                "country_id": {
+                    "type": "integer"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "image_path": {
+                    "type": "string"
+                },
+                "meta": {
+                    "type": "object",
+                    "properties": {
+                        "location": {
+                            "description": "\"home\" or \"away\"",
+                            "type": "string"
+                        },
+                        "winner": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                "name": {
+                    "type": "string"
+                },
+                "short_code": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                }
+            }
+        },
+        "model.APIStatistics": {
+            "type": "object",
+            "properties": {
+                "date": {
+                    "type": "object",
+                    "properties": {
+                        "value": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "location": {
+                    "type": "string"
+                },
+                "type_id": {
+                    "type": "integer"
+                }
+            }
+        },
+        "model.Fixture": {
+            "type": "object",
+            "properties": {
+                "enable_bet": {
+                    "description": "是否可以下注",
+                    "type": "boolean"
+                },
+                "has_odds": {
+                    "description": "是否有赔率  精选赛事卡片过滤（无赔率赛事不展示）",
+                    "type": "boolean"
+                },
+                "id": {
+                    "description": "比赛ID",
+                    "type": "integer"
+                },
+                "league": {
+                    "description": "联赛信息",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/model.APILeague"
+                        }
+                    ]
+                },
+                "league_id": {
+                    "description": "联赛ID",
+                    "type": "integer"
+                },
+                "mock_activity": {
+                    "$ref": "#/definitions/model.MockActivity"
+                },
+                "name": {
+                    "description": "比赛名展示、下注单存储",
+                    "type": "string"
+                },
+                "odds": {
+                    "description": "赔率",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/model.APIOdd"
+                    }
+                },
+                "participants": {
+                    "description": "队名、队徽、主客场判断",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/model.APIParticipant"
+                    }
+                },
+                "stage_id": {
+                    "description": "阶段ID",
+                    "type": "integer"
+                },
+                "stage_name": {
+                    "description": "阶段名称(小组赛/32强/16强...)",
+                    "type": "string"
+                },
+                "starting_at": {
+                    "description": "比赛开始时间",
+                    "type": "string"
+                },
+                "starting_at_timestamp": {
+                    "description": "比赛开始时间戳",
+                    "type": "integer"
+                },
+                "state_id": {
+                    "description": "比赛状态ID",
+                    "type": "integer"
+                },
+                "statistics": {
+                    "description": "比赛统计信息",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/model.APIStatistics"
+                    }
+                }
+            }
+        },
+        "model.MockActivity": {
+            "type": "object",
+            "properties": {
+                "activity_id": {
+                    "type": "string"
+                },
+                "bet_close_at": {
+                    "type": "string"
+                },
+                "bet_close_sec": {
+                    "type": "integer"
+                },
+                "period_sec": {
+                    "type": "integer"
+                },
+                "phase": {
+                    "type": "string"
+                },
+                "remaining_sec": {
+                    "description": "remaining_sec 是给前端展示倒计时的统一字段：开盘期倒向封盘，封盘期倒向结算，避免前端理解 worker 内部状态机细节。",
+                    "type": "integer"
+                },
+                "settle_at": {
+                    "type": "string"
+                },
+                "settle_at_sec": {
+                    "type": "integer"
+                }
+            }
+        },
+        "model.Pagination": {
+            "type": "object",
+            "properties": {
+                "count": {
+                    "type": "integer"
+                },
+                "current_page": {
+                    "type": "integer"
+                },
+                "has_more": {
+                    "type": "boolean"
+                },
+                "per_page": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}

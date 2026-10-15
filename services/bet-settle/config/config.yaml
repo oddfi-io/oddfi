@@ -1,0 +1,28 @@
+app:
+  env: "dev"
+mysql:
+  dsn: "用户名:密码@tcp(127.0.0.1:3306)/数据库名?charset=utf8mb4&parseTime=True&loc=Local"
+  tables:
+    leagues: "oddfi_leagues_dev"
+    fixtures: "oddfi_fixtures_dev"
+    odds: "oddfi_odds_dev"
+    statistics: "oddfi_statistics_dev"
+
+settlement:
+  # 0 表示不限制用户；线上单用户灰度时改成新注册测试用户的 user_id。
+  user_id: 2049056716888215552
+  mock_ucl:
+    enabled: false
+    fixture_id: 99200001
+    period_sec: 300
+    bet_open_sec: 240
+    lock_name: "oddfi_ucl_mock_5min_dev"
+
+sportmonks:
+  api_token: "xxxx"
+  base_url: "https://api.sportmonks.com/v3/football"
+
+kafka:
+  brokers:
+    - "127.0.0.1:9092"
+  topic: "league_updates"

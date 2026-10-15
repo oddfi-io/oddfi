@@ -1,0 +1,74 @@
+# OddFi 运营后台 · Nginx 反代示例
+#
+# 部署位置（参考）：/etc/nginx/sites-available/admin.oddfi.io
+# 拷贝后改 server_name、证书路径、前端静态目录即可。
+#
+# 设计要点：
+#   - 后端 :8081 不暴露公网，仅 127.0.0.1 监听
+#   - SPA 兜底 try_files 让前端路由能工作
+#   - X-Forwarded-For + X-Real-IP 传给后端，配合 router.SetTrustedProxies(127.0.0.1) 取真实 IP
+#   - X-Request-ID 自动注入并透传（Nginx 1.11.0+ 内置 $request_id）
+
+# HTTPS 主站点
+server {
+    listen 443 ssl;
+    listen [::]:443 ssl;
+    http2 on;
+    server_name admin.oddfi.io;
+    server_tokens off;   # 不在响应里暴露 nginx 版本
+
+    # TLS（用 certbot 或你的 TLS 工具维护）
+    ssl_certificate     /etc/letsencrypt/live/admin.oddfi.io/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/admin.oddfi.io/privkey.pem;
+    ssl_protocols       TLSv1.2 TLSv1.3;
+    ssl_ciphers         HIGH:!aNULL:!MD5;
+
+    # 安全响应头（应用层 SecurityHeaders 也设了，这里冗余加一道保险）
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+    add_header X-Content-Type-Options    "nosniff"   always;
+    add_header X-Frame-Options           "DENY"      always;
+    add_header Referrer-Policy           "no-referrer" always;
+
+    # 限制请求体大小（admin 后台基本不传大文件）
+    client_max_body_size 2m;
+
+    # 前端静态资源（与 bootstrap.md §4 创建的目录对齐）
+    root /var/www/oddfi-admin;
+    index index.html;
+
+    # SPA 兜底：未匹配的路径回 index.html
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    # 后端反代：/auth/* 和 /admin/* 走 :8081
+    location ~ ^/(auth|admin)/ {
+        proxy_pass http://127.0.0.1:8081;
+        proxy_http_version 1.1;
+        proxy_set_header Host              $host;
+        proxy_set_header X-Real-IP         $remote_addr;
+        proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        # Nginx 1.11+ 自动生成 $request_id；如果客户端带了就透传
+        proxy_set_header X-Request-ID      $request_id;
+        proxy_read_timeout 30s;
+        proxy_send_timeout 30s;
+    }
+
+    # 健康检查：仅内网网段访问（按实际监控/LB IP 调整）
+    location = /health {
+        proxy_pass http://127.0.0.1:8081/health;
+        # allow 10.0.0.0/8;
+        # allow 127.0.0.1;
+        # deny all;
+    }
+}
+
+# HTTP → HTTPS 跳转
+server {
+    listen 80;
+    listen [::]:80;
+    server_name admin.oddfi.io;
+    server_tokens off;
+    return 301 https://$host$request_uri;
+}

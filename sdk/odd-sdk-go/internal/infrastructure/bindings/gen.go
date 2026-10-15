@@ -1,0 +1,19 @@
+// Package bindings contains generated go-ethereum contract bindings.
+package bindings
+
+//go:generate go run github.com/ethereum/go-ethereum/cmd/abigen@v1.17.0 --abi ../../../contracts/abi/BettingPool.abi.json --pkg bettingpool --type BettingPool --out bettingpool/bettingpool.go
+//go:generate go run github.com/ethereum/go-ethereum/cmd/abigen@v1.17.0 --abi ../../../contracts/abi/BettingBetModule.abi.json --pkg bettingbetmodule --type BettingBetModule --out bettingbetmodule/bettingbetmodule.go
+//go:generate go run github.com/ethereum/go-ethereum/cmd/abigen@v1.17.0 --abi ../../../contracts/abi/BettingMarketModule.abi.json --pkg bettingmarketmodule --type BettingMarketModule --out bettingmarketmodule/bettingmarketmodule.go
+//go:generate go run github.com/ethereum/go-ethereum/cmd/abigen@v1.17.0 --abi ../../../contracts/abi/BettingParlayLens.abi.json --pkg bettingparlaylens --type BettingParlayLens --out bettingparlaylens/bettingparlaylens.go
+//go:generate go run github.com/ethereum/go-ethereum/cmd/abigen@v1.17.0 --abi ../../../contracts/abi/BettingParlayModule.abi.json --pkg bettingparlaymodule --type BettingParlayModule --out bettingparlaymodule/bettingparlaymodule.go
+//go:generate go run github.com/ethereum/go-ethereum/cmd/abigen@v1.17.0 --abi ../../../contracts/abi/BettingReferralModule.abi.json --pkg bettingreferralmodule --type BettingReferralModule --out bettingreferralmodule/bettingreferralmodule.go
+//go:generate go run github.com/ethereum/go-ethereum/cmd/abigen@v1.17.0 --abi ../../../contracts/abi/BettingSettlementModule.abi.json --pkg bettingsettlementmodule --type BettingSettlementModule --out bettingsettlementmodule/bettingsettlementmodule.go
+//go:generate go run github.com/ethereum/go-ethereum/cmd/abigen@v1.17.0 --abi ../../../contracts/abi/DexLaunchController.abi.json --pkg dexlaunchcontroller --type DexLaunchController --out dexlaunchcontroller/dexlaunchcontroller.go
+//go:generate go run github.com/ethereum/go-ethereum/cmd/abigen@v1.17.0 --abi ../../../contracts/abi/DexLpLocker.abi.json --pkg dexlplocker --type DexLpLocker --out dexlplocker/dexlplocker.go
+//go:generate go run github.com/ethereum/go-ethereum/cmd/abigen@v1.17.0 --abi ../../../contracts/abi/EcosystemRewards.abi.json --pkg ecosystemrewards --type EcosystemRewards --out ecosystemrewards/ecosystemrewards.go
+//go:generate go run github.com/ethereum/go-ethereum/cmd/abigen@v1.17.0 --abi ../../../contracts/abi/HouseVault.abi.json --pkg housevault --type HouseVault --out housevault/housevault.go
+//go:generate go run github.com/ethereum/go-ethereum/cmd/abigen@v1.17.0 --abi ../../../contracts/abi/LiquidityPool.abi.json --pkg liquiditypool --type LiquidityPool --out liquiditypool/liquiditypool.go
+//go:generate go run github.com/ethereum/go-ethereum/cmd/abigen@v1.17.0 --abi ../../../contracts/abi/ODDToken.abi.json --pkg oddtoken --type ODDToken --out oddtoken/oddtoken.go
+//go:generate go run github.com/ethereum/go-ethereum/cmd/abigen@v1.17.0 --abi ../../../contracts/abi/StakingPool.abi.json --pkg stakingpool --type StakingPool --out stakingpool/stakingpool.go
+//go:generate go run github.com/ethereum/go-ethereum/cmd/abigen@v1.17.0 --abi ../../../contracts/abi/TierSale.abi.json --pkg tiersale --type TierSale --out tiersale/tiersale.go
+//go:generate go run ./normalize_headers.go -- bettingpool/bettingpool.go bettingbetmodule/bettingbetmodule.go bettingmarketmodule/bettingmarketmodule.go bettingparlaylens/bettingparlaylens.go bettingparlaymodule/bettingparlaymodule.go bettingreferralmodule/bettingreferralmodule.go bettingsettlementmodule/bettingsettlementmodule.go dexlaunchcontroller/dexlaunchcontroller.go dexlplocker/dexlplocker.go ecosystemrewards/ecosystemrewards.go housevault/housevault.go liquiditypool/liquiditypool.go oddtoken/oddtoken.go stakingpool/stakingpool.go tiersale/tiersale.go

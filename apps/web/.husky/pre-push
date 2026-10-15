@@ -1,0 +1,5 @@
+# ENH-035: 全 suite 守底回归（频率比 pre-commit 低 1 个量级）
+# 紧急 hotfix 跳过：ALLOW_NO_VERIFY=1 git push --no-verify
+# 顺序：test 在前快失败（~3min）→ build（更慢，test 红就不浪费 build）
+pnpm test --run
+rm -rf .next && pnpm build 2>&1 | tail -40

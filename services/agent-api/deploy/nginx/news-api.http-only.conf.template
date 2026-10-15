@@ -1,0 +1,25 @@
+# oddfi-agent-backend nginx site config (HTTP-ONLY, for first-time certbot bootstrap)
+#
+# 流程（首次签证书时用，签完后用 news-api.conf.template 替换）：
+#   1. 替换 __DOMAIN__ 为目标域名
+#   2. sudo cp 到 /etc/nginx/sites-available/__DOMAIN__
+#   3. sudo ln -sf .../sites-available/... /etc/nginx/sites-enabled/
+#   4. sudo mkdir -p /var/www/html && sudo nginx -t && sudo systemctl reload nginx
+#   5. sudo certbot certonly --webroot -w /var/www/html -d __DOMAIN__ \
+#        --non-interactive --agree-tos -m admin@oddfi.io
+#   6. 覆盖为 news-api.conf.template 完整版（含 TLS + SSE 配置）
+
+server {
+    listen 80;
+    server_name __DOMAIN__;
+
+    # certbot HTTP-01 验证路径
+    location /.well-known/acme-challenge/ {
+        root /var/www/html;
+    }
+
+    # 其他请求一律 404（不暴露任何信息，bootstrap 阶段不应该有业务流量进来）
+    location / {
+        return 404;
+    }
+}

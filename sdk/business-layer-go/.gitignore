@@ -1,0 +1,17 @@
+*.exe
+*.test
+*.out
+.idea/
+.vscode/
+.env
+coverage.txt
+/dist/
+/tmp/
+
+# Local LP-position hand-off file between TestLiquidityMatchAddSettleUnbond
+# (writer) and TestLiquidityWithdraw (reader). Per-developer state, not for VCS.
+.last_lp_position
+
+# Local stake-position hand-off file between TestStakeForLaterUnstake
+# (writer) and TestUnstake (reader). Per-developer state, not for VCS.
+.last_stake_position

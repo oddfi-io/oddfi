@@ -1,0 +1,184 @@
+{
+  "network": "BNB Smart Chain Testnet",
+  "chainId": 97,
+  "rpc": [
+    "https://bsc-testnet-dataseed.bnbchain.org",
+    "https://bsc-testnet.bnbchain.org",
+    "https://bsc-prebsc-dataseed.bnbchain.org"
+  ],
+  "explorer": "https://testnet.bscscan.com",
+  "contracts": {
+    "ODDToken": {
+      "address": "0x9D3cfd96C447D45FBf3e10bf0D233C51DEb58Ad0",
+      "type": "ERC1967Proxy",
+      "implementation": "0x1c35c6c048266c22390C8b6CCEec3D6e4479192c",
+      "proxyDeployTxHash": "0x2a3fa4c6571b7b56652140d4569e43b96a7fb2f565bbccec22db02ffecc1123d",
+      "implementationDeployTxHash": "0xfe0a4ff103b857b143b426ca341fef061ee624ee77c7a6d73d3daf3830817993",
+      "abi": "../assets/ODDToken.abi.json"
+    },
+    "StakingPool": {
+      "address": "0x9378fd8E53c3904e972bf633Dbb96aA3EF46E32F",
+      "type": "ERC1967Proxy",
+      "implementation": "0x07e3246b17d4FBd0325Bb0027b71C13734b084BA",
+      "proxyDeployTxHash": "0x5a109003d9f70df6ea1dfdb9db018261956fa157c02e0681ff2bd82f4901b749",
+      "implementationDeployTxHash": "0x8f02752ef1d4149a5e61b6d427d0176b22a369a110342eec09c9b6b444e91c24",
+      "abi": "../assets/StakingPool.abi.json"
+    },
+    "LiquidityPool": {
+      "address": "0x2de40A5AE2eF4a3fb8168ccd357b37A9fFC04b50",
+      "type": "ERC1967Proxy",
+      "implementation": "0x359b8cd8Ab5ADD99335f7ABA806c793CBf3FD870",
+      "proxyDeployTxHash": "0x0d09aad81b851414a731d39e6caf92128df813b9d202b689f73e61f9b026d02c",
+      "implementationDeployTxHash": "0xfdd82b704cd1df9dcf2066239e6b85862252e63b5872c8d326636a2adbe4a71f",
+      "abi": "../assets/LiquidityPool.abi.json"
+    },
+    "BettingPool": {
+      "address": "0x0Ce84e205EF5a131b8677F348e7d613BB1a630E3",
+      "type": "ERC1967Proxy",
+      "implementation": "0x3a4845AAdDf529dd3Ee8F073EA7dE9e565df56DA",
+      "proxyDeployTxHash": "0x2ba7768c51dd55bdd410f9fb1b15278ce456e3bd1c333c1fe9d5d228c7b0aaa5",
+      "implementationDeployTxHash": "0x21d42994afa16e7409ed5f1a106562db4883bacfc64c867aee85600d6d8e5777",
+      "implementationUpgradeTxHash": "0x67e4949ff03aa47baa61f5d2cea0bc5dcb5f426af27e5a0127ea8077f5300ddf",
+      "abi": "../assets/BettingPool.abi.json"
+    },
+    "BettingSettlementModule": {
+      "address": "0xC29ebbdd68d7718f0fe1B8E187d84ae8F34bfA39",
+      "type": "delegatecall/staticcall implementation",
+      "deployTxHash": "0xcc83fe3e0eea2fbccd4ebd1f7ee049a23ea8b91169b736e164ddb259ab10e6ee",
+      "supersedes": "0xD05070e92F8981578e27DF3BFA32094549Ec54Dc",
+      "abi": "../assets/BettingSettlementModule.abi.json"
+    },
+    "BettingBetModule": {
+      "address": "0xe911D8472F53f64E8B06eAb31E8Ec6Cc5B4c8825",
+      "type": "delegatecall implementation",
+      "deployTxHash": "0x04043b092c54549db5f77c72373c9580b9edd4be04a57e7f74c4227cdf737728",
+      "abi": "../assets/BettingBetModule.abi.json"
+    },
+    "BettingMarketModule": {
+      "address": "0xD786A66a77Ff137A09Aa2fa69BbD8f6AE42f79De",
+      "type": "delegatecall/staticcall implementation",
+      "deployTxHash": "0x3edcca638528c0d7aa905e6f0c8f0e989607d5a952ea951afe7a071dd30b563d",
+      "abi": "../assets/BettingMarketModule.abi.json"
+    },
+    "BettingReferralModule": {
+      "address": "0x6f481A9E772AFDF85741a5FA82985DCcaC79Bb6B",
+      "type": "delegatecall implementation",
+      "deployTxHash": "0x7cf52488b1de96d44891a53eafcfb4f6873ca361de3ddef4cbb3fff69c0c8364",
+      "configureTxHash": "0xdc14f4237c160638f0d5b34c059774631dfadd0951064e7fdb9e21c8dd431535",
+      "supersedes": "0xa2A9D3015D437cDB5dDe901F546734cC775984Ea",
+      "abi": "../assets/BettingReferralModule.abi.json",
+      "note": "2026-06-12 replaced after live validation to use Pancake V3 exactInputSingle params with deadline."
+    },
+    "BettingParlayModule": {
+      "address": "0xD7AcFb964C01D4be09757207034FD919dA06fE96",
+      "type": "delegatecall/staticcall implementation",
+      "deployTxHash": "0x2f718917652a843232d48ba88a4e023d8f7be3c2242d310c9b38440587378c2e",
+      "supersedes": "0xeDBC57c205129FDB0501cEa42Fc4bD68C1AAcBaA",
+      "abi": "../assets/BettingParlayModule.abi.json"
+    },
+    "BettingParlayLens": {
+      "address": "0xd139C9C041783D48A3D36aedb8Ea7d99859bD2a2",
+      "type": "read-only lens",
+      "deployTxHash": "0x0ca95c36e29764b8539eaf23acc2e4c3d3e9e4e3c62221d91b61139dddbe1062",
+      "abi": "../assets/BettingParlayLens.abi.json"
+    }
+  },
+  "mvpSupportContracts": {
+    "TierSale": {
+      "address": "0xBe938fB7AF656B111a123B749bB724d8351497C7",
+      "type": "ERC1967Proxy",
+      "implementation": "0x3E47eDe9Dd62Ed34B7c6C1590Ca2B856e8dABC9d",
+      "proxyDeployTxHash": "0xd77035edddd8ae75fbea113edf8c365b50fed567c6820365c48445d446e378b6",
+      "implementationDeployTxHash": "0x709c771e9935a58ced7a4c3e696394a119df026a03d05955983c79cccdfed680",
+      "abi": "../assets/TierSale.abi.json"
+    },
+    "HouseVault": {
+      "address": "0x41e87F99f1a3dBDb09A337AEf4C4841d90b5d280",
+      "type": "ERC1967Proxy",
+      "implementation": "0x7e12549BC39B25B1Df4034abEDB9a0109E700128",
+      "proxyDeployTxHash": "0x1a5181774f42e008cca48193f160abce31f6c229c35333b381dc6444b6e51e56",
+      "implementationDeployTxHash": "0x1660a90066d182dfdf889a032fc2ee1de59b57ed7f6373480e06e7e3e0be504d",
+      "implementationUpgradeTxHash": "0x1f09745b8058c3c6c683ce0108b487d3e68303ce9b0ef4fb3a4a64e7451b08ec",
+      "abi": "../assets/HouseVault.abi.json"
+    },
+    "DexLaunchController": {
+      "address": "0x070f72Fda6eAa8335162A5A5629Fb12f9f8b6d54",
+      "type": "ERC1967Proxy",
+      "implementation": "0x96faC6D3D9912D06da9Da5bF287D9CdBE23AE924",
+      "proxyDeployTxHash": "0x45922601b52f13f123c2cf2cd1269b77054fefed72ade8a8b047a6fa7f2b233f",
+      "implementationDeployTxHash": "0x6ef03e5e37791c0873a43871a69d59127efe2c75397698608a8c805e42b116d3",
+      "abi": "../assets/DexLaunchController.abi.json"
+    },
+    "DexLpLocker": {
+      "address": "0xC30d6407df0E7291dbE8A58A2c44808C92AFD3a9",
+      "type": "ERC1967Proxy",
+      "implementation": "0x69B62b5Dc2a21A24340Cdb83045630B5b01C85E6",
+      "proxyDeployTxHash": "0x6e64cc913ac3c9b788a5a54521196e1eab595ca0e4729c48ba2c39169c3ce658",
+      "implementationDeployTxHash": "0xda72eff9ee24884ddacb5df70d219ad1f25f7833fc3bcbcd6582cc12adbfde64",
+      "abi": "../assets/DexLpLocker.abi.json"
+    },
+    "EcosystemRewards": {
+      "address": "0x6c5352D01160E50C50b66dD61BD3d48Ff6B4E2ac",
+      "type": "ERC1967Proxy",
+      "implementation": "0xea9215b1aDf39b3da859098DeBCA66982B4A1931",
+      "proxyDeployTxHash": "0x15a6816ede56599d95ead0b52e96da8a839d590a31168515180753ad29a7441b",
+      "implementationDeployTxHash": "0x8e2b287e5fac49e84afb5a98006955b249b19e91d8d592685e8ac30aa472d002",
+      "abi": "../assets/EcosystemRewards.abi.json"
+    },
+    "BettingReferralLib": {
+      "address": "0x41492e7D1fFa49bF0C9cf2eED8A1D134c0E6c44e",
+      "type": "linked library",
+      "deployTxHash": "0xd31cbe0fe406f257883d76acacbf28fae419bae49d9fd2865ffcc4d1ee9f5bbb"
+    },
+    "BettingOddsLib": {
+      "address": "0x6d700796d862bdeb4566192f32f4f287a136a1d6",
+      "type": "linked library",
+      "deployTxHash": "0x643e8a37f152ae9f73091f68db726ca5fb262eff0b7c514546d9d106be3723e3",
+      "supersedes": "0x8143fe80565acbc809f1c1fd0d57c758495f7aa6",
+      "note": "Current BettingOddsLib linked into the 2026-06-13 settlement netLoss hotfix settlement/parlay modules. The 2026-06-12 market module remains linked to the previous BettingOddsLib."
+    }
+  },
+  "externalContracts": {
+    "TestnetUSDT": "0x337610d27c682E347C9cD60BD4b3b107C9d34dDd",
+    "PancakeV3SwapRouter": "0x1b81D678ffb9C0263b24A97847620C99d213eB14",
+    "PancakeV3NonfungiblePositionManager": "0x427bF5b37357632377eCbEC9de3626C71A5396c1",
+    "PancakeV3Factory": "0x0BFbCF9fa4f9C56B0F40a671Ad40E0805A091865",
+    "PancakeV2RouterTestFundingOnly": "0xD99D1c33F9fC3444f8101754aBC46c52416550D1",
+    "WBNB": "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd"
+  },
+  "liveValidation": {
+    "date": "2026-06-13",
+    "status": "passed with pending protocol waits for mature stake withdraw and LP withdraw after unbond epoch; settlement netLoss hotfix module upgrade passed",
+    "dexPool": "0x7c6b58a4FF7D3E4cFF3F7C61C6F3DbDdB748bF36",
+    "dexLpTokenId": "35590",
+    "referralModuleSwitchTxHash": "0xdc14f4237c160638f0d5b34c059774631dfadd0951064e7fdb9e21c8dd431535",
+    "finalReferralOddClaimTxHash": "0x78e6f223a8d5d93465eb0a46c7a0774806bc70dae23170a55978d56b7f76a2d3",
+    "oddsV3LineUpgrade": {
+      "date": "2026-06-12",
+      "status": "passed",
+      "settlementModule": "0xD05070e92F8981578e27DF3BFA32094549Ec54Dc",
+      "marketModule": "0xD786A66a77Ff137A09Aa2fa69BbD8f6AE42f79De",
+      "parlayModule": "0xeDBC57c205129FDB0501cEa42Fc4bD68C1AAcBaA",
+      "parlayLens": "0xd139C9C041783D48A3D36aedb8Ea7d99859bD2a2",
+      "bettingOddsLib": "0x8143fe80565acbc809f1c1fd0d57c758495f7aa6",
+      "validationReport": "../../docs/testing/2026-06-12-bsc-testnet-赔率V3新增line升级验证报告.md"
+    },
+    "settlementNetLossHotfixUpgrade": {
+      "date": "2026-06-13",
+      "status": "passed",
+      "settlementModule": "0xC29ebbdd68d7718f0fe1B8E187d84ae8F34bfA39",
+      "parlayModule": "0xD7AcFb964C01D4be09757207034FD919dA06fE96",
+      "bettingOddsLib": "0x6d700796d862bdeb4566192f32f4f287a136a1d6",
+      "validationReport": "../../docs/testing/2026-06-13-bsc-testnet-结算缺口Hotfix升级验证报告.md"
+    }
+  },
+  "notes": [
+    "2026-06-12 ODDToken lock/source-ledger MVP was fully redeployed on BSC Testnet. Frontend/backend writes should use proxy addresses for ODDToken, StakingPool, LiquidityPool, BettingPool, TierSale, HouseVault, DexLaunchController, DexLpLocker, and EcosystemRewards.",
+    "BettingBetModule, BettingMarketModule, BettingReferralModule, BettingSettlementModule, and BettingParlayModule are implementation modules invoked through BettingPool delegatecall/staticcall; do not use them as independent write entrypoints.",
+    "BettingReferralModule was replaced after real-chain validation found Pancake V3 SwapRouter on BSC Testnet requires the deadline field in exactInputSingle params. BettingPool.referralModule() now returns 0x6f481A9E772AFDF85741a5FA82985DCcaC79Bb6B.",
+    "skills/assets/*.abi.json is regenerated from current Foundry artifacts after the Pancake V3 referral fix.",
+    "2026-06-12 HouseVault and BettingPool implementations were upgraded for HouseVault.fundBettingPlatformReserve L4 funding. The live funding validation tx is 0x8c1c1d50283772c1d42d5b3de7291fd2f1822da23b1469047bba680faa0a21f3.",
+    "2026-06-12 odds V3 line support was published to BSC Testnet by replacing BettingPool settlement/market/parlay modules and deploying a fresh BettingParlayLens. AH line=10..12 and OU line=3..10 are now usable on the current BettingPool proxy.",
+    "2026-06-13 settlement netLoss hotfix was published to BSC Testnet by replacing only BettingSettlementModule and BettingParlayModule. Current module addresses are recorded in the contracts section above."
+  ]
+}

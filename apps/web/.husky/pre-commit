@@ -1,0 +1,21 @@
+# ENH-035: 暂存 ts/tsx 列表必须在 lint-staged 之前取（lint-staged 会临时改 git index）
+# 用 NUL 分隔保护含空格/特殊字符的文件名，存临时文件因为 POSIX shell 变量不能含 NUL
+# --diff-filter=ACMR 包含 Rename，避免 git mv 后漏跑相关测试
+TMPFILE=$(mktemp)
+trap 'rm -f "$TMPFILE"' EXIT
+git diff --cached --name-only --diff-filter=ACMR -z \
+  | perl -0ne 'chomp; print "$_\0" if /\.(ts|tsx)$/' > "$TMPFILE"
+
+pnpm exec lint-staged
+
+# 仅对暂存的 ts/tsx 跑相关测试；无 ts 改动则整段跳过
+if [ -s "$TMPFILE" ]; then
+  COUNT=$(tr '\0' '\n' < "$TMPFILE" | grep -c .)
+  echo "[pre-commit] vitest related: $COUNT 个暂存 ts/tsx 文件"
+  xargs -0 pnpm vitest related --run < "$TMPFILE"
+fi
+
+# ENH-011: AUTO 块过期则阻塞 commit；SKIP_ASSETS_CHECK=1 可跳过
+if [ "${SKIP_ASSETS_CHECK:-0}" != "1" ]; then
+  pnpm gen-assets --check
+fi

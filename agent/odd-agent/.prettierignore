@@ -1,0 +1,9 @@
+dist
+node_modules
+AGENTS.md
+docs/
+logs/
+tmp/
+db/migrations/*.sql
+.claude/
+.omc/

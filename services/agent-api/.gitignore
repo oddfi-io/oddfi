@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+*.log
+/bin
+/tmp
+.DS_Store
+.idea/
+.vscode/
+oddfi-agent-backend
+
+# AI 工作空间（本地专属，不入库）
+.progress/
+.omc/
+.claude/local.settings.json
+

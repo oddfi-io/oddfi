@@ -1,0 +1,26 @@
+{
+  "name": "oddfi-contracts-skill",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "query": "tsx script/query.ts",
+    "token": "tsx script/token.ts",
+    "stake": "tsx script/stake.ts",
+    "lp": "tsx script/lp.ts",
+    "market": "tsx script/market.ts",
+    "bet": "tsx script/bet.ts",
+    "settle": "tsx script/settle.ts",
+    "cancel": "tsx script/cancel.ts",
+    "healthcheck": "tsx script/healthcheck.ts",
+    "scenario": "tsx script/scenario-smoke.ts",
+    "local:scenarios": "tsx script/local-scenarios.ts",
+    "method": "tsx script/method.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@types/node": "^25.5.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "viem": "^2.47.6"
+  }
+}

@@ -1,0 +1,5326 @@
+{
+    "code": 200,
+    "msg": "success",
+    "data": [
+      {
+        "id": 19683233,
+        "league_id": 2,
+        "stage_id": 77480821,
+        "stage_name": "",
+        "name": "里斯本竞技 vs 阿森纳",
+        "starting_at": "2026-04-07 19:00:00",
+        "starting_at_timestamp": 1775588400,
+        "state_id": 5,
+        "has_odds": true,
+        "participants": [
+          {
+            "id": 58,
+            "name": "葡萄牙体育",
+            "image_path": "https://cdn.sportmonks.com/images/soccer/teams/26/58.png",
+            "country_id": 20,
+            "type": "domestic",
+            "short_code": "SCP",
+            "meta": {
+              "location": "home",
+              "winner": false
+            }
+          },
+          {
+            "id": 19,
+            "name": "阿森纳",
+            "image_path": "https://cdn.sportmonks.com/images/soccer/teams/19/19.png",
+            "country_id": 462,
+            "type": "domestic",
+            "short_code": "ARS",
+            "meta": {
+              "location": "away",
+              "winner": true
+            }
+          }
+        ],
+        "odds": [
+          {
+            "id": 227631375484,
+            "fixture_id": 19683233,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.85",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": true,
+            "stopped": false
+          },
+          {
+            "id": 227631375483,
+            "fixture_id": 19683233,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Draw",
+            "value": "3.87",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631375481,
+            "fixture_id": 19683233,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "4.47",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631375753,
+            "fixture_id": 19683233,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.37",
+            "market_description": "Asian Handicap",
+            "handicap": "+0",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631375756,
+            "fixture_id": 19683233,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.60",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631375750,
+            "fixture_id": 19683233,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.29",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631375759,
+            "fixture_id": 19683233,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.85",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631375735,
+            "fixture_id": 19683233,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.24",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631375762,
+            "fixture_id": 19683233,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.09",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631375765,
+            "fixture_id": 19683233,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.56",
+            "market_description": "Asian Handicap",
+            "handicap": "+1",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631375784,
+            "fixture_id": 19683233,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.95",
+            "market_description": "Asian Handicap",
+            "handicap": "+1.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631375788,
+            "fixture_id": 19683233,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "3.35",
+            "market_description": "Asian Handicap",
+            "handicap": "+1.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 228718267439,
+            "fixture_id": 19683233,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "4.12",
+            "market_description": "Asian Handicap",
+            "handicap": "+1.75",
+            "total": "",
+            "winning": false,
+            "stopped": true
+          },
+          {
+            "id": 227631375752,
+            "fixture_id": 19683233,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "3.33",
+            "market_description": "Asian Handicap",
+            "handicap": "+0",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631375754,
+            "fixture_id": 19683233,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.47",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631375747,
+            "fixture_id": 19683233,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "3.85",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631375757,
+            "fixture_id": 19683233,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.09",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631375733,
+            "fixture_id": 19683233,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "4.37",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631375760,
+            "fixture_id": 19683233,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.82",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631375764,
+            "fixture_id": 19683233,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.57",
+            "market_description": "Asian Handicap",
+            "handicap": "+1",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631375768,
+            "fixture_id": 19683233,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.44",
+            "market_description": "Asian Handicap",
+            "handicap": "+1.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631375787,
+            "fixture_id": 19683233,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.36",
+            "market_description": "Asian Handicap",
+            "handicap": "+1.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 228718267432,
+            "fixture_id": 19683233,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.26",
+            "market_description": "Asian Handicap",
+            "handicap": "+1.75",
+            "total": "",
+            "winning": false,
+            "stopped": true
+          },
+          {
+            "id": 226384188331,
+            "fixture_id": 19683233,
+            "market_id": 7,
+            "bookmaker_id": 20,
+            "label": "Over",
+            "value": "1.95",
+            "market_description": "Goal Line",
+            "handicap": "",
+            "total": "2.5",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 226384188332,
+            "fixture_id": 19683233,
+            "market_id": 7,
+            "bookmaker_id": 20,
+            "label": "Under",
+            "value": "1.95",
+            "market_description": "Goal Line",
+            "handicap": "",
+            "total": "2.5",
+            "winning": false,
+            "stopped": false
+          }
+        ],
+        "league": {
+          "id": 2,
+          "sport_id": 1,
+          "country_id": 41,
+          "name": "欧冠",
+          "active": true,
+          "short_code": "UEFA CL",
+          "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/2.png",
+          "type": "league",
+          "sub_type": "cup_international",
+          "last_played_at": "2026-04-08 19:00:00",
+          "category": 1,
+          "has_jerseys": false
+        },
+        "statistics": [
+          {
+            "type_id": 45,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 45,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 57,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 57,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 80,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 106,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 106,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 117,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 117,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 82,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 55,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 55,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 81,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 78,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 78,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 62,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 82,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 43,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 56,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 56,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 27264,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 80,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 27265,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 43,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 27264,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 44,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 44,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 62,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 86,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 60,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 53,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 41,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 64,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 64,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 42,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 49,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 49,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 109,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 98,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 41,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 53,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 58,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 100,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 86,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 50,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 50,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 580,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 581,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 51,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 51,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 34,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 34,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 98,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 99,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 60,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 46,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 46,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 54,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 54,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 84,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 84,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 81,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 42,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 108,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 109,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 580,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 581,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 58,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 99,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 100,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 108,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 1605,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 1605,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 27265,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 59,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 59,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 79,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 79,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 52,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 52,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 65,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 65,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": 19683235,
+        "league_id": 2,
+        "stage_id": 77480821,
+        "stage_name": "",
+        "name": "皇家马德里 vs 拜仁慕尼黑",
+        "starting_at": "2026-04-07 19:00:00",
+        "starting_at_timestamp": 1775588400,
+        "state_id": 5,
+        "has_odds": true,
+        "participants": [
+          {
+            "id": 3468,
+            "name": "皇家马德里",
+            "image_path": "https://cdn.sportmonks.com/images/soccer/teams/12/3468.png",
+            "country_id": 32,
+            "type": "domestic",
+            "short_code": "RMA",
+            "meta": {
+              "location": "home",
+              "winner": false
+            }
+          },
+          {
+            "id": 503,
+            "name": "拜仁慕尼黑足球俱乐部",
+            "image_path": "https://cdn.sportmonks.com/images/soccer/teams/23/503.png",
+            "country_id": 11,
+            "type": "domestic",
+            "short_code": "FCB",
+            "meta": {
+              "location": "away",
+              "winner": true
+            }
+          }
+        ],
+        "odds": [
+          {
+            "id": 227631373364,
+            "fixture_id": 19683235,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.32",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": true,
+            "stopped": false
+          },
+          {
+            "id": 227631373362,
+            "fixture_id": 19683235,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Draw",
+            "value": "4.13",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631373360,
+            "fixture_id": 19683235,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.84",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631373464,
+            "fixture_id": 19683235,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.76",
+            "market_description": "Asian Handicap",
+            "handicap": "+0",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631373468,
+            "fixture_id": 19683235,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.05",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631373462,
+            "fixture_id": 19683235,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.59",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631373471,
+            "fixture_id": 19683235,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.30",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631373460,
+            "fixture_id": 19683235,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.48",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631373473,
+            "fixture_id": 19683235,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.68",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631373458,
+            "fixture_id": 19683235,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.35",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631373475,
+            "fixture_id": 19683235,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "3.31",
+            "market_description": "Asian Handicap",
+            "handicap": "+1",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 228898858648,
+            "fixture_id": 19683235,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.26",
+            "market_description": "Asian Handicap",
+            "handicap": "-1",
+            "total": "",
+            "winning": false,
+            "stopped": true
+          },
+          {
+            "id": 227631373477,
+            "fixture_id": 19683235,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "3.68",
+            "market_description": "Asian Handicap",
+            "handicap": "+1.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631373463,
+            "fixture_id": 19683235,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.16",
+            "market_description": "Asian Handicap",
+            "handicap": "+0",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631373465,
+            "fixture_id": 19683235,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.88",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631373461,
+            "fixture_id": 19683235,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.49",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631373470,
+            "fixture_id": 19683235,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.68",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631373459,
+            "fixture_id": 19683235,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.81",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631373472,
+            "fixture_id": 19683235,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.53",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631373457,
+            "fixture_id": 19683235,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "3.38",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227631373474,
+            "fixture_id": 19683235,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.37",
+            "market_description": "Asian Handicap",
+            "handicap": "+1",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 228898858640,
+            "fixture_id": 19683235,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "4.14",
+            "market_description": "Asian Handicap",
+            "handicap": "-1",
+            "total": "",
+            "winning": false,
+            "stopped": true
+          },
+          {
+            "id": 227631373476,
+            "fixture_id": 19683235,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.31",
+            "market_description": "Asian Handicap",
+            "handicap": "+1.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 226384188463,
+            "fixture_id": 19683235,
+            "market_id": 7,
+            "bookmaker_id": 20,
+            "label": "Over",
+            "value": "1.90",
+            "market_description": "Goal Line",
+            "handicap": "",
+            "total": "3.25",
+            "winning": false,
+            "stopped": true
+          },
+          {
+            "id": 228770592467,
+            "fixture_id": 19683235,
+            "market_id": 7,
+            "bookmaker_id": 20,
+            "label": "Over",
+            "value": "1.90",
+            "market_description": "Goal Line",
+            "handicap": "",
+            "total": "3.5",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 228917954998,
+            "fixture_id": 19683235,
+            "market_id": 7,
+            "bookmaker_id": 20,
+            "label": "Over",
+            "value": "2.04",
+            "market_description": "Goal Line",
+            "handicap": "",
+            "total": "3.75",
+            "winning": false,
+            "stopped": true
+          },
+          {
+            "id": 226384188464,
+            "fixture_id": 19683235,
+            "market_id": 7,
+            "bookmaker_id": 20,
+            "label": "Under",
+            "value": "1.99",
+            "market_description": "Goal Line",
+            "handicap": "",
+            "total": "3.25",
+            "winning": false,
+            "stopped": true
+          },
+          {
+            "id": 228770592468,
+            "fixture_id": 19683235,
+            "market_id": 7,
+            "bookmaker_id": 20,
+            "label": "Under",
+            "value": "2.00",
+            "market_description": "Goal Line",
+            "handicap": "",
+            "total": "3.5",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 228917954999,
+            "fixture_id": 19683235,
+            "market_id": 7,
+            "bookmaker_id": 20,
+            "label": "Under",
+            "value": "1.86",
+            "market_description": "Goal Line",
+            "handicap": "",
+            "total": "3.75",
+            "winning": false,
+            "stopped": true
+          }
+        ],
+        "league": {
+          "id": 2,
+          "sport_id": 1,
+          "country_id": 41,
+          "name": "欧冠",
+          "active": true,
+          "short_code": "UEFA CL",
+          "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/2.png",
+          "type": "league",
+          "sub_type": "cup_international",
+          "last_played_at": "2026-04-08 19:00:00",
+          "category": 1,
+          "has_jerseys": false
+        },
+        "statistics": [
+          {
+            "type_id": 45,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 45,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 43,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 43,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 56,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 98,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 98,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 80,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 58,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 53,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 53,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 82,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 82,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 60,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 60,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 44,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 44,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 41,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 41,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 42,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 27264,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 50,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 117,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 117,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 42,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 80,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 62,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 62,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 27265,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 27265,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 1605,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 81,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 81,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 50,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 106,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 106,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 58,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 56,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 78,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 55,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 78,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 34,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 34,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 55,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 49,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 580,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 580,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 581,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 109,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 86,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 86,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 49,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 99,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 99,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 581,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 54,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 46,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 46,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 54,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 100,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 57,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 57,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 100,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 84,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 84,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 52,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 79,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 79,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 52,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 108,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 27264,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 109,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 108,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 51,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 59,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 59,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 1605,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 51,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 65,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 65,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": 19683234,
+        "league_id": 2,
+        "stage_id": 77480821,
+        "stage_name": "",
+        "name": "巴塞罗那足球俱乐部 vs 马德里竞技",
+        "starting_at": "2026-04-08 19:00:00",
+        "starting_at_timestamp": 1775674800,
+        "state_id": 5,
+        "has_odds": true,
+        "participants": [
+          {
+            "id": 83,
+            "name": "巴塞罗那足球俱乐部",
+            "image_path": "https://cdn.sportmonks.com/images/soccer/teams/19/83.png",
+            "country_id": 32,
+            "type": "domestic",
+            "short_code": "BAR",
+            "meta": {
+              "location": "home",
+              "winner": false
+            }
+          },
+          {
+            "id": 7980,
+            "name": "马德里竞技",
+            "image_path": "https://cdn.sportmonks.com/images/soccer/teams/12/7980.png",
+            "country_id": 32,
+            "type": "domestic",
+            "short_code": "ATM",
+            "meta": {
+              "location": "away",
+              "winner": true
+            }
+          }
+        ],
+        "odds": [
+          {
+            "id": 227862802278,
+            "fixture_id": 19683234,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "5.60",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": true,
+            "stopped": false
+          },
+          {
+            "id": 227862802277,
+            "fixture_id": 19683234,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Draw",
+            "value": "5.10",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862802276,
+            "fixture_id": 19683234,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.53",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862802398,
+            "fixture_id": 19683234,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "4.31",
+            "market_description": "Asian Handicap",
+            "handicap": "+0",
+            "total": "",
+            "winning": false,
+            "stopped": true
+          },
+          {
+            "id": 227862802394,
+            "fixture_id": 19683234,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "3.20",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862802388,
+            "fixture_id": 19683234,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.63",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862802385,
+            "fixture_id": 19683234,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.36",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862802383,
+            "fixture_id": 19683234,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.10",
+            "market_description": "Asian Handicap",
+            "handicap": "-1",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862802381,
+            "fixture_id": 19683234,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.86",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862802405,
+            "fixture_id": 19683234,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.68",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862802403,
+            "fixture_id": 19683234,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.51",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862802401,
+            "fixture_id": 19683234,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.35",
+            "market_description": "Asian Handicap",
+            "handicap": "-2",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 228718267353,
+            "fixture_id": 19683234,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.30",
+            "market_description": "Asian Handicap",
+            "handicap": "-2.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862802396,
+            "fixture_id": 19683234,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.25",
+            "market_description": "Asian Handicap",
+            "handicap": "+0",
+            "total": "",
+            "winning": false,
+            "stopped": true
+          },
+          {
+            "id": 227862802391,
+            "fixture_id": 19683234,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.38",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862802387,
+            "fixture_id": 19683234,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.52",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862802384,
+            "fixture_id": 19683234,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.63",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862802382,
+            "fixture_id": 19683234,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.81",
+            "market_description": "Asian Handicap",
+            "handicap": "-1",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862802380,
+            "fixture_id": 19683234,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.07",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862802404,
+            "fixture_id": 19683234,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.30",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862802402,
+            "fixture_id": 19683234,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.66",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862802400,
+            "fixture_id": 19683234,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "3.34",
+            "market_description": "Asian Handicap",
+            "handicap": "-2",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 228718267352,
+            "fixture_id": 19683234,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "3.72",
+            "market_description": "Asian Handicap",
+            "handicap": "-2.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          }
+        ],
+        "league": {
+          "id": 2,
+          "sport_id": 1,
+          "country_id": 41,
+          "name": "欧冠",
+          "active": true,
+          "short_code": "UEFA CL",
+          "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/2.png",
+          "type": "league",
+          "sub_type": "cup_international",
+          "last_played_at": "2026-04-08 19:00:00",
+          "category": 1,
+          "has_jerseys": false
+        },
+        "statistics": [
+          {
+            "type_id": 45,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 45,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 60,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 56,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 56,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 27264,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 1605,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 1605,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 82,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 580,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 581,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 581,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 98,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 109,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 57,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 57,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 100,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 44,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 43,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 43,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 82,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 86,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 65,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 65,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 86,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 62,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 80,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 81,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 81,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 55,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 60,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 100,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 44,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 106,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 106,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 42,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 27265,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 50,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 50,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 78,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 108,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 80,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 117,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 117,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 41,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 27264,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 34,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 34,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 98,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 580,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 42,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 49,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 109,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 108,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 41,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 58,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 58,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 27265,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 55,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 49,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 78,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 53,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 99,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 99,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 53,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 51,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 51,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 84,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 84,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 59,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 59,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 83,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 83,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 52,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 62,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 46,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 64,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 64,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 79,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 79,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 52,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 46,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 87,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 87,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 54,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 54,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": 19683236,
+        "league_id": 2,
+        "stage_id": 77480821,
+        "stage_name": "",
+        "name": "巴黎圣日耳曼 vs 利物浦",
+        "starting_at": "2026-04-08 19:00:00",
+        "starting_at_timestamp": 1775674800,
+        "state_id": 5,
+        "has_odds": true,
+        "participants": [
+          {
+            "id": 8,
+            "name": "利物浦",
+            "image_path": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png",
+            "country_id": 462,
+            "type": "domestic",
+            "short_code": "LIV",
+            "meta": {
+              "location": "away",
+              "winner": false
+            }
+          },
+          {
+            "id": 591,
+            "name": "巴黎圣日耳曼",
+            "image_path": "https://cdn.sportmonks.com/images/soccer/teams/15/591.png",
+            "country_id": 17,
+            "type": "domestic",
+            "short_code": "PSG",
+            "meta": {
+              "location": "home",
+              "winner": true
+            }
+          }
+        ],
+        "odds": [
+          {
+            "id": 227862806203,
+            "fixture_id": 19683236,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "4.24",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862806201,
+            "fixture_id": 19683236,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Draw",
+            "value": "4.34",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862806199,
+            "fixture_id": 19683236,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.78",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": true,
+            "stopped": false
+          },
+          {
+            "id": 227862806536,
+            "fixture_id": 19683236,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "3.24",
+            "market_description": "Asian Handicap",
+            "handicap": "+0",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862806538,
+            "fixture_id": 19683236,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "3.67",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862806534,
+            "fixture_id": 19683236,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.51",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862806540,
+            "fixture_id": 19683236,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "3.90",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.5",
+            "total": "",
+            "winning": false,
+            "stopped": true
+          },
+          {
+            "id": 227862806530,
+            "fixture_id": 19683236,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.14",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862806525,
+            "fixture_id": 19683236,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.92",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862806521,
+            "fixture_id": 19683236,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.66",
+            "market_description": "Asian Handicap",
+            "handicap": "-1",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862806514,
+            "fixture_id": 19683236,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.51",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862806542,
+            "fixture_id": 19683236,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.42",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 228718267321,
+            "fixture_id": 19683236,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.30",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862806535,
+            "fixture_id": 19683236,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.36",
+            "market_description": "Asian Handicap",
+            "handicap": "+0",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862806537,
+            "fixture_id": 19683236,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.29",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862806531,
+            "fixture_id": 19683236,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.56",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862806539,
+            "fixture_id": 19683236,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.27",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.5",
+            "total": "",
+            "winning": false,
+            "stopped": true
+          },
+          {
+            "id": 227862806527,
+            "fixture_id": 19683236,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.78",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862806524,
+            "fixture_id": 19683236,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.00",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862806518,
+            "fixture_id": 19683236,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.34",
+            "market_description": "Asian Handicap",
+            "handicap": "-1",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862806511,
+            "fixture_id": 19683236,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.65",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 227862806541,
+            "fixture_id": 19683236,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.96",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 228718267320,
+            "fixture_id": 19683236,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "3.62",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          }
+        ],
+        "league": {
+          "id": 2,
+          "sport_id": 1,
+          "country_id": 41,
+          "name": "欧冠",
+          "active": true,
+          "short_code": "UEFA CL",
+          "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/2.png",
+          "type": "league",
+          "sub_type": "cup_international",
+          "last_played_at": "2026-04-08 19:00:00",
+          "category": 1,
+          "has_jerseys": false
+        },
+        "statistics": [
+          {
+            "type_id": 45,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 45,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 53,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 53,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 82,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 82,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 43,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 43,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 60,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 60,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 80,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 65,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 106,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 106,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 1605,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 1605,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 65,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 44,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 44,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 27264,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 27265,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 27265,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 41,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 42,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 55,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 41,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 58,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 117,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 117,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 52,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 52,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 62,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 62,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 27264,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 81,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 81,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 80,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 55,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 56,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 42,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 109,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 58,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 49,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 86,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 86,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 56,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 100,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 78,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 108,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 78,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 109,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 98,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 99,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 98,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 100,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 108,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 99,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 34,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 34,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 50,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 50,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 51,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 84,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 84,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 57,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 57,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 49,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 580,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 581,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 581,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 51,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 580,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 79,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 79,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 59,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 59,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 64,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 64,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 54,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 46,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 46,
+            "location": "home",
+            "date": {
+              "value": 0
+            }
+          },
+          {
+            "type_id": 54,
+            "location": "away",
+            "date": {
+              "value": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": 19683229,
+        "league_id": 2,
+        "stage_id": 77480821,
+        "stage_name": "",
+        "name": "利物浦 vs 巴黎圣日耳曼",
+        "starting_at": "2026-04-14 19:00:00",
+        "starting_at_timestamp": 1776193200,
+        "state_id": 1,
+        "has_odds": true,
+        "participants": [
+          {
+            "id": 8,
+            "name": "利物浦",
+            "image_path": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png",
+            "country_id": 462,
+            "type": "domestic",
+            "short_code": "LIV",
+            "meta": {
+              "location": "home",
+              "winner": false
+            }
+          },
+          {
+            "id": 591,
+            "name": "巴黎圣日耳曼",
+            "image_path": "https://cdn.sportmonks.com/images/soccer/teams/15/591.png",
+            "country_id": 17,
+            "type": "domestic",
+            "short_code": "PSG",
+            "meta": {
+              "location": "away",
+              "winner": false
+            }
+          }
+        ],
+        "odds": [
+          {
+            "id": 229191001121,
+            "fixture_id": 19683229,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.55",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001120,
+            "fixture_id": 19683229,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Draw",
+            "value": "4.56",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001116,
+            "fixture_id": 19683229,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.28",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001264,
+            "fixture_id": 19683229,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.04",
+            "market_description": "Asian Handicap",
+            "handicap": "+0",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001266,
+            "fixture_id": 19683229,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.28",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001262,
+            "fixture_id": 19683229,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.79",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001269,
+            "fixture_id": 19683229,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.54",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001260,
+            "fixture_id": 19683229,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.65",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001272,
+            "fixture_id": 19683229,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.98",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001258,
+            "fixture_id": 19683229,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.47",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001274,
+            "fixture_id": 19683229,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "3.81",
+            "market_description": "Asian Handicap",
+            "handicap": "+1",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001255,
+            "fixture_id": 19683229,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.30",
+            "market_description": "Asian Handicap",
+            "handicap": "-1",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001252,
+            "fixture_id": 19683229,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.25",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.25",
+            "total": "",
+            "winning": false,
+            "stopped": true
+          },
+          {
+            "id": 229191001263,
+            "fixture_id": 19683229,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.82",
+            "market_description": "Asian Handicap",
+            "handicap": "+0",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001265,
+            "fixture_id": 19683229,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.64",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001261,
+            "fixture_id": 19683229,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.04",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001267,
+            "fixture_id": 19683229,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.53",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001259,
+            "fixture_id": 19683229,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.26",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001270,
+            "fixture_id": 19683229,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.40",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001256,
+            "fixture_id": 19683229,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.69",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001273,
+            "fixture_id": 19683229,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.27",
+            "market_description": "Asian Handicap",
+            "handicap": "+1",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001254,
+            "fixture_id": 19683229,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "3.54",
+            "market_description": "Asian Handicap",
+            "handicap": "-1",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001250,
+            "fixture_id": 19683229,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "3.96",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.25",
+            "total": "",
+            "winning": false,
+            "stopped": true
+          },
+          {
+            "id": 229182906194,
+            "fixture_id": 19683229,
+            "market_id": 7,
+            "bookmaker_id": 20,
+            "label": "Over",
+            "value": "1.94",
+            "market_description": "Goal Line",
+            "handicap": "",
+            "total": "3.25",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229182906195,
+            "fixture_id": 19683229,
+            "market_id": 7,
+            "bookmaker_id": 20,
+            "label": "Under",
+            "value": "1.89",
+            "market_description": "Goal Line",
+            "handicap": "",
+            "total": "3.25",
+            "winning": false,
+            "stopped": false
+          }
+        ],
+        "league": {
+          "id": 2,
+          "sport_id": 1,
+          "country_id": 41,
+          "name": "欧冠",
+          "active": true,
+          "short_code": "UEFA CL",
+          "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/2.png",
+          "type": "league",
+          "sub_type": "cup_international",
+          "last_played_at": "2026-04-08 19:00:00",
+          "category": 1,
+          "has_jerseys": false
+        },
+        "statistics": []
+      },
+      {
+        "id": 19683231,
+        "league_id": 2,
+        "stage_id": 77480821,
+        "stage_name": "",
+        "name": "马德里竞技 vs 巴塞罗那足球俱乐部",
+        "starting_at": "2026-04-14 19:00:00",
+        "starting_at_timestamp": 1776193200,
+        "state_id": 1,
+        "has_odds": true,
+        "participants": [
+          {
+            "id": 7980,
+            "name": "马德里竞技",
+            "image_path": "https://cdn.sportmonks.com/images/soccer/teams/12/7980.png",
+            "country_id": 32,
+            "type": "domestic",
+            "short_code": "ATM",
+            "meta": {
+              "location": "home",
+              "winner": false
+            }
+          },
+          {
+            "id": 83,
+            "name": "巴塞罗那足球俱乐部",
+            "image_path": "https://cdn.sportmonks.com/images/soccer/teams/19/83.png",
+            "country_id": 32,
+            "type": "domestic",
+            "short_code": "BAR",
+            "meta": {
+              "location": "away",
+              "winner": false
+            }
+          }
+        ],
+        "odds": [
+          {
+            "id": 229191000644,
+            "fixture_id": 19683231,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.79",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191000643,
+            "fixture_id": 19683231,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Draw",
+            "value": "4.39",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191000628,
+            "fixture_id": 19683231,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "3.75",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001173,
+            "fixture_id": 19683231,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.40",
+            "market_description": "Asian Handicap",
+            "handicap": "+0",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001191,
+            "fixture_id": 19683231,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.59",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001158,
+            "fixture_id": 19683231,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.33",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001216,
+            "fixture_id": 19683231,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.78",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001146,
+            "fixture_id": 19683231,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.29",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.5",
+            "total": "",
+            "winning": false,
+            "stopped": true
+          },
+          {
+            "id": 229191001306,
+            "fixture_id": 19683231,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.02",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001324,
+            "fixture_id": 19683231,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.38",
+            "market_description": "Asian Handicap",
+            "handicap": "+1",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001362,
+            "fixture_id": 19683231,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.71",
+            "market_description": "Asian Handicap",
+            "handicap": "+1.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001399,
+            "fixture_id": 19683231,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "3.03",
+            "market_description": "Asian Handicap",
+            "handicap": "+1.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229204629252,
+            "fixture_id": 19683231,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "3.72",
+            "market_description": "Asian Handicap",
+            "handicap": "+1.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001159,
+            "fixture_id": 19683231,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.95",
+            "market_description": "Asian Handicap",
+            "handicap": "+0",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001189,
+            "fixture_id": 19683231,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.38",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001147,
+            "fixture_id": 19683231,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "3.33",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001193,
+            "fixture_id": 19683231,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.06",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001144,
+            "fixture_id": 19683231,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "3.61",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.5",
+            "total": "",
+            "winning": false,
+            "stopped": true
+          },
+          {
+            "id": 229191001284,
+            "fixture_id": 19683231,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.84",
+            "market_description": "Asian Handicap",
+            "handicap": "+0.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001309,
+            "fixture_id": 19683231,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.60",
+            "market_description": "Asian Handicap",
+            "handicap": "+1",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001338,
+            "fixture_id": 19683231,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.47",
+            "market_description": "Asian Handicap",
+            "handicap": "+1.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229191001391,
+            "fixture_id": 19683231,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.38",
+            "market_description": "Asian Handicap",
+            "handicap": "+1.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229204629251,
+            "fixture_id": 19683231,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.28",
+            "market_description": "Asian Handicap",
+            "handicap": "+1.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229182903883,
+            "fixture_id": 19683231,
+            "market_id": 7,
+            "bookmaker_id": 20,
+            "label": "Over",
+            "value": "1.87",
+            "market_description": "Goal Line",
+            "handicap": "",
+            "total": "3.5",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229182903884,
+            "fixture_id": 19683231,
+            "market_id": 7,
+            "bookmaker_id": 20,
+            "label": "Under",
+            "value": "1.96",
+            "market_description": "Goal Line",
+            "handicap": "",
+            "total": "3.5",
+            "winning": false,
+            "stopped": false
+          }
+        ],
+        "league": {
+          "id": 2,
+          "sport_id": 1,
+          "country_id": 41,
+          "name": "欧冠",
+          "active": true,
+          "short_code": "UEFA CL",
+          "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/2.png",
+          "type": "league",
+          "sub_type": "cup_international",
+          "last_played_at": "2026-04-08 19:00:00",
+          "category": 1,
+          "has_jerseys": false
+        },
+        "statistics": []
+      },
+      {
+        "id": 19683230,
+        "league_id": 2,
+        "stage_id": 77480821,
+        "stage_name": "",
+        "name": "阿森纳 vs 里斯本竞技",
+        "starting_at": "2026-04-15 19:00:00",
+        "starting_at_timestamp": 1776279600,
+        "state_id": 1,
+        "has_odds": true,
+        "participants": [
+          {
+            "id": 19,
+            "name": "阿森纳",
+            "image_path": "https://cdn.sportmonks.com/images/soccer/teams/19/19.png",
+            "country_id": 462,
+            "type": "domestic",
+            "short_code": "ARS",
+            "meta": {
+              "location": "home",
+              "winner": false
+            }
+          },
+          {
+            "id": 58,
+            "name": "葡萄牙体育",
+            "image_path": "https://cdn.sportmonks.com/images/soccer/teams/26/58.png",
+            "country_id": 20,
+            "type": "domestic",
+            "short_code": "SCP",
+            "meta": {
+              "location": "away",
+              "winner": false
+            }
+          }
+        ],
+        "odds": [
+          {
+            "id": 229214878777,
+            "fixture_id": 19683230,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "7.15",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214878776,
+            "fixture_id": 19683230,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Draw",
+            "value": "4.88",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214878775,
+            "fixture_id": 19683230,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.40",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214878862,
+            "fixture_id": 19683230,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "3.83",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214878860,
+            "fixture_id": 19683230,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.99",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214878858,
+            "fixture_id": 19683230,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.66",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214878856,
+            "fixture_id": 19683230,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.31",
+            "market_description": "Asian Handicap",
+            "handicap": "-1",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214878854,
+            "fixture_id": 19683230,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.96",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214878868,
+            "fixture_id": 19683230,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.73",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214878866,
+            "fixture_id": 19683230,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.54",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214878864,
+            "fixture_id": 19683230,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.35",
+            "market_description": "Asian Handicap",
+            "handicap": "-2",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214878870,
+            "fixture_id": 19683230,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.28",
+            "market_description": "Asian Handicap",
+            "handicap": "-2.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214878861,
+            "fixture_id": 19683230,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.27",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214878859,
+            "fixture_id": 19683230,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.39",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214878857,
+            "fixture_id": 19683230,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.49",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214878855,
+            "fixture_id": 19683230,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.62",
+            "market_description": "Asian Handicap",
+            "handicap": "-1",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214878853,
+            "fixture_id": 19683230,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.89",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214878867,
+            "fixture_id": 19683230,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.13",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214878865,
+            "fixture_id": 19683230,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.51",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214878863,
+            "fixture_id": 19683230,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "3.23",
+            "market_description": "Asian Handicap",
+            "handicap": "-2",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214878869,
+            "fixture_id": 19683230,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "3.67",
+            "market_description": "Asian Handicap",
+            "handicap": "-2.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 228971100602,
+            "fixture_id": 19683230,
+            "market_id": 7,
+            "bookmaker_id": 20,
+            "label": "Over",
+            "value": "1.98",
+            "market_description": "Goal Line",
+            "handicap": "",
+            "total": "2.75",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 228971100603,
+            "fixture_id": 19683230,
+            "market_id": 7,
+            "bookmaker_id": 20,
+            "label": "Under",
+            "value": "1.86",
+            "market_description": "Goal Line",
+            "handicap": "",
+            "total": "2.75",
+            "winning": false,
+            "stopped": false
+          }
+        ],
+        "league": {
+          "id": 2,
+          "sport_id": 1,
+          "country_id": 41,
+          "name": "欧冠",
+          "active": true,
+          "short_code": "UEFA CL",
+          "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/2.png",
+          "type": "league",
+          "sub_type": "cup_international",
+          "last_played_at": "2026-04-08 19:00:00",
+          "category": 1,
+          "has_jerseys": false
+        },
+        "statistics": []
+      },
+      {
+        "id": 19683232,
+        "league_id": 2,
+        "stage_id": 77480821,
+        "stage_name": "",
+        "name": "拜仁慕尼黑 vs 皇家马德里",
+        "starting_at": "2026-04-15 19:00:00",
+        "starting_at_timestamp": 1776279600,
+        "state_id": 1,
+        "has_odds": true,
+        "participants": [
+          {
+            "id": 503,
+            "name": "拜仁慕尼黑足球俱乐部",
+            "image_path": "https://cdn.sportmonks.com/images/soccer/teams/23/503.png",
+            "country_id": 11,
+            "type": "domestic",
+            "short_code": "FCB",
+            "meta": {
+              "location": "home",
+              "winner": false
+            }
+          },
+          {
+            "id": 3468,
+            "name": "皇家马德里",
+            "image_path": "https://cdn.sportmonks.com/images/soccer/teams/12/3468.png",
+            "country_id": 32,
+            "type": "domestic",
+            "short_code": "RMA",
+            "meta": {
+              "location": "away",
+              "winner": false
+            }
+          }
+        ],
+        "odds": [
+          {
+            "id": 229214879503,
+            "fixture_id": 19683232,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "4.34",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214879502,
+            "fixture_id": 19683232,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Draw",
+            "value": "5.19",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214879501,
+            "fixture_id": 19683232,
+            "market_id": 1,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.58",
+            "market_description": "Match Winner",
+            "handicap": "",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214879652,
+            "fixture_id": 19683232,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "3.56",
+            "market_description": "Asian Handicap",
+            "handicap": "+0",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214879650,
+            "fixture_id": 19683232,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.83",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214879648,
+            "fixture_id": 19683232,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.42",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214879646,
+            "fixture_id": 19683232,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "2.19",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214879644,
+            "fixture_id": 19683232,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.96",
+            "market_description": "Asian Handicap",
+            "handicap": "-1",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214879642,
+            "fixture_id": 19683232,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.75",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214879659,
+            "fixture_id": 19683232,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.62",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214879656,
+            "fixture_id": 19683232,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.46",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214879654,
+            "fixture_id": 19683232,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Away",
+            "value": "1.31",
+            "market_description": "Asian Handicap",
+            "handicap": "-2",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214879651,
+            "fixture_id": 19683232,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.30",
+            "market_description": "Asian Handicap",
+            "handicap": "+0",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214879649,
+            "fixture_id": 19683232,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.43",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214879647,
+            "fixture_id": 19683232,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.57",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214879645,
+            "fixture_id": 19683232,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.69",
+            "market_description": "Asian Handicap",
+            "handicap": "-0.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214879643,
+            "fixture_id": 19683232,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "1.88",
+            "market_description": "Asian Handicap",
+            "handicap": "-1",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214879641,
+            "fixture_id": 19683232,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.10",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.25",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214879657,
+            "fixture_id": 19683232,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.33",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.5",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214879655,
+            "fixture_id": 19683232,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "2.72",
+            "market_description": "Asian Handicap",
+            "handicap": "-1.75",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 229214879653,
+            "fixture_id": 19683232,
+            "market_id": 6,
+            "bookmaker_id": 20,
+            "label": "Home",
+            "value": "3.47",
+            "market_description": "Asian Handicap",
+            "handicap": "-2",
+            "total": "",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 228973063131,
+            "fixture_id": 19683232,
+            "market_id": 7,
+            "bookmaker_id": 20,
+            "label": "Over",
+            "value": "1.81",
+            "market_description": "Goal Line",
+            "handicap": "",
+            "total": "3.5",
+            "winning": false,
+            "stopped": true
+          },
+          {
+            "id": 228971098332,
+            "fixture_id": 19683232,
+            "market_id": 7,
+            "bookmaker_id": 20,
+            "label": "Over",
+            "value": "1.99",
+            "market_description": "Goal Line",
+            "handicap": "",
+            "total": "3.75",
+            "winning": false,
+            "stopped": false
+          },
+          {
+            "id": 228973063132,
+            "fixture_id": 19683232,
+            "market_id": 7,
+            "bookmaker_id": 20,
+            "label": "Under",
+            "value": "2.03",
+            "market_description": "Goal Line",
+            "handicap": "",
+            "total": "3.5",
+            "winning": false,
+            "stopped": true
+          },
+          {
+            "id": 228971098333,
+            "fixture_id": 19683232,
+            "market_id": 7,
+            "bookmaker_id": 20,
+            "label": "Under",
+            "value": "1.84",
+            "market_description": "Goal Line",
+            "handicap": "",
+            "total": "3.75",
+            "winning": false,
+            "stopped": false
+          }
+        ],
+        "league": {
+          "id": 2,
+          "sport_id": 1,
+          "country_id": 41,
+          "name": "欧冠",
+          "active": true,
+          "short_code": "UEFA CL",
+          "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/2.png",
+          "type": "league",
+          "sub_type": "cup_international",
+          "last_played_at": "2026-04-08 19:00:00",
+          "category": 1,
+          "has_jerseys": false
+        },
+        "statistics": []
+      }
+    ]
+  }

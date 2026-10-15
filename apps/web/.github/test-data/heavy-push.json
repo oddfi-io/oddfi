@@ -1,0 +1,92 @@
+[
+  {
+    "id": "53bc7869daad2b6628cd5c39e98bada76a5d2118",
+    "message": "chore(pools): 我的仓位状态/操作列文案接入 i18n（按 LP 仓位映射表）",
+    "author": { "name": "Khan", "username": "khanforreal67" },
+    "url": "https://github.com/Crypto-Barrett/oddfi-frontend/commit/53bc7869daad2b6628cd5c39e98bada76a5d2118"
+  },
+  {
+    "id": "ecb56292060388e54942d250785ece4e3c3368a4",
+    "message": "feat(ai-chat): float 浮窗右缘吸附 → dock 侧边栏（解耦 column 存在性）",
+    "author": { "name": "Khan", "username": "khanforreal67" },
+    "url": "https://github.com/Crypto-Barrett/oddfi-frontend/commit/ecb56292060388e54942d250785ece4e3c3368a4"
+  },
+  {
+    "id": "2cfefdad3aa614faa959d93855ad190a9e5c7197",
+    "message": "feat(pools): Add 按钮文案接入 i18n（中文「添加」/ 其他 Add）",
+    "author": { "name": "Khan", "username": "khanforreal67" },
+    "url": "https://github.com/Crypto-Barrett/oddfi-frontend/commit/2cfefdad3aa614faa959d93855ad190a9e5c7197"
+  },
+  {
+    "id": "d08abd5f948c21ba7bbf38d7ee93d4fcfac9e03b",
+    "message": "chore(gitignore): 排除 vercel env pull 拉取的环境文件（含 secrets）",
+    "author": { "name": "Khan", "username": "khanforreal67" },
+    "url": "https://github.com/Crypto-Barrett/oddfi-frontend/commit/d08abd5f948c21ba7bbf38d7ee93d4fcfac9e03b"
+  },
+  {
+    "id": "834869499cc9361611adc60a9c2c398adff928aa",
+    "message": "fix(ai-chat): dock 模式跨路由恢复（ref callback 替换 rAF 探测）",
+    "author": { "name": "Khan", "username": "khanforreal67" },
+    "url": "https://github.com/Crypto-Barrett/oddfi-frontend/commit/834869499cc9361611adc60a9c2c398adff928aa"
+  },
+  {
+    "id": "2f82b721db4b368183bb4bb5a854c92c8e8a2b62",
+    "message": "feat(bet-slip): MyBets 卡片接入 i18n,PC/H5 同步适配",
+    "author": { "name": "Khan", "username": "khanforreal67" },
+    "url": "https://github.com/Crypto-Barrett/oddfi-frontend/commit/2f82b721db4b368183bb4bb5a854c92c8e8a2b62"
+  },
+  {
+    "id": "6a6ef6c325e37168c9a1fc509463d457f1146a7a",
+    "message": "feat(pools): 流动性池金额跟随全局 ODD/USD 单位切换",
+    "author": { "name": "Khan", "username": "khanforreal67" },
+    "url": "https://github.com/Crypto-Barrett/oddfi-frontend/commit/6a6ef6c325e37168c9a1fc509463d457f1146a7a"
+  },
+  {
+    "id": "e3597c00295e9d383a8ff393d9a50d76d7ed92bb",
+    "message": "fix(ai-chat): 浮窗未登录禁止渲染 + 登出时强制关闭",
+    "author": { "name": "Khan", "username": "khanforreal67" },
+    "url": "https://github.com/Crypto-Barrett/oddfi-frontend/commit/e3597c00295e9d383a8ff393d9a50d76d7ed92bb"
+  },
+  {
+    "id": "f952fa25bfc7a9e1c695852d01a07cc8411973cd",
+    "message": "feat(news-tab): DD-110 AI Chat 接入实时新闻推送 tab",
+    "author": { "name": "Khan", "username": "khanforreal67" },
+    "url": "https://github.com/Crypto-Barrett/oddfi-frontend/commit/f952fa25bfc7a9e1c695852d01a07cc8411973cd"
+  },
+  {
+    "id": "cef3459cc55e1640abcd12d76932cdeb1bf3bb3f",
+    "message": "feat(match-card): AI badge 升级为描边版 v3",
+    "author": { "name": "Khan", "username": "khanforreal67" },
+    "url": "https://github.com/Crypto-Barrett/oddfi-frontend/commit/cef3459cc55e1640abcd12d76932cdeb1bf3bb3f"
+  },
+  {
+    "id": "aff141a604a45a467092662b02fabafdcda27958",
+    "message": "feat(ai-chat): 浮窗头像跟随用户配置的 codex-pet 静态预览",
+    "author": { "name": "Khan", "username": "khanforreal67" },
+    "url": "https://github.com/Crypto-Barrett/oddfi-frontend/commit/aff141a604a45a467092662b02fabafdcda27958"
+  },
+  {
+    "id": "1205fe520076c6041e32f12af2134e76fab0f6a2",
+    "message": "fix(match-detail): 中间列赔率按钮颜色对齐左侧赛事卡",
+    "author": { "name": "Khan", "username": "khanforreal67" },
+    "url": "https://github.com/Crypto-Barrett/oddfi-frontend/commit/1205fe520076c6041e32f12af2134e76fab0f6a2"
+  },
+  {
+    "id": "828ea8591b993337a6159aa0407696c12668283c",
+    "message": "feat(betslip): 倍率展示改为后缀 + 左侧栏新增 My Bets 入口",
+    "author": { "name": "Khan", "username": "khanforreal67" },
+    "url": "https://github.com/Crypto-Barrett/oddfi-frontend/commit/828ea8591b993337a6159aa0407696c12668283c"
+  },
+  {
+    "id": "62c4f252ad851dd32478096bb880d8b166887369",
+    "message": "feat(match-card): 替换 AI badge 图标为 v2 资源",
+    "author": { "name": "Khan", "username": "khanforreal67" },
+    "url": "https://github.com/Crypto-Barrett/oddfi-frontend/commit/62c4f252ad851dd32478096bb880d8b166887369"
+  },
+  {
+    "id": "5c20f2934a354d6a457131c6ac55b23306d2e9cf",
+    "message": "fix(odd-presale): 私募卡片 CTA 中文化 + 移除按钮内倒计时与合约保护脚注",
+    "author": { "name": "Khan", "username": "khanforreal67" },
+    "url": "https://github.com/Crypto-Barrett/oddfi-frontend/commit/5c20f2934a354d6a457131c6ac55b23306d2e9cf"
+  }
+]

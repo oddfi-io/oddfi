@@ -1,0 +1,326 @@
+[
+  {
+    "type": "function",
+    "name": "estimateParlayValue",
+    "inputs": [
+      {
+        "name": "bettingPool",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "userAddress",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "parlayId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "estimated",
+        "type": "tuple",
+        "internalType": "struct ParlayEstimatedValue",
+        "components": [
+          {
+            "name": "state",
+            "type": "uint8",
+            "internalType": "uint8"
+          },
+          {
+            "name": "stake",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "lockedComboOdds",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "maxPayout",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "estimatedValue",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "floatingPnL",
+            "type": "int256",
+            "internalType": "int256"
+          },
+          {
+            "name": "factorProduct",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "finalizedLegCount",
+            "type": "uint8",
+            "internalType": "uint8"
+          },
+          {
+            "name": "unresolvedLegCount",
+            "type": "uint8",
+            "internalType": "uint8"
+          },
+          {
+            "name": "hasFullLoss",
+            "type": "bool",
+            "internalType": "bool"
+          },
+          {
+            "name": "isFinal",
+            "type": "bool",
+            "internalType": "bool"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "previewParlay",
+    "inputs": [
+      {
+        "name": "bettingPool",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "legs",
+        "type": "tuple[]",
+        "internalType": "struct ParlayLegInput[]",
+        "components": [
+          {
+            "name": "marketId",
+            "type": "bytes32",
+            "internalType": "bytes32"
+          },
+          {
+            "name": "outcome",
+            "type": "uint8",
+            "internalType": "uint8"
+          },
+          {
+            "name": "quoteVersion",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "quotedAt",
+            "type": "uint64",
+            "internalType": "uint64"
+          },
+          {
+            "name": "minOdds",
+            "type": "uint256",
+            "internalType": "uint256"
+          }
+        ]
+      },
+      {
+        "name": "stake",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "preview",
+        "type": "tuple",
+        "internalType": "struct ParlayPreview",
+        "components": [
+          {
+            "name": "rawComboOdds",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "lockedComboOdds",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "maxPayout",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "maxRequiredPayout",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "availableParlayCapacity",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "cappedByOdds",
+            "type": "bool",
+            "internalType": "bool"
+          },
+          {
+            "name": "cappedByPayout",
+            "type": "bool",
+            "internalType": "bool"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "error",
+    "name": "DuplicateParlayMarket",
+    "inputs": [
+      {
+        "name": "marketId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "DuplicateParlayMatch",
+    "inputs": [
+      {
+        "name": "matchId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "InvalidParlayLegCount",
+    "inputs": [
+      {
+        "name": "provided",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "minimum",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "maximum",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "InvalidParlayState",
+    "inputs": [
+      {
+        "name": "parlayId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "state",
+        "type": "uint8",
+        "internalType": "uint8"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "InvalidQuoteGuard",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "MarketClosed",
+    "inputs": [
+      {
+        "name": "marketId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "MarketLocked",
+    "inputs": [
+      {
+        "name": "marketId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "MarketNotOpen",
+    "inputs": [
+      {
+        "name": "marketId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "MarketTemplateNotAllowed",
+    "inputs": [
+      {
+        "name": "marketType",
+        "type": "uint8",
+        "internalType": "uint8"
+      },
+      {
+        "name": "line",
+        "type": "uint8",
+        "internalType": "uint8"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "PoolLiquidityInsufficient",
+    "inputs": [
+      {
+        "name": "requestedPayout",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "availableLiquidity",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "SettlementCannotClose",
+    "inputs": [
+      {
+        "name": "marketId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ]
+  }
+]

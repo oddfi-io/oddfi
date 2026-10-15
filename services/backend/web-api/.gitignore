@@ -1,0 +1,25 @@
+config_prod.yaml
+
+# 编译产物
+bin/
+
+# AI 开发基建（本地专属，不入库）
+.omc/
+.mcp.json
+.progress/
+.claude/*
+!.claude/settings.json
+!.claude/rules/
+!.claude/hooks/
+!.claude/commands/
+!.claude/rules/**
+!.claude/hooks/**
+!.claude/commands/**
+.claude/settings.local.json
+.claude/**/.DS_Store
+
+# 个人本地配置
+CLAUDE.md
+CLAUDE.local.md
+*.local.md
+.screenshots/

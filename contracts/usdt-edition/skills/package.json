@@ -1,0 +1,25 @@
+{
+  "name": "skills",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "deposit": "tsx script/deposit.ts",
+    "withdraw": "tsx script/withdraw.ts",
+    "market": "tsx script/market.ts",
+    "bet": "tsx script/bet.ts",
+    "settle": "tsx script/settle.ts",
+    "cancel": "tsx script/cancel.ts",
+    "lp": "tsx script/lp.ts",
+    "query": "tsx script/query.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^25.5.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "viem": "^2.47.6"
+  }
+}

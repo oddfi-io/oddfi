@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-page: #0a0e12;
+  --bg-panel: #0e1419;
+  --bg-elevated: #141a21;
+  --bg-card: #1a2129;
+  --bg-card-hover: #1f2832;
+  --bg-input: #11171d;
+  --border: #1f2832;
+  --border-light: #2a3440;
+  --text-primary: #ffffff;
+  --text-secondary: #b8c1cc;
+  --text-tertiary: #6b7785;
+  --accent: #00E6A0;
+  --accent-dim: #00b380;
+  --accent-bg: rgba(0, 230, 160, 0.1);
+  --accent-border: rgba(0, 230, 160, 0.3);
+  --warn: #ffb020;
+  --warn-bg: rgba(255, 176, 32, 0.1);
+  --danger: #ff4757;
+  --danger-bg: rgba(255, 71, 87, 0.1);
+  --info: #4d9fff;
+  --info-bg: rgba(77, 159, 255, 0.1);
+  --user-blue: #4d9fff;
+  --font-body: "Inter", -apple-system, "PingFang SC", "Hiragino Sans GB", sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", monospace;
+
+  --dock-bg: #04060c;
+  --dock-bg-2: #111114;
+  --dock-bg-3: #191b20;
+  --dock-edge: #37393a;
+  --dock-edge-soft: rgba(255, 255, 255, 0.08);
+  --brand: #28f4d2;
+  --brand-bright: #1ed4b6;
+  --brand-fade: rgba(40, 244, 210, 0.15);
+  --brand-glow: rgba(40, 244, 210, 0.2);
+  --font-display: "Orbitron", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--bg-page);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Push card AI analysis delta utility classes (used in dangerouslySetInnerHTML) */
+.delta-up {
+  color: var(--brand);
+  font-weight: 700;
+}
+.delta-down {
+  color: #f87171;
+  font-weight: 700;
+}
+.delta-warn {
+  color: #fbbf24;
+  font-weight: 700;
+}

@@ -1,0 +1,35 @@
+# 正式环境配置与本地私有配置
+config/config_prod.yaml
+config/config_local.yaml
+config/config_private.yaml
+config/config_oddfi_dev.yaml
+config/config_selftest.yaml
+config/*secret*.yaml
+config/*private*.yaml
+
+# 环境变量与本地覆盖文件
+.env
+.env.*
+!.env.example
+*.local
+
+# 证书、私钥、密钥文件
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# 构建产物
+bin/
+dist/
+build/
+coverage.out
+*.test
+
+# 系统与编辑器噪音
+.DS_Store
+.idea/
+.vscode/

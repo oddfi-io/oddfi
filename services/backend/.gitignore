@@ -1,0 +1,6 @@
+api-docs-site/
+
+# AI 开发基建（本地专属，不入库）
+.omc/
+.progress/
+.claude/

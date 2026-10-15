@@ -1,0 +1,29 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.25.0'
+          cache: true
+      - run: go mod download
+      - run: go generate ./internal/infrastructure/bindings/...
+      - run: git diff --exit-code
+      - run: go vet ./...
+      - uses: golangci/golangci-lint-action@v8
+        with:
+          version: v2.6.2
+      - run: go test -race -count=1 ./...
+      - run: go run golang.org/x/vuln/cmd/govulncheck@latest ./...
+      - run: go run github.com/securego/gosec/v2/cmd/gosec@latest ./...
+      - run: go run ./tools/importcheck
+      - run: go run golang.org/x/exp/cmd/apidiff@latest -w /tmp/oddfi.pkg github.com/Crypto-Barrett/oddfi-ODD-SDK/pkg/oddfi

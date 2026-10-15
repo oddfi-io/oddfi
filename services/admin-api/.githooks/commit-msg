@@ -1,0 +1,64 @@
+#!/usr/bin/env bash
+# 守门：改 handler / router / errcode 但没动 docs/api.md → 阻断
+#
+# 用 commit-msg 而非 pre-commit 的原因：
+#   pre-commit 阶段 git 还没把 `-m` 消息持久化到 COMMIT_EDITMSG，
+#   导致 `[no-api-surface-change]` 例外标记检测不可靠。
+#   commit-msg 钩子收到的 $1 是当前提交的真实消息文件路径，可靠。
+#
+# 启用方式（一次性，本地）：
+#   make setup-hooks   # 或：git config core.hooksPath .githooks
+#
+# 例外协议：纯内部重构、不改 API surface 时，commit message 加 [no-api-surface-change] 即放行。
+# 详见 .claude/rules/api-docs-required.md
+#
+# 紧急绕过（不推荐，会被 review 卡）：
+#   git commit --no-verify
+
+set -euo pipefail
+
+MSG_FILE="${1:-}"
+if [[ -z "$MSG_FILE" || ! -f "$MSG_FILE" ]]; then
+  exit 0
+fi
+
+# 例外标记：纯内部重构、不改 surface 时放行
+if grep -q '\[no-api-surface-change\]' "$MSG_FILE"; then
+  exit 0
+fi
+
+# 列出本次 staged 文件
+changed=$(git diff --cached --name-only --diff-filter=ACMR)
+
+touches_api() {
+  echo "$changed" | grep -qE '^internal/(handler|router|pkg/(errcode|response|jwt))/'
+}
+
+docs_updated() {
+  echo "$changed" | grep -qx 'docs/api.md'
+}
+
+if touches_api && ! docs_updated; then
+  cat >&2 <<'EOF'
+✗ commit-msg 阻断：你改了 API surface（handler / router / errcode / response / jwt）
+  但没动 docs/api.md。
+
+  规则：.claude/rules/api-docs-required.md
+  契约：docs/api.md §7 变更协议
+
+  你需要在同一次 commit 中更新 docs/api.md：
+    - 新增/删除路由 → §1.6 路由表 + §3.X endpoint block
+    - 改入参/响应   → §3.X 对应 endpoint
+    - 改错误码     → §1.2-§1.4 错误码表
+    - 改 JWT/RBAC  → §2 或 §1.5
+
+  例外（仅限纯内部重构 / 不改 surface）：
+    git commit -m "refactor(...): xxx [no-api-surface-change]"
+
+  紧急绕过（强烈不推荐）：
+    git commit --no-verify
+EOF
+  exit 1
+fi
+
+exit 0

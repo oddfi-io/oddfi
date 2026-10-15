@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: oddfi-dev-mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "123456"
+      MYSQL_DATABASE: oddfi_dev
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - oddfi-dev
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-uroot", "-p123456"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+      start_period: 10s
+
+  redis:
+    image: redis:7-alpine
+    container_name: oddfi-dev-redis
+    ports:
+      - "6379:6379"
+    networks:
+      - oddfi-dev
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+      start_period: 5s
+
+volumes:
+  mysql-data:
+
+networks:
+  oddfi-dev:
+    driver: bridge

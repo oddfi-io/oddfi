@@ -1,0 +1,240 @@
+name: Notify Lark
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      mock_file:
+        description: 'Path to mock commits JSON (relative to repo root). Empty = use real event data.'
+        required: false
+        default: '.github/test-data/heavy-push.json'
+
+permissions:
+  contents: read
+
+env:
+  REPO_LABEL: "前端"
+  LARK_HOST: "https://open.larksuite.com"
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch' || github.event.head_commit != null
+    steps:
+      - name: Checkout (workflow_dispatch only, for mock file)
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/checkout@v4
+
+      - name: Resolve commits source
+        id: resolve
+        env:
+          EVENT_COMMITS: ${{ toJSON(github.event.commits) }}
+          MOCK_FILE: ${{ inputs.mock_file }}
+          COMPARE_URL_REAL: ${{ github.event.compare }}
+          FORCED_REAL: ${{ github.event.forced }}
+        run: |
+          set -euo pipefail
+          if [ "${GITHUB_EVENT_NAME}" = "workflow_dispatch" ] && [ -n "${MOCK_FILE}" ]; then
+            COMMITS_JSON=$(cat "${MOCK_FILE}")
+            FIRST_SHA=$(echo "${COMMITS_JSON}" | jq -r '.[0].id[0:12]')
+            LAST_SHA=$(echo "${COMMITS_JSON}" | jq -r '.[-1].id[0:12]')
+            COMPARE_URL="https://github.com/${GITHUB_REPOSITORY}/compare/${FIRST_SHA}...${LAST_SHA}"
+            FORCED="false"
+          else
+            COMMITS_JSON="${EVENT_COMMITS}"
+            COMPARE_URL="${COMPARE_URL_REAL}"
+            FORCED="${FORCED_REAL}"
+          fi
+          echo "$COMMITS_JSON" > commits.json
+          echo "compare_url=$COMPARE_URL" >> "$GITHUB_OUTPUT"
+          echo "forced=$FORCED" >> "$GITHUB_OUTPUT"
+          echo "commit_count=$(echo "$COMMITS_JSON" | jq 'length')" >> "$GITHUB_OUTPUT"
+
+      - name: Build technical detail (mechanical, no LLM)
+        run: |
+          set -euo pipefail
+          # 技术详情：每条 commit 一个 bullet，带短 SHA + 原始 message 首行
+          jq -r '.[] | "- `\(.id[0:6])` \(.message | split("\n")[0])"' commits.json > tech_detail.txt
+          echo "--- Tech detail ---"
+          cat tech_detail.txt
+
+      - name: Summarize PM bullets with DeepSeek
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: |
+          set -euo pipefail
+
+          COMMITS_TEXT=$(jq -r '.[] | "- " + (.message | split("\n")[0])' commits.json)
+
+          PROMPT=$(cat <<EOF
+          你是 OddFi ${REPO_LABEL}发版的 PM 摘要助手。
+
+          将以下 commits 按主题/模块归并，输出 PM（产品经理）能看懂的业务摘要。
+
+          参考输出：
+          - AI 浮窗改版：体验和稳定性优化
+          - 流动性池：文案 i18n + 金额单位切换
+          - 投注单：i18n + 入口优化
+          - AI 内容能力升级：新闻 tab + 赛事卡 AI badge
+          - 赛事详情：赔率按钮样式
+          - 私募卡片 CTA：文案优化
+          - 工程配置：环境文件 ignore
+
+          要求：
+          1. 简体中文
+          2. 用 PM 易懂的业务话术，不要技术词（如 ref callback / rAF / dock 模式 / column）
+          3. 每条 1 行：\`- 主题：业务描述\`
+          4. 不带 commit hash、不带文件路径、不带代码细节
+          5. 同模块的多 commit 合并为 1 个主题
+          6. 只输出 bullet 列表，不要标题、不要前言后语、不要 emoji
+
+          本次 push 的 commits：
+          ${COMMITS_TEXT}
+          EOF
+          )
+
+          REQUEST_BODY=$(jq -n --arg prompt "$PROMPT" '{
+            model: "deepseek-chat",
+            messages: [{ role: "user", content: $prompt }],
+            stream: false,
+            temperature: 0.3
+          }')
+
+          set +e
+          RESPONSE=$(curl -fsS --max-time 90 https://api.deepseek.com/chat/completions \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer $DEEPSEEK_API_KEY" \
+            -d "$REQUEST_BODY")
+          CURL_EXIT=$?
+          set -e
+
+          if [ $CURL_EXIT -ne 0 ] || [ -z "$RESPONSE" ]; then
+            echo "::warning::DeepSeek API failed (exit=$CURL_EXIT), falling back to topic-less list"
+            cp tech_detail.txt pm_summary.txt
+            sed -i '1i⚠️ AI 摘要降级（DeepSeek 调用失败），以下为原始 commit 列表：\n' pm_summary.txt
+          else
+            SUMMARY=$(echo "$RESPONSE" | jq -r '.choices[0].message.content // empty')
+            if [ -z "$SUMMARY" ]; then
+              echo "::warning::DeepSeek returned empty, falling back"
+              cp tech_detail.txt pm_summary.txt
+            else
+              printf '%s\n' "$SUMMARY" > pm_summary.txt
+            fi
+          fi
+
+          echo "--- PM Summary ---"
+          cat pm_summary.txt
+
+      - name: Get Lark tenant_access_token
+        id: lark_auth
+        env:
+          LARK_APP_ID: ${{ secrets.LARK_APP_ID }}
+          LARK_APP_SECRET: ${{ secrets.LARK_APP_SECRET }}
+        run: |
+          set -euo pipefail
+          RESPONSE=$(curl -fsS -X POST "$LARK_HOST/open-apis/auth/v3/tenant_access_token/internal" \
+            -H "Content-Type: application/json" \
+            -d "{\"app_id\":\"$LARK_APP_ID\",\"app_secret\":\"$LARK_APP_SECRET\"}")
+          TOKEN=$(echo "$RESPONSE" | jq -r '.tenant_access_token // empty')
+          if [ -z "$TOKEN" ]; then
+            echo "::error::Failed to obtain tenant_access_token"
+            echo "$RESPONSE"
+            exit 1
+          fi
+          echo "::add-mask::$TOKEN"
+          echo "token=$TOKEN" >> "$GITHUB_OUTPUT"
+
+      - name: Send main card (PM summary)
+        id: send_main
+        env:
+          TOKEN: ${{ steps.lark_auth.outputs.token }}
+          CHAT_ID: ${{ secrets.LARK_CHAT_ID }}
+          COMPARE_URL: ${{ steps.resolve.outputs.compare_url }}
+          COMMIT_COUNT: ${{ steps.resolve.outputs.commit_count }}
+          FORCED: ${{ steps.resolve.outputs.forced }}
+        run: |
+          set -euo pipefail
+
+          DATE=$(TZ='Asia/Shanghai' date +%Y%m%d)
+          PM_SUMMARY=$(cat pm_summary.txt)
+
+          if [ "$FORCED" = "true" ]; then
+            HEADER_TEMPLATE="red"
+            TITLE="⚠️ Force Push · OddFi ${REPO_LABEL}发版 ${DATE} · ${COMMIT_COUNT} commits"
+          else
+            HEADER_TEMPLATE="blue"
+            TITLE="OddFi ${REPO_LABEL}发版 ${DATE} · ${COMMIT_COUNT} commits"
+          fi
+
+          BODY_MD=$(printf '%s\n\n[查看 Diff →](%s)' "$PM_SUMMARY" "$COMPARE_URL")
+
+          CARD=$(jq -n \
+            --arg title "$TITLE" \
+            --arg template "$HEADER_TEMPLATE" \
+            --arg content "$BODY_MD" \
+            '{
+              config: { wide_screen_mode: true },
+              header: {
+                title: { tag: "plain_text", content: $title },
+                template: $template
+              },
+              elements: [
+                { tag: "markdown", content: $content }
+              ]
+            }')
+
+          REQUEST_BODY=$(jq -n \
+            --arg cid "$CHAT_ID" \
+            --arg card "$CARD" \
+            '{
+              receive_id: $cid,
+              msg_type: "interactive",
+              content: $card
+            }')
+
+          RESPONSE=$(curl -fsS -X POST "$LARK_HOST/open-apis/im/v1/messages?receive_id_type=chat_id" \
+            -H "Authorization: Bearer $TOKEN" \
+            -H "Content-Type: application/json" \
+            -d "$REQUEST_BODY")
+
+          echo "$RESPONSE"
+
+          MSG_ID=$(echo "$RESPONSE" | jq -r '.data.message_id // empty')
+          if [ -z "$MSG_ID" ]; then
+            echo "::error::Failed to send main message"
+            exit 1
+          fi
+          echo "message_id=$MSG_ID" >> "$GITHUB_OUTPUT"
+
+      - name: Reply with tech detail (thread)
+        env:
+          TOKEN: ${{ steps.lark_auth.outputs.token }}
+          MSG_ID: ${{ steps.send_main.outputs.message_id }}
+        run: |
+          set -euo pipefail
+
+          TECH_DETAIL=$(cat tech_detail.txt)
+          BODY_MD=$(printf '【技术详情】\n%s' "$TECH_DETAIL")
+
+          CARD=$(jq -n \
+            --arg content "$BODY_MD" \
+            '{
+              config: { wide_screen_mode: true },
+              elements: [
+                { tag: "markdown", content: $content }
+              ]
+            }')
+
+          REQUEST_BODY=$(jq -n \
+            --arg card "$CARD" \
+            '{
+              msg_type: "interactive",
+              content: $card,
+              reply_in_thread: true
+            }')
+
+          curl -fsS -X POST "$LARK_HOST/open-apis/im/v1/messages/$MSG_ID/reply" \
+            -H "Authorization: Bearer $TOKEN" \
+            -H "Content-Type: application/json" \
+            -d "$REQUEST_BODY"

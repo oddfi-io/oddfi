@@ -1,0 +1,23 @@
+# 秘密：绝不进构建上下文（防止泄露到 build 缓存层）
+.env
+.env.*
+!.env.example
+
+# 本地构建产物
+magic-signer
+*.exe
+/out/
+
+# 版本控制与 IDE
+.git
+.gitignore
+.idea
+.vscode
+
+# 文档/部署清单（构建二进制用不到，减小上下文）
+*.md
+deploy/
+
+# 测试缓存
+*.test
+coverage.out

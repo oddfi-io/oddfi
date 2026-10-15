@@ -1,0 +1,269 @@
+# oddfi-bet-settle 项目级 Codex/AI 协作配置
+# 注意：这个文件不是服务运行配置，服务运行仍然读取 config/*.yaml。
+# 这个文件用于沉淀本项目的固定事实、上线约束和容易踩坑的校验规则，避免后续协作时重复犯错。
+
+[project]
+name = "oddfi-bet-settle"
+role = "后台结算 worker"
+runtime_config_format = "yaml"
+runtime_entrypoint = "cmd/server/main.go"
+runbook = "PROD_RUNBOOK.md"
+architecture_doc = "ARCHITECTURE.md"
+self_test_doc = "SELF_TEST.md"
+
+[service_boundary]
+worker_only = true
+expose_http_api = false
+http_api_owner = "web-api"
+poll_interval_seconds = 30
+responsibilities = [
+  "读取 spider 已落库的赛事、赔率、赛果快照",
+  "轮询 PENDING/live 注单",
+  "判定 WON/LOST/PUSH/VOID",
+  "更新 user_bet_holding.status 和 actual_payout",
+  "扣减 user_balance.bet_lock_balance",
+  "将 WON/PUSH/VOID 派彩累加到 user_balance.claimable_balance",
+]
+out_of_scope = [
+  "对外 HTTP API",
+  "Claim 接口",
+  "WebSocket/Kafka 结算广播",
+  "asset_ledger/asset_leager 资产流水写入",
+  "官方改判后的 resettle",
+  "多 worker 分布式锁",
+  "48 小时延期自动 VOID",
+]
+must_not_reintroduce = [
+  "gin HTTP API",
+  "match state API",
+  "mode=api/mode=all 启动分支",
+  "Docker EXPOSE 或端口映射说明",
+]
+
+[runtime_commands]
+test = "go test ./..."
+build = "go build -o bin/oddfi-bet-settle ./cmd/server"
+run_worker = "./bin/oddfi-bet-settle -config config/config_prod.yaml"
+docker_build = "./deploy.sh build"
+docker_restart = "TAG=prod ./deploy.sh restart"
+
+[config_files]
+default_yaml = "config/config.yaml"
+production_yaml = "config/config_prod.yaml"
+local_oddfi_dev_yaml = "config/config_oddfi_dev.yaml"
+selftest_yaml = "config/config_selftest.yaml"
+private_yaml_should_not_commit = [
+  "config/config_prod.yaml",
+  "config/config_oddfi_dev.yaml",
+  "config/config_selftest.yaml",
+]
+
+[database.production_tables]
+fixtures = "oddfi_fixtures"
+fixture_results = "oddfi_fixture_results"
+odds = "oddfi_odds"
+statistics = "oddfi_statistics"
+bet_holding = "user_bet_holding"
+balance = "user_balance"
+asset_ledger_current_code_name = "asset_leager"
+asset_ledger_mock_name = "asset_ledger"
+
+[database.table_name_rules]
+fixture_results_must_be_configured = true
+fixture_results_config_key = "mysql.tables.fixture_results"
+fixture_results_config_value = "oddfi_fixture_results"
+do_not_use_default_fixture_results_in_prod_docs = true
+reason = "代码未配置 mysql.tables.fixture_results 时会回退 fixture_results；生产真实表名是 oddfi_fixture_results。"
+
+[database.join_contract]
+description = "worker 候选联查必须按 odd_id 反查 fixture_id，不能假设注单有可靠 match_id。"
+chain = [
+  "user_bet_holding.odd_id",
+  "oddfi_odds.odd_id",
+  "oddfi_odds.fixture_id",
+  "oddfi_fixture_results.fixture_id",
+]
+candidate_sql = """
+SELECT
+  b.id AS bet_id,
+  b.user_id,
+  b.odd_id,
+  b.status AS bet_status,
+  b.market,
+  b.label,
+  b.handicap_line,
+  b.stake,
+  o.fixture_id,
+  fr.state_id,
+  fr.state_code,
+  fr.home_score_full,
+  fr.away_score_full,
+  fr.settlement_status,
+  ub.id AS balance_id,
+  ub.bet_lock_balance,
+  ub.claimable_balance
+FROM user_bet_holding AS b
+JOIN oddfi_odds AS o ON o.odd_id = b.odd_id
+JOIN oddfi_fixture_results AS fr ON fr.fixture_id = o.fixture_id
+LEFT JOIN user_balance AS ub ON ub.user_id = b.user_id
+WHERE b.status IN ('PENDING', 'live')
+ORDER BY fr.updated_at DESC, b.id DESC
+LIMIT 100;
+"""
+
+[database.required_schema.user_balance]
+claimable_balance_required = true
+claimable_balance_definition = "DECIMAL(40,18) NOT NULL DEFAULT 0.000000000000000000"
+claimable_balance_comment = "结算后待用户领取余额"
+prod_currently_missing_claimable_balance = true
+failure_if_missing = "Unknown column 'claimable_balance'"
+notes = [
+  "当前 Go 模型会映射 ClaimableBalance 字段。",
+  "当前资金落账会更新 claimable_balance。",
+  "生产表缺字段时不能启动当前版本。",
+]
+
+[database.claimable_balance_migration]
+mysql_version_verified = "8.4.7"
+prefer_append_column = true
+avoid_after_available_balance_by_default = true
+precheck_sql = """
+SELECT
+  table_name,
+  column_name,
+  column_type,
+  is_nullable,
+  column_default
+FROM information_schema.columns
+WHERE table_schema = DATABASE()
+  AND table_name = 'user_balance'
+  AND column_name = 'claimable_balance';
+"""
+recommended_sql = """
+SET SESSION lock_wait_timeout = 5;
+
+ALTER TABLE user_balance
+  ADD COLUMN claimable_balance DECIMAL(40,18) NOT NULL DEFAULT 0.000000000000000000 COMMENT '结算后待用户领取余额',
+  ALGORITHM=INSTANT;
+"""
+ordered_column_sql_for_maintenance_window = """
+SET SESSION lock_wait_timeout = 5;
+
+ALTER TABLE user_balance
+  ADD COLUMN claimable_balance DECIMAL(40,18) NOT NULL DEFAULT 0.000000000000000000 COMMENT '结算后待用户领取余额'
+  AFTER available_balance;
+"""
+postcheck_sql = """
+SHOW COLUMNS FROM user_balance LIKE 'claimable_balance';
+
+SELECT COUNT(*) AS null_claimable_rows
+FROM user_balance
+WHERE claimable_balance IS NULL;
+"""
+forbidden_sql_fragments = [
+  "ALGORITHM=INSTANT, LOCK=NONE",
+  "LOCK=NONE",
+]
+mysql_847_note = "MySQL 8.4 的 ALGORITHM=INSTANT 只允许 LOCK=DEFAULT；不要和 LOCK=NONE/SHARED/EXCLUSIVE 混用，否则会报 ERROR 1221。"
+
+[settlement.status]
+unsettled = ["PENDING", "live"]
+settled = ["WON", "LOST", "PUSH", "VOID"]
+settle_state_ids = [5, 7, 8]
+settle_state_codes = ["FT", "AET", "FT_PEN"]
+refund_state_ids = [12, 14, 15, 17, 20]
+refund_state_codes = ["CANCELLED", "WO", "ABANDONED", "AWARDED", "DELETED"]
+
+[settlement.score_rules]
+ft_score_description = "CURRENT"
+aet_and_penalty_score_description = "2ND_HALF"
+raw_score_data_first = true
+flat_score_fallback = true
+participant_locations_supported = [
+  "participant",
+  "score.participant",
+]
+
+[settlement.money_rules]
+decimal_required = true
+won = "stake * odds"
+lost = "0"
+push = "stake * 0.90"
+void = "stake"
+deduct_lock_field = "user_balance.bet_lock_balance"
+claimable_field = "user_balance.claimable_balance"
+lost_should_not_increase_claimable = true
+
+[known_risks]
+items = [
+  "user_balance.claimable_balance 是当前版本硬依赖，生产缺字段不能上线。",
+  "user_bet_holding 没有 coin_symbol；一用户多余额行时有扣款歧义。",
+  "internal/db.NewDBStorage 启动会 AutoMigrate OddDB、FixtureDB、FixtureResult。",
+  "当前无分布式锁；正式多实例部署前必须补外层锁或只跑单实例。",
+  "当前不写 asset_ledger/asset_leager；财务要求逐笔流水时必须补逻辑。",
+  "config/config_prod.yaml 是私有配置，不应提交真实 DSN。",
+]
+
+[documentation_rules]
+language = "zh-CN"
+sql_examples_must_be_executable = true
+prod_table_names_must_match_config = true
+do_not_use_placeholder_fixture_results_table_in_prod_sql = true
+must_include_schema_precheck_for_new_columns = true
+must_include_mysql_version_notes_for_ddl = true
+must_explain_online_ddl_lock_behavior = true
+must_not_document_claimable_balance_as_optional = true
+must_not_leave_trailing_comma_in_sql_select = true
+
+[codex_guardrails]
+analyze_before_modify = true
+use_chinese_comments_for_key_logic = true
+do_not_assume_production_schema = true
+verify_table_names_from_config_and_models = true
+verify_mysql_ddl_before_recommending = true
+run_tests_after_code_change = true
+run_diff_check_after_doc_change = true
+prefer_rg_for_search = true
+do_not_revert_user_changes = true
+
+[verification]
+after_code_change = [
+  "go test ./...",
+]
+after_runbook_change = [
+  "git diff --check -- PROD_RUNBOOK.md",
+  "! rg -n \"SHOW TABLES LIKE 'fixture_results'|JOIN fixture_results|FROM fixture_results\" PROD_RUNBOOK.md",
+]
+after_deploy_change = [
+  "bash -n deploy.sh",
+  "docker build -t oddfi-bet-settle:test .",
+]
+
+[self_test]
+prd_cases_file = "prd.md"
+unit_test_file = "internal/service/settle_service_test.go"
+local_seed_sql = "scripts/oddfi_dev_settle_seed.sql"
+prd24_seed_sql = "scripts/oddfi_dev_prd24_seed.sql"
+prd24_assert_sql = "scripts/oddfi_dev_prd24_assert.sql"
+expected_prd24_result = "PRD24_E2E_PASS"
+
+[today_summary]
+date = "2026-04-27"
+major_changes = [
+  "服务收敛为 worker-only，移除对外 API 路径。",
+  "删除 internal/api/match_state.go，移除 gin 依赖。",
+  "新增 Dockerfile 和 deploy.sh，容器不映射端口，只启动后台结算 worker。",
+  "补齐 mysql.tables.fixture_results 配置，支持 oddfi_fixture_results 真实表名。",
+  "worker 改为 user_bet_holding.odd_id -> oddfi_odds.odd_id -> oddfi_odds.fixture_id -> oddfi_fixture_results.fixture_id 链路。",
+  "新增/完善 PRD 24 条用例单测和本地 E2E seed/assert SQL。",
+  "合并上线检查清单到 PROD_RUNBOOK.md，删除中间 PRE_LAUNCH 指针文档。",
+  "明确 user_balance.claimable_balance 是生产上线硬依赖。",
+  "修正 MySQL 8.4.7 下 ALGORITHM=INSTANT 不能搭配 LOCK=NONE 的 DDL 错误。",
+]
+bug_fixes = [
+  "修正生产 runbook 错误表名 fixture_results，统一为 oddfi_fixture_results。",
+  "修正 worker 候选联查 SQL 的 SELECT 尾逗号问题。",
+  "修正 claimable_balance 生产 DDL，去掉 MySQL 8.4.7 不支持的 LOCK=NONE。",
+  "补充生产缺 claimable_balance 时 Unknown column 风险和上线阻断说明。",
+  "补充 AutoMigrate 对生产库权限和表结构的影响说明。",
+]

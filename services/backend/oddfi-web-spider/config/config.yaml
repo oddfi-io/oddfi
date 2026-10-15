@@ -1,0 +1,19 @@
+app:
+  env: "dev"
+mysql:
+  dsn: "root:123456@tcp(127.0.0.1:3306)/oddfi?charset=utf8mb4&parseTime=True&loc=Local"  
+  tables:
+    leagues: "oddfi_prod_leagues"
+    fixtures: "oddfi_prod_fixtures"
+    odds: "oddfi_prod_odds"
+    statistics: "oddfi_prod_statistics"
+    fixture_results: "oddfi_prod_fixture_results"
+
+sportmonks:
+  api_token: "<SPORTMONKS_API_TOKEN>"
+  base_url: "https://api.sportmonks.com/v3/football/leagues"
+
+kafka:
+  brokers:
+    - "127.0.0.1:9092"
+  topic: "league_updates"

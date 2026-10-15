@@ -1,0 +1,1028 @@
+{
+  "run_started_utc": "2026-06-13T15:13:21Z",
+  "run_finished_utc": "2026-06-13T15:16:33Z",
+  "chain": "bsc-mainnet",
+  "chain_id": 56,
+  "rpc_url": "https://bnb-mainnet.g.alchemy.com/v2/<redacted>",
+  "deployer": "0xf74955a232E66AC5329D4fA5fb3e83B0925aDb5c",
+  "admin": "0x045f869618321e4CFF067C565dF8Effbd253e415",
+  "pauser": "0x38002091a8580a64Ffa62a9A5BEaEE59EBA51dB1",
+  "platform_treasury": "0x38002091a8580a64Ffa62a9A5BEaEE59EBA51dB1",
+  "ops_treasury": "0x38002091a8580a64Ffa62a9A5BEaEE59EBA51dB1",
+  "referral_claim_signer": "0x38002091a8580a64Ffa62a9A5BEaEE59EBA51dB1",
+  "referral_swap_pool_fee": 2500,
+  "initial_platform_reserve": "0",
+  "external_contracts": {
+    "USDT": "0x55d398326f99059fF775485246999027B3197955",
+    "PancakeV3NonfungiblePositionManager": "0x46A15B0b27311cedF172AB29E4f4766fbE7F4364",
+    "PancakeV3SwapRouter": "0x13f4EA83D0bd40E75C8222255bc855a974568Dd4",
+    "referral_swap_expected_pool": "0x0000000000000000000000000000000000000000"
+  },
+  "source": {
+    "script": "script/DeployAll.s.sol:DeployAll",
+    "broadcast_file": "broadcast/DeployAll.s.sol/56/run-latest.json"
+  },
+  "contracts": {
+    "ODDToken": {
+      "proxy": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "implementation": "0x476fc1b7ceda60f3681530e91def246db4645c5f",
+      "proxy_deploy_tx_hash": "0xe5f54f326ed783085ec43a4ab311a8914ed474a9289ea185a71f833101a327eb",
+      "implementation_deploy_tx_hash": "0x54835ff8ab2e39f18a3341a0243774f978859184b6ebdcd2dd88c4c57bfb1ad1",
+      "proxy_deploy_block": null,
+      "implementation_deploy_block": null,
+      "proxy_deploy_gas_used": null,
+      "implementation_deploy_gas_used": null,
+      "verification": "verified"
+    },
+    "TierSale": {
+      "proxy": "0x6ff56e20308647868811089906687fb7706d6517",
+      "implementation": "0x7900f36d29375c701419c80fcc15500e44984ad8",
+      "proxy_deploy_tx_hash": "0xd09c3d5551581980ab2115babb4fa929211e091ae90f48d43ec63c02a3cb7e00",
+      "implementation_deploy_tx_hash": "0x74e602ff432935d77b7a09f050cb128b0df16b63d91354fa0561063412e1fe16",
+      "proxy_deploy_block": null,
+      "implementation_deploy_block": null,
+      "proxy_deploy_gas_used": null,
+      "implementation_deploy_gas_used": null,
+      "verification": "verified"
+    },
+    "HouseVault": {
+      "proxy": "0x5f67cf50c01b6528f5fa841475806061bd0e16cd",
+      "implementation": "0x5a855b672a33ca2c924b044cd3187b45d419f8b2",
+      "proxy_deploy_tx_hash": "0x7f27a8a2924a0d9affb6ec098eba3643bee98b8f5943333f62d63bf5b476bc4f",
+      "implementation_deploy_tx_hash": "0x56fd770a4354cb98b0c59891c6babcc2c1d4dfa1ede9beceadf46e9a0a6ae46f",
+      "proxy_deploy_block": null,
+      "implementation_deploy_block": null,
+      "proxy_deploy_gas_used": null,
+      "implementation_deploy_gas_used": null,
+      "verification": "verified"
+    },
+    "DexLpLocker": {
+      "proxy": "0xbb09dccce850371c58d784bc652049dce7f6fe5c",
+      "implementation": "0x0135a4cbecb51ce23b8b9c98753fd40b6254f1f9",
+      "proxy_deploy_tx_hash": "0xbf47cf4d2e6fd8725b0cd0c2ffb9474b1b08d35e9a3f1bed6bac9c869ce04c9d",
+      "implementation_deploy_tx_hash": "0xd1839637319770c91b422932af6e8a53d769ff1e7939b7da1d1d7cfb7218b2e4",
+      "proxy_deploy_block": null,
+      "implementation_deploy_block": null,
+      "proxy_deploy_gas_used": null,
+      "implementation_deploy_gas_used": null,
+      "verification": "verified"
+    },
+    "DexLaunchController": {
+      "proxy": "0x7208e06b6df913d59851e36d15585e0ec9a4c22f",
+      "implementation": "0x9e6a683d401607407e8ec67f1aea2f9e77aecedf",
+      "proxy_deploy_tx_hash": "0xa4e6b8579a6a6505a8cf7ac92002bae1d6e87bd6b16d6c701669cc4067c3751f",
+      "implementation_deploy_tx_hash": "0x13f618d47916c17e15679a40bbe6171a33a3f57e320c0ef26dc3059101cdefce",
+      "proxy_deploy_block": null,
+      "implementation_deploy_block": null,
+      "proxy_deploy_gas_used": null,
+      "implementation_deploy_gas_used": null,
+      "verification": "verified"
+    },
+    "EcosystemRewards": {
+      "proxy": "0x71f0c250e8f9ce43626822de118bc07fbb72cda4",
+      "implementation": "0xdcf4bcb0970b30f5159da69b8827941ae0ac4d55",
+      "proxy_deploy_tx_hash": "0x179a38a5e40ee7564b6c00e82f2bb4e658c21164584123890b5217d91c66edce",
+      "implementation_deploy_tx_hash": "0xc22b3a71317f5c7cd09e1839373b88f962b71e6a168c3f5a4a38aa4654ffec9d",
+      "proxy_deploy_block": null,
+      "implementation_deploy_block": null,
+      "proxy_deploy_gas_used": null,
+      "implementation_deploy_gas_used": null,
+      "verification": "verified"
+    },
+    "StakingPool": {
+      "proxy": "0x837beb9c2cd6b45af68cd62009d874569584ddca",
+      "implementation": "0xc4cc6cd6f91e10da45f987a4c8f4d3402bef6fa8",
+      "proxy_deploy_tx_hash": "0x9713367d0bfa743009414c3c2c33b5197afe1baa3d1d3f99490c72a86246a6a3",
+      "implementation_deploy_tx_hash": "0xd31bac26633a6e91a564e66fe79b2c7005e1230f169aa2e1e2735e8d67df01df",
+      "proxy_deploy_block": null,
+      "implementation_deploy_block": null,
+      "proxy_deploy_gas_used": null,
+      "implementation_deploy_gas_used": null,
+      "verification": "verified"
+    },
+    "LiquidityPool": {
+      "proxy": "0x55419b1529b89fe3c72bdc3062515f431a63f06a",
+      "implementation": "0x5ca3c168e184843c35e467e7d69dbd5be9afcc02",
+      "proxy_deploy_tx_hash": "0x713235569bb3f6f594d6fc9e358fae9fb8b6fe913424cfa074b53885367aa8dd",
+      "implementation_deploy_tx_hash": "0x896cea02d930e1de3b173ab8c1f73f20c4b5e9b23759187f11a73b2007cd2a89",
+      "proxy_deploy_block": null,
+      "implementation_deploy_block": null,
+      "proxy_deploy_gas_used": null,
+      "implementation_deploy_gas_used": null,
+      "verification": "verified"
+    },
+    "BettingPool": {
+      "proxy": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "implementation": "0xd2d01482b684a3d486547657b93f3570b0714388",
+      "proxy_deploy_tx_hash": "0x46fc6d7278af0a415ce21016bae3501e21d93212fa4fb54e770bce9ba4519816",
+      "implementation_deploy_tx_hash": "0x140b26c51413419e2d324f09c9f9715559c841a276c0c2b49ebf3fca92479f02",
+      "proxy_deploy_block": null,
+      "implementation_deploy_block": null,
+      "proxy_deploy_gas_used": null,
+      "implementation_deploy_gas_used": null,
+      "verification": "verified"
+    },
+    "BettingSettlementModule": {
+      "address": "0x22a2dd5896b4f6741923a4e044af86c027e90b06",
+      "deploy_tx_hash": "0x6470d1a53e589cf88046dcf533fc0ea73ee5bfbb4c7cf2759e40b7ee000f5226",
+      "deploy_block": null,
+      "deploy_gas_used": null,
+      "verification": "verified"
+    },
+    "BettingBetModule": {
+      "address": "0x1429a40c5d6f7905486c4f56e5133f0811276b2f",
+      "deploy_tx_hash": "0x6e7fc6d3d3488f62ed32adea8422dcbd4f8c8de4b7a3a481b2b4d67ef91742f9",
+      "deploy_block": null,
+      "deploy_gas_used": null,
+      "verification": "verified"
+    },
+    "BettingMarketModule": {
+      "address": "0x9fa51aae630a719fe9546ef8d72f92ca65b2591d",
+      "deploy_tx_hash": "0x6a8cbb8d52ce9d5c22580f5a2964b79f3f21d7f8083a69f34037ef577075022b",
+      "deploy_block": null,
+      "deploy_gas_used": null,
+      "verification": "verified"
+    },
+    "BettingReferralModule": {
+      "address": "0x7dacc7ac1ffc2f51e6db14068c650cd2a5a25907",
+      "deploy_tx_hash": "0xde1b35756ae0348d323746e13154818ce7326d0fcf3ec15f5399d542d2d0d6da",
+      "deploy_block": null,
+      "deploy_gas_used": null,
+      "verification": "verified"
+    },
+    "BettingParlayModule": {
+      "address": "0xbbdbdbc15aedea78903d585c4d37ad91dfd2e0b1",
+      "deploy_tx_hash": "0x3b19d9fb74d02ef379d59962e0816885fdb1720420093ec853b1f482d1db87b7",
+      "deploy_block": null,
+      "deploy_gas_used": null,
+      "verification": "verified"
+    },
+    "BettingParlayLens": {
+      "address": "0x7be018a244dfd6585cb5d55112fa3febf6c78a0f",
+      "deploy_tx_hash": "0xb6c34288ec1e79964c6d628f6dedc573b7664aab22733cd070fdf7b38bfcbbd8",
+      "deploy_block": null,
+      "deploy_gas_used": null,
+      "verification": "verified"
+    },
+    "BettingOddsLib": {
+      "address": "0x6d700796d862bdeb4566192f32f4f287a136a1d6",
+      "deploy_tx_hash": "0x405c64ec3514c74e454c1a2cd1a3f645485dcfae5d7e8396340db04aea34bfdd",
+      "deploy_block": null,
+      "deploy_gas_used": null,
+      "verification": "verified"
+    },
+    "BettingValidationLib": {
+      "address": "0x46574de605d72512dc02f3bd67e615f7ae1e35db",
+      "deploy_tx_hash": "0x7016fcf1901e7b30323dd6b9042d545614ec85cba1d5e635eb38d2eb6d5e7514",
+      "deploy_block": null,
+      "deploy_gas_used": null,
+      "verification": "verified"
+    },
+    "BettingReferralLib": {
+      "address": "0x29a988a4ceb81cc41066e82691f028229a7677d2",
+      "deploy_tx_hash": "0x181d9a68b9cd78654357376df98518260c0d3a9c6e04ceed81f38c628c8147a6",
+      "deploy_block": null,
+      "deploy_gas_used": null,
+      "verification": "verified"
+    }
+  },
+  "configuration_transactions": [
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0x012487b4e8d5d286afb1fec531d5d3bdb44bcfc5e7790befdcfaba5ac0cedb3e",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0xff6d61d9ac29b9ef19c7a87e6deabc83b1154fd2087d1542f9c89af6e1c3cac4",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0x9ecb95c2d223199c8c887fda5d29c81b86ad54c2dff339fcd218facb16d47ffe",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0x431dbc120a6206e088a5ec9c84ae0b64fc7ed6b629e62755d3da1a0de765234b",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0x3bfd1436dee549f97c13eb0cb8d3c32403472ec9c9286815af7c102ae54d7125",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0x170bd5a491a87469ce11a0d857d83b7850ae62b530bf8db5fef248af639b972c",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0xcc0822e7a54fe2c62ddc3a36d43bfed5082b8094d32d0b3be4a06fe84d64f701",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0xf4ab5ae9cecd3176f6f145c15ce8021defc3725bbf4842ac7c0102e5fabcf518",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0xa03275de3dc2510d15e63b6153fc38891273b1a86b24e3821e06ac570cb16af4",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0xf31ec92fa7eea47417f2e44923778b8518924f9db9bb43e312f9a47df8cda080",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0x1bc556f194efd69f122df4094b8d8e40a3ceeb28fd26dd87125b57ac37354cbd",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0xbb09dccce850371c58d784bc652049dce7f6fe5c",
+      "function": "",
+      "tx_hash": "0xd2214d9bfc6126892914eb902953e77b1ed7e011bd09f49ca9c038d37e30651d",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x837beb9c2cd6b45af68cd62009d874569584ddca",
+      "function": "",
+      "tx_hash": "0xf55569a82f2656b18f80f58479862a1a76566dbbbceb4d0949cc3414b9f7a9c3",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x55419b1529b89fe3c72bdc3062515f431a63f06a",
+      "function": "",
+      "tx_hash": "0xc2db4a969ea581e032dd4cf7322013247e1a14588123214b2902654c54671fc2",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0x2846f1c65dd9aab858536c2bae9b09a823cd5d2990d8ce56434f4faf01d37f29",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0x9cb791d0ec996051b33e0e40859fae837f65cd3d0b9177f33e56d9726c8f93e5",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0x57a43e0d898e574a2f8ba9620efc5a631eb8477ed7612dd2b0a61a5cce39e89c",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0x616cc7c4a62ec868420aaffa4df4127b9cbc9d33222420e2fd93fb57c436e2f6",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0x734589aa69243fc5c47169f5c6628170cbeabedaa10719f087349e3ea90cbd1b",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0xeff55aef2203d32a22cf4fb29381504aebbd3e47782c99ebd2f01efb5f65f234",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0x8756efc32c138ff6e875d7db5a43c0d0bbdf441e0b5af414a46071a2eaa09c8c",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0xb60e67785d299ffb74a35418c4bdb8549dbe6f51fa7e9dae53f6fa651deac640",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0xca725ef9b4e906cb613a1d5284b61c77482758b32fb67cf9217e542611b444f1",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0xe5014827801ba62d7f4ee49bc1e092743898e155fa3be8afa0e2a5c70a90e570",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0x46abf089f3c6e6868ec540dbfa7d763d9a6f24de0040f122e91530c023b61a04",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0x393d6ea62172f9f6cce7ef0418477728b71b024d520f42b5f0d2a9cb4711880b",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0xfb670e89206978a73ad8bfbd49082ac785d61c4319fb727221010884eee44e4c",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0xfe1e6e48221b97f7cc87ec2158627541912a668c37e9d432bf2329aca2c7b4e5",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0x3cb73877f305f4198a19f743c7f87b2098811568715d54aceb7a6d48b8bcb120",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x837beb9c2cd6b45af68cd62009d874569584ddca",
+      "function": "",
+      "tx_hash": "0xf2796c2b5e94ea01e49a12c7bc8d3e916f99213958e030d72a5598a8c1093c63",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x837beb9c2cd6b45af68cd62009d874569584ddca",
+      "function": "",
+      "tx_hash": "0x11d880e94bea649c0062aeb7dd067172256214f31093cd0e5370a5817408d6ca",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x837beb9c2cd6b45af68cd62009d874569584ddca",
+      "function": "",
+      "tx_hash": "0x52197d85bb6f3de26d1656108f30bcd9b66f21dc6907c5b2d5385464d065bd47",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x55419b1529b89fe3c72bdc3062515f431a63f06a",
+      "function": "",
+      "tx_hash": "0x0d3de8be14b1ef508d32f0ecb06a1e7c7d128e9f1e88233eeace98a4c231a305",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x55419b1529b89fe3c72bdc3062515f431a63f06a",
+      "function": "",
+      "tx_hash": "0x9f88d1b01636bf1dee83e9b2c85d71753895134d0a4459c1f10fa974b62a83ac",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x55419b1529b89fe3c72bdc3062515f431a63f06a",
+      "function": "",
+      "tx_hash": "0x480072d6734b7f7583d16ac02ca90a9fb10b19a57b9e6c7b6ecacfda6ace18fb",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0x5af0be3b5b70c4992c0536b33d069758d62d1ff202a3067d1f4804391828ece3",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0x1dcf529a22f3628c401c85449b6723bb78e5ae4186276032c3f0cf4d07358da4",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0xe2873efe7108adfd3d2cbf83d80513b7b90286e04fe9ec30385b49631321cca3",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0x180801526bcd94a129e8e0de215064d455e75aab00a05c0b787a918e8f198a44",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0x780dff8e9546b609c4be18baa36068fdb080b43efda1d3ea710b3d4bbf42553c",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0xa4a2ce2b854f232b8c19ee746537c81fe143a76ced179e2be19cad7940304934",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x6ff56e20308647868811089906687fb7706d6517",
+      "function": "",
+      "tx_hash": "0xec4e2a61399750e2576432aa4671aabcd1fa5e7c2e680c8dd5e6803d8230c768",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x6ff56e20308647868811089906687fb7706d6517",
+      "function": "",
+      "tx_hash": "0x47df0b6d466e6ae5ccc0173cbb399458ceace43816ae375d7dfe3ab523d6289b",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x6ff56e20308647868811089906687fb7706d6517",
+      "function": "",
+      "tx_hash": "0x64069196aab69d6ddbfbb7eb1d72bcd4268d03622e66f670be987648abf6bb56",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x6ff56e20308647868811089906687fb7706d6517",
+      "function": "",
+      "tx_hash": "0x816f314fbe3a8b7840cc5d2d4f30034a10f3607a46cb0df2dd7c97efe3b30dc3",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x5f67cf50c01b6528f5fa841475806061bd0e16cd",
+      "function": "",
+      "tx_hash": "0x7d786443b4a2a1ad919b9593b25ecd2159428bfbce20ec7c9458e4f8d11deffc",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x5f67cf50c01b6528f5fa841475806061bd0e16cd",
+      "function": "",
+      "tx_hash": "0x697a39fa6baa0535e42d8c070d5f7046b8e5d61545be5f919c35f97788f15df3",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x5f67cf50c01b6528f5fa841475806061bd0e16cd",
+      "function": "",
+      "tx_hash": "0x73d9252b5ad153956fcccecc244241175900e4756b0c1acdb8c5c6e45b359b35",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x5f67cf50c01b6528f5fa841475806061bd0e16cd",
+      "function": "",
+      "tx_hash": "0xe8b5e744834433bea90191d6b6e26342222dde8f16c990ce4bf580cfc6c9b3f2",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x7208e06b6df913d59851e36d15585e0ec9a4c22f",
+      "function": "",
+      "tx_hash": "0xe8314be0292130aa7d77e00fb467dd48241c5207233aae8a9a8beff12022b9f1",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x7208e06b6df913d59851e36d15585e0ec9a4c22f",
+      "function": "",
+      "tx_hash": "0xa8eb8fcc1d86316a14e9bec7055f70393b0315a7d6f6e2c7280699276c0f274a",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x7208e06b6df913d59851e36d15585e0ec9a4c22f",
+      "function": "",
+      "tx_hash": "0x83ea784bd217dedf41cec7cf4d95186a7e6f806a329c088d559feb41219af1af",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x7208e06b6df913d59851e36d15585e0ec9a4c22f",
+      "function": "",
+      "tx_hash": "0x7512871368407643a4f235424b6d9d22f40b2d91e6f56b0b5c4157002d71eb6c",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0xbb09dccce850371c58d784bc652049dce7f6fe5c",
+      "function": "",
+      "tx_hash": "0x131a4225c1ba8c7eeec158256d6300c214cb624595c18f90af1e3d2831d79ad4",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0xbb09dccce850371c58d784bc652049dce7f6fe5c",
+      "function": "",
+      "tx_hash": "0x333ddba765b2c953e5cca88050a605ac9f00573ad16a5291ded9c453b820cba1",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0xbb09dccce850371c58d784bc652049dce7f6fe5c",
+      "function": "",
+      "tx_hash": "0x15e1cb727f72b1f4661b6d9c88d5af3d1c0fe178f2fa8b74e3e50764f90f4302",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0xbb09dccce850371c58d784bc652049dce7f6fe5c",
+      "function": "",
+      "tx_hash": "0x25bbe8847bf2661e135b393958978262da0d50c0002e7e72febc51be0026e9ca",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x71f0c250e8f9ce43626822de118bc07fbb72cda4",
+      "function": "",
+      "tx_hash": "0x1cea450910bec94f717cefb624b0ccf3ab576967ada71108e8d8032e4542c819",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x71f0c250e8f9ce43626822de118bc07fbb72cda4",
+      "function": "",
+      "tx_hash": "0x64d39f3f3d200aa0ffc14a03a83742b579e62f3035b6a339aa13317aad9f686f",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x71f0c250e8f9ce43626822de118bc07fbb72cda4",
+      "function": "",
+      "tx_hash": "0x929c91c0c1e769a45d67c5fe22ba3ce00f545528b8f6f8f7e1a953981d5e79a2",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x71f0c250e8f9ce43626822de118bc07fbb72cda4",
+      "function": "",
+      "tx_hash": "0xe39042529695e9c0576498b2f9e7c4249f40fb44534f43f2815808b109e96d8f",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0xadc394d353e908b29c3d8bbd7531604761d058263524ccd62ecd0d5a5c4660cc",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0x30d0949a0cd08efbd43dfde1b574c1fc2114ac6faf3a9e0c16f7ae818578e7ee",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0xc56a45ed7ad9ff30ac9a3313c8b9474a893ae7698d18d8524993cae8e226cbe9",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0xd5c847e94558c015283680fa44ad039eddf99048b422ace1a7769b49bbfdae87",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0x8fb99a6fd5cc36c4d1b845a05052736fc0ed6139a04c3a3be979c77c8ebe0daf",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0x80d3369053a1925771b9bda4f45e3beb126b0f7415ce81c4eb9dec6435e2bce9",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0x5197513cf550ee96bf57bd18e6f924954ca0f68ac1ba55f381c31554c0f86dce",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0x75db9c0d464824555ededed36a575fd68840b41ad01fe0b9714eb584ddf16e48",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0xb6017aeeda247d3678b18aaf7f1fc967dca5898b0cec1caeed80f6fc67003dac",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0xcdbcd6f3c4c7844d2014a171b34d862110f7423153b5b17d7a731bf3e7eefc2a",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x3e130563e069c414f0a18863966c211aa5d518f9",
+      "function": "",
+      "tx_hash": "0x68c9956286df09ed4455ae0702920fb978dc3a16566cb7e00a97c3c0c7cec8f8",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x837beb9c2cd6b45af68cd62009d874569584ddca",
+      "function": "",
+      "tx_hash": "0xcf5ce223b4d05d926d21f9dd9e73420640723e1bfd87969332df5d691c737b69",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x837beb9c2cd6b45af68cd62009d874569584ddca",
+      "function": "",
+      "tx_hash": "0xce6e924b8be028f82e0674936654ed4e63bc3092a645ab73b44bc85c5e9b69f9",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x837beb9c2cd6b45af68cd62009d874569584ddca",
+      "function": "",
+      "tx_hash": "0x76b6f27c26d61fe1f4506b098f7d08c3edb008c7ab8da1fa3598141c7c2e7cc4",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x55419b1529b89fe3c72bdc3062515f431a63f06a",
+      "function": "",
+      "tx_hash": "0xbb17c00dc0c643e86d18ece2d4710373540e80a9865716d62090cd5a018a4f0a",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x55419b1529b89fe3c72bdc3062515f431a63f06a",
+      "function": "",
+      "tx_hash": "0x3a1f322c05dd5cc8667bce342bdd0ad5dac18a9f9f7f877c7827c51d3fc419f9",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x55419b1529b89fe3c72bdc3062515f431a63f06a",
+      "function": "",
+      "tx_hash": "0x420ae5a7e6ca0914e8c1aa7f74a1cc38754d60f55c7c093ed1e540e3ba9e58ab",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0xa1feaae708c02e232a02d67870db69b1adb5f678d231729f74e02f8d0be5f166",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0x00d5801190b42445058c6868fd78e1a36cbd6d9bf839ff6871507287877be1bd",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0x7ea145e320a303c82150f4b3ce75f1bf0223466c189a4e445994c6857164291f",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0xa1de6d07fc92131c1624929fd40d04d1183c889c132c3d8d5e225b4b264e416f",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0xbebd2d22b28dc878722e1bf41e79ca128368bab50ff8a3580f96898f31f63eb1",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x875d0ca32a74663e42a20d0c2b7e252b5a3121ca",
+      "function": "",
+      "tx_hash": "0xa28bb630631e39d2dbd174a8820ff606bfd63e0fa8570798f07025c2d19274e6",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x6ff56e20308647868811089906687fb7706d6517",
+      "function": "",
+      "tx_hash": "0x11d68dda14a6070ddc78f699e61ac6965b8105ce1902c1c545aa28232f3efebe",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x6ff56e20308647868811089906687fb7706d6517",
+      "function": "",
+      "tx_hash": "0xb247df3e08b0c86dffcbcf24525cc8601c0e84a5781dd54cba159625b150158a",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x6ff56e20308647868811089906687fb7706d6517",
+      "function": "",
+      "tx_hash": "0x2ff8c5d1a314438e5d8c4a0fbd0b01919e3ddfb58dab246f56fe45f50a99b893",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x6ff56e20308647868811089906687fb7706d6517",
+      "function": "",
+      "tx_hash": "0x188f67780a8f96e61bba7dddafb90443e150dc02dad516bad7fea50d7524229a",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x5f67cf50c01b6528f5fa841475806061bd0e16cd",
+      "function": "",
+      "tx_hash": "0xc1e7d1d25a8bfe45b91786ef6232d1a0792822605259710f3b2404589e9f49be",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x5f67cf50c01b6528f5fa841475806061bd0e16cd",
+      "function": "",
+      "tx_hash": "0xcef45eeac0dca81bd3ab065119c2580007caeb24d3a2e7a9b9e6c712b06d24c0",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x5f67cf50c01b6528f5fa841475806061bd0e16cd",
+      "function": "",
+      "tx_hash": "0xa4e99070cb58602de84b39ff75808b9a97dafaf8d06f6d4b0cf7918bd79c6492",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x5f67cf50c01b6528f5fa841475806061bd0e16cd",
+      "function": "",
+      "tx_hash": "0x3f9a5d7e767e0fd045c004e42d95e9d8f552af741928358dcce4ddf7a8d032c4",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x7208e06b6df913d59851e36d15585e0ec9a4c22f",
+      "function": "",
+      "tx_hash": "0xc4eb284a808c6176abadf3b5d8be35ae287e0fc2fe3d9c272c0a0a9aa4f7bcb0",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x7208e06b6df913d59851e36d15585e0ec9a4c22f",
+      "function": "",
+      "tx_hash": "0xe2f1af69c1b17283f9994478d26d7a2b66a61d5e7fc25b5d90514791c5d1684a",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x7208e06b6df913d59851e36d15585e0ec9a4c22f",
+      "function": "",
+      "tx_hash": "0x1285e7d4bd69a51788fc7514b7103e0bf6f46d7cbb1abebeb52862eed4fbaba7",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x7208e06b6df913d59851e36d15585e0ec9a4c22f",
+      "function": "",
+      "tx_hash": "0x0e0f4ae8cb819fd130b1c74e39eea9edabc25eb87f3346e5e5ed8b6cca8035fe",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0xbb09dccce850371c58d784bc652049dce7f6fe5c",
+      "function": "",
+      "tx_hash": "0x9e84f015a02599fa6593ac87fc9e054c31e269f3f9da9dae8ad84b9913948608",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0xbb09dccce850371c58d784bc652049dce7f6fe5c",
+      "function": "",
+      "tx_hash": "0x6e44094efc2891430c9bc9c6ea5823f37bdc5dd64151567c8bf7c03c8644c75a",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0xbb09dccce850371c58d784bc652049dce7f6fe5c",
+      "function": "",
+      "tx_hash": "0xbca33900a077554f5680e6c73ebace89f81ec7951ab8630d3cae29d73d3ea2fd",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0xbb09dccce850371c58d784bc652049dce7f6fe5c",
+      "function": "",
+      "tx_hash": "0x83d1a88d5096e2c052de4110fd4bdb8fb7ad66bda4f2363fc1cb997f49de4ad9",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x71f0c250e8f9ce43626822de118bc07fbb72cda4",
+      "function": "",
+      "tx_hash": "0xa1499ca2caf4cf2861f0c5f73be4833a2b33e4e545e42832b214219aa45d7573",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x71f0c250e8f9ce43626822de118bc07fbb72cda4",
+      "function": "",
+      "tx_hash": "0xc487b0e1464bd6c4672087f0444fd545779416aa9be26027fe8e80462036ed5c",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x71f0c250e8f9ce43626822de118bc07fbb72cda4",
+      "function": "",
+      "tx_hash": "0x96a33910a2febf2a8cba10e539eb5559e2cd8d76e9b2568e89ce18dfff6dabc3",
+      "block": null,
+      "gas_used": null
+    },
+    {
+      "contractName": "ERC1967Proxy",
+      "contractAddress": "0x71f0c250e8f9ce43626822de118bc07fbb72cda4",
+      "function": "",
+      "tx_hash": "0xcb0e20409cd2bf2ef4a22adb83cd4f675d21732a4b49db79be0db6988c67bfb9",
+      "block": null,
+      "gas_used": null
+    }
+  ],
+  "verification": {
+    "status": "verified",
+    "verifier": "BscScan",
+    "note": "forge script automatic verification returned partial because the explorer/compiler request had transient TLS failure and Foundry mis-associated several betting module addresses; missing contracts were manually verified with forge verify-contract and explicit library links."
+  }
+}

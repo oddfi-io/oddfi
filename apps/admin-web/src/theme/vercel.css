@@ -1,0 +1,80 @@
+/*
+ * Vercel design system — global CSS overrides for what AntD ConfigProvider tokens can't reach.
+ * Source: docs/DESIGN-SYSTEM.md  /  Decisions: docs/THEME-MAPPING.md
+ */
+
+/* === Geist variable fonts (one file covers all weights 100-900) === */
+@font-face {
+  font-family: "Geist";
+  src: url("../../node_modules/geist/dist/fonts/geist-sans/Geist-Variable.woff2") format("woff2-variations"),
+       url("../../node_modules/geist/dist/fonts/geist-sans/Geist-Variable.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("../../node_modules/geist/dist/fonts/geist-mono/GeistMono-Variable.woff2") format("woff2-variations"),
+       url("../../node_modules/geist/dist/fonts/geist-mono/GeistMono-Variable.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* === Selection highlight (Vercel design spec) === */
+::selection {
+  background: #171717;
+  color: #f2f2f2;
+}
+
+/* === Table header: Geist Mono uppercase small (ex-data-table-cell design) === */
+.ant-table-thead > tr > th {
+  font-family: "Geist Mono", ui-monospace, monospace !important;
+  font-size: 12px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+/* === Sider active state left border indicator (ex-app-shell-row design) === */
+.ant-menu-item-selected {
+  position: relative;
+}
+.ant-menu-item-selected::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 3px;
+  background: #171717;
+  border-radius: 2px;
+}
+
+/* === Statistic large number: negative letter-spacing === */
+.ant-statistic-content-value {
+  letter-spacing: -1.28px;
+  font-weight: 600;
+}
+
+/* === DD002 信号灯（风险语义色，非品牌强调色 — 边界见 SignalTag.tsx 头注释） === */
+/* 红灯 KPI 卡脉冲：rgba 基于 colorError #ee0000（vercelTheme.ts），仅 box-shadow 不引新填充色 */
+@keyframes of-signal-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(238, 0, 0, 0.35); }
+  70% { box-shadow: 0 0 0 8px rgba(238, 0, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(238, 0, 0, 0); }
+}
+.of-signal-pulse {
+  animation: of-signal-pulse 2s ease-out infinite;
+}
+
+/* 最大敞口卡点击定位的目标行高亮（AntD gold-1，5s 后由 JS 摘除 class） */
+.of-row-highlight > td {
+  background: #fffbe6 !important;
+}
+
+/* 未开盘行整体置灰（风险/赔率数据无意义，预期态非 bug） */
+.of-row-muted > td {
+  opacity: 0.55;
+}

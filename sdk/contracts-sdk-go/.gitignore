@@ -1,0 +1,41 @@
+# Go
+*.exe
+*.test
+*.out
+*.prof
+vendor/
+go.sum.bak
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local secrets / overrides
+.env
+.env.local
+*.pem
+*.key
+keystore-*.json
+admin_pk
+proposer_pk
+
+# Build artifacts
+dist/
+bin/
+
+# ABI working files (downloaded ABIs are committed; tarballs are not)
+abi.tar.gz
+*.tar.gz
+
+# Coverage
+coverage.out
+coverage.html
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker compose volumes
+postgres-data/

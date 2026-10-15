@@ -1,0 +1,5618 @@
+[
+  {
+    "id": 19609127,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Mexico vs South Africa",
+    "starting_at": "2026-06-11 19:00:00",
+    "starting_at_timestamp": 1781204400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18576,
+        "name": "Mexico",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/16/18576.png",
+        "country_id": 458,
+        "type": "national",
+        "short_code": "MEX",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18555,
+        "name": "South Africa",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/27/18555.png",
+        "country_id": 146,
+        "type": "national",
+        "short_code": "ZAF",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609153,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Korea Republic vs Czech Republic",
+    "starting_at": "2026-06-12 02:00:00",
+    "starting_at_timestamp": 1781229600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18567,
+        "name": "Korea Republic",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/7/18567.png",
+        "country_id": 712,
+        "type": "national",
+        "short_code": "KOR",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18718,
+        "name": "Czech Republic",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/30/18718.png",
+        "country_id": 245,
+        "type": "national",
+        "short_code": "CZE",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609154,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Canada vs Bosnia and Herzegovina",
+    "starting_at": "2026-06-12 19:00:00",
+    "starting_at_timestamp": 1781290800,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18572,
+        "name": "Canada",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/12/18572.png",
+        "country_id": 1004,
+        "type": "national",
+        "short_code": "CAN",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18625,
+        "name": "Bosnia and Herzegovina",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/1/18625.png",
+        "country_id": 507,
+        "type": "national",
+        "short_code": "BIH",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609133,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "United States vs Paraguay",
+    "starting_at": "2026-06-13 01:00:00",
+    "starting_at_timestamp": 1781312400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18571,
+        "name": "United States",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/11/18571.png",
+        "country_id": 3483,
+        "type": "national",
+        "short_code": "USA",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18723,
+        "name": "Paraguay",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/3/18723.png",
+        "country_id": 1190,
+        "type": "national",
+        "short_code": "PRY",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609130,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Qatar vs Switzerland",
+    "starting_at": "2026-06-13 19:00:00",
+    "starting_at_timestamp": 1781377200,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18544,
+        "name": "Qatar",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/16/18544.png",
+        "country_id": 74505,
+        "type": "national",
+        "short_code": "QAT",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18708,
+        "name": "Switzerland",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/20/18708.png",
+        "country_id": 62,
+        "type": "national",
+        "short_code": "SUI",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609131,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Brazil vs Morocco",
+    "starting_at": "2026-06-13 22:00:00",
+    "starting_at_timestamp": 1781388000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18704,
+        "name": "Brazil",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/16/18704.png",
+        "country_id": 5,
+        "type": "national",
+        "short_code": "BRA",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18551,
+        "name": "Morocco",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/23/18551.png",
+        "country_id": 1424,
+        "type": "national",
+        "short_code": "MAR",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609155,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Haiti vs Scotland",
+    "starting_at": "2026-06-14 01:00:00",
+    "starting_at_timestamp": 1781398800,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18804,
+        "name": "Haiti",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/20/18804.png",
+        "country_id": 2177,
+        "type": "national",
+        "short_code": "HTI",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18706,
+        "name": "Scotland",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/18/18706.png",
+        "country_id": 1161,
+        "type": "national",
+        "short_code": "SCO",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609156,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Australia vs Turkey",
+    "starting_at": "2026-06-14 04:00:00",
+    "starting_at_timestamp": 1781409600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18730,
+        "name": "Australia",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/10/18730.png",
+        "country_id": 98,
+        "type": "national",
+        "short_code": "AUS",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18716,
+        "name": "Turkey",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/28/18716.png",
+        "country_id": 404,
+        "type": "national",
+        "short_code": "TUR",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609158,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Germany vs Curacao",
+    "starting_at": "2026-06-14 17:00:00",
+    "starting_at_timestamp": 1781456400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18660,
+        "name": "Germany",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/4/18660.png",
+        "country_id": 11,
+        "type": "national",
+        "short_code": "GER",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18910,
+        "name": "Curacao",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/30/18910.png",
+        "country_id": 7437,
+        "type": "national",
+        "short_code": "CUW",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609138,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Netherlands vs Japan",
+    "starting_at": "2026-06-14 20:00:00",
+    "starting_at_timestamp": 1781467200,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18694,
+        "name": "Netherlands",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/6/18694.png",
+        "country_id": 38,
+        "type": "national",
+        "short_code": "NED",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18597,
+        "name": "Japan",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/5/18597.png",
+        "country_id": 479,
+        "type": "national",
+        "short_code": "JPN",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609157,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Côte d'Ivoire vs Ecuador",
+    "starting_at": "2026-06-14 23:00:00",
+    "starting_at_timestamp": 1781478000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18560,
+        "name": "Côte d'Ivoire",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/0/18560.png",
+        "country_id": 23,
+        "type": "national",
+        "short_code": "CIV",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18573,
+        "name": "Ecuador",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/13/18573.png",
+        "country_id": 459,
+        "type": "national",
+        "short_code": "ECU",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609159,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Sweden vs Tunisia",
+    "starting_at": "2026-06-15 02:00:00",
+    "starting_at_timestamp": 1781488800,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18564,
+        "name": "Sweden",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/4/18564.png",
+        "country_id": 47,
+        "type": "national",
+        "short_code": "SWE",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18554,
+        "name": "Tunisia",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/26/18554.png",
+        "country_id": 1439,
+        "type": "national",
+        "short_code": "TUN",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609162,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Spain vs Cape Verde Islands",
+    "starting_at": "2026-06-15 16:00:00",
+    "starting_at_timestamp": 1781539200,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18710,
+        "name": "Spain",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/22/18710.png",
+        "country_id": 32,
+        "type": "national",
+        "short_code": "ESP",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18823,
+        "name": "Cape Verde Islands",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/7/18823.png",
+        "country_id": 772,
+        "type": "national",
+        "short_code": "CPV",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609139,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Belgium vs Egypt",
+    "starting_at": "2026-06-15 19:00:00",
+    "starting_at_timestamp": 1781550000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18743,
+        "name": "Belgium",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/23/18743.png",
+        "country_id": 556,
+        "type": "national",
+        "short_code": "BEL",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18546,
+        "name": "Egypt",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/18/18546.png",
+        "country_id": 886,
+        "type": "national",
+        "short_code": "EGY",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609161,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Saudi Arabia vs Uruguay",
+    "starting_at": "2026-06-15 22:00:00",
+    "starting_at_timestamp": 1781560800,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18562,
+        "name": "Saudi Arabia",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/2/18562.png",
+        "country_id": 35376,
+        "type": "national",
+        "short_code": "KSA",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 15251,
+        "name": "Uruguay",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/19/15251.png",
+        "country_id": 158,
+        "type": "national",
+        "short_code": "URU",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609160,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Iran vs New Zealand",
+    "starting_at": "2026-06-16 01:00:00",
+    "starting_at_timestamp": 1781571600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18652,
+        "name": "Iran",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/28/18652.png",
+        "country_id": 488,
+        "type": "national",
+        "short_code": "IRN",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18613,
+        "name": "New Zealand",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/21/18613.png",
+        "country_id": 2817,
+        "type": "national",
+        "short_code": "NZL",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609143,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "France vs Senegal",
+    "starting_at": "2026-06-16 19:00:00",
+    "starting_at_timestamp": 1781636400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18647,
+        "name": "France",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/23/18647.png",
+        "country_id": 17,
+        "type": "national",
+        "short_code": "FRA",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18558,
+        "name": "Senegal",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/30/18558.png",
+        "country_id": 200,
+        "type": "national",
+        "short_code": "SEN",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609163,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Iraq vs Norway",
+    "starting_at": "2026-06-16 22:00:00",
+    "starting_at_timestamp": 1781647200,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18600,
+        "name": "Iraq",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/8/18600.png",
+        "country_id": 107,
+        "type": "national",
+        "short_code": "IRQ",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18578,
+        "name": "Norway",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/18/18578.png",
+        "country_id": 1578,
+        "type": "national",
+        "short_code": "NOR",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609145,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Argentina vs Algeria",
+    "starting_at": "2026-06-17 01:00:00",
+    "starting_at_timestamp": 1781658000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18644,
+        "name": "Argentina",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/20/18644.png",
+        "country_id": 44,
+        "type": "national",
+        "short_code": "ARG",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18620,
+        "name": "Algeria",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/28/18620.png",
+        "country_id": 614,
+        "type": "national",
+        "short_code": "DZA",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609164,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Austria vs Jordan",
+    "starting_at": "2026-06-17 04:00:00",
+    "starting_at_timestamp": 1781668800,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18643,
+        "name": "Austria",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/19/18643.png",
+        "country_id": 143,
+        "type": "national",
+        "short_code": "AUT",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18559,
+        "name": "Jordan",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/31/18559.png",
+        "country_id": 97374,
+        "type": "national",
+        "short_code": "JOR",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609166,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Portugal vs Congo DR",
+    "starting_at": "2026-06-17 17:00:00",
+    "starting_at_timestamp": 1781715600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18701,
+        "name": "Portugal",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/13/18701.png",
+        "country_id": 20,
+        "type": "national",
+        "short_code": "POR",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18552,
+        "name": "Congo DR",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/24/18552.png",
+        "country_id": 1320,
+        "type": "national",
+        "short_code": "COD",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609149,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "England vs Croatia",
+    "starting_at": "2026-06-17 20:00:00",
+    "starting_at_timestamp": 1781726400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18645,
+        "name": "England",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/21/18645.png",
+        "country_id": 462,
+        "type": "national",
+        "short_code": "ENG",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18588,
+        "name": "Croatia",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/28/18588.png",
+        "country_id": 266,
+        "type": "national",
+        "short_code": "CRO",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609167,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Ghana vs Panama",
+    "starting_at": "2026-06-17 23:00:00",
+    "starting_at_timestamp": 1781737200,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18553,
+        "name": "Ghana",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/25/18553.png",
+        "country_id": 468,
+        "type": "national",
+        "short_code": "GHA",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18717,
+        "name": "Panama",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/29/18717.png",
+        "country_id": 65437,
+        "type": "national",
+        "short_code": "PAN",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609165,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Uzbekistan vs Colombia",
+    "starting_at": "2026-06-18 02:00:00",
+    "starting_at_timestamp": 1781748000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18745,
+        "name": "Uzbekistan",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/25/18745.png",
+        "country_id": 2426,
+        "type": "national",
+        "short_code": "UZB",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18720,
+        "name": "Colombia",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/0/18720.png",
+        "country_id": 353,
+        "type": "national",
+        "short_code": "COL",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609168,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Czech Republic vs South Africa",
+    "starting_at": "2026-06-18 16:00:00",
+    "starting_at_timestamp": 1781798400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18718,
+        "name": "Czech Republic",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/30/18718.png",
+        "country_id": 245,
+        "type": "national",
+        "short_code": "CZE",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18555,
+        "name": "South Africa",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/27/18555.png",
+        "country_id": 146,
+        "type": "national",
+        "short_code": "ZAF",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609169,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Switzerland vs Bosnia and Herzegovina",
+    "starting_at": "2026-06-18 19:00:00",
+    "starting_at_timestamp": 1781809200,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18708,
+        "name": "Switzerland",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/20/18708.png",
+        "country_id": 62,
+        "type": "national",
+        "short_code": "SUI",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18625,
+        "name": "Bosnia and Herzegovina",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/1/18625.png",
+        "country_id": 507,
+        "type": "national",
+        "short_code": "BIH",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609170,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Canada vs Qatar",
+    "starting_at": "2026-06-18 22:00:00",
+    "starting_at_timestamp": 1781820000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18572,
+        "name": "Canada",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/12/18572.png",
+        "country_id": 1004,
+        "type": "national",
+        "short_code": "CAN",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18544,
+        "name": "Qatar",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/16/18544.png",
+        "country_id": 74505,
+        "type": "national",
+        "short_code": "QAT",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609128,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Mexico vs Korea Republic",
+    "starting_at": "2026-06-19 01:00:00",
+    "starting_at_timestamp": 1781830800,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18576,
+        "name": "Mexico",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/16/18576.png",
+        "country_id": 458,
+        "type": "national",
+        "short_code": "MEX",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18567,
+        "name": "Korea Republic",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/7/18567.png",
+        "country_id": 712,
+        "type": "national",
+        "short_code": "KOR",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609134,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "United States vs Australia",
+    "starting_at": "2026-06-19 19:00:00",
+    "starting_at_timestamp": 1781895600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18571,
+        "name": "United States",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/11/18571.png",
+        "country_id": 3483,
+        "type": "national",
+        "short_code": "USA",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18730,
+        "name": "Australia",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/10/18730.png",
+        "country_id": 98,
+        "type": "national",
+        "short_code": "AUS",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609171,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Scotland vs Morocco",
+    "starting_at": "2026-06-19 22:00:00",
+    "starting_at_timestamp": 1781906400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18706,
+        "name": "Scotland",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/18/18706.png",
+        "country_id": 1161,
+        "type": "national",
+        "short_code": "SCO",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18551,
+        "name": "Morocco",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/23/18551.png",
+        "country_id": 1424,
+        "type": "national",
+        "short_code": "MAR",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609172,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Brazil vs Haiti",
+    "starting_at": "2026-06-20 00:30:00",
+    "starting_at_timestamp": 1781915400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18704,
+        "name": "Brazil",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/16/18704.png",
+        "country_id": 5,
+        "type": "national",
+        "short_code": "BRA",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18804,
+        "name": "Haiti",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/20/18804.png",
+        "country_id": 2177,
+        "type": "national",
+        "short_code": "HTI",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609173,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Turkey vs Paraguay",
+    "starting_at": "2026-06-20 03:00:00",
+    "starting_at_timestamp": 1781924400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18716,
+        "name": "Turkey",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/28/18716.png",
+        "country_id": 404,
+        "type": "national",
+        "short_code": "TUR",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18723,
+        "name": "Paraguay",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/3/18723.png",
+        "country_id": 1190,
+        "type": "national",
+        "short_code": "PRY",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609176,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Netherlands vs Sweden",
+    "starting_at": "2026-06-20 17:00:00",
+    "starting_at_timestamp": 1781974800,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18694,
+        "name": "Netherlands",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/6/18694.png",
+        "country_id": 38,
+        "type": "national",
+        "short_code": "NED",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18564,
+        "name": "Sweden",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/4/18564.png",
+        "country_id": 47,
+        "type": "national",
+        "short_code": "SWE",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609135,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Germany vs Côte d'Ivoire",
+    "starting_at": "2026-06-20 20:00:00",
+    "starting_at_timestamp": 1781985600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18660,
+        "name": "Germany",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/4/18660.png",
+        "country_id": 11,
+        "type": "national",
+        "short_code": "GER",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18560,
+        "name": "Côte d'Ivoire",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/0/18560.png",
+        "country_id": 23,
+        "type": "national",
+        "short_code": "CIV",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609174,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Ecuador vs Curacao",
+    "starting_at": "2026-06-21 00:00:00",
+    "starting_at_timestamp": 1782000000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18573,
+        "name": "Ecuador",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/13/18573.png",
+        "country_id": 459,
+        "type": "national",
+        "short_code": "ECU",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18910,
+        "name": "Curacao",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/30/18910.png",
+        "country_id": 7437,
+        "type": "national",
+        "short_code": "CUW",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609175,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Tunisia vs Japan",
+    "starting_at": "2026-06-21 04:00:00",
+    "starting_at_timestamp": 1782014400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18554,
+        "name": "Tunisia",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/26/18554.png",
+        "country_id": 1439,
+        "type": "national",
+        "short_code": "TUN",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18597,
+        "name": "Japan",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/5/18597.png",
+        "country_id": 479,
+        "type": "national",
+        "short_code": "JPN",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609142,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Spain vs Saudi Arabia",
+    "starting_at": "2026-06-21 16:00:00",
+    "starting_at_timestamp": 1782057600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18710,
+        "name": "Spain",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/22/18710.png",
+        "country_id": 32,
+        "type": "national",
+        "short_code": "ESP",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18562,
+        "name": "Saudi Arabia",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/2/18562.png",
+        "country_id": 35376,
+        "type": "national",
+        "short_code": "KSA",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609152,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Belgium vs Iran",
+    "starting_at": "2026-06-21 19:00:00",
+    "starting_at_timestamp": 1782068400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18743,
+        "name": "Belgium",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/23/18743.png",
+        "country_id": 556,
+        "type": "national",
+        "short_code": "BEL",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18652,
+        "name": "Iran",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/28/18652.png",
+        "country_id": 488,
+        "type": "national",
+        "short_code": "IRN",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609178,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Uruguay vs Cape Verde Islands",
+    "starting_at": "2026-06-21 22:00:00",
+    "starting_at_timestamp": 1782079200,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 15251,
+        "name": "Uruguay",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/19/15251.png",
+        "country_id": 158,
+        "type": "national",
+        "short_code": "URU",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18823,
+        "name": "Cape Verde Islands",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/7/18823.png",
+        "country_id": 772,
+        "type": "national",
+        "short_code": "CPV",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609177,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "New Zealand vs Egypt",
+    "starting_at": "2026-06-22 01:00:00",
+    "starting_at_timestamp": 1782090000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18613,
+        "name": "New Zealand",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/21/18613.png",
+        "country_id": 2817,
+        "type": "national",
+        "short_code": "NZL",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18546,
+        "name": "Egypt",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/18/18546.png",
+        "country_id": 886,
+        "type": "national",
+        "short_code": "EGY",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609146,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Argentina vs Austria",
+    "starting_at": "2026-06-22 17:00:00",
+    "starting_at_timestamp": 1782147600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18644,
+        "name": "Argentina",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/20/18644.png",
+        "country_id": 44,
+        "type": "national",
+        "short_code": "ARG",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18643,
+        "name": "Austria",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/19/18643.png",
+        "country_id": 143,
+        "type": "national",
+        "short_code": "AUT",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609179,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "France vs Iraq",
+    "starting_at": "2026-06-22 21:00:00",
+    "starting_at_timestamp": 1782162000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18647,
+        "name": "France",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/23/18647.png",
+        "country_id": 17,
+        "type": "national",
+        "short_code": "FRA",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18600,
+        "name": "Iraq",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/8/18600.png",
+        "country_id": 107,
+        "type": "national",
+        "short_code": "IRQ",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609180,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Norway vs Senegal",
+    "starting_at": "2026-06-23 00:00:00",
+    "starting_at_timestamp": 1782172800,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18578,
+        "name": "Norway",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/18/18578.png",
+        "country_id": 1578,
+        "type": "national",
+        "short_code": "NOR",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18558,
+        "name": "Senegal",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/30/18558.png",
+        "country_id": 200,
+        "type": "national",
+        "short_code": "SEN",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609181,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Jordan vs Algeria",
+    "starting_at": "2026-06-23 03:00:00",
+    "starting_at_timestamp": 1782183600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18559,
+        "name": "Jordan",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/31/18559.png",
+        "country_id": 97374,
+        "type": "national",
+        "short_code": "JOR",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18620,
+        "name": "Algeria",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/28/18620.png",
+        "country_id": 614,
+        "type": "national",
+        "short_code": "DZA",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609148,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Portugal vs Uzbekistan",
+    "starting_at": "2026-06-23 17:00:00",
+    "starting_at_timestamp": 1782234000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18701,
+        "name": "Portugal",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/13/18701.png",
+        "country_id": 20,
+        "type": "national",
+        "short_code": "POR",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18745,
+        "name": "Uzbekistan",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/25/18745.png",
+        "country_id": 2426,
+        "type": "national",
+        "short_code": "UZB",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609183,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "England vs Ghana",
+    "starting_at": "2026-06-23 20:00:00",
+    "starting_at_timestamp": 1782244800,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18645,
+        "name": "England",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/21/18645.png",
+        "country_id": 462,
+        "type": "national",
+        "short_code": "ENG",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18553,
+        "name": "Ghana",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/25/18553.png",
+        "country_id": 468,
+        "type": "national",
+        "short_code": "GHA",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609151,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Panama vs Croatia",
+    "starting_at": "2026-06-23 23:00:00",
+    "starting_at_timestamp": 1782255600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18717,
+        "name": "Panama",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/29/18717.png",
+        "country_id": 65437,
+        "type": "national",
+        "short_code": "PAN",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18588,
+        "name": "Croatia",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/28/18588.png",
+        "country_id": 266,
+        "type": "national",
+        "short_code": "CRO",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609182,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Colombia vs Congo DR",
+    "starting_at": "2026-06-24 02:00:00",
+    "starting_at_timestamp": 1782266400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18720,
+        "name": "Colombia",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/0/18720.png",
+        "country_id": 353,
+        "type": "national",
+        "short_code": "COL",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18552,
+        "name": "Congo DR",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/24/18552.png",
+        "country_id": 1320,
+        "type": "national",
+        "short_code": "COD",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609186,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Bosnia and Herzegovina vs Qatar",
+    "starting_at": "2026-06-24 19:00:00",
+    "starting_at_timestamp": 1782327600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18625,
+        "name": "Bosnia and Herzegovina",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/1/18625.png",
+        "country_id": 507,
+        "type": "national",
+        "short_code": "BIH",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18544,
+        "name": "Qatar",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/16/18544.png",
+        "country_id": 74505,
+        "type": "national",
+        "short_code": "QAT",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609129,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Switzerland vs Canada",
+    "starting_at": "2026-06-24 19:00:00",
+    "starting_at_timestamp": 1782327600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18708,
+        "name": "Switzerland",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/20/18708.png",
+        "country_id": 62,
+        "type": "national",
+        "short_code": "SUI",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18572,
+        "name": "Canada",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/12/18572.png",
+        "country_id": 1004,
+        "type": "national",
+        "short_code": "CAN",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609132,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Scotland vs Brazil",
+    "starting_at": "2026-06-24 22:00:00",
+    "starting_at_timestamp": 1782338400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18706,
+        "name": "Scotland",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/18/18706.png",
+        "country_id": 1161,
+        "type": "national",
+        "short_code": "SCO",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18704,
+        "name": "Brazil",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/16/18704.png",
+        "country_id": 5,
+        "type": "national",
+        "short_code": "BRA",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609187,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Morocco vs Haiti",
+    "starting_at": "2026-06-24 22:00:00",
+    "starting_at_timestamp": 1782338400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18551,
+        "name": "Morocco",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/23/18551.png",
+        "country_id": 1424,
+        "type": "national",
+        "short_code": "MAR",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18804,
+        "name": "Haiti",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/20/18804.png",
+        "country_id": 2177,
+        "type": "national",
+        "short_code": "HTI",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609184,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "South Africa vs Korea Republic",
+    "starting_at": "2026-06-25 01:00:00",
+    "starting_at_timestamp": 1782349200,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18555,
+        "name": "South Africa",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/27/18555.png",
+        "country_id": 146,
+        "type": "national",
+        "short_code": "ZAF",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18567,
+        "name": "Korea Republic",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/7/18567.png",
+        "country_id": 712,
+        "type": "national",
+        "short_code": "KOR",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609185,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Czech Republic vs Mexico",
+    "starting_at": "2026-06-25 01:00:00",
+    "starting_at_timestamp": 1782349200,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18718,
+        "name": "Czech Republic",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/30/18718.png",
+        "country_id": 245,
+        "type": "national",
+        "short_code": "CZE",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18576,
+        "name": "Mexico",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/16/18576.png",
+        "country_id": 458,
+        "type": "national",
+        "short_code": "MEX",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609136,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Ecuador vs Germany",
+    "starting_at": "2026-06-25 20:00:00",
+    "starting_at_timestamp": 1782417600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18573,
+        "name": "Ecuador",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/13/18573.png",
+        "country_id": 459,
+        "type": "national",
+        "short_code": "ECU",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18660,
+        "name": "Germany",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/4/18660.png",
+        "country_id": 11,
+        "type": "national",
+        "short_code": "GER",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609191,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Curacao vs Côte d'Ivoire",
+    "starting_at": "2026-06-25 20:00:00",
+    "starting_at_timestamp": 1782417600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18910,
+        "name": "Curacao",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/30/18910.png",
+        "country_id": 7437,
+        "type": "national",
+        "short_code": "CUW",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18560,
+        "name": "Côte d'Ivoire",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/0/18560.png",
+        "country_id": 23,
+        "type": "national",
+        "short_code": "CIV",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609137,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Tunisia vs Netherlands",
+    "starting_at": "2026-06-25 23:00:00",
+    "starting_at_timestamp": 1782428400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18554,
+        "name": "Tunisia",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/26/18554.png",
+        "country_id": 1439,
+        "type": "national",
+        "short_code": "TUN",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18694,
+        "name": "Netherlands",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/6/18694.png",
+        "country_id": 38,
+        "type": "national",
+        "short_code": "NED",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609190,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Japan vs Sweden",
+    "starting_at": "2026-06-25 23:00:00",
+    "starting_at_timestamp": 1782428400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18597,
+        "name": "Japan",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/5/18597.png",
+        "country_id": 479,
+        "type": "national",
+        "short_code": "JPN",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18564,
+        "name": "Sweden",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/4/18564.png",
+        "country_id": 47,
+        "type": "national",
+        "short_code": "SWE",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609188,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Paraguay vs Australia",
+    "starting_at": "2026-06-26 02:00:00",
+    "starting_at_timestamp": 1782439200,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18723,
+        "name": "Paraguay",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/3/18723.png",
+        "country_id": 1190,
+        "type": "national",
+        "short_code": "PRY",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18730,
+        "name": "Australia",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/10/18730.png",
+        "country_id": 98,
+        "type": "national",
+        "short_code": "AUS",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609189,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Turkey vs United States",
+    "starting_at": "2026-06-26 02:00:00",
+    "starting_at_timestamp": 1782439200,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18716,
+        "name": "Turkey",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/28/18716.png",
+        "country_id": 404,
+        "type": "national",
+        "short_code": "TUR",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18571,
+        "name": "United States",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/11/18571.png",
+        "country_id": 3483,
+        "type": "national",
+        "short_code": "USA",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609144,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Norway vs France",
+    "starting_at": "2026-06-26 19:00:00",
+    "starting_at_timestamp": 1782500400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18578,
+        "name": "Norway",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/18/18578.png",
+        "country_id": 1578,
+        "type": "national",
+        "short_code": "NOR",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18647,
+        "name": "France",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/23/18647.png",
+        "country_id": 17,
+        "type": "national",
+        "short_code": "FRA",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609195,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Senegal vs Iraq",
+    "starting_at": "2026-06-26 19:00:00",
+    "starting_at_timestamp": 1782500400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18558,
+        "name": "Senegal",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/30/18558.png",
+        "country_id": 200,
+        "type": "national",
+        "short_code": "SEN",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18600,
+        "name": "Iraq",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/8/18600.png",
+        "country_id": 107,
+        "type": "national",
+        "short_code": "IRQ",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609141,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Uruguay vs Spain",
+    "starting_at": "2026-06-27 00:00:00",
+    "starting_at_timestamp": 1782518400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 15251,
+        "name": "Uruguay",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/19/15251.png",
+        "country_id": 158,
+        "type": "national",
+        "short_code": "URU",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18710,
+        "name": "Spain",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/22/18710.png",
+        "country_id": 32,
+        "type": "national",
+        "short_code": "ESP",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609194,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Cape Verde Islands vs Saudi Arabia",
+    "starting_at": "2026-06-27 00:00:00",
+    "starting_at_timestamp": 1782518400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18823,
+        "name": "Cape Verde Islands",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/7/18823.png",
+        "country_id": 772,
+        "type": "national",
+        "short_code": "CPV",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18562,
+        "name": "Saudi Arabia",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/2/18562.png",
+        "country_id": 35376,
+        "type": "national",
+        "short_code": "KSA",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609192,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "New Zealand vs Belgium",
+    "starting_at": "2026-06-27 03:00:00",
+    "starting_at_timestamp": 1782529200,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18613,
+        "name": "New Zealand",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/21/18613.png",
+        "country_id": 2817,
+        "type": "national",
+        "short_code": "NZL",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18743,
+        "name": "Belgium",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/23/18743.png",
+        "country_id": 556,
+        "type": "national",
+        "short_code": "BEL",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609193,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Egypt vs Iran",
+    "starting_at": "2026-06-27 03:00:00",
+    "starting_at_timestamp": 1782529200,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18546,
+        "name": "Egypt",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/18/18546.png",
+        "country_id": 886,
+        "type": "national",
+        "short_code": "EGY",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18652,
+        "name": "Iran",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/28/18652.png",
+        "country_id": 488,
+        "type": "national",
+        "short_code": "IRN",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609150,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Croatia vs Ghana",
+    "starting_at": "2026-06-27 21:00:00",
+    "starting_at_timestamp": 1782594000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18588,
+        "name": "Croatia",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/28/18588.png",
+        "country_id": 266,
+        "type": "national",
+        "short_code": "CRO",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18553,
+        "name": "Ghana",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/25/18553.png",
+        "country_id": 468,
+        "type": "national",
+        "short_code": "GHA",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609199,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Panama vs England",
+    "starting_at": "2026-06-27 21:00:00",
+    "starting_at_timestamp": 1782594000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18717,
+        "name": "Panama",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/29/18717.png",
+        "country_id": 65437,
+        "type": "national",
+        "short_code": "PAN",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18645,
+        "name": "England",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/21/18645.png",
+        "country_id": 462,
+        "type": "national",
+        "short_code": "ENG",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609147,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Colombia vs Portugal",
+    "starting_at": "2026-06-27 23:30:00",
+    "starting_at_timestamp": 1782603000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18720,
+        "name": "Colombia",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/0/18720.png",
+        "country_id": 353,
+        "type": "national",
+        "short_code": "COL",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18701,
+        "name": "Portugal",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/13/18701.png",
+        "country_id": 20,
+        "type": "national",
+        "short_code": "POR",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609196,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Congo DR vs Uzbekistan",
+    "starting_at": "2026-06-27 23:30:00",
+    "starting_at_timestamp": 1782603000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18552,
+        "name": "Congo DR",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/24/18552.png",
+        "country_id": 1320,
+        "type": "national",
+        "short_code": "COD",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18745,
+        "name": "Uzbekistan",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/25/18745.png",
+        "country_id": 2426,
+        "type": "national",
+        "short_code": "UZB",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609197,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Algeria vs Austria",
+    "starting_at": "2026-06-28 02:00:00",
+    "starting_at_timestamp": 1782612000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18620,
+        "name": "Algeria",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/28/18620.png",
+        "country_id": 614,
+        "type": "national",
+        "short_code": "DZA",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18643,
+        "name": "Austria",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/19/18643.png",
+        "country_id": 143,
+        "type": "national",
+        "short_code": "AUT",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19609198,
+    "league_id": 732,
+    "stage_id": 77478590,
+    "stage_name": "",
+    "name": "Jordan vs Argentina",
+    "starting_at": "2026-06-28 02:00:00",
+    "starting_at_timestamp": 1782612000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 18559,
+        "name": "Jordan",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/31/18559.png",
+        "country_id": 97374,
+        "type": "national",
+        "short_code": "JOR",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 18644,
+        "name": "Argentina",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/20/18644.png",
+        "country_id": 44,
+        "type": "national",
+        "short_code": "ARG",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606960,
+    "league_id": 732,
+    "stage_id": 77479086,
+    "stage_name": "",
+    "name": "2nd position Group A vs 2nd position Group B",
+    "starting_at": "2026-06-28 19:00:00",
+    "starting_at_timestamp": 1782673200,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 260196,
+        "name": "2nd position Group A",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 260197,
+        "name": "2nd position Group B",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606959,
+    "league_id": 732,
+    "stage_id": 77479086,
+    "stage_name": "",
+    "name": "1st Group C vs 2nd Group F",
+    "starting_at": "2026-06-29 17:00:00",
+    "starting_at_timestamp": 1782752400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 260267,
+        "name": "1st Group C",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 260265,
+        "name": "2nd Group F",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606957,
+    "league_id": 732,
+    "stage_id": 77479086,
+    "stage_name": "",
+    "name": "1st Group E vs 3rd Group A/B/C/D/F",
+    "starting_at": "2026-06-29 20:30:00",
+    "starting_at_timestamp": 1782765000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 260269,
+        "name": "1st Group E",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 278993,
+        "name": "3rd Group A/B/C/D/F",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606958,
+    "league_id": 732,
+    "stage_id": 77479086,
+    "stage_name": "",
+    "name": "1st Group F vs 2nd Group C",
+    "starting_at": "2026-06-30 01:00:00",
+    "starting_at_timestamp": 1782781200,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 260270,
+        "name": "1st Group F",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 260275,
+        "name": "2nd Group C",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606955,
+    "league_id": 732,
+    "stage_id": 77479086,
+    "stage_name": "",
+    "name": "2nd Group E vs 2nd Group I",
+    "starting_at": "2026-06-30 17:00:00",
+    "starting_at_timestamp": 1782838800,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 260277,
+        "name": "2nd Group E",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 278990,
+        "name": "2nd Group I",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606956,
+    "league_id": 732,
+    "stage_id": 77479086,
+    "stage_name": "",
+    "name": "1st Group I vs 3rd Group C/D/F/G/H",
+    "starting_at": "2026-06-30 21:00:00",
+    "starting_at_timestamp": 1782853200,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 278991,
+        "name": "1st Group I",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 278992,
+        "name": "3rd Group C/D/F/G/H",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606954,
+    "league_id": 732,
+    "stage_id": 77479086,
+    "stage_name": "",
+    "name": "1st Group A vs 3rd Group C/E/F/H/I",
+    "starting_at": "2026-07-01 01:00:00",
+    "starting_at_timestamp": 1782867600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 260262,
+        "name": "1st Group A",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 278989,
+        "name": "3rd Group C/E/F/H/I",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606952,
+    "league_id": 732,
+    "stage_id": 77479086,
+    "stage_name": "",
+    "name": "1st Group L vs 3rd Group E/H/I/J/K",
+    "starting_at": "2026-07-01 16:00:00",
+    "starting_at_timestamp": 1782921600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 278986,
+        "name": "1st Group L",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 278987,
+        "name": "3rd Group E/H/I/J/K",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606953,
+    "league_id": 732,
+    "stage_id": 77479086,
+    "stage_name": "",
+    "name": "1st Group G vs 3rd Group  A/E/H/I/J",
+    "starting_at": "2026-07-01 20:00:00",
+    "starting_at_timestamp": 1782936000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 260271,
+        "name": "1st Group G",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 278988,
+        "name": "3rd Group  A/E/H/I/J",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606951,
+    "league_id": 732,
+    "stage_id": 77479086,
+    "stage_name": "",
+    "name": "1st Group D vs 3rd Group B/E/F/I/J",
+    "starting_at": "2026-07-02 00:00:00",
+    "starting_at_timestamp": 1782950400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 260268,
+        "name": "1st Group D",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 278985,
+        "name": "3rd Group B/E/F/I/J",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606948,
+    "league_id": 732,
+    "stage_id": 77479086,
+    "stage_name": "",
+    "name": "1st Group H vs 2nd Group J",
+    "starting_at": "2026-07-02 19:00:00",
+    "starting_at_timestamp": 1783018800,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 260272,
+        "name": "1st Group H",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 278981,
+        "name": "2nd Group J",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606949,
+    "league_id": 732,
+    "stage_id": 77479086,
+    "stage_name": "",
+    "name": "2nd Group K vs 2nd Group L",
+    "starting_at": "2026-07-02 23:00:00",
+    "starting_at_timestamp": 1783033200,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 278982,
+        "name": "2nd Group K",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 278983,
+        "name": "2nd Group L",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606950,
+    "league_id": 732,
+    "stage_id": 77479086,
+    "stage_name": "",
+    "name": "1st Group B vs 3rd Group E/F/G/I/J",
+    "starting_at": "2026-07-03 03:00:00",
+    "starting_at_timestamp": 1783047600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 260266,
+        "name": "1st Group B",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 278984,
+        "name": "3rd Group E/F/G/I/J",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606945,
+    "league_id": 732,
+    "stage_id": 77479086,
+    "stage_name": "",
+    "name": "2nd Group D vs 2nd Group G",
+    "starting_at": "2026-07-03 18:00:00",
+    "starting_at_timestamp": 1783101600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 260276,
+        "name": "2nd Group D",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 260264,
+        "name": "2nd Group G",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606946,
+    "league_id": 732,
+    "stage_id": 77479086,
+    "stage_name": "",
+    "name": "1st Group J vs 2nd Group H",
+    "starting_at": "2026-07-03 22:00:00",
+    "starting_at_timestamp": 1783116000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 278978,
+        "name": "1st Group J",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 260263,
+        "name": "2nd Group H",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606947,
+    "league_id": 732,
+    "stage_id": 77479086,
+    "stage_name": "",
+    "name": "1st Group K vs 3rd Group D/E/I/J/L",
+    "starting_at": "2026-07-04 01:30:00",
+    "starting_at_timestamp": 1783128600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 278979,
+        "name": "1st Group K",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 278980,
+        "name": "3rd Group D/E/I/J/L",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606968,
+    "league_id": 732,
+    "stage_id": 77479087,
+    "stage_name": "",
+    "name": "Winner Match 73 vs Winner Match 75",
+    "starting_at": "2026-07-04 17:00:00",
+    "starting_at_timestamp": 1783184400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 279008,
+        "name": "Winner Match 73",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 279009,
+        "name": "Winner Match 75",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606967,
+    "league_id": 732,
+    "stage_id": 77479087,
+    "stage_name": "",
+    "name": "Winner Match 74 vs Winner Match 77",
+    "starting_at": "2026-07-04 21:00:00",
+    "starting_at_timestamp": 1783198800,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 279006,
+        "name": "Winner Match 74",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 279007,
+        "name": "Winner Match 77",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606966,
+    "league_id": 732,
+    "stage_id": 77479087,
+    "stage_name": "",
+    "name": "Winner Match 76 vs Winner Match 78",
+    "starting_at": "2026-07-05 20:00:00",
+    "starting_at_timestamp": 1783281600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 279004,
+        "name": "Winner Match 76",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 279005,
+        "name": "Winner Match 78",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606965,
+    "league_id": 732,
+    "stage_id": 77479087,
+    "stage_name": "",
+    "name": "Winner Match 79 vs Winner Match 80",
+    "starting_at": "2026-07-06 00:00:00",
+    "starting_at_timestamp": 1783296000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 279002,
+        "name": "Winner Match 79",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 279003,
+        "name": "Winner Match 80",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606964,
+    "league_id": 732,
+    "stage_id": 77479087,
+    "stage_name": "",
+    "name": "Winner Match 83 vs Winner Match 84",
+    "starting_at": "2026-07-06 19:00:00",
+    "starting_at_timestamp": 1783364400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 279000,
+        "name": "Winner Match 83",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 279001,
+        "name": "Winner Match 84",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606963,
+    "league_id": 732,
+    "stage_id": 77479087,
+    "stage_name": "",
+    "name": "Winner Match 81 vs Winner Match 82",
+    "starting_at": "2026-07-07 00:00:00",
+    "starting_at_timestamp": 1783382400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 278998,
+        "name": "Winner Match 81",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 278999,
+        "name": "Winner Match 82",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606962,
+    "league_id": 732,
+    "stage_id": 77479087,
+    "stage_name": "",
+    "name": "Winner Match 86 vs Winner Match 88",
+    "starting_at": "2026-07-07 16:00:00",
+    "starting_at_timestamp": 1783440000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 278996,
+        "name": "Winner Match 86",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 278997,
+        "name": "Winner Match 88",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606961,
+    "league_id": 732,
+    "stage_id": 77479087,
+    "stage_name": "",
+    "name": "Winner Match 85 vs Winner Match 87",
+    "starting_at": "2026-07-07 20:00:00",
+    "starting_at_timestamp": 1783454400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 278994,
+        "name": "Winner Match 85",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 278995,
+        "name": "Winner Match 87",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606972,
+    "league_id": 732,
+    "stage_id": 77479088,
+    "stage_name": "",
+    "name": "Winner Match 89 vs Winner Match 90",
+    "starting_at": "2026-07-09 20:00:00",
+    "starting_at_timestamp": 1783627200,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 279061,
+        "name": "Winner Match 89",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 279062,
+        "name": "Winner Match 90",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606971,
+    "league_id": 732,
+    "stage_id": 77479088,
+    "stage_name": "",
+    "name": "Winner Match 93 vs Winner Match 94",
+    "starting_at": "2026-07-10 19:00:00",
+    "starting_at_timestamp": 1783710000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 279059,
+        "name": "Winner Match 93",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 279060,
+        "name": "Winner Match 94",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606970,
+    "league_id": 732,
+    "stage_id": 77479088,
+    "stage_name": "",
+    "name": "Winner Match 91 vs Winner Match 92",
+    "starting_at": "2026-07-11 21:00:00",
+    "starting_at_timestamp": 1783803600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 279057,
+        "name": "Winner Match 91",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 279058,
+        "name": "Winner Match 92",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606969,
+    "league_id": 732,
+    "stage_id": 77479088,
+    "stage_name": "",
+    "name": "Winner Match 95 vs Winner Match 96",
+    "starting_at": "2026-07-12 01:00:00",
+    "starting_at_timestamp": 1783818000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 279055,
+        "name": "Winner Match 95",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 279056,
+        "name": "Winner Match 96",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 99474,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606974,
+    "league_id": 732,
+    "stage_id": 77479089,
+    "stage_name": "",
+    "name": "Winner Quarter-final 1 vs Winner Quarter-final 2",
+    "starting_at": "2026-07-14 19:00:00",
+    "starting_at_timestamp": 1784055600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 260284,
+        "name": "Winner Quarter-final 1",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 260285,
+        "name": "Winner Quarter-final 2",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606973,
+    "league_id": 732,
+    "stage_id": 77479089,
+    "stage_name": "",
+    "name": "Winner Quarter-final 3 vs Winner Quarter-final 4",
+    "starting_at": "2026-07-15 19:00:00",
+    "starting_at_timestamp": 1784142000,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 260286,
+        "name": "Winner Quarter-final 3",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 260287,
+        "name": "Winner Quarter-final 4",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606976,
+    "league_id": 732,
+    "stage_id": 77479091,
+    "stage_name": "",
+    "name": "Loser Semi-final 1 vs Loser Semi-final 2",
+    "starting_at": "2026-07-18 21:00:00",
+    "starting_at_timestamp": 1784408400,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 260185,
+        "name": "Loser Semi-final 1",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 260186,
+        "name": "Loser Semi-final 2",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  },
+  {
+    "id": 19606975,
+    "league_id": 732,
+    "stage_id": 77479090,
+    "stage_name": "",
+    "name": "Winner Semi-final 1 vs Winner Semi-final 2",
+    "starting_at": "2026-07-19 19:00:00",
+    "starting_at_timestamp": 1784487600,
+    "state_id": 1,
+    "has_odds": false,
+    "participants": [
+      {
+        "id": 260165,
+        "name": "Winner Semi-final 1",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "home",
+          "winner": false
+        }
+      },
+      {
+        "id": 260166,
+        "name": "Winner Semi-final 2",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+        "country_id": 190324,
+        "type": "domestic",
+        "short_code": "",
+        "meta": {
+          "location": "away",
+          "winner": false
+        }
+      }
+    ],
+    "odds": [],
+    "league": {
+      "id": 732,
+      "sport_id": 1,
+      "country_id": 99474,
+      "name": "World Cup",
+      "active": true,
+      "short_code": "FIFA WC",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/28/732.png",
+      "type": "league",
+      "sub_type": "cup_international",
+      "last_played_at": "2014-07-05 20:00:00",
+      "category": 1,
+      "has_jerseys": true
+    },
+    "statistics": [],
+    "enable_bet": false
+  }
+]

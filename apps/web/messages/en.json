@@ -1,0 +1,2320 @@
+{
+  "nav": {
+    "markets": "World Cup",
+    "pools": "Banker Vault",
+    "stake": "Stake",
+    "lend": "Lend",
+    "swap": "Swap",
+    "referral": "Referral",
+    "portfolio": "Portfolio",
+    "home": "Home",
+    "analytics": "Analytics",
+    "leaderboard": "Leaderboard",
+    "oddPresale": "Token",
+    "invest": "Presale",
+    "aiAgent": "AI Agent",
+    "rewards": "Rewards"
+  },
+  "sidebar": {
+    "favorites": "Favorites",
+    "football": "Football",
+    "basketball": "Basketball",
+    "ufc": "UFC",
+    "esports": "Esports",
+    "politics": "Politics",
+    "tech": "Tech",
+    "expand": "Expand sidebar",
+    "collapse": "Collapse sidebar"
+  },
+  "mobileTab": {
+    "markets": "World Cup",
+    "stake": "Stake",
+    "swap": "Swap",
+    "referral": "Referral",
+    "portfolio": "Portfolio",
+    "rewards": "Rewards"
+  },
+  "metadata": {
+    "siteTitle": "On-chain Sports Prediction",
+    "description": "Next-gen on-chain sports prediction platform — bet on live matches, provide liquidity, stake, and earn.",
+    "pages": {
+      "markets": "Markets",
+      "pools": "Banker Vault",
+      "stake": "Stake",
+      "lend": "Lend",
+      "swap": "Swap",
+      "referral": "Referral",
+      "rewards": "Rewards"
+    }
+  },
+  "languageSwitcher": {
+    "ariaLabel": "Switch language"
+  },
+  "markets": {
+    "liveStream": {
+      "title": "Livestream",
+      "live": "Live",
+      "startingSoon": "Live stream starting soon",
+      "sourceFallback": "Source",
+      "thirdPartyNotice": "Live stream provided by a third party; quality may vary.",
+      "disclaimerTitle": "Third-Party Stream Disclaimer",
+      "disclaimerBody": "This live stream is provided by a third-party platform. After you start playback, third-party ads or pop-up windows may appear. These come from the third party and are not affiliated with this site, so please stay alert.",
+      "disclaimerConfirm": "Got it, continue"
+    },
+    "allLeagues": "All Leagues",
+    "allMatches": "All Matches",
+    "asianHandicap": "Asian Handicap",
+    "asianTotal": "Asian Total",
+    "away": "Away",
+    "bracket": "Bracket",
+    "calendar": "Calendar",
+    "championsLeague": "Champions League",
+    "chipAll": "All",
+    "chipAllCountries": "All Countries",
+    "chipAllTeams": "All Teams",
+    "chipCalendar": "Calendar",
+    "chipFinals": "Finals",
+    "chipHot": "Hot",
+    "chipLive": "Live",
+    "chipQualifiers": "Qualifiers",
+    "chipToday": "Today",
+    "chipTomorrow": "Tomorrow",
+    "comingSoon": "Coming Soon",
+    "draw": "Draw",
+    "errorDescription": "Failed to load this page. Please try again.",
+    "errorTitle": "Something went wrong",
+    "filterHandicap": "Handicap",
+    "filterTotal": "Total",
+    "filterWinner": "Winner",
+    "fullTimeResult": "Full Time Result",
+    "goToSlide": "Go to slide {number}",
+    "home": "Home",
+    "loadError": "Failed to load fixture data. Please try again later.",
+    "match": "Match",
+    "matchCount": "{count, plural, one {# match} other {# matches}}",
+    "moneylineDraw": "Draw",
+    "moneylineTeaser": "Oddfi users piling on {teamCode}—{userBetPct}% of bets vs {impliedPct}% implied at {odds} odds.",
+    "moneylineTitle": "Moneyline",
+    "myBets": "My Bets",
+    "news": "News",
+    "nextSlide": "Next slide",
+    "noMatches": "No matches found for the selected filters.",
+    "noMoreMatches": "No more matches scheduled.",
+    "noOddsAvailable": "No odds available for this market.",
+    "oddsPending": "TBD",
+    "onchainTag": "On-chain",
+    "openFullPage": "Open in full page",
+    "other": "Other",
+    "otherMatches": "Other Matches",
+    "over": "Over",
+    "overLine": "Over {line}",
+    "period1H": "1H",
+    "period2H": "2H",
+    "periodBRK": "Break",
+    "periodET": "ET",
+    "periodHT": "HT",
+    "periodINT": "INT",
+    "periodPEN": "PEN",
+    "periodSUS": "SUS",
+    "prevSlide": "Previous slide",
+    "regionBelgium": "Belgium",
+    "regionEngland": "England",
+    "regionFrance": "France",
+    "regionGermany": "Germany",
+    "regionItaly": "Italy",
+    "regionJapan": "Japan",
+    "regionNetherlands": "Netherlands",
+    "regionNorway": "Norway",
+    "regionPortugal": "Portugal",
+    "regionSaudiArabia": "Saudi Arabia",
+    "regionSpain": "Spain",
+    "regionSweden": "Sweden",
+    "regionTurkey": "Turkey",
+    "regionUsa": "USA",
+    "retry": "Try again",
+    "searchCancel": "Cancel",
+    "searchEmptySubtitle": "Try a different title or filter to explore more games.",
+    "searchEmptyTitle": "Oops, No games matched your search",
+    "searchPlaceholder": "Search teams...",
+    "searchPopularEvents": "🔥🔥 Popular events",
+    "sidebarTitle": "Market",
+    "soccer": "Soccer",
+    "stageAll": "All Stages",
+    "stageFinal": "Final",
+    "stageGroupStage": "Group Stage",
+    "stageKnockoutPlayoffs": "Knockout Play-offs",
+    "stageQuarterFinals": "Quarter-finals",
+    "stageRound16": "Round of 16",
+    "stageRound32": "Round of 32",
+    "stageSemiFinals": "Semi-finals",
+    "time": "Time",
+    "timelineLive": "LIVE",
+    "timelineToday": "Today",
+    "timelineTomorrow": "Tomorrow",
+    "testGroup": "Test",
+    "under": "Under",
+    "underLine": "Under {line}",
+    "worldCup": "World Cup",
+    "bannerDetailBack": "Markets",
+    "bannerDetailEndIn": "End in",
+    "bannerPromoCta": "Bet now",
+    "bettingClosed": "Betting closed",
+    "win": "Win"
+  },
+  "betSlip": {
+    "blockedRedline": "This outcome has reached the risk limit and is not accepting bets",
+    "partialFill": "Near the risk limit — filled {accepted} ODD of {origin} ODD; {remain} ODD not charged",
+    "alertNetworkRetry": "Network error, please try again later",
+    "title": "Bet Slip",
+    "single": "Single",
+    "multi": "Multi",
+    "noSelections": "No selections yet",
+    "noSelectionsHint": "Click on odds to add selections",
+    "estPayout": "Est. Payout",
+    "totalOdds": "Total Odds",
+    "totalBet": "Total Bet",
+    "potentialWin": "Potential Win",
+    "blend": "Blend",
+    "placeBet": "Place Bet",
+    "confirming": "Confirming...",
+    "placeBetSuccess": "Bet placed successfully!",
+    "placeBetFailed": "Failed to place bet, please try again",
+    "insufficientBalance": "Insufficient balance",
+    "conflictWarning": "Multiple selections from same event cannot be combined into a Multi bet.",
+    "settings": "Settings",
+    "currency": "Currency",
+    "oddsChanges": "Odds Changes",
+    "acceptAnyOdds": "Accept Any Odds",
+    "acceptHigherOnly": "Accept Only Higher Odds",
+    "noOddsChanges": "No Odds Changes Accepted",
+    "oddsOptionYes": "Yes",
+    "oddsOptionBetterOnly": "Better only",
+    "oddsOptionNo": "No",
+    "insufficientFundsTitle": "Insufficient Funds",
+    "insufficientFundsDesc": "Not enough funds to place this bet. You need <b>{required} {symbol}</b> but only have <b>{available} {symbol}</b>.",
+    "cancel": "Cancel",
+    "deposit": "Deposit",
+    "myBets": "My Bets",
+    "colBet": "Bet",
+    "colBetTime": "Bet time",
+    "colSettledTime": "Settled time",
+    "inputAmount": "Input Amount",
+    "max": "MAX",
+    "availableBalance": "Available Balance",
+    "insufficientFundsWarning": "Insufficient funds",
+    "depositNow": "Deposit now",
+    "toContinueBetting": "to continue betting",
+    "cannotPlaceComboOrder": "Cannot place combo order",
+    "minBetWarning": "Minimum bet is {min} {symbol}",
+    "error": {
+      "betAmountBelowMin": "Minimum bet is {minimum} {symbol} (you entered {amount})",
+      "poolLiquidityInsufficient": "Pool liquidity insufficient ({requested} {symbol} requested, only {available} available)",
+      "marketLocked": "Market is locked, betting unavailable",
+      "marketNotOpen": "Market is not open for betting",
+      "marketClosed": "Market has closed",
+      "invalidQuoteGuard": "Odds have changed or quote expired — please refresh and try again",
+      "dailyLimitExceeded": "Daily betting limit reached ({remaining} {symbol} remaining)",
+      "openPositionExceeded": "Open-position limit reached ({allowed} {symbol} allowed)",
+      "matchPayoutExceeded": "Match payout cap reached ({allowed} {symbol} allowed)",
+      "erc20InsufficientAllowance": "Token allowance insufficient (need {needed} {symbol}, have {allowance})",
+      "erc20InsufficientBalance": "Token balance insufficient (need {needed} {symbol}, have {balance})",
+      "txRevertedUnknown": "Bet failed on chain. Please try again",
+      "contractPanic": "This bet hit a contract error on chain and can't be placed right now. Please try again later or contact support"
+    },
+    "signalLight": {
+      "loading": "Checking liquidity...",
+      "networkError": "Network error, please retry",
+      "previewUnavailable": "Preview unavailable — please refresh",
+      "degraded": "Live odds unavailable, please retry in a moment",
+      "red": "Selected amount cannot be matched. Max: {max} ODD",
+      "orangePartial": "Only {accepted} ODD available — adjust or accept partial",
+      "yellow": "Odds may adjust on submit (~1%)",
+      "green": "Ready to bet at {odds}"
+    }
+  },
+  "common": {
+    "onchain": "Onchain",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "close": "Close",
+    "back": "Back",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "noData": "No data available",
+    "copied": "Copied!",
+    "days": "days",
+    "balance": "Balance",
+    "available": "Available",
+    "copy": "Copy",
+    "saveImage": "Save Image",
+    "share": "Share",
+    "history": "History",
+    "status": "Status",
+    "amount": "Amount",
+    "claim": "Claim",
+    "max": "Max",
+    "oddPrice": "ODD Price"
+  },
+  "wallet": {
+    "connectWallet": "Connect Wallet",
+    "connectWalletShort": "Connect",
+    "deposit": "Deposit",
+    "switching": "Switching...",
+    "wrongNetwork": "Wrong Network",
+    "sheetTitle": "Connect a wallet",
+    "sheetSubtitle": "Next level betting",
+    "connecting": "Connecting...",
+    "lastUsed": "Last used",
+    "termsNotice": "By continuing you agree to our <terms>Terms of Service</terms> and <privacy>Privacy Policy</privacy>",
+    "signAddress": "Sign Address",
+    "signDescription": "You need to sign a message in your wallet to prove ownership of the connected address",
+    "checkWallet": "Check Wallet",
+    "signIn": "Sign In",
+    "openWalletHint": "Please open your wallet app to approve the signature request",
+    "returnToWalletSign": "Open wallet to sign",
+    "openWalletToConnect": "Open wallet to connect",
+    "signatureCanceled": "Signature canceled",
+    "signatureCanceledDesc": "You canceled the signature request. Click Reconnect to try again.",
+    "loginFailed": "Login Failed",
+    "loginFailedDesc": "Something went wrong. Please try again.",
+    "reconnect": "Reconnect",
+    "modalTitle": "Sign up to oddfi",
+    "modalSubtitle": "Next level betting",
+    "connectYourWallet": "Connect your wallet",
+    "signWithAddress": "Sign with your address",
+    "approveConnection": "Approve the connection request in your wallet extension.",
+    "confirmSignature": "Confirm the signature request in your wallet to log in.",
+    "checkWalletStep": "Check wallet ({current}/{total})",
+    "termsPrefix": "By continuing, you agree to our",
+    "termsOfService": "Terms of Service",
+    "and": "and",
+    "privacyPolicy": "Privacy Policy",
+    "startPrediction": "Start Prediction",
+    "connectWalletForAi": "Connect your wallet to use AI features",
+    "error": {
+      "user-rejected-connect": {
+        "title": "Connection canceled",
+        "description": "You closed the wallet popup. Click \"Connect\" to try again."
+      },
+      "user-rejected-switch": {
+        "title": "Network switch canceled",
+        "description": "You declined the network switch. Switch networks manually in your wallet or click Retry."
+      },
+      "user-rejected-sign": {
+        "title": "Signature canceled",
+        "description": "You declined the signature. Click Reconnect to try again."
+      },
+      "connector-not-connected": {
+        "title": "Wallet connection interrupted",
+        "description": "Your wallet disconnected mid-process. This often happens when multiple wallet extensions are installed. Try Reconnect, or use incognito mode with only MetaMask enabled."
+      },
+      "connector-chain-mismatch": {
+        "title": "Wallet network syncing",
+        "description": "Your wallet is still switching networks. Wait a moment and click Retry."
+      },
+      "chain-switch-failed": {
+        "title": "Couldn't switch network",
+        "description": "Please switch your wallet network manually and try again."
+      },
+      "chain-switch-timeout": {
+        "title": "Network switch timed out",
+        "description": "Your wallet didn't switch in time. Please retry."
+      },
+      "sign-timeout": {
+        "title": "Signature timed out",
+        "description": "Open your wallet app to complete the signature."
+      },
+      "server-error": {
+        "title": "Service temporarily unavailable",
+        "description": "Our login service is briefly down. Please try again in a few seconds."
+      },
+      "network-error": {
+        "title": "Network connection failed",
+        "description": "Check your internet connection and try again."
+      },
+      "unknown": {
+        "title": "Login failed",
+        "description": "Something went wrong. Please retry, or contact support if it persists."
+      }
+    }
+  },
+  "auth": {
+    "connect_wallet": "Connect Wallet",
+    "sign_in": "Sign In to Oddfi"
+  },
+  "toast": {
+    "betSubmitted": "Transaction submitted successfully",
+    "insufficientBalance": "Insufficient balance. Please deposit before placing a bet.",
+    "insufficientBalanceAction": "Deposit",
+    "stakingRequired": "Bets over {amount} require staking {symbol}.",
+    "stakingRequiredAction": "Go to Stake",
+    "exceedsStakeLimit": "Bet exceeds staking limit (current max: {maxAmount}).",
+    "oddsChanged": "Odds updated ({oldOdds} → {newOdds}). Please review and resubmit.",
+    "marketClosed": "This market is closed. Betting is no longer available.",
+    "betSuccess": "Bet placed · {amount} · {selection} @ {odds}",
+    "betSuccessAndMore": "and {count} more",
+    "betSuccessAction": "View Order",
+    "walletNotConnectedPrefix": "Please ",
+    "walletNotConnectedLink": "connect wallet",
+    "networkError": "Network error. Please try again.",
+    "betFailed": "Bet placement failed. Please try again.",
+    "betPartialSuccess": "{succeeded} bet(s) placed, {failed} failed.",
+    "sessionExpired": "Session expired. Please log in again.",
+    "betPendingOnchain": "Transaction submitted. Check My Bets later for confirmation.",
+    "betOnchainSubmitted": "Bet submitted, confirming on-chain · {selection}",
+    "betOnchainConfirmed": "Confirmed on-chain · {selection}"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "assets": "Assets",
+    "cash": "Cash",
+    "usdt": "USDT",
+    "bet": "Bet",
+    "stake": "Stake",
+    "liquidity": "Liquidity",
+    "won": "Won",
+    "deposit": "Deposit",
+    "withdraw": "Withdraw",
+    "claim": "Claim",
+    "dailyPnl": "Today's P&L",
+    "tabBets": "Bet",
+    "tabHistory": "History",
+    "viewActive": "Active",
+    "viewSettled": "Settled",
+    "colMarket": "Market",
+    "colMatch": "Match",
+    "colDateOfEvent": "Date of Event",
+    "colBetType": "Bet Type",
+    "colBet": "Bet",
+    "colPayout": "Potential payout",
+    "colBetTime": "Bet time",
+    "colSettledTime": "Settle time",
+    "colResult": "Result",
+    "colResultH5": "Result",
+    "colPayoutSettled": "Payout",
+    "resultWon": "Won",
+    "resultLost": "Lost",
+    "resultVoid": "Void",
+    "resultCashback": "Cashback",
+    "statusClaiming": "Claiming...",
+    "colActivity": "Activity",
+    "colCash": "Cash",
+    "colTime": "Time",
+    "colStatus": "Status",
+    "actBet": "Bet",
+    "actCashout": "Cash Out",
+    "actLost": "Lost",
+    "actClaimed": "Claimed",
+    "actDeposit": "Deposit",
+    "actWithdraw": "Withdraw",
+    "actStake": "Stake",
+    "actUnstake": "Unstake",
+    "actAddLp": "Add LP",
+    "actRemoveLp": "Remove LP",
+    "marketDeposited": "Deposited Funds",
+    "marketWithdrew": "Withdrew Funds",
+    "marketCancelWithdraw": "Cancel Withdraw",
+    "marketStake": "Stake Funds",
+    "marketUnstake": "Unstake Funds",
+    "marketAddLiquidity": "Deposit Vault",
+    "marketRemoveLiquidity": "Redeem Vault",
+    "marketClaimedPrize": "Claimed Prize",
+    "marketCancelBet": "Cancel Bet",
+    "statusReviewing": "Reviewing",
+    "statusFailed": "Failed",
+    "statusInProgress": "In Progress",
+    "statusCompleted": "Completed",
+    "statusAppealing": "Appealing",
+    "statusCanceled": "Canceled",
+    "menuCancelWithdraw": "Cancel Withdrawal",
+    "menuAppeal": "Appeal",
+    "btnAppeal": "Appeal",
+    "btnView": "View",
+    "searchPlaceholder": "Search...",
+    "claimTitle": "Claim your reward",
+    "claimYouWon": "You won",
+    "claimAll": "Claim All",
+    "claimPendingTitle": "Claim Pending",
+    "claimPendingBtn": "Claim Pending",
+    "signatureTitle": "Signature request",
+    "signatureMessage": "Message",
+    "readMore": "Read more",
+    "showLess": "Show less",
+    "networkFee": "BSC network fee",
+    "youWillReceive": "You will receive",
+    "termsAgree": "By trading, you agree to the",
+    "termsOfUse": "Terms of Use",
+    "confirm": "Confirm",
+    "txSuccessTitle": "Transaction sent successfully",
+    "txSuccessDesc": "You will receive in a few seconds",
+    "gotIt": "Got it",
+    "wdReceiveAddress": "Receive Address",
+    "wdUseConnected": "Use connected",
+    "wdPlaceholderInput": "Please input",
+    "wdCoin": "Coin",
+    "wdNetwork": "Network",
+    "wdAmount": "Amount",
+    "wdAvailable": "Available",
+    "wdPriceImpact": "Price impact",
+    "wdMaxSlippage": "Max slippage",
+    "wdNetworkCost": "Network cost",
+    "wdReceiveAmount": "Receive amount",
+    "wdContinue": "Continue",
+    "wdClear": "Clear",
+    "confirming": "Confirming...",
+    "wdSuccessTitle": "Withdrawal successful",
+    "wdSuccessDesc": "Funds will arrive at your wallet shortly",
+    "wdFailedTitle": "Withdrawal failed",
+    "wdErrFailedDesc": "Request failed. Please try again.",
+    "wdErrSigRejected": "You cancelled the signature. Please retry the withdrawal.",
+    "wdGotIt": "Got it",
+    "wdGoToHistory": "View history",
+    "mtMatchWinner": "Fulltime Result",
+    "mtHandicap": "Handicap",
+    "mtOverUnder": "Over/Under",
+    "filterTitle": "Filter by type",
+    "filterMenuTitle": "Filter by status",
+    "filterAll": "All",
+    "filterBetAll": "All bets",
+    "filterStakeAll": "All stake",
+    "filterLpAll": "All Vault",
+    "filterOther": "Other",
+    "filterSingle": "Single",
+    "filterParlay": "Parlay",
+    "filterClaim": "Claim",
+    "filterCancelBet": "Cancel",
+    "filterDeposit": "Deposit",
+    "filterWithdraw": "Withdraw",
+    "filterCancelWithdraw": "Cancel Withdraw",
+    "filterStake": "Stake",
+    "filterUnstake": "Unstake",
+    "filterAddLp": "Deposit Vault",
+    "filterRemoveLp": "Redeem Vault",
+    "filterResultTitle": "Result",
+    "filterResultAll": "All",
+    "filterResultWon": "Won",
+    "filterResultLost": "Lost",
+    "datePlaceholder": "YYYY-MM-DD",
+    "dateFrom": "From",
+    "dateTo": "To",
+    "dateApply": "Apply",
+    "dateReset": "Reset",
+    "dateInvalid": "Start date must be before end date",
+    "loadMore": "Load more",
+    "loadingMore": "Loading...",
+    "noResult": "No matching transactions",
+    "cancelBet": "Cancel",
+    "cancelling": "Cancelling…",
+    "cancelTitle": "Cancel Bet",
+    "cancelDestination": "Destination",
+    "cancelSource": "Source",
+    "cancelData": "Data",
+    "cancelSuccess": "Bet cancelled successfully",
+    "cancelConfirm": "Confirm",
+    "claimWinnings": "Claim",
+    "claimRefund": "Claim",
+    "claimWinningsTitle": "Claim Your Winnings",
+    "claimRefundTitle": "Claim Your Refund",
+    "partialRefund": "Refunded {amount}",
+    "claimConfirm": "Claim",
+    "resultPush": "Push",
+    "actCancel": "Cancel",
+    "actClaim": "Claim",
+    "actWon": "Won",
+    "actPush": "Push",
+    "actVoid": "Void",
+    "datePresetToday": "Today",
+    "datePreset7d": "Last 7 days",
+    "datePreset30d": "Last 30 days",
+    "datePreset6mo": "Last 6 months",
+    "datePreset12mo": "Last 1 year",
+    "wdErrNonceUsed": "Withdrawal already submitted. Check your withdrawal history.",
+    "wdNonceReplayedTitle": "Withdrawal already submitted"
+  },
+  "lending": {
+    "title": "Position Lending",
+    "description": "Use active bet positions as collateral to borrow up to 50% of the principal for additional bets — no account balance required.",
+    "tabBorrow": "Borrow",
+    "tabRepay": "Repay",
+    "availablePositions": "Available Collateral Positions",
+    "colMatch": "Match / Selection",
+    "colPrincipal": "Principal",
+    "colReturn": "Returns",
+    "colCreditLimit": "Credit Limit",
+    "homeWin": "Home Win",
+    "draw": "Draw",
+    "awayWin": "Away Win",
+    "expires": "Expires {date}",
+    "alreadyBorrowed": "Already borrowed",
+    "borrowed": "Borrowed",
+    "activeBorrows": "Active Borrows",
+    "statusActive": "Active",
+    "principalFrozen": "Principal Frozen",
+    "collateralLabel": "Collateral: {match} · #{id}",
+    "potentialReturn": "Potential return {amount}",
+    "collateralPosition": "Collateral Position",
+    "betPrincipal": "Bet Principal",
+    "maxBorrow": "Max Borrow",
+    "borrowAmount": "Borrow Amount",
+    "usage": "Usage",
+    "creditExpires": "Credit Expires",
+    "fee": "Fee",
+    "free": "Free",
+    "repayment": "Repayment",
+    "autoDeducted": "Auto-deducted on settlement",
+    "exceedsCreditLimit": "Amount exceeds maximum credit limit",
+    "enterAmount": "Enter borrow amount",
+    "confirmBorrow": "Confirm Borrow {amount} {symbol}",
+    "exceedsMax": "Exceeds max credit limit",
+    "repaymentDetails": "Repayment Details",
+    "creditBet": "Credit Bet",
+    "borrowedAmount": "Borrowed Amount",
+    "potentialReturnLabel": "Potential Return",
+    "collateralBet": "Collateral Bet",
+    "profitCredited": "Net profit has been credited. The borrowed principal is frozen pending collateral settlement — auto-released or forfeited. No bad debt risk.",
+    "noManualRepay": "No manual repayment needed. The borrowed amount is automatically deducted from the collateral payout on settlement.",
+    "confirmRepay": "Repay",
+    "awaitingSettlement": "Awaiting collateral settlement",
+    "toastBorrowSubmitted": "Credit borrow of {amount} {symbol} submitted — awaiting on-chain confirmation",
+    "toastRepayConfirmed": "Repayment confirmed — will be auto-deducted on settlement",
+    "colActions": "Actions",
+    "noPositions": "No collateral positions available",
+    "times": "Returns",
+    "netProfit": "Net profit",
+    "noActiveBorrows": "No active borrows",
+    "earnedSoFar": "Earned So Far",
+    "totalPrincipal": "Total Principal",
+    "borrowing": "Borrowing...",
+    "confirming": "Confirming...",
+    "status": "Status"
+  },
+  "referral": {
+    "heroTitle": "Invite Friends, Earn Rewards.",
+    "heroSubtitle": "Provide liquidity to match markets and earn yield",
+    "betaBadge": "BETA",
+    "bannerTitle": "UCL Exclusive Incentives Live · Apr 29 – May 31",
+    "bannerItem1": "2× First Deposit ODD Bonus",
+    "bannerItem2": "Extra +2% Rebate on UCL Bets",
+    "bannerItem3": "Top 5 Inviters Get 500 ODD Bonus",
+    "myReferral": "My Referral",
+    "myInviteLink": "My Invite Link",
+    "myReferrer": "My Referrer",
+    "inviteLinkPlaceholder": "https://www.oddfi.io/invite/xxxx or wallet address",
+    "copyLink": "Copy Link",
+    "shareCard": "Share Card",
+    "shareModalTitle": "Share",
+    "joinMeAtOddfi": "Join me at OddFi",
+    "nextGenPrediction": "Next-Gen Prediction Markets",
+    "save": "Save",
+    "bind": "Bind",
+    "myRewards": "My Rewards",
+    "todaysEarnings": "Today's Earnings",
+    "monthlyTotal": "Monthly Total",
+    "indirectClaimable": "Indirect Bonus Claimable",
+    "directRebate": "Direct Rebate",
+    "indirectRebate": "Indirect Rebate",
+    "firstDeposit": "First Deposit",
+    "communityReward": "Community Reward",
+    "firstDepositTitle": "First Deposit ODD Bonus",
+    "firstDepositThreshold": "First Deposit ≥ ${amount}",
+    "inviterBonus": "Inviter +{amount} {symbol}",
+    "firstDepositNote": "Beta period 2× bonus active · ODD rewards unlock after 30 days · Requires at least 1 valid bet ≥ $10",
+    "statsTitle": "Referral Stats",
+    "walletsReferred": "Wallets Referred",
+    "totalRebates": "Total Rebates Earned",
+    "myLevel": "My Level",
+    "current": "Current",
+    "indirectBonus": "Indirect Bonus +{percent}%",
+    "unlockCondition": "Unlocked at team volume ≥ ${amount}",
+    "oddRelease": "ODD release ×{multiplier}",
+    "directRebateNote": "Direct rebate 5% calculated separately",
+    "progressTo": "Progress to {level}",
+    "progressHint": "${amount} more to reach {level} — unlock +{percent}% indirect bonus",
+    "colDirectRebate": "Direct Rebate",
+    "colIndirectBonus": "Indirect Bonus",
+    "colOddBoost": "ODD Boost",
+    "colLevel": "Level",
+    "colTeamVolume": "Team Volume",
+    "colIndirectBonusOdd": "Indirect Bonus (ODD)",
+    "directRebateOnly": "Direct rebate 5% only",
+    "kolPerks": "KOL Perks",
+    "myCommunity": "My Community",
+    "communityLevel": "Community Level",
+    "directReferrals": "Direct Referrals",
+    "indirectReferrals": "Indirect Referrals",
+    "myPerformance": "My Performance",
+    "totalVolume": "Total Volume",
+    "personalVolume": "Personal Volume",
+    "directVolume": "Direct Volume",
+    "indirectVolume": "Indirect Volume",
+    "teamVolume": "Team Volume",
+    "historyTitle": "Referral History",
+    "colAddress": "Address",
+    "colJoined": "Joined",
+    "colBettingVolume": "Betting Volume",
+    "colRebateEarned": "Rebate Earned",
+    "shareTitle": "Share Invite Card",
+    "exclusiveCode": "My Exclusive Invite Code",
+    "shareSubtitle": "Invite friends, share betting rebates",
+    "shareFeature1": "Instant settlement, no cap",
+    "shareFeature2": "Direct rebate 5% · Team bonus up to +20% · Real-time payouts",
+    "shareExample": "Invite 1 friend who bets $1,000 · Earn up to $50 in rebates",
+    "tagNoKyc": "No KYC",
+    "tagWalletConnect": "Wallet Connect",
+    "tagInstantPayout": "Instant Payout",
+    "tagBscChain": "BSC Chain",
+    "toastCopied": "Invite link copied",
+    "toastCopyFailed": "Copy failed — please select and copy manually",
+    "claim": "Claim",
+    "tagDirectRebate": "5% Direct Rebate",
+    "tagIndirectBonus": "4% Indirect Bonus",
+    "tagOddBoost": "ODD Boost x1.2"
+  },
+  "staking": {
+    "daysShort": "d",
+    "banner": {
+      "tag": "World Cup Limited-Time Event",
+      "lead": "50,000 ODD daily",
+      "body": "injected into the staking pool, distributed to participants by stake share"
+    },
+    "title": "Odd Staking",
+    "tabStake": "Stake",
+    "tabUnstake": "Unstake",
+    "totalStaked": "Total Staked",
+    "rewardPool": "Reward Pool",
+    "days": "days",
+    "hours": "hours",
+    "estApy": "Est. APY",
+    "multiplier": "multiplier",
+    "available": "Available",
+    "max": "Max",
+    "minimum": "Minimum 100 {symbol}",
+    "insufficientBalance": "Insufficient balance",
+    "stakeOdd": "Stake ODD",
+    "stakeSummary": "Stake {days} days · {multiplier}x multiplier",
+    "youWillEarn": "You will earn",
+    "dailyEarn": "Daily Earn",
+    "inUsd": "In USD",
+    "unlockDate": "Unlock date",
+    "apyFormula": "APY = (dailyMargin × {multiplier} / totalWeight) × 365.",
+    "apyDisclaimer": "Actual returns depend on network conditions.",
+    "statusReady": "Ready",
+    "statusActive": "Active",
+    "statusWithdrawn": "Withdrawn",
+    "principal": "Principal",
+    "rewardsEarned": "Rewards earned",
+    "totalToReceive": "Total to receive",
+    "unlockedOn": "Unlocked on",
+    "rewardsSoFar": "Rewards so far",
+    "earlyExitReceives": "Early exit receives",
+    "rewardsForfeited": "Rewards forfeited",
+    "unstakeReceive": "Unstake · receive {amount} {symbol}",
+    "earlyUnstake": "Early unstake (forfeit {amount} {symbol} rewards)",
+    "completed": "{count} completed",
+    "toastStaked": "Staked {amount} {symbol} for {days} days ({multiplier}x)",
+    "toastUnstakeRequested": "Unstake requested · funds available in ~2–3 days",
+    "toastEarlyUnstake": "Early unstake confirmed · {amount} {symbol} returned",
+    "subtitle": "Lock {symbol} to earn platform rewards",
+    "subtitleH5": "Provide liquidity to match markets and earn yield",
+    "cardTitle": "ODD Staking",
+    "tabHistory": "History",
+    "stakingDate": "Staking date",
+    "amount": "Amount",
+    "inputAmount": "Input Amount",
+    "enterAmount": "Enter amount",
+    "noActivePositions": "No active positions",
+    "stakeToEarn": "Stake {symbol} to start earning rewards",
+    "noHistory": "No history yet",
+    "actionEarlyUnstake": "Early Unstake",
+    "tabMyStaking": "My Staking",
+    "stakingAmount": "Staking amount",
+    "earnedLabel": "Earned",
+    "unstakeBtn": "Unstake",
+    "earlyUnstakeBtn": "Early Unstake",
+    "stakedAmount": "Staked Amount",
+    "earnedSoFar": "Earned So Far",
+    "penalty": "Penalty (10% of rewards)",
+    "youWillReceive": "You will receive",
+    "confirmEarlyUnstake": "Confirm Early Unstake",
+    "earlyUnstakeTitle": "Early Unstake Confirmation",
+    "lockPeriod": "Lock Period",
+    "comingSoon": "Coming Soon",
+    "approving": "Approving...",
+    "staking": "Staking...",
+    "confirming": "Confirming...",
+    "processing": "Processing...",
+    "connectWalletToView": "Connect wallet to view your positions",
+    "connectWalletToStake": "Connect wallet to stake",
+    "historyEarlyForfeited": "Forfeited & redistributed",
+    "totalActiveStake": "Total Active Stake",
+    "totalPendingReward": "Pending Rewards",
+    "vipTier": "VIP Tier",
+    "dailyBetLimit": "Daily Bet Limit",
+    "dailyBetLimitTooltip": "VIP-determined daily betting cap (BettingPool)"
+  },
+  "pools": {
+    "daysShort": "d",
+    "banner": {
+      "tag": "World Cup Limited-Time Event",
+      "lead": "100,000 ODD daily",
+      "body": "injected into the vault pool, distributed to depositors by market-making contribution"
+    },
+    "title": "Banker Vault",
+    "pageTitle": "Banker Vault",
+    "pageSubtitle": "Provide liquidity to match markets and earn yield",
+    "add": "Deposit",
+    "matchMarketsTitle": "Selected Match Pools",
+    "matchMarketsSubtitle": "Bet against users on the matches you choose.",
+    "allPoolsTitle": "All Match Pools",
+    "allPoolsSubtitle": "Bet against all users across every match.",
+    "noMatches": "No matches found",
+    "colActions": "Actions",
+    "colStatus": "Status",
+    "tabPositions": "My Vault",
+    "tabReturns": "Returns",
+    "totalSupply": "Total Supply",
+    "estApy": "Est. APY",
+    "myBalance": "My Balance",
+    "deposit": "Deposit",
+    "redeem": "Redeem",
+    "searchPlaceholder": "Search matches...",
+    "filterAll": "All",
+    "filterFavorites": "Favorites",
+    "filterSoccer": "Soccer",
+    "filterTennis": "Tennis",
+    "filterCricket": "Cricket",
+    "filterOthers": "Others",
+    "colMatch": "Match",
+    "colVolume24h": "Total Bets",
+    "globalPool": "Global Pool",
+    "matchStarted": "Match started",
+    "pendingSettlement": "Pending settlement",
+    "closed": "Closed",
+    "depositTo": "Deposit to {match}",
+    "depositSubtitle": "Independent settlement · Principal fluctuates with match P&L",
+    "depositWarning": "Principal is not guaranteed. Returns depend on match outcomes and pool performance.",
+    "lockPeriod": "Lock Period",
+    "unlocksAfterMatch": "Unlocks automatically after match ends",
+    "availableAndMin": "Available: {available} {symbol} · Min: 1,000 {symbol}",
+    "poolShare": "Pool Share",
+    "estPeriodReturn": "Est. Period Return",
+    "unlockDate": "Unlock Date",
+    "confirmDeposit": "Confirm Deposit",
+    "minimumDeposit": "Minimum deposit is 1,000 {symbol}",
+    "redeemTitle": "Redeem — {match}",
+    "unbondingPeriod": "2 Epoch unbonding period (~2–3 days)",
+    "currentValue": "Current Value",
+    "netPnl": "Net P&L",
+    "unbondingLabel": "Unbonding Period",
+    "youWillReceive": "You will receive",
+    "redeemWarning": "Once requested, rewards stop accruing. This cannot be undone.",
+    "confirmRedeem": "Confirm Redeem",
+    "totalDeposited": "Total Deposited",
+    "readyToWithdraw": "Ready to Withdraw",
+    "activePositions": "Active Positions",
+    "deposited": "Deposited",
+    "pnl": "P&L",
+    "unlock": "Unlock",
+    "statusReady": "Ready",
+    "statusActive": "Active",
+    "statusUnbonding": "Unbonding",
+    "statusWithdrawable": "Withdrawable",
+    "statusWithdrawn": "Withdrawn",
+    "statusLocked": "Locked",
+    "statusLiquidated": "Liquidated",
+    "withdraw": "Withdraw",
+    "noPositions": "No active positions · Deposit to get started",
+    "totalMarginEarned": "Total Margin Earned",
+    "totalLossAbsorbed": "Total Loss Absorbed",
+    "houseWinRate": "House Win Rate",
+    "allMatches": "All Matches",
+    "houseWon": "House Won",
+    "houseLost": "House Lost",
+    "colDate": "Date",
+    "colResult": "Result",
+    "marginEarned": "Margin Earned",
+    "lossAbsorbed": "Loss Absorbed",
+    "acrossAllMatches": "across all matches",
+    "payoutLossesShared": "payout losses shared",
+    "matchRatio": "{won} of {total} matches",
+    "noHistory": "No history yet",
+    "toastDepositConfirmed": "Deposit confirmed · {amount} {symbol} deposited",
+    "toastRedeemSubmitted": "Redeem request submitted · available in ~2–3 days",
+    "depositVaultTitle": "Deposit — ODD Vault",
+    "redeemVaultTitle": "Redeem — ODD Vault",
+    "amount": "Amount",
+    "estDaily": "Est. Daily",
+    "estMonthly": "Est. Monthly",
+    "apy": "APY",
+    "lockBonus": "Lock Bonus",
+    "riskNotice": "Risk Notice: Liquidity pool deposits are subject to market risk. Your principal may decrease if the house loses on the matched events. Past APY does not guarantee future returns.",
+    "redeemAmountLabel": "Redeem Amount ({symbol})",
+    "available": "Available",
+    "unbondingDays": "{days} days",
+    "afterUnbondingPeriod": "After {days}-day unbonding period",
+    "addLiquidity": "Deposit Vault",
+    "maxBtn": "MAX",
+    "availableWithAmount": "Available: {amount} {symbol}",
+    "timeUntilMatchEnd": "Time until match ends",
+    "matchEnded": "Match has ended",
+    "matchPoolRiskNotice": "If the betting pool pays out on a match, your balance may decrease.",
+    "depositWindowClosed": "Deposit window closed for this match pool.",
+    "approvingCta": "Approving...",
+    "confirmingApproveCta": "Confirming Approve...",
+    "depositingCta": "Depositing...",
+    "confirmingCta": "Confirming...",
+    "minimumDepositDynamic": "Minimum deposit is {amount} {symbol}",
+    "connectToViewPositions": "Connect your wallet to view your positions"
+  },
+  "userMenu": {
+    "themeDark": "Dark Mode",
+    "themeLight": "Light Mode",
+    "language": "Language",
+    "currency": "Currency",
+    "portfolio": "Portfolio",
+    "accuracy": "Accuracy",
+    "helpCenter": "Help Center",
+    "documentation": "Documentation",
+    "termsOfUse": "Terms of Use",
+    "disconnect": "Disconnect"
+  },
+  "swap": {
+    "title": "Swap",
+    "pay": "Pay",
+    "receive": "Receive",
+    "connectWallet": "Connect Wallet",
+    "switchToBsc": "Switch to BSC",
+    "enterAmount": "Enter Amount",
+    "insufficientBalance": "Insufficient {token}",
+    "approving": "Approving...",
+    "swapping": "Swapping...",
+    "fetchingQuote": "Fetching quote...",
+    "switchingNetwork": "Switching network...",
+    "approveAndSwap": "Approve & Swap",
+    "swap": "Swap",
+    "max": "MAX",
+    "fetchingRate": "Fetching rate...",
+    "priceImpact": "Price Impact",
+    "minReceived": "Min Received (slippage {slippage}%)",
+    "minimumReceived": "Min Received",
+    "referenceRate": "Reference Rate",
+    "routing": "Routing",
+    "quoteErrorLowLiquidity": "Amount too small or insufficient liquidity — please increase amount",
+    "auto": "Auto",
+    "route": "Route",
+    "loading": "Loading...",
+    "slippageSettings": "Slippage Settings",
+    "slippageDescription": "Set the maximum price deviation you're willing to accept.",
+    "custom": "Custom",
+    "highSlippageWarning": "High slippage may result in unfavorable trades",
+    "currentSlippage": "Current Slippage",
+    "aboutToken": "About {name}",
+    "overview": "Overview",
+    "marketCap": "Market Cap",
+    "volume24h": "Volume (24h)",
+    "totalSupply": "Total Supply",
+    "volMarketCap": "Vol/Market Cap",
+    "circulatingSupply": "Circulating Supply",
+    "securityCheck": "Security Check",
+    "noRisksDetected": "No risks detected",
+    "lineChart": "Line Chart",
+    "candleChart": "Candle Chart",
+    "confirm": "Confirm",
+    "tokenPicker": {
+      "title": "Select token",
+      "searchPlaceholder": "Search by token symbol or contract address",
+      "allChains": "All",
+      "ownedAssets": "Owned assets",
+      "popular": "Popular",
+      "noTokensFound": "No tokens found"
+    }
+  },
+  "deposit": {
+    "title": "Deposit",
+    "receive": "Receive",
+    "balance": "Balance:",
+    "usedConnectedWallet": "Used connected wallet",
+    "wallet": "Wallet",
+    "loading": "Loading...",
+    "instant": "Instant",
+    "otherOptions": "Other options",
+    "transferCrypto": "Transfer Crypto",
+    "noLimit": "No limit",
+    "failedToLoad": "Failed to load deposit address.",
+    "pleaseReopen": "Please close and reopen the deposit modal.",
+    "receiveNetwork": "Receive network:",
+    "receiveAddress": "Receive address",
+    "noTokensFound": "No tokens with balance found",
+    "transferToDeposit": "Transfer tokens to your wallet to deposit",
+    "crossChainSoon": "Cross-chain deposit coming soon",
+    "continue": "Continue",
+    "enterAmount": "Enter an amount",
+    "insufficientBalance": "Insufficient balance",
+    "minimumAdjusted": "Minimum $2 — amount adjusted",
+    "send": "Send",
+    "get": "Get",
+    "youSend": "You send",
+    "youGet": "You get",
+    "source": "Source",
+    "destination": "Destination",
+    "estimatedTime": "Estimated time",
+    "lessThan1Min": "< 1 min",
+    "confirm": "Confirm",
+    "processing": "Processing...",
+    "selectCrypto": "Select crypto",
+    "inputAmount": "Input Amount",
+    "oddWallet": "ODD Wallet",
+    "transactionBreakdown": "Transaction breakdown",
+    "networkCost": "Network cost",
+    "priceImpact": "Price impact",
+    "maxSlippage": "Max slippage",
+    "termsNotice": "By trading, you agree to the",
+    "termsOfUse": "Terms of Use",
+    "depositConfirming": "Deposit Confirming",
+    "fundsArrive": "your funds will arrive in a few seconds.",
+    "continueDeposit": "Continue Deposit",
+    "viewPortfolio": "View",
+    "lowBalance": "Low Balance"
+  },
+  "bridge": {
+    "title": "Bridge",
+    "from": "From",
+    "to": "To (BSC)",
+    "amount": "Amount",
+    "bridge": "Bridge",
+    "approveBridge": "Approve & Bridge",
+    "bridging": "Cross-chain transfer in progress...",
+    "quoteExpired": "Quote expired, refreshing...",
+    "refundInitiated": "Transaction failed. Refund initiated to your wallet.",
+    "completed": "Transfer Complete",
+    "selectSourceToken": "Select source token",
+    "selectDestToken": "Select destination token",
+    "enterAmount": "Enter amount",
+    "fetchingQuote": "Fetching quote...",
+    "failedQuote": "Failed to get quote",
+    "waitingSignature": "Waiting for signature...",
+    "relaying": "Relaying...",
+    "relayingStep": "Relaying... (step {current}/{total})",
+    "switchToSupported": "Please switch to a supported network",
+    "connectWallet": "Connect Wallet",
+    "bridgeAgain": "Bridge Again",
+    "refreshingQuote": "Refreshing quote...",
+    "transferComplete": "Transfer complete! Check your BSC wallet.",
+    "transferFailed": "Transaction failed. Please try again."
+  },
+  "landing": {
+    "hero": {
+      "slogans": ["AI-NATIVE", "PREDICT ANYTHING", "TOGETHER ON-CHAIN"],
+      "titleLine1": "Next-Gen Prediction Markets,",
+      "titleLine2": "Rebuilt by AI Agents."
+    },
+    "predictions": {
+      "sectionTitle": "The 2026 World Cup. Now on-chain.",
+      "ctaButton": "Predict Now",
+      "cardCta": "Predict Now",
+      "cards": {
+        "world-cup-winner": "Who Will Lift the Cup?",
+        "ronaldo-goals": "How Many Goals for Ronaldo?",
+        "mvp": "Who Will Win the Golden Ball?",
+        "top-scorer": "Who Will Win the Golden Boot?",
+        "best-goalkeeper": "Who Will Win the Golden Glove?"
+      }
+    },
+    "mobile": {
+      "heroBadge": "AI-NATIVE",
+      "heroTitleLine1": "Next-Gen Prediction Markets,",
+      "heroTitleLine2": "Rebuilt by AI Agents.",
+      "ctaStartPredict": "Predict Now",
+      "predictionsTitleLine1": "The 2026 World Cup",
+      "predictionsTitleLine2": "Now on-chain.",
+      "stickyConnect": "Connect Wallet",
+      "stickyEnter": "Enter Markets",
+      "headerClose": "Close"
+    },
+    "starsNight": {
+      "title": "The Final Curtain",
+      "subtitleLine1": "Time never blows the whistle, but every legend reaches the final line.",
+      "subtitleLine2": "2026 — One last stage. One last time.",
+      "ctaPredictNow": "Predict Now",
+      "players": {
+        "messi": {
+          "name": "Messi 🇦🇷",
+          "description": "The champion's final dance."
+        },
+        "mbappe": {
+          "name": "Mbappé 🇫🇷",
+          "description": "A spear at its peak, hunting the cup."
+        },
+        "yamal": {
+          "name": "Yamal 🇪🇸",
+          "description": "Eighteen years old. Born for this."
+        },
+        "ronaldo": {
+          "name": "Ronaldo 🇵🇹",
+          "description": "Six World Cups. One last crown."
+        },
+        "bellingham": {
+          "name": "Bellingham 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+          "description": "Engine of the Three Lions. King of Madrid."
+        },
+        "haaland": {
+          "name": "Haaland 🇳🇴",
+          "description": "The Nordic beast has arrived."
+        },
+        "son": {
+          "name": "Son Heung-min 🇰🇷",
+          "description": "Light of Asia. One last charge."
+        },
+        "vinicius": {
+          "name": "Vinícius 🇧🇷",
+          "description": "Samba's new heart. A storm down the left."
+        },
+        "kane": {
+          "name": "Kane 🇬🇧",
+          "description": "Captain. Golden Boot. Lethal."
+        },
+        "pedri": {
+          "name": "Pedri 🇪🇸",
+          "description": "The maestro. Calm. Untouchable."
+        }
+      }
+    },
+    "tradeShowcase": {
+      "title": "One Platform, Many Ways to Play",
+      "subtitle": "From predicting to market making, every role has a place.",
+      "card1": {
+        "title": "Predict & Bet",
+        "description": "Pick events, lock odds. Parlay up to 6 matches."
+      },
+      "card2": {
+        "title": "Market Make",
+        "description": "Provide liquidity, earn protocol fees.",
+        "small": "Est. APY"
+      },
+      "card3": {
+        "title": "Stake",
+        "description": "Stake ODD for rewards and higher VIP limits.",
+        "small": "Est. APY"
+      },
+      "card4": {
+        "title": "Position Lending",
+        "description": "Use open positions as collateral. Boost capital efficiency.",
+        "small": "Borrow up to"
+      }
+    },
+    "stats": {
+      "title": "Live Platform Stats",
+      "totalVolume": "Total Volume",
+      "tvl": "TVL",
+      "activeUsers": "Active Users",
+      "marketsResolved": "Markets Resolved"
+    },
+    "oddToken": {
+      "title": "ODD Token",
+      "subtitle": "Real protocol revenue, shared with token holders.",
+      "tokenName": "Token Name",
+      "totalSupply": "Total Supply",
+      "network": "Network",
+      "dex": "DEX",
+      "buyButton": "Buy ODD Now",
+      "flywheelCenter": "ODD\nGrowth\nFlywheel",
+      "flywheelStages": {
+        "userBet": "More Bets",
+        "demand": "Rising Demand",
+        "valueCapture": "Value Capture",
+        "scenarios": "New Use Cases",
+        "liquidity": "Deeper Liquidity",
+        "experience": "Better UX"
+      }
+    },
+    "advantages": {
+      "title": "Prediction Markets, Reimagined.",
+      "subtitle": "From predicting to market making, every role has a place.",
+      "cards": {
+        "zero-slippage": {
+          "title": "Zero Slippage",
+          "description": "Fixed odds. What you see is what you get."
+        },
+        "lending": {
+          "title": "Position Lending",
+          "description": "Use open positions as collateral. Unlock capital efficiency."
+        },
+        "staking": {
+          "title": "Stake to Earn",
+          "description": "ODD holders share real protocol revenue."
+        },
+        "market-making": {
+          "title": "Market Making for All",
+          "description": "Provide liquidity in one click. Earn maker fees."
+        },
+        "ai-agent": {
+          "title": "AI Agent Trading",
+          "description": "From analysis to reflection — fully on-chain, fully autonomous."
+        },
+        "no-kyc": {
+          "title": "No KYC",
+          "description": "Connect wallet, start instantly. Withdraw anytime."
+        }
+      }
+    },
+    "aiAgent": {
+      "comingSoon": "Coming Soon",
+      "title": "AI Agent Protocol Layer",
+      "subtitle": "Let your Agent bet the 2026 World Cup for you.",
+      "ctaButton": "Get Early Access",
+      "card1": {
+        "title": "Train Your Agent",
+        "description": "Inject your strategies, preferences, and risk limits — your Agent plays the market your way."
+      },
+      "card2": {
+        "title": "Auto-Predict the World Cup",
+        "description": "24/7 tracking of odds, injuries, and sentiment. Spots opportunities, places bets — automatically."
+      },
+      "card3": {
+        "title": "Build Trading Memory",
+        "description": "Every decision becomes data. The more you use it, the better it knows you — an asset uniquely yours."
+      }
+    },
+    "roadmap": {
+      "title": "What We're Building",
+      "phases": {
+        "phase1": {
+          "label": "Phase 1",
+          "title": "World Cup Launch",
+          "month": "May 2026",
+          "details": [
+            "Football prediction market goes live",
+            "ODD token launch",
+            "Liquidity pools open",
+            "Position lending available"
+          ]
+        },
+        "phase2": {
+          "label": "Phase 2",
+          "title": "AI-Native Prediction",
+          "month": "Jun – Jul 2026",
+          "details": [
+            "Train your personal Agent",
+            "Auto-prediction + autonomous betting",
+            "Agent learns from your trading memory"
+          ]
+        },
+        "phase3": {
+          "label": "Phase 3",
+          "title": "Multi-Market Expansion",
+          "month": "Aug 2026",
+          "details": [
+            "Full coverage of major sports",
+            "Crypto event markets",
+            "Multi-chain deployment",
+            "Agent strategy marketplace"
+          ]
+        },
+        "phase4": {
+          "label": "Phase 4",
+          "title": "Predict Anything",
+          "month": "Sep – Oct 2026",
+          "details": [
+            "Politics & geopolitics markets",
+            "Macroeconomic markets",
+            "Real-time markets for breaking events",
+            "Expert Agents onboarded"
+          ]
+        },
+        "phase5": {
+          "label": "Phase 5",
+          "title": "Agent-Driven Derivatives",
+          "month": "Nov 2026+",
+          "details": [
+            "On-chain derivatives across all assets",
+            "Auto market-making & pricing",
+            "Cross-asset Agent trading"
+          ]
+        }
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "viewMore": "View More",
+      "items": [
+        {
+          "question": "What is OddFi?",
+          "answer": "OddFi is a decentralized sports prediction market on BNB Smart Chain. Train your own AI Agent — it handles the research, analysis, and betting for you. Funds are self-custodied via smart contracts; the platform cannot move them unilaterally. Odds, margin, and settlement are all verifiable on-chain."
+        },
+        {
+          "question": "How do I get started?",
+          "answer": "① Connect any EVM wallet (MetaMask / OKX / Bitget / WalletConnect) → ② Sign to authenticate → ③ Deposit any EVM asset (auto-bridged to BSC) → ④ Pick an event and bet. Takes about 1 minute end-to-end."
+        },
+        {
+          "question": "What can I do on OddFi?",
+          "answer": "Four core features: Predict & Bet (manual or AI Agent, supporting 1X2, Asian Handicap, and Over/Under, with parlays and early cashout), Market Making (provide liquidity to earn protocol margin), ODD Staking (unlock VIP limits and share dividend rewards), and Position Lending (collateralize open positions to borrow and bet again). Plus a referral program with direct rebates and tiered team bonuses."
+        },
+        {
+          "question": "What is ODD, and what's it for?",
+          "answer": "ODD is OddFi's native token. BEP-20 standard, fixed supply of 100M.\n· Betting: the only settlement currency for all markets\n· AI: gas for training Agents and running model calls\n· Staking: unlock VIP limits, share dividend rewards\n· Market Making: provide liquidity, earn proportional margin"
+        },
+        {
+          "question": "How is OddFi different from Polymarket / Kalshi?",
+          "answer": "Four core differences:\n· AI Agents: the first prediction market with native AI Agents. Train your own; it researches, decides, and bets autonomously.\n· Multi-chain access: any EVM asset works, auto-bridged to BSC\n· Full DeFi stack: market making, staking, position lending, all on-chain\n· Token economy: ODD as both settlement currency and AI gas, forming a closed-loop flywheel"
+        },
+        {
+          "question": "What's an AI Agent, and how do I use it?",
+          "answer": "Your AI Agent is a personal trading agent. Three steps to start:\n· Train: set strategy preferences, risk limits, and focus areas. 5 minutes to configure.\n· Run: your Agent tracks odds, injuries, and sentiment 24/7, spotting opportunities and placing bets automatically.\n· Learn: every decision is recorded. The more you use it, the better it knows you."
+        }
+      ]
+    },
+    "cta": {
+      "title": "OddFi — Next-gen prediction markets, on-chain.",
+      "buttonPredict": "Predict Now"
+    },
+    "partners": {
+      "title": "Partners"
+    },
+    "footer": {
+      "slogan": "Next-gen prediction markets, rebuilt by AI Agents.",
+      "product": "Product",
+      "resources": "Resources",
+      "links": {
+        "markets": "World Cup",
+        "pools": "Banker Vault",
+        "stake": "Stake",
+        "lend": "Lend",
+        "swap": "Swap",
+        "referral": "Referral",
+        "docs": "Docs",
+        "audits": "Audit Reports",
+        "whitepaper": "Whitepaper",
+        "contracts": "Contract Addresses",
+        "rewards": "Rewards"
+      },
+      "copyright": "© 2026 OddFi. All rights reserved."
+    },
+    "calendarPage": {
+      "title": "FIFA World Cup 26™ Match Schedule",
+      "stages": {
+        "group": "Group Stage",
+        "r32": "Round of 32",
+        "r16": "Round of 16",
+        "qf": "Quarter-finals",
+        "sf": "Semi-finals",
+        "third": "3rd Place",
+        "final": "Final"
+      },
+      "sectionBanner": {
+        "groupMatches": "Group Stage Matches",
+        "day": "day",
+        "days": "days"
+      },
+      "filters": {
+        "group": "Group",
+        "groupWithCount": "Group ({count})",
+        "all": "All",
+        "comingSoon": "Coming soon",
+        "cancel": "Cancel",
+        "apply": "Apply"
+      },
+      "hover": {
+        "preOpen": "Pending",
+        "local": "Local",
+        "groupLabel": "Group {name}"
+      }
+    }
+  },
+  "calendarPage": {
+    "title": "FIFA World Cup 26™ Match Schedule",
+    "stages": {
+      "group": "Group Stage",
+      "r32": "Round of 32",
+      "r16": "Round of 16",
+      "qf": "Quarter-finals",
+      "sf": "Semi-finals",
+      "third": "3rd Place",
+      "final": "Final"
+    },
+    "sectionBanner": {
+      "groupMatches": "Group Stage Matches",
+      "day": "day",
+      "days": "days"
+    },
+    "filters": {
+      "group": "Group",
+      "groupWithCount": "Group ({count})",
+      "all": "All",
+      "comingSoon": "Coming soon",
+      "cancel": "Cancel",
+      "apply": "Apply"
+    },
+    "hover": {
+      "preOpen": "Pending",
+      "local": "Local",
+      "groupLabel": "Group {name}"
+    }
+  },
+  "userSettings": {
+    "title": "Settings",
+    "username": "Username",
+    "usernamePlaceholder": "default username",
+    "address": "Address",
+    "copy": "Copy",
+    "copied": "Copied",
+    "addressHint": "Do not send funds to this address. This address is for API use only",
+    "connectSocialMedia": "Connect Social Media",
+    "connect": "Connect",
+    "disconnect": "Disconnect",
+    "save": "Save",
+    "saved": "Saved",
+    "socialComingSoon": "Social connect coming soon",
+    "twitter": {
+      "refresh": "Refresh",
+      "rateLimited": "Too many checks — please try again later",
+      "bindSuccess": "X account @{username} linked",
+      "bindSuccessLoginToView": "X account linked. Log in to view details.",
+      "bindCancelled": "X linking cancelled",
+      "bindFailed": "Couldn't link X account — please try again",
+      "bindError": {
+        "alreadyBound": "Please unbind your current X account first",
+        "disabled": "X linking isn't available yet",
+        "unknown": "Failed to start X linking — please try again"
+      },
+      "unbindConfirm": {
+        "cooldown": "After unbinding, this X account can't be re-linked by any account for {days} days.",
+        "confirm": "Unbind",
+        "cancel": "Cancel"
+      },
+      "follow": {
+        "verified": "Following @OddFiLabs",
+        "notFollowing": "Not following yet",
+        "cta": "Follow",
+        "unverified": "Follow @OddFiLabs, then refresh",
+        "protected": "Private account can't be verified — set it to public",
+        "tooMany": "Can't auto-verify right now",
+        "error": "Can't verify right now — try again later"
+      }
+    },
+    "errors": {
+      "tooShort": "Username must be at least 3 characters",
+      "tooLong": "Username must be at most 20 characters",
+      "invalidChars": "Username must be alphanumeric with ._- only",
+      "consecutiveSpecial": "Username cannot contain consecutive special characters",
+      "edgeSpecial": "Username must start and end with a letter or number"
+    }
+  },
+  "earlyBird": {
+    "step1": {
+      "title": "Early Access · Join the Whitelist",
+      "heading": "Be among the first to trade on Oddfi.",
+      "formIntro": "Fill out the form first to receive airdrops and early-bird perks",
+      "formHint": "This form takes ~1 minute.",
+      "emailLabel": "Email Address",
+      "emailHint": "For product launch updates and airdrop notifications",
+      "emailPlaceholder": "Enter",
+      "walletLabel": "BSC Receive Address",
+      "walletHint": "BNB Smart Chain (BEP-20) wallet address — used for whitelist & airdrop distribution",
+      "walletPlaceholder": "Enter",
+      "walletError": "Error: Please enter a valid BSC wallet address (0x..., 42 chars)",
+      "emailAlreadyRegistered": "This email is already registered",
+      "walletAlreadyRegistered": "This wallet is already registered",
+      "emailInvalidServer": "Please enter a valid email address",
+      "wishTooLong": "Too long (max 500 characters)",
+      "requiredMissing": "Please fill in all required fields",
+      "captchaFailed": "CAPTCHA failed. Please refresh and try again.",
+      "sourceInvalid": "Please select a valid source",
+      "tooManyRequests": "Too many attempts. Please try again in a moment.",
+      "networkError": "Network error. Please check your connection.",
+      "submitError": "Something went wrong. Please try again.",
+      "submitting": "Submitting...",
+      "wishLabel": "Tell us what you'd try first",
+      "wishHint": "Suggestions, questions, or other ideas",
+      "wishPlaceholder": "Enter",
+      "submitCta": "Save",
+      "sourceLabel": "How did you hear about Oddfi?",
+      "sourceHint": "Help us optimize channel placement",
+      "sourcePlaceholder": "Please select",
+      "sourceOption": {
+        "telegram": "Telegram",
+        "x": "X",
+        "discord": "Discord",
+        "friends": "Friends",
+        "kol": "KOL",
+        "other": "Other"
+      },
+      "sourceOtherPlaceholder": "Please specify",
+      "sourceOtherHint": "Tell us the exact source",
+      "sourceOtherCancel": "Cancel"
+    },
+    "step2": {
+      "title": "Early Access · Join the Whitelist",
+      "heading": "You're on the list",
+      "subheading": "We'll reach out via email before launch.",
+      "rankBadge": "You're #{rank} on the waitlist",
+      "followIntro": "Follow us on X & Telegram so you don't miss the drop.",
+      "xHandle": "Follow @oddfilabs on X",
+      "tgHandle": "Join @OddFi_Official on Telegram",
+      "followCta": "Follow",
+      "joinCta": "Join",
+      "doneCta": "I Know"
+    },
+    "mobileGate": {
+      "comingSoon": "Coming Soon",
+      "stayTuned": "Stay Tuned",
+      "notifyMe": "Notify Me"
+    }
+  },
+  "aiAgent": {
+    "mobileComingSoon": {
+      "title": "Coming Soon"
+    },
+    "intro": {
+      "title": "AI Agent is now live!",
+      "cta": "Set up",
+      "skip": "Maybe later"
+    },
+    "persona": {
+      "title": "Creating your trading persona",
+      "steps": [
+        "Scanning FIFA data pool (48 teams + 30+ stars)",
+        "Extracting 20 preference vectors",
+        "Matching team style",
+        "Matching template style",
+        "Generating 4-line persona",
+        "Done"
+      ],
+      "result": {
+        "title": "Your persona is ready",
+        "cta": "Start using"
+      }
+    },
+    "wizard": {
+      "title": "Personalize your Agent",
+      "editTitle": "Edit Agent settings",
+      "settingsTitle": "Agent Settings",
+      "linearTitle": "Create your Agent in 3 steps",
+      "tabs": {
+        "basics": "Basics",
+        "behavior": "Behavior",
+        "notify": "Notify",
+        "memory": "Memory",
+        "usage": "Usage"
+      },
+      "actions": {
+        "reset": "Reset",
+        "save": "Save",
+        "prev": "Back",
+        "next": "Next",
+        "createPersona": "Complete setup"
+      },
+      "hint": {
+        "completeAll": "Complete all required fields to save"
+      },
+      "step1": {
+        "avatarLabel": "Avatar",
+        "changeAvatar": "Change avatar",
+        "nicknameLabel": "Nickname",
+        "nicknamePlaceholder": "Cat",
+        "aiTypeLabel": "AI tone",
+        "aiTypeSubtitle": "Sets the AI's personality, voice, and pacing",
+        "tones": {
+          "rational": "Rational",
+          "companion": "Companion",
+          "aggressive": "Aggressive",
+          "strict": "Strict"
+        }
+      },
+      "step2": {
+        "risk": {
+          "title": "Risk preference",
+          "subtitle": "0-10 fine-tune. Higher = more aggressive sizing",
+          "ariaLabel": "Risk preference",
+          "buckets": {
+            "veryConservative": "Very conservative",
+            "conservative": "Conservative",
+            "moderate": "Moderate",
+            "balanced": "Balanced",
+            "aggressive": "Aggressive",
+            "veryAggressive": "Very aggressive"
+          }
+        },
+        "stake": {
+          "title": "Usual stake size",
+          "subtitle": "AI baseline position size; min 1,000 ODD",
+          "hint": "Min stake: 1,000 ODD ≈ $100. Conversion 1 ODD = 0.10 USD (locked by bridge).",
+          "ariaLabel": "Usual stake size"
+        },
+        "control": {
+          "title": "Self-control",
+          "subtitle": "Pushes back when a Tilt signal is detected",
+          "ariaLabel": "Self-control"
+        }
+      },
+      "step3": {
+        "countries": {
+          "title": "Followed countries",
+          "subtitle": "National-team tweets get priority push; pre-filled with 10; click × to remove, Enter to add",
+          "placeholder": "Country",
+          "addButton": "Add",
+          "defaultList": [
+            "Argentina",
+            "Brazil",
+            "England",
+            "France",
+            "Spain",
+            "Portugal",
+            "Germany",
+            "Italy",
+            "Netherlands",
+            "Belgium"
+          ]
+        },
+        "players": {
+          "title": "Followed players",
+          "subtitle": "Player tweets get priority push; pre-filled with 10; click × to remove, Enter to add",
+          "placeholder": "Player",
+          "addButton": "Add",
+          "defaultList": [
+            "Messi",
+            "Ronaldo",
+            "Mbappé",
+            "Haaland",
+            "Bellingham",
+            "Neymar",
+            "Vinicius",
+            "Salah",
+            "Kane",
+            "Modrić"
+          ]
+        },
+        "channels": {
+          "title": "Push types",
+          "subtitle": "Daily soft cap 4 / hard cap 8",
+          "loginGreet": {
+            "label": "Login greeting",
+            "hint": "Greets on login; lowest priority, dropped if too frequent"
+          },
+          "preMatch": {
+            "label": "Pre-match analysis",
+            "hint": "Deep analysis 4-6 hours before kickoff for followed matches"
+          },
+          "kickoff": {
+            "label": "Live update",
+            "hint": "30 minutes before kickoff; highest priority (no make-up)"
+          },
+          "recap": {
+            "label": "Recap",
+            "hint": "Post-match review with AI self-assessment"
+          },
+          "highPriority": {
+            "label": "High-priority override",
+            "hint": "Cancellations, lineup shifts, odds spikes can bypass the soft cap"
+          }
+        },
+        "sound": {
+          "title": "Notify sound",
+          "subtitle": "Plays on push arrival, self-control, and news",
+          "names": {
+            "ding": "Ding",
+            "bell": "Bell",
+            "crisp": "Crisp",
+            "guqin": "Guqin",
+            "comm": "Comm"
+          },
+          "previewAria": "Select and preview {name}",
+          "masterAria": "Notify sound master switch",
+          "footnote": "Tap ▶ to preview · High-priority events keep visual cues even when muted"
+        }
+      },
+      "step4": {
+        "title": "What the AI knows about you",
+        "subtitle": "The AI remembers your chats, betting preferences, and risk tolerance to give more personalized suggestions.",
+        "summaryTitle": "Memory summary",
+        "empty": "No memory yet",
+        "viewFull": "View full memory",
+        "clear": "Clear memory",
+        "clearConfirm": "Confirm?",
+        "defaultSummary": [
+          "Prefers European top-5 leagues, especially La Liga and Premier League",
+          "Tends to analyze home team handicap",
+          "Moderate risk preference, typical stake 1,000-3,000 ODD",
+          "Likes to receive analysis 2-4 hours before kickoff"
+        ]
+      },
+      "step5": {
+        "creditsUsage": {
+          "title": "Credits Usage",
+          "balance": "Balance",
+          "monthlyConsumption": "This month"
+        },
+        "lowBalance": {
+          "title": "Low balance",
+          "desc": "Your balance is running low. Top up to keep using AI features.",
+          "deposit": "Top up",
+          "upgrade": "Upgrade"
+        },
+        "tiers": {
+          "title": "Tier & Credits discount",
+          "subtitle": "Upgrade VIP to reduce per-call cost",
+          "you": "◀ You",
+          "tableHeader": {
+            "level": "Level",
+            "rate": "Rate",
+            "unit": "Per Credit",
+            "save": "Save"
+          }
+        },
+        "footnote": {
+          "baseLabel": "Base cost:",
+          "baseDesc": "Chat 1 / Pre-match 8 / Live update 3 / Recap 5 / Active news 2 Credits",
+          "formulaPrefix": "Actual = max(1, round(base × rate)). E.g. VIP 3 pre-match = 8 × 0.85 ≈ ",
+          "formulaHighlight": "7 Credits",
+          "formulaSuffix": "."
+        }
+      }
+    }
+  },
+  "aiChat": {
+    "header": {
+      "status": "Online · Active mode"
+    },
+    "tabs": {
+      "chat": "Chat",
+      "news": "News",
+      "analysis": "Analysis"
+    },
+    "composer": {
+      "placeholder": "Type a message..."
+    },
+    "empty": "Start a conversation below",
+    "quickReplies": {
+      "match": "⚽ What matches are today?",
+      "highOdds": "🔥 What are today's high-odds matches?",
+      "trending": "👀 What is everyone betting on?"
+    },
+    "sidebar": {
+      "feature": "Feature",
+      "recents": "Recents",
+      "newChat": "New Chat",
+      "search": "Search",
+      "basics": "Basics",
+      "behavior": "Behavior",
+      "notification": "Notification",
+      "memory": "Memory",
+      "usage": "Usage"
+    }
+  },
+  "invest": {
+    "hero": {
+      "badge": "ODDFI Pre-Sale Live",
+      "title": "Subscribe First, Take Off Later",
+      "countdownLabel": "TGE in",
+      "cta": "Subscribe Now",
+      "unitDay": "Days",
+      "unitHour": "Hrs",
+      "unitMin": "Min",
+      "unitSec": "Sec"
+    },
+    "position": {
+      "panelTitle": "My Subscription",
+      "totalHoldings": "Total Holdings",
+      "sourceSubscribe": "Subscribed",
+      "sourceReferral": "Referral Reward",
+      "totalInvested": "Total Invested",
+      "todayValue": "Today's Value",
+      "lockedPrice": "Avg. Lock Price",
+      "todayPrice": "Today's Price",
+      "claimLabel": "Claim",
+      "vestingLabel": "Pending Vesting",
+      "claimed": "Claimed",
+      "claimable": "Claimable",
+      "claimBtn": "Claim",
+      "notReleased": "Not Released",
+      "upcomingRelease": "Upcoming Release"
+    },
+    "subscribe": {
+      "pageTitle": "Pre-Sale",
+      "panelTitle": "Subscribe",
+      "panelHeader": "Subscribe Now",
+      "inputLabel": "Enter Amount",
+      "endTimeLabel": "Subscription ends",
+      "dayUnit": "d",
+      "amountLabel": "Amount",
+      "balanceLabel": "Balance",
+      "balanceInsufficient": "Insufficient balance, max {max} USDT",
+      "maxBtn": "Max",
+      "summaryProgress": "Round Progress",
+      "summaryRelease": "Release Schedule",
+      "summaryPrice": "Unit Price",
+      "summaryEstimate": "Est. Tokens Received",
+      "perTokenUnit": "token",
+      "toggleSupplyUnit": "Toggle ODD / USDT",
+      "ctaConnect": "⚡ Connect Wallet",
+      "ctaEnded": "Sale Ended",
+      "ctaComing": "Opening Soon · {countdown}",
+      "ctaSubscribe": "Subscribe",
+      "allEndedBanner": "<b>Pre-sale ended on Jun 10, 2026 (TGE)</b> · All rounds closed · Rewards distributed daily within 90-day vesting window",
+      "badgeEnded": "Ended",
+      "badgeActive": "Live",
+      "badgeComing": "Coming Soon",
+      "chipTitleComing": "Opens {date}",
+      "chipTitleEnded": "Round Ended",
+      "chipTgeDiscount": "TGE Discount {discount}",
+      "tgeDiscountLabel": "TGE Discount",
+      "currentRound": "Current Round"
+    },
+    "referral": {
+      "panelTitle": "My Referral",
+      "marketingBadge": "🎁 Referrer earns <strong>10%</strong> subscription reward",
+      "myLinkLabel": "My Referral Link",
+      "connectToViewLink": "Connect wallet to view referral link",
+      "copyLinkBtn": "Copy Link",
+      "shareCardBtn": "Share Card",
+      "inviteBtn": "Go Invite",
+      "rewardSubtitle": "Referrers earn <b>10%</b> subscription reward",
+      "myReferrerLabel": "My Referrer",
+      "connectToViewReferrer": "Connect wallet to view",
+      "inviterInputPlaceholder": "e.g. 0x3YCBK8 or referral link",
+      "bindBtn": "Bind",
+      "referrerLabel": "Referrer",
+      "inviterCodeLabel": "Code",
+      "copyTitle": "Copy",
+      "bannerLine1": "Invited by <strong>{code}</strong> · Both parties earn 10% bonus",
+      "codeLabel": "Referral Code",
+      "codePlaceholder": "e.g. 0x3YCBK8",
+      "bannerCodeRequired": "Please enter referral code first",
+      "bannerCodeBound": "✓ Referral code applied",
+      "modalCodeEmpty": "Please enter a referral code, or tap \"Skip for now\""
+    },
+    "vault": {
+      "panelTitle": "Vault Info",
+      "panelSub": "Verify the receiving address and pool parameters before transferring",
+      "depositAddr": "Deposit Address",
+      "subscribeProgress": "Subscription Progress",
+      "tgeLabel": "TGE",
+      "auditLabel": "Audit",
+      "subscribeWindow": "Subscription Window",
+      "subscribeWindowFallback": "May 21 – Jun 10"
+    },
+    "history": {
+      "txTab": "Transactions",
+      "refTab": "Referrals",
+      "thTime": "Time",
+      "thType": "Type",
+      "thAmount": "Amount",
+      "thTxHash": "Tx Hash",
+      "connectToView": "Connect wallet to view",
+      "emptyRecords": "No records yet",
+      "typeDeposit": "Subscribe",
+      "typeClaim": "Claim",
+      "typeJoin": "Join",
+      "refThInvestor": "Investor",
+      "refThAction": "Action",
+      "refThRound": "Round",
+      "refThAmount": "Amount",
+      "refThRebate": "Rebate",
+      "rebateTooltipAriaLabel": "Rebate info",
+      "rebateTooltipLine1": "Invitee's subscription amount ÷ unit price × <strong>10%</strong> = rebate tokens",
+      "rebateTooltipLine2": "Released in full at <strong>6/10 TGE</strong>",
+      "refRoundsCount": "{count} txns"
+    },
+    "toast": {
+      "copied": "Copied",
+      "addrCopied": "Copied {addr}",
+      "vaultAddrCopied": "Vault address copied",
+      "depositSuccess": "Subscription successful, funds transferred to vault",
+      "referralInputEmpty": "Please enter a referral link or code",
+      "referralCodeInvalid": "Invalid referral code (e.g. 0x3YCBK8)",
+      "referralBound": "Referrer bound successfully",
+      "referralAutoBound": "Referrer auto-bound for you",
+      "referralSkipped": "Referral code binding skipped",
+      "referralLinkGenerating": "Generating referral link…",
+      "referralLinkCopied": "Referral link copied",
+      "shareCardSaved": "Card saved to album",
+      "twitterOpening": "Opening X / Twitter…"
+    },
+    "tge": {
+      "countdownLabel": "TGE in",
+      "launched": "🎉 TGE Launched",
+      "liveHint": "<b>TGE launched on Jun 10, 2026</b> · All rounds closed, rewards distributed daily",
+      "twitterShareText": "OddFi Early Subscription is live!\nHow many X returns are you expecting?\nI'm joining OddFi's pre-sale — come join me!",
+      "twitterShareCode": "Referral code: {code}",
+      "twitterShareTag": "#oddfi"
+    },
+    "ctaBanner": {
+      "headline": "ODD Token — holders truly share platform revenue",
+      "button": "Learn More"
+    },
+    "partnersTitle": "Our Partners",
+    "stages": {
+      "releaseSchedule": "TGE {tgePct}% + {days}d linear vesting",
+      "tgePrice": "TGE Price",
+      "tgeDiscount": "{pct}% off TGE",
+      "badgeHot": "🔥 Hot",
+      "roundName": {
+        "seed": "Seed",
+        "strategic": "Strategic",
+        "ecosystem": "Ecosystem",
+        "public_a": "Public Sale A",
+        "public_b": "Public Sale B",
+        "public_c": "Public Sale C"
+      }
+    },
+    "confirm": {
+      "title": "Confirm Subscription",
+      "subtitle": "Please review the details. Assets will be sent directly to the vault address.",
+      "labelAmount": "Amount",
+      "labelStage": "Round",
+      "labelAddress": "Destination",
+      "labelNetwork": "Network",
+      "perUnit": "per token",
+      "signing": "Confirm the transfer in your wallet…",
+      "reporting": "Confirming on-chain… (approx. 10s, up to 1 min)",
+      "polling": "Waiting for block confirmation… (approx. 9s, up to 5 min)",
+      "confirmed": "Subscription Successful",
+      "pausedArrival": "This round was paused during subscription; your allocation has been recorded.",
+      "anomalyTitle": "Verifying Subscription Details",
+      "timeout": "Still confirming — check \"My Subscriptions\" later",
+      "viewOnBscScan": "View on BSCScan ↗",
+      "btnDone": "Done",
+      "btnCancel": "Cancel",
+      "btnRetry": "Retry",
+      "btnConfirm": "Confirm Subscription"
+    },
+    "depositError": {
+      "belowMin": "Subscription amount is below the minimum",
+      "invalidTx": "Transaction is invalid or failed — please verify on BSCScan",
+      "notToVault": "Recipient address is not the subscription vault — do not transfer manually",
+      "notUsdt": "Please use BEP20 USDT for the transfer",
+      "roundNotActive": "This round is not open / has ended / is paused",
+      "walletMismatch": "Please use the wallet linked to your account",
+      "unknown": "Subscription report failed — please try again later"
+    },
+    "bindError": {
+      "selfReferral": "You cannot use your own referral code",
+      "invalidCode": "Invalid referral code",
+      "alreadyBound": "Referrer already bound and cannot be changed",
+      "unknown": "Binding failed — please try again later"
+    },
+    "anomaly": {
+      "overflow": "Amount exceeded remaining quota for this round — operations will handle within 24h (partial at this round, excess negotiated separately)",
+      "fromMismatch": "Payment wallet does not match login wallet — please contact support",
+      "roundMismatch": "Subscription round does not match the actual receiving round — under review",
+      "lateArrival": "Transaction confirmed late across rounds — operations will handle within 24h",
+      "nonUsdt": "Non-USDT transfer detected — please contact support",
+      "belowMin": "Amount is below the minimum subscription — under review",
+      "generic": "Subscription details are anomalous — operations will review within 24h"
+    },
+    "validationError": {
+      "notAuthenticated": "Please connect your wallet first",
+      "wrongChain": "Please switch to BNB Smart Chain",
+      "invalidAmount": "Please enter a valid amount",
+      "roundNotActive": "This round is not open / has ended",
+      "belowMin": "Below minimum subscription of {min} USDT",
+      "belowMinNoCtx": "Below minimum subscription amount",
+      "exceedsRemaining": "Exceeds remaining quota for this round",
+      "nearBoundary": "Round transition in progress — orders temporarily paused",
+      "insufficientBalance": "Insufficient USDT balance",
+      "unknown": "Unable to subscribe — please check your input"
+    },
+    "codeModal": {
+      "closeAriaLabel": "Close",
+      "title": "Bind Referral Code",
+      "label": "Referral Code",
+      "placeholder": "e.g. 0x3YCBK8 (optional)",
+      "skipBtn": "Skip for now",
+      "bindBtn": "Bind & Continue"
+    },
+    "share": {
+      "closeAriaLabel": "Close",
+      "title": "Share",
+      "cardHeadline": "OddFi Early Presale Is Live",
+      "cardCta": "Expecting an X return?",
+      "cardFooterLine1": "I'm joining OddFi presale — come join me!",
+      "cardFooterLine2": "Referral code: {code}",
+      "copyLinkBtn": "Copy Link",
+      "saveBtn": "Save",
+      "savingBtn": "Saving…",
+      "twitterBtn": "Share"
+    }
+  },
+  "token": {
+    "purchase": {
+      "title": "My Purchase",
+      "subtitle": "See your total holdings, total invested and unlock progress. Live market value shows here once listed on DEX.",
+      "connectHint": "Connect your wallet to view your purchase",
+      "totalHoldings": "Total holdings",
+      "sourcePurchase": "Purchase",
+      "sourceReferral": "Referral reward",
+      "totalInvested": "Total invested",
+      "todayValue": "Today's value",
+      "lockedAvg": "Locked avg price",
+      "todayPrice": "Today's price",
+      "claimTitle": "Claim",
+      "claimed": "Claimed",
+      "claimable": "Claimable",
+      "vestingTitle": "Pending release",
+      "notReleased": "Not released",
+      "upcomingRelease": "Upcoming release",
+      "releaseBreakdown": "Purchase {p} · Referral {r}"
+    },
+    "referral": {
+      "title": "Referral · Earn 10%",
+      "subtitle": "Share your link. For every friend who buys, you earn 10% of their purchase in ODD — credited in real time, no cap.",
+      "myInviteTitle": "My Invite",
+      "myReferrerTitle": "My Referrer",
+      "linkGenerating": "Generating referral link…",
+      "linkCopied": "Referral link copied",
+      "connectToViewLink": "Connect wallet to view referral link",
+      "connectToViewReferrer": "Connect wallet to bind a referrer",
+      "copyLinkBtn": "Copy link",
+      "inviteBtn": "Invite friends",
+      "bindBtn": "Bind",
+      "inputEmpty": "Please enter a referral code or link",
+      "codeInvalid": "Invalid referral code",
+      "bound": "Referrer bound",
+      "inviterCodeLabel": "Code",
+      "inviterPlaceholder": "e.g. 0x3YCBK8 or referral link",
+      "invitedCount": "Invited",
+      "totalReward": "Total reward (10%)",
+      "bindError": {
+        "selfReferral": "You cannot refer yourself",
+        "invalidCode": "Invalid referral code",
+        "alreadyBound": "A referrer is already bound",
+        "unknown": "Failed to bind referrer, please try again"
+      }
+    },
+    "buy": {
+      "title": "Buy Now",
+      "notice": "Buy and play instantly — ODD lands and you can bet right away; sell quota unlocks over a 29-day ramp from pool creation; net profits from winning bets are withdrawable anytime.",
+      "inputLabel": "Enter amount",
+      "balance": "Balance:",
+      "max": "Max",
+      "currentTierProgress": "Current tier progress",
+      "tierN": "(Tier {n})",
+      "tierRemaining": "{remaining} / {size} ODD left in tier",
+      "unlockCadence": "Unlock cadence",
+      "unlockCadenceValue": "29-day ramp from pool creation",
+      "unitPrice": "Unit price",
+      "estimateGet": "Est. received",
+      "estimatePlaceholder": "-- ODD",
+      "inviteCodeOptional": "Invite code (optional)",
+      "buy": "Buy",
+      "connectAndBuy": "Connect wallet & buy",
+      "soldOut": "Sold out",
+      "processing": "Processing...",
+      "successMsg": "Purchase successful! ODD credited — refreshing balance…",
+      "reconcileHint": "Transaction processing — do not buy again; check Records shortly.",
+      "insufficientBalance": "Insufficient USDT balance. Please deposit first."
+    },
+    "vault": {
+      "title": "Buy ODD",
+      "subtitle": "Pool condition: when <mint>{amount} ODD</mint> sells out, a DEX pool is created automatically. Current progress <mint>{pct}</mint>.",
+      "infoTitle": "Vault info",
+      "poolBalance": "Vault pool balance (cumulative raised)",
+      "soldOdd": "ODD sold",
+      "currentTier": "Current tier",
+      "currentTierValue": "Tier {n} · ${price}",
+      "toPoolGap": "To pool creation",
+      "toPoolGapValue": "{amount} ODD",
+      "poolProgress": "Pool progress",
+      "note": "All purchase funds enter the vault pool immediately and are fully used to create the DEX liquidity pool after sellout. The pool is created on-chain the instant it sells out, with no fixed schedule; full refund if not sold out."
+    },
+    "hero": {
+      "badge": "Fair launch in progress during the World Cup",
+      "titleLine1": "Driven by real yield",
+      "titleLine2": "Predict the future on-chain",
+      "tierHint": "Now <mint>Tier 1 $0.01</mint> · Next $0.02 · 10-tier ladder sale. Lists on DEX once sold out · full refund if not filled · executed automatically by the contract.",
+      "cta": "Buy Now"
+    },
+    "records": {
+      "title": "Records",
+      "subtitle": "View your on-chain transactions and referral rewards — shown in real time once your wallet is connected.",
+      "tabTx": "Transactions",
+      "tabInvite": "Referrals",
+      "colTime": "Time",
+      "colType": "Type",
+      "colAmount": "Amount",
+      "colHash": "Tx hash",
+      "typeInvite": "Referral",
+      "connectHint": "Connect your wallet to view your records",
+      "txEmpty": "No transactions yet",
+      "inviteEmpty": "No referral records yet",
+      "hashCopied": "Copied",
+      "copyHash": "Copy"
+    },
+    "finalCta": {
+      "title": "Join now, lock the lowest tier price",
+      "subtitle": "Fair launch across 10 tiers from $0.01 — first come, first served, price steps up as tiers sell out. Buy and bet instantly; sell quota unlocks over a 29-day ramp from DEX pool creation; lists on DEX once sold out.",
+      "card1Title": "Tier 1 · $0.01",
+      "card1Desc": "Lowest entry price · buy and play",
+      "card2Title": "Lists on DEX once sold out",
+      "card2Desc": "Opening price $0.165 · funds fully into the pool",
+      "card3Title": "29 days after pool creation",
+      "card3Desc": "Sell quota 100% unlocked",
+      "cta": "Join the fair launch"
+    },
+    "metrics": {
+      "title": "Core Token Metrics",
+      "items": [
+        {
+          "value": "100M",
+          "label": "Total Supply",
+          "desc": "Fixed supply, no minting"
+        },
+        {
+          "value": "$0.01–0.10",
+          "label": "10-Tier Sale Price",
+          "desc": "Tiered pricing · earlier is cheaper"
+        },
+        {
+          "value": "$0.165",
+          "label": "DEX Listing Price",
+          "desc": "Lists once sold out · all proceeds into the pool"
+        },
+        {
+          "value": "$1.65M",
+          "label": "Sale Hardcap",
+          "desc": "All 30M tokens sold out"
+        }
+      ]
+    },
+    "distribution": {
+      "title": "Token Distribution",
+      "subtitle": "100M total supply across five categories. The market-maker vault stays fully locked throughout the World Cup.",
+      "centerNum": "100M",
+      "centerSub": "Total Supply",
+      "segments": [
+        "Fair Launch",
+        "DEX Liquidity (LP)",
+        "Ecosystem Incentives",
+        "Market-Maker Vault",
+        "Ecosystem / Ops Treasury"
+      ]
+    },
+    "unlock": {
+      "title": "Tiered Release Schedule",
+      "subtitlePre": "29-day release window (D1–D29, from pool creation) · ratio increases daily · day 1 0.23%",
+      "subtitlePost": "final day 6.67% · 100% cumulative",
+      "phases": [
+        {
+          "title": "Early Release",
+          "desc": "Daily release 0.23%–2.30%, lightest sell pressure, ~12.6% cumulative."
+        },
+        {
+          "title": "Release Ramp-Up",
+          "desc": "Daily release 2.53%–4.60%, ~48.3% cumulative."
+        },
+        {
+          "title": "Full Release",
+          "desc": "Daily release rises to 6.67%; by the final day (D29), 100% is fully unlocked."
+        }
+      ],
+      "legendDaily": "Daily release (count)",
+      "legendCumulative": "Cumulative release (%)",
+      "chartAria": "Daily token release curve: daily release amount as bars (left axis 0–2.0M) and cumulative release ratio as a line (right axis 0–100%); final day D29 reaches 100% cumulative.",
+      "curveTitle": "Release Curve",
+      "curveSubtitle": "Bars = daily release (tokens) · Line = cumulative release (%)",
+      "tableTitle": "Daily Release Table",
+      "headersPc": [
+        "Release Day",
+        "Daily %",
+        "Daily Release (tokens)",
+        "Cumulative %",
+        "Cumulative (tokens)"
+      ],
+      "headersH5": ["Day", "Daily %", "Cum. %", "Cum. Tokens"],
+      "dayLabelPc": "Day {n}",
+      "dayLabelH5": "Day {n}",
+      "disclaimer": "The release ratios, amounts, and time structure shown here are the fixed and accurate token-release rules; the release curve and daily breakdown are deterministic data. Any assumptions about price, breakeven, or returns depend on actual secondary-market performance and do not constitute investment advice or any guarantee of returns."
+    },
+    "tier": {
+      "title": "Fair-Launch Tiered Sale Plan",
+      "stats": [
+        {
+          "value": "Buy & Play",
+          "desc": "Playable on arrival · in time for the World Cup"
+        },
+        {
+          "value": "$0.01 → $0.10",
+          "desc": "10 tiers · first come, first served · price steps up when a tier sells out"
+        },
+        {
+          "value": "$0.165",
+          "desc": "DEX listing price · all proceeds into the pool"
+        }
+      ],
+      "colTier": "Tier",
+      "colPrice": "Price",
+      "colAmount": "Tier Amount",
+      "colSold": "Cumulative Sold",
+      "colRaised": "Cumulative Raised",
+      "colGain": "Listing Gain",
+      "rowTier": "Tier {n}",
+      "footnote": "◆ Listing gain = the increase of the DEX listing price over each tier's buy price. Purchased ODD arrives instantly and can be used for betting right away; the sellable amount unlocks daily over 29 tiered days from DEX pool creation. Net profit won from bets is instantly tradable and withdrawable anytime; bet principal keeps its original unlock status."
+    }
+  },
+  "rewards": {
+    "tabs": {
+      "ariaLabel": "Reward Hub sections",
+      "taskCenter": "Task Center",
+      "myRewards": "My Rewards"
+    },
+    "hero": {
+      "tag": "World Cup Limited Event",
+      "title": "Complete tasks, earn ODD",
+      "subtitle1": "Tasks are tokens — the earlier you join, the more ODD you earn.",
+      "subtitle2": "Extra boosts during the World Cup unlock exclusive perks.",
+      "stats": {
+        "totalPool": "Total Pool (ODD)",
+        "participants": "Participants"
+      }
+    },
+    "taskCenter": {
+      "completed": "Completed"
+    },
+    "groups": {
+      "viewRules": "View Rules",
+      "newbie": {
+        "title": "Newbie Tasks",
+        "subtitle": "Complete all 5 tasks for 250 ODD total"
+      },
+      "dailySocial": {
+        "title": "Daily Rewards (Social)",
+        "subtitle": "Tweet + place a daily bet — claim up to 100 ODD per day"
+      }
+    },
+    "tasks": {
+      "actions": {
+        "go": "Go",
+        "verify": "Verify"
+      },
+      "toast": {
+        "verified": "Task verified"
+      },
+      "newbie-follow-x": {
+        "title": "Follow @oddfilabs",
+        "desc": "Follow OddFi's official account on X"
+      },
+      "newbie-join-tg": {
+        "title": "Join Telegram",
+        "desc": "Join the official TG group and verify via bot"
+      },
+      "newbie-first-bet": {
+        "title": "Place your first valid bet",
+        "desc": "Real-balance bet · odds ≥ 1.30 · settled"
+      },
+      "newbie-retweet": {
+        "title": "Retweet the shoutout",
+        "desc": "Retweet the designated post"
+      },
+      "newbie-like": {
+        "title": "Like the post",
+        "desc": "Like the post to earn a reward"
+      },
+      "daily-tweet": {
+        "title": "Post a tweet",
+        "desc": "Post a daily tweet mentioning OddFi"
+      },
+      "daily-bet": {
+        "title": "Place a daily bet",
+        "desc": "Place at least one valid bet today"
+      }
+    },
+    "records": {
+      "switch": {
+        "ariaLabel": "Reward record status",
+        "claimable": "Claimable",
+        "claimed": "Claimed",
+        "expired": "Expired"
+      },
+      "notice": "Credited within ~24h after claiming; bonus funds require 1× real betting turnover before withdrawal.",
+      "credited": "Credited",
+      "actions": {
+        "claim": "Claim",
+        "claimed": "Claimed",
+        "expired": "Expired"
+      },
+      "toast": {
+        "claimed": "Reward claimed"
+      },
+      "empty": {
+        "title": "No rewards yet",
+        "desc": "Complete tasks to earn ODD rewards — they'll show up here."
+      },
+      "items": {
+        "rec-shoutout-0612": {
+          "title": "Shoutout Daily Reward",
+          "desc": "Quoted shoutout tweet"
+        },
+        "rec-firstbet-0611": {
+          "title": "Newbie · First Bet",
+          "desc": "First valid bet reward"
+        },
+        "rec-connect-0610": {
+          "title": "Newbie · Follow",
+          "desc": "Followed the official account"
+        },
+        "rec-deposit-0609": {
+          "title": "Newbie · Join TG",
+          "desc": "Joined the Telegram group"
+        },
+        "rec-daily-0605": {
+          "title": "Retweet Shoutout",
+          "desc": "Expired, unclaimed"
+        }
+      }
+    },
+    "rules": {
+      "gotIt": "Got it",
+      "contact": "Have questions? Reach support on <tg>official Telegram</tg>.",
+      "newbie": {
+        "title": "Newbie Tasks — Event Rules",
+        "items": [
+          {
+            "title": "Eligibility",
+            "desc": "Connect a BSC wallet to join. Each address may join the newbie tasks once."
+          },
+          {
+            "title": "Reward Issuance",
+            "desc": "Rewards are issued within 24h after completion. Bonus funds are for betting only and cannot be withdrawn directly."
+          },
+          {
+            "title": "Valid Bet",
+            "desc": "Your first bet must use real balance, odds ≥ 1.30, and be settled to count as valid."
+          },
+          {
+            "title": "Event Period",
+            "desc": "Complete within the event window to claim. Rewards for tasks not completed in time expire automatically."
+          },
+          {
+            "title": "Final Interpretation",
+            "desc": "OddFi reserves the right of final interpretation. For questions, contact official support."
+          }
+        ]
+      },
+      "dailySocial": {
+        "title": "Daily Rewards — Event Rules",
+        "items": [
+          {
+            "title": "Eligibility",
+            "desc": "Connect a BSC wallet to join. Daily social tasks reset every day."
+          },
+          {
+            "title": "Reward Issuance",
+            "desc": "Rewards are issued within 24h after completion, up to 100 ODD per day."
+          },
+          {
+            "title": "Valid Actions",
+            "desc": "Tweets must mention OddFi; the daily bet must use real balance and be settled to count."
+          },
+          {
+            "title": "Daily Reset",
+            "desc": "Unclaimed daily rewards do not roll over and reset at 00:00 UTC."
+          },
+          {
+            "title": "Final Interpretation",
+            "desc": "OddFi reserves the right of final interpretation. For questions, contact official support."
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "network": "BNB Smart Chain Testnet",
+  "chainId": 97,
+  "rpc": [
+    "https://bsc-testnet-dataseed.bnbchain.org",
+    "https://bsc-testnet.bnbchain.org",
+    "https://bsc-prebsc-dataseed.bnbchain.org"
+  ],
+  "explorer": "https://testnet.bscscan.com",
+  "deployer": "0x7501bCBFAAa99e6390577277D051A32ec2e64064",
+  "contracts": {
+    "MockUSDT": {
+      "address": "0xd8f86e84b4475d7bd398788e594124429e7700cf",
+      "type": "ERC20",
+      "decimals": 6,
+      "abi": "../assets/MockUSDT.abi.json"
+    },
+    "BettingPool_Implementation": {
+      "address": "0xb2809eaa08cd5d0344339fc2297702bdc9936297",
+      "type": "UUPS Implementation",
+      "note": "不要直接交互，使用 Proxy 地址"
+    },
+    "BettingPool_Proxy": {
+      "address": "0xCcAD84d0772262AeDe15B1B702d1Bd69D02f177D",
+      "type": "ERC1967Proxy (UUPS)",
+      "abi": "../assets/BettingPool.abi.json",
+      "admin": "0x7501bCBFAAa99e6390577277D051A32ec2e64064",
+      "multisig": "0x7501bCBFAAa99e6390577277D051A32ec2e64064",
+      "note": "所有交互通过此地址"
+    }
+  }
+}

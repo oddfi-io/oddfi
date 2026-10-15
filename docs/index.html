@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OddFi — Open Source</title>
+<meta name="description" content="OddFi: an open-source, full-stack on-chain sports prediction market on BNB Chain — contracts, Go services, web apps and an AI agent.">
+<meta property="og:title" content="OddFi — On-chain sports prediction market, open source">
+<meta property="og:description" content="Smart contracts, Go backend, Next.js app, admin console and AI agent. MIT licensed.">
+<meta property="og:image" content="assets/og-image.png">
+<link rel="icon" href="assets/logo-icon-mint.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#04060C; --bg2:#0A0D16; --card:#111114; --line:#212124; --line2:#2C2E33;
+  --text:#F1F1F1; --muted:#9A9DA6; --dim:#6B6E76;
+  --mint:#28F4D2; --mint2:#1CAD95; --red:#ED4C52; --orange:#ED7442; --green:#2DB270;
+  --radius:16px; --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,-apple-system,"PingFang SC",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+code,.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:10;background:rgba(4,6,12,.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:24px;height:60px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.02em}
+.brand img{width:26px;height:26px}
+nav .links{display:flex;gap:22px;margin-left:auto;font-size:14px;color:var(--muted)}
+nav .links a:hover{color:var(--text)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:15px;border:1px solid var(--line2);transition:.15s}
+.btn.primary{background:var(--mint);color:#04060C;border-color:var(--mint)}
+.btn.primary:hover{background:#5ff8e0}
+.btn:hover{border-color:var(--mint)}
+nav .btn{padding:7px 14px;font-size:13px}
+
+.hero{position:relative;padding:110px 0 80px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-40% -10% auto;height:700px;background:radial-gradient(ellipse at 50% 30%,rgba(40,244,210,.18),transparent 60%);pointer-events:none}
+.tag{display:inline-flex;gap:8px;align-items:center;font-size:13px;color:var(--mint);border:1px solid rgba(40,244,210,.35);background:rgba(40,244,210,.06);padding:5px 12px;border-radius:999px;margin-bottom:24px}
+.tag i{width:6px;height:6px;border-radius:50%;background:var(--mint);display:block}
+h1{font-size:clamp(40px,6.4vw,76px);line-height:1.02;letter-spacing:-.035em;font-weight:800;max-width:900px}
+h1 em{font-style:normal;color:var(--mint)}
+.lede{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:680px;margin:24px 0 36px}
+.lede .zh{display:block;font-size:15px;color:var(--dim);margin-top:8px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:72px}
+.stat{background:var(--bg2);padding:24px}
+.stat b{display:block;font-size:30px;font-weight:800;letter-spacing:-.02em}
+.stat span{font-size:13px;color:var(--muted)}
+
+section{padding:88px 0;border-top:1px solid var(--line)}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--mint);margin-bottom:12px}
+h2{font-size:clamp(28px,3.6vw,42px);letter-spacing:-.025em;line-height:1.12;font-weight:800;max-width:760px}
+.sub{color:var(--muted);max-width:680px;margin-top:14px;font-size:17px}
+
+.grid{display:grid;gap:16px;margin-top:44px}
+.g3{grid-template-columns:repeat(3,1fr)} .g2{grid-template-columns:repeat(2,1fr)} .g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.card h3{font-size:17px;font-weight:700;margin-bottom:8px;letter-spacing:-.01em}
+.card p{color:var(--muted);font-size:14.5px}
+.card .k{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--mint);margin-bottom:12px;display:block}
+
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:44px;counter-reset:s}
+.step{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--mint);display:block;margin-bottom:10px}
+.step h4{font-size:15px;margin-bottom:6px}
+.step p{font-size:13.5px;color:var(--muted)}
+
+.arch{margin-top:44px;background:var(--bg2);border:1px solid var(--line);border-radius:var(--radius);padding:28px;overflow-x:auto}
+.arch svg{display:block;min-width:900px;width:100%;height:auto}
+.arch text{font-family:Inter,sans-serif}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:44px}
+.bar{display:flex;height:44px;border-radius:10px;overflow:hidden;margin:18px 0 14px;font-size:12px;font-weight:600}
+.bar div{display:flex;align-items:center;justify-content:center;color:#04060C}
+.legend{display:grid;gap:8px;font-size:14px;color:var(--muted)}
+.legend span{display:flex;align-items:center;gap:10px}
+.legend i{width:10px;height:10px;border-radius:3px;display:block;flex:none}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:10px 0;border-bottom:1px solid var(--line)}
+th{color:var(--dim);font-weight:500;font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+td{color:var(--muted)} td b{color:var(--text);font-weight:600}
+
+.shots{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:44px}
+.shot{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.shot img{display:block;width:100%;height:auto;border-bottom:1px solid var(--line)}
+.shot figcaption{padding:14px 18px;font-size:14px;color:var(--muted)}
+.shot figcaption b{color:var(--text);font-weight:600;margin-right:6px}
+
+.stack{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.stack span{font-size:12.5px;padding:4px 10px;border:1px solid var(--line2);border-radius:999px;color:var(--muted)}
+
+.tree{font-family:"JetBrains Mono",monospace;font-size:13.5px;line-height:1.85;color:var(--muted);background:var(--bg2);border:1px solid var(--line);border-radius:var(--radius);padding:24px 28px;margin-top:44px;overflow-x:auto;white-space:pre}
+.tree b{color:var(--mint);font-weight:500}
+
+.note{margin-top:44px;border:1px solid rgba(237,116,66,.35);background:rgba(237,116,66,.06);border-radius:var(--radius);padding:20px 24px;color:var(--muted);font-size:14.5px}
+.note b{color:var(--orange)}
+footer{border-top:1px solid var(--line);padding:40px 0 56px;color:var(--dim);font-size:14px}
+footer .wrap{display:flex;gap:16px;justify-content:space-between;flex-wrap:wrap}
+footer a{color:var(--muted)} footer a:hover{color:var(--mint)}
+
+@media (max-width:900px){
+  .g3,.g4,.split,.shots{grid-template-columns:1fr}
+  .g2{grid-template-columns:1fr}
+  .flow{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  nav .links{display:none}
+  nav .btn{margin-left:auto}
+}
+@media (max-width:520px){
+  .wrap{padding:0 16px}
+  .flow{grid-template-columns:1fr}
+  .hero{padding:72px 0 56px}
+  section{padding:64px 0}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="brand" href="#"><img src="assets/logo-icon-mint.svg" alt="">OddFi</a>
+  <div class="links">
+    <a href="#how">How it works</a><a href="#arch">Architecture</a><a href="#contracts">Contracts</a><a href="#economics">Economics</a><a href="#product">Product</a><a href="#code">Code</a>
+  </div>
+  <a class="btn" href="https://github.com/oddfi-io/oddfi">GitHub ↗</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <span class="tag"><i></i>Open source · MIT</span>
+  <h1>A sports prediction market that runs <em>on-chain</em>.</h1>
+  <p class="lede">OddFi is a complete betting stack on BNB Smart Chain, built for the 2026 World Cup. Funds sit in smart contracts, settlement goes through a multisig, and the whole thing is now open source: contracts, backend, apps and AI agent.
+    <span class="zh">基于 BNB Chain 的链上体育预测市场，完整技术栈现已开源。</span></p>
+  <div class="cta">
+    <a class="btn primary" href="https://github.com/oddfi-io/oddfi">View source</a>
+    <a class="btn" href="#arch">See the architecture</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>17</b><span>repositories merged</span></div>
+    <div class="stat"><b>14k</b><span>lines of Solidity</span></div>
+    <div class="stat"><b>420k+</b><span>lines of Go + TypeScript</span></div>
+    <div class="stat"><b>600+</b><span>test files</span></div>
+  </div>
+</div></header>
+
+<section id="how"><div class="wrap">
+  <div class="eyebrow">How it works</div>
+  <h2>From wallet connect to payout, every step that touches money happens on-chain.</h2>
+  <div class="flow">
+    <div class="step"><h4>Connect</h4><p>Sign in with MetaMask or WalletConnect. No email, no password.</p></div>
+    <div class="step"><h4>Stake</h4><p>Stake ODD to unlock VIP tiers and higher daily limits.</p></div>
+    <div class="step"><h4>Bet</h4><p>1X2, Asian Handicap, Over/Under and parlays, with live odds pushed over WebSocket.</p></div>
+    <div class="step"><h4>Settle</h4><p>Results come from two data sources. Settlement goes on-chain through a Gnosis Safe multisig.</p></div>
+    <div class="step"><h4>Claim</h4><p>Winners claim from the contract. Fees fund stakers, a reserve buffer and referrers.</p></div>
+  </div>
+</div></section>
+
+<section id="arch"><div class="wrap">
+  <div class="eyebrow">Architecture</div>
+  <h2>Five layers. The Go services share state only through MySQL and Redis.</h2>
+  <p class="sub">The contracts hold the funds. Off-chain services handle odds, risk checks and indexing, and they call the contracts through a typed Go SDK with separate admin, relay and read clients.</p>
+  <div class="arch">
+  <svg viewBox="0 0 1060 470" role="img" aria-label="OddFi system architecture">
+    <defs>
+      <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#4A4D55"/></marker>
+    </defs>
+    <g font-size="12" fill="#6B6E76" font-weight="600" letter-spacing="1.2">
+      <text x="0" y="30">CLIENTS</text><text x="0" y="125">SERVICES</text><text x="0" y="245">DATA</text><text x="0" y="335">SDK</text><text x="0" y="430">CHAIN</text>
+    </g>
+    <g font-size="13.5" fill="#F1F1F1" font-weight="600" text-anchor="middle">
+      <!-- clients -->
+      <rect x="110" y="8" width="210" height="40" rx="10" fill="#111114" stroke="#28F4D2"/><text x="215" y="33">Web app · Next.js</text>
+      <rect x="340" y="8" width="210" height="40" rx="10" fill="#111114" stroke="#2C2E33"/><text x="445" y="33">Admin · React + Refine</text>
+      <rect x="570" y="8" width="210" height="40" rx="10" fill="#111114" stroke="#2C2E33"/><text x="675" y="33">Agent panel</text>
+      <rect x="800" y="8" width="250" height="40" rx="10" fill="#111114" stroke="#2C2E33"/><text x="925" y="33">Wallet · MetaMask / WC</text>
+      <!-- services -->
+      <rect x="110" y="96" width="130" height="50" rx="10" fill="#111114" stroke="#2C2E33"/><text x="175" y="118">web-api</text><text x="175" y="136" font-size="11" fill="#9A9DA6" font-weight="400">account · bet · cashout</text>
+      <rect x="252" y="96" width="130" height="50" rx="10" fill="#111114" stroke="#2C2E33"/><text x="317" y="118">market-api</text><text x="317" y="136" font-size="11" fill="#9A9DA6" font-weight="400">odds · WS push</text>
+      <rect x="394" y="96" width="130" height="50" rx="10" fill="#111114" stroke="#2C2E33"/><text x="459" y="118">odds spider</text><text x="459" y="136" font-size="11" fill="#9A9DA6" font-weight="400">SportMonks ingest</text>
+      <rect x="536" y="96" width="130" height="50" rx="10" fill="#111114" stroke="#2C2E33"/><text x="601" y="118">bet-settle</text><text x="601" y="136" font-size="11" fill="#9A9DA6" font-weight="400">settlement engine</text>
+      <rect x="678" y="96" width="130" height="50" rx="10" fill="#111114" stroke="#2C2E33"/><text x="743" y="118">admin-api</text><text x="743" y="136" font-size="11" fill="#9A9DA6" font-weight="400">Lark SSO · RBAC</text>
+      <rect x="820" y="96" width="110" height="50" rx="10" fill="#111114" stroke="#2C2E33"/><text x="875" y="118">agent-api</text><text x="875" y="136" font-size="11" fill="#9A9DA6" font-weight="400">tweet → LLM</text>
+      <rect x="940" y="96" width="110" height="50" rx="10" fill="#111114" stroke="#2C2E33"/><text x="995" y="118">indexers</text><text x="995" y="136" font-size="11" fill="#9A9DA6" font-weight="400">consumer · crawler</text>
+      <!-- data -->
+      <rect x="110" y="220" width="400" height="40" rx="10" fill="#0A0D16" stroke="#2C2E33" stroke-dasharray="4 4"/><text x="310" y="245">MySQL · shared tables</text>
+      <rect x="530" y="220" width="250" height="40" rx="10" fill="#0A0D16" stroke="#2C2E33" stroke-dasharray="4 4"/><text x="655" y="245">Redis · prices / heat</text>
+      <rect x="800" y="220" width="250" height="40" rx="10" fill="#0A0D16" stroke="#2C2E33" stroke-dasharray="4 4"/><text x="925" y="245">Agent memory · pgvector</text>
+      <!-- sdk -->
+      <rect x="110" y="310" width="260" height="40" rx="10" fill="#111114" stroke="#28F4D2"/><text x="240" y="335">admin · multisig calldata</text>
+      <rect x="390" y="310" width="300" height="40" rx="10" fill="#111114" stroke="#28F4D2"/><text x="540" y="335">relay · EIP-7702 sponsored tx</text>
+      <rect x="710" y="310" width="160" height="40" rx="10" fill="#111114" stroke="#28F4D2"/><text x="790" y="335">read</text>
+      <rect x="890" y="310" width="160" height="40" rx="10" fill="#111114" stroke="#2C2E33"/><text x="970" y="335">magic-signer · TEE</text>
+      <!-- chain -->
+      <rect x="110" y="400" width="940" height="56" rx="12" fill="rgba(40,244,210,.07)" stroke="#28F4D2"/>
+      <g font-size="13" fill="#28F4D2"><text x="210" y="433">ODDToken</text><text x="370" y="433">StakingPool</text><text x="540" y="433">LiquidityPool</text><text x="710" y="433">BettingPool</text><text x="910" y="433">SettlementModule</text></g>
+    </g>
+    <g stroke="#4A4D55" stroke-width="1.4" fill="none" marker-end="url(#a)">
+      <path d="M215 48V94"/><path d="M445 48L317 94"/><path d="M445 48L743 94"/><path d="M675 48L875 94"/>
+      <path d="M175 146V218"/><path d="M317 146V218"/><path d="M459 146V218"/><path d="M601 146L601 218"/><path d="M995 146V218"/><path d="M875 146L925 218"/>
+      <path d="M175 146C175 280 240 280 240 308"/><path d="M601 146C601 280 540 280 540 308"/>
+      <path d="M240 350V398"/><path d="M540 350V398"/><path d="M790 350V398"/><path d="M970 350V398"/>
+      <path d="M925 48C1055 48 1055 380 1052 398" stroke-dasharray="3 4"/>
+    </g>
+  </svg>
+  </div>
+</div></section>
+
+<section id="contracts"><div class="wrap">
+  <div class="eyebrow">Smart contracts</div>
+  <h2>Five upgradeable contracts on BSC, built and tested with Foundry.</h2>
+  <div class="grid g3">
+    <div class="card"><span class="k">ODDToken</span><h3>Clean BEP-20</h3><p>100M fixed supply. No inflation, no burn, no transfer tax. Pausable, UUPS-upgradeable.</p></div>
+    <div class="card"><span class="k">StakingPool</span><h3>Stake for status</h3><p>Effective stake sets one of 10 VIP tiers in real time and receives 2% of every payout.</p></div>
+    <div class="card"><span class="k">LiquidityPool</span><h3>House liquidity</h3><p>A global pool plus per-match pools, with LP positions, requestable liquidity and payout windows.</p></div>
+    <div class="card"><span class="k">BettingPool</span><h3>Markets &amp; bets</h3><p>Opens markets, places bets, runs risk checks, handles refunds, claims, referral rewards and a three-tier reserve waterfall.</p></div>
+    <div class="card"><span class="k">BettingSettlementModule</span><h3>Settlement via delegatecall</h3><p>Holds the heavy settlement and refund logic so BettingPool stays under the bytecode size limit.</p></div>
+    <div class="card"><span class="k">Gnosis Safe</span><h3>Multisig settlement</h3><p>No single key can settle a market. The SDK can propose, execute, or export raw calldata.</p></div>
+  </div>
+</div></section>
+
+<section id="economics"><div class="wrap">
+  <div class="eyebrow">Economics &amp; risk</div>
+  <h2>Two fees, both applied in the betting contract rather than on token transfers.</h2>
+  <div class="split">
+    <div class="card">
+      <h3>5% payout fee split</h3>
+      <div class="bar"><div style="flex:2;background:var(--mint)">2%</div><div style="flex:1;background:var(--mint2)">1%</div><div style="flex:1;background:var(--orange)">1%</div><div style="flex:1;background:#7B8CFF">1%</div></div>
+      <div class="legend">
+        <span><i style="background:var(--mint)"></i>Stakers' dividend pool</span>
+        <span><i style="background:var(--mint2)"></i>L3 reserve buffer (tier 3 of the waterfall)</span>
+        <span><i style="background:var(--orange)"></i>Platform treasury</span>
+        <span><i style="background:#7B8CFF"></i>Direct referrer</span>
+      </div>
+      <p style="margin-top:16px;color:var(--muted);font-size:14px">On top of that, a <b style="color:var(--text)">1% bet fee</b> goes entirely to the direct referrer. Referrers claim accrued ODD, which the contract swaps to USDT at claim time.</p>
+    </div>
+    <div class="card">
+      <h3>Risk controls</h3>
+      <table>
+        <tr><th>Control</th><th>Rule</th></tr>
+        <tr><td><b>Margin</b></td><td>10% built into the odds</td></tr>
+        <tr><td><b>Min bet</b></td><td>100 ODD, enforced in the contract</td></tr>
+        <tr><td><b>Market limits</b></td><td>Traffic-light signal; a bet that would push a market into red is rejected</td></tr>
+        <tr><td><b>Payout cap</b></td><td>30,000 ODD per bet / per match, parlays included</td></tr>
+        <tr><td><b>Open interest</b></td><td>Above 5,000 ODD, open positions must stay ≤ effective stake</td></tr>
+        <tr><td><b>Daily limit</b></td><td>10k → 1M ODD across 10 VIP tiers</td></tr>
+        <tr><td><b>Odds drift</b></td><td>External odds polled every 5 min; drift ≥ 5% forces a base-odds update</td></tr>
+      </table>
+    </div>
+  </div>
+</div></section>
+
+<section id="product"><div class="wrap">
+  <div class="eyebrow">Product</div>
+  <h2>The web app, running locally against its built-in mock API.</h2>
+  <div class="shots" id="shots">
+    <figure class="shot"><img src="assets/shots/home.jpg" alt="Home" loading="lazy" width="1440" height="900"><figcaption><b>Home</b>Landing page</figcaption></figure>
+    <figure class="shot"><img src="assets/shots/vault.jpg" alt="Banker Vault" loading="lazy" width="1440" height="900"><figcaption><b>Banker Vault</b>users provide liquidity to match pools and earn yield</figcaption></figure>
+    <figure class="shot"><img src="assets/shots/stake.jpg" alt="Staking" loading="lazy" width="1440" height="900"><figcaption><b>Staking</b>lock-up terms with boosted APY multipliers</figcaption></figure>
+    <figure class="shot"><img src="assets/shots/referral.jpg" alt="Referral" loading="lazy" width="1440" height="900"><figcaption><b>Referral</b>two-tier rebates, claimable on-chain</figcaption></figure>
+    <figure class="shot"><img src="assets/shots/rewards.jpg" alt="Rewards" loading="lazy" width="1440" height="900"><figcaption><b>Rewards</b>task center for growth campaigns</figcaption></figure>
+    <figure class="shot"><img src="assets/shots/agent.jpg" alt="AI Agent" loading="lazy" width="1440" height="900"><figcaption><b>AI Agent</b>a personalized agent with its own tone, risk preference and push channels</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="code"><div class="wrap">
+  <div class="eyebrow">Code</div>
+  <h2>Seventeen repositories merged into one archive.</h2>
+  <div class="grid g4">
+    <div class="card"><h3>Contracts</h3><p>Solidity · Foundry · OpenZeppelin upgradeable</p></div>
+    <div class="card"><h3>Backend</h3><p>Go · Gin · GORM · MySQL · Redis · Kafka</p></div>
+    <div class="card"><h3>Frontend</h3><p>Next.js 15 · React 19 · wagmi · viem · Tailwind</p></div>
+    <div class="card"><h3>Agent</h3><p>TypeScript · LLM parsing · memory · user tagging</p></div>
+  </div>
+<div class="tree"><b>contracts/</b>   odd-token-edition · usdt-edition
+<b>sdk/</b>         odd-sdk-go · contracts-sdk-go · business-layer-go
+<b>apps/</b>        web · admin-web · agent-web
+<b>services/</b>    backend · bet-settle · chain-consumer · chain-crawler · cron-job
+             magic-signer · admin-api · agent-api
+<b>agent/</b>       odd-agent</div>
+  <div class="cta" style="margin-top:28px">
+    <a class="btn primary" href="https://github.com/oddfi-io/oddfi">Browse the repository</a>
+    <a class="btn" href="https://github.com/oddfi-io/oddfi/tree/main/contracts/odd-token-edition">Start with the contracts</a>
+  </div>
+  <div class="note"><b>Archived project.</b> OddFi is no longer operated. The code has not been fully audited and should not be deployed with real funds. Nothing on this page is financial advice or a token offer. Credentials and infrastructure details were removed before publishing.</div>
+</div></section>
+
+<footer><div class="wrap">
+  <span>OddFi · MIT License · 2026</span>
+  <span><a href="https://github.com/oddfi-io/oddfi">github.com/oddfi-io/oddfi</a> · <a href="https://oddfi-io.github.io/">More projects</a></span>
+</div></footer>
+</body>
+</html>

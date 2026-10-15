@@ -1,0 +1,96 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: odd_agent
+      POSTGRES_PASSWORD: odd_agent
+      POSTGRES_DB: odd_agent
+    ports:
+      - "55432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U odd_agent -d odd_agent"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "56379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+
+  qdrant:
+    image: qdrant/qdrant:v1.12.5
+    ports:
+      - "6333:6333"
+    healthcheck:
+      test: ["CMD-SHELL", "bash -c ':> /dev/tcp/127.0.0.1/6333'"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+
+  chroma:
+    image: chromadb/chroma:0.5.23
+    ports:
+      - "8001:8000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:8000/api/v1/heartbeat"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  milvus-etcd:
+    image: quay.io/coreos/etcd:v3.5.18
+    environment:
+      ETCD_AUTO_COMPACTION_MODE: revision
+      ETCD_AUTO_COMPACTION_RETENTION: "1000"
+      ETCD_QUOTA_BACKEND_BYTES: "4294967296"
+      ETCD_SNAPSHOT_COUNT: "50000"
+    command: etcd -advertise-client-urls=http://127.0.0.1:2379 -listen-client-urls http://0.0.0.0:2379 --data-dir /etcd
+
+  milvus-minio:
+    image: minio/minio:RELEASE.2024-12-18T13-15-44Z
+    environment:
+      MINIO_ACCESS_KEY: minioadmin
+      MINIO_SECRET_KEY: minioadmin
+    command: minio server /minio_data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:9000/minio/health/live"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  milvus-standalone:
+    image: milvusdb/milvus:v2.5.6
+    command: ["milvus", "run", "standalone"]
+    environment:
+      ETCD_ENDPOINTS: milvus-etcd:2379
+      MINIO_ADDRESS: milvus-minio:9000
+      COMMON_STORAGETYPE: local
+    ports:
+      - "19530:19530"
+      - "9091:9091"
+    depends_on:
+      - milvus-etcd
+      - milvus-minio
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:9091/healthz"]
+      interval: 5s
+      timeout: 5s
+      retries: 60
+
+  centrifugo:
+    image: centrifugo/centrifugo:v6
+    environment:
+      CENTRIFUGO_TOKEN_HMAC_SECRET_KEY: ${CENTRIFUGO_TOKEN_HMAC_SECRET_KEY:-odd_agent_local_token_secret_32_chars}
+      CENTRIFUGO_HTTP_API_KEY: ${CENTRIFUGO_API_KEY:-odd_agent_local_centrifugo_api_key_32}
+      CENTRIFUGO_CHANNEL_NAMESPACES: '[{"name":"tag"}]'
+      CENTRIFUGO_ADMIN: "true"
+      CENTRIFUGO_ADMIN_PASSWORD: ${CENTRIFUGO_ADMIN_PASSWORD:-odd_agent_admin}
+      CENTRIFUGO_ADMIN_SECRET: ${CENTRIFUGO_ADMIN_SECRET:-odd_agent_local_admin_secret_32}
+    ports:
+      - "18000:8000"

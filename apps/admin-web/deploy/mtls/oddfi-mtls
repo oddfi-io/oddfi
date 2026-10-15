@@ -1,0 +1,217 @@
+#!/usr/bin/env bash
+#
+# oddfi-mtls — admin.oddfi.io 设备准入（mTLS 客户端证书）统一管理脚本
+#
+# 安装位置：服务器 /usr/local/sbin/oddfi-mtls（本文件是入库真值源，
+#           更新方式见 docs/ops/mtls-runbook.md §7）
+# 运行要求：root（sudo oddfi-mtls ...）
+#
+# 子命令：
+#   init                 一次性初始化 CA + 目录 + nginx include（幂等，已存在则拒绝重建）
+#   issue <name> [days]  服务器侧生成密钥并签发，产出 .p12（导入 Keychain）+ .pem（curl 用）
+#   sign <name> <csr> [days]  签外部 CSR（CSR 流：私钥在设备侧生成，只产出 .crt，推荐）
+#   revoke <name>        吊销证书并刷新 CRL + reload nginx
+#   list                 列出全部已签发证书（状态/到期/CN）
+#   enforce on|off|status  强制模式开关：on=无有效证书一律 403；off=观察模式（只记日志）
+#
+# 设计要点：
+#   - CRL 用 -crldays 3650：CRL 一旦过期 nginx 会拒掉所有客户端证书（坑），长效期规避
+#   - enforce 用 "ssl_verify_client optional + if(403)" 而非 "on"：
+#     切换不影响 TLS 握手层，回滚只需重写 include + reload，且浏览器报错更友好（403 页 vs 握手失败）
+set -euo pipefail
+
+BASE=/etc/nginx/mtls
+CA_DIR=$BASE/ca
+ISSUED=$BASE/issued
+ENFORCE_CONF=$BASE/enforce.conf
+CA_DAYS=3650
+# 180 天:2026-06-04 安全评审从 730 收紧,缩小"未被发现的泄露"的窗口;吊销(CRL)仍是即时止血手段
+CLIENT_DAYS_DEFAULT=180
+
+say() { printf '[oddfi-mtls] %s\n' "$*"; }
+die() { printf '[oddfi-mtls] ERROR: %s\n' "$*" >&2; exit 1; }
+
+[ "$(id -u)" = 0 ] || die "must run as root (sudo oddfi-mtls ...)"
+
+usage() {
+  sed -n '5,20p' "$0" | sed 's/^# \{0,1\}//'
+  exit 1
+}
+
+write_enforce() { # $1 = on|off
+  if [ "$1" = on ]; then
+    cat > "$ENFORCE_CONF" <<'EOF'
+# mTLS enforce: ON — 无有效客户端证书一律 403（含 /health 公网探测）
+# 切换：sudo oddfi-mtls enforce on|off
+if ($ssl_client_verify != SUCCESS) { return 403; }
+EOF
+  else
+    cat > "$ENFORCE_CONF" <<'EOF'
+# mTLS enforce: OFF — 观察模式，仅在 access log 记录 $ssl_client_verify，不拦截
+# 切换：sudo oddfi-mtls enforce on|off
+EOF
+  fi
+  nginx -t >/dev/null 2>&1 || die "nginx -t failed, enforce.conf not applied"
+  systemctl reload nginx
+}
+
+cmd_init() {
+  [ -f "$CA_DIR/ca.key" ] && die "CA already exists at $CA_DIR — refusing to overwrite (see runbook §8 灾备)"
+  say "creating CA under $BASE"
+  mkdir -p "$CA_DIR/newcerts" "$ISSUED"
+  chmod 700 "$BASE" "$CA_DIR"
+  touch "$CA_DIR/index.txt"
+  echo 1000 > "$CA_DIR/serial"
+  echo 1000 > "$CA_DIR/crlnumber"
+
+  cat > "$CA_DIR/openssl.cnf" <<EOF
+[ ca ]
+default_ca = oddfi
+
+[ oddfi ]
+dir              = $CA_DIR
+database         = \$dir/index.txt
+new_certs_dir    = \$dir/newcerts
+certificate      = \$dir/ca.crt
+private_key      = \$dir/ca.key
+serial           = \$dir/serial
+crlnumber        = \$dir/crlnumber
+default_md       = sha256
+default_days     = $CLIENT_DAYS_DEFAULT
+default_crl_days = 3650
+policy           = policy_client
+x509_extensions  = client_ext
+copy_extensions  = none
+unique_subject   = no
+
+[ policy_client ]
+commonName             = supplied
+organizationName       = optional
+
+[ client_ext ]
+basicConstraints       = CA:FALSE
+keyUsage               = critical, digitalSignature
+extendedKeyUsage       = clientAuth
+subjectKeyIdentifier   = hash
+authorityKeyIdentifier = keyid
+
+[ crl_ext ]
+authorityKeyIdentifier = keyid
+EOF
+
+  openssl req -x509 -newkey rsa:4096 -nodes -sha256 -days $CA_DAYS \
+    -keyout "$CA_DIR/ca.key" -out "$CA_DIR/ca.crt" \
+    -subj "/O=OddFi/CN=OddFi Admin mTLS CA" \
+    -addext "basicConstraints=critical,CA:TRUE,pathlen:0" \
+    -addext "keyUsage=critical,keyCertSign,cRLSign"
+  chmod 400 "$CA_DIR/ca.key"
+
+  openssl ca -config "$CA_DIR/openssl.cnf" -gencrl -crlexts crl_ext -out "$CA_DIR/ca.crl" 2>/dev/null
+  write_enforce off
+  say "CA ready. next: add nginx directives (runbook §3), then 'oddfi-mtls issue <name>'"
+}
+
+cmd_issue() {
+  local name="${1:-}"; local days="${2:-$CLIENT_DAYS_DEFAULT}"
+  [ -n "$name" ] || usage
+  [[ "$name" =~ ^[a-z0-9-]+$ ]] || die "name must be kebab-case: [a-z0-9-]+ (e.g. hang-mbp)"
+  local dir="$ISSUED/$name"
+  [ -e "$dir/client.crt" ] && die "cert for '$name' already exists — revoke first or pick another name"
+  mkdir -p "$dir"; chmod 700 "$dir"
+
+  openssl req -newkey rsa:2048 -nodes -sha256 \
+    -keyout "$dir/client.key" -out "$dir/client.csr" \
+    -subj "/O=OddFi/CN=$name" 2>/dev/null
+  openssl ca -batch -config "$CA_DIR/openssl.cnf" -days "$days" \
+    -in "$dir/client.csr" -out "$dir/client.crt" 2>/dev/null
+  rm -f "$dir/client.csr"
+
+  # .pem（cert+key 合体）给 curl / deploy.sh 用
+  cat "$dir/client.crt" "$dir/client.key" > "$dir/client.pem"
+  # .p12 给 macOS Keychain / 浏览器导入；密码随机生成，打印一次，不落盘
+  # ⚠️ 必须用 SHA1-3DES 老算法：OpenSSL 3 默认的 AES-256/PBKDF2 p12 会被
+  #    macOS `security import` 拒收（"MAC verification failed"，2026-06-04 实测踩坑）
+  local p12pass; p12pass="$(openssl rand -base64 12)"
+  openssl pkcs12 -export -name "oddfi-admin-$name" \
+    -certpbe PBE-SHA1-3DES -keypbe PBE-SHA1-3DES -macalg sha1 \
+    -in "$dir/client.crt" -inkey "$dir/client.key" \
+    -out "$dir/client.p12" -passout "pass:$p12pass"
+  chmod 600 "$dir"/client.*
+
+  say "issued '$name' (valid $days days)"
+  say "  files : $dir/{client.p12,client.pem}"
+  say "  p12 password (NOT saved anywhere, copy it now): $p12pass"
+  say "  expiry: $(openssl x509 -enddate -noout -in "$dir/client.crt" | cut -d= -f2)"
+  say "next: scp to the device + import (runbook §4)"
+}
+
+cmd_sign() {
+  # CSR 流：设备侧自己生成私钥 + CSR,这里只签证书。私钥永不经过服务器。
+  local name="${1:-}"; local csr="${2:-}"; local days="${3:-$CLIENT_DAYS_DEFAULT}"
+  [ -n "$name" ] && [ -n "$csr" ] || usage
+  [[ "$name" =~ ^[a-z0-9-]+$ ]] || die "name must be kebab-case: [a-z0-9-]+ (e.g. alice-mbp)"
+  [ -f "$csr" ] || die "CSR file not found: $csr"
+  openssl req -verify -noout -in "$csr" 2>/dev/null || die "invalid CSR (signature verify failed)"
+  # CN 必须与 name 一致,防止申请包里偷换身份
+  local cn; cn="$(openssl req -noout -subject -in "$csr" | sed -n 's/.*CN *= *\([^,/]*\).*/\1/p')"
+  [ "$cn" = "$name" ] || die "CSR CN ('$cn') != name ('$name') — refusing to sign"
+  local dir="$ISSUED/$name"
+  [ -e "$dir/client.crt" ] && die "cert for '$name' already exists — revoke first or pick another name"
+  mkdir -p "$dir"; chmod 700 "$dir"
+
+  # copy_extensions=none + x509_extensions=client_ext：CSR 里夹带的扩展一律忽略,
+  # 强制按我们的模板签（CA:FALSE + clientAuth）,申请方塞不进 CA:TRUE
+  openssl ca -batch -config "$CA_DIR/openssl.cnf" -days "$days" \
+    -in "$csr" -out "$dir/client.crt" 2>/dev/null
+  chmod 600 "$dir/client.crt"
+
+  say "signed '$name' (valid $days days, key stays on the device)"
+  say "  cert  : $dir/client.crt"
+  say "  expiry: $(openssl x509 -enddate -noout -in "$dir/client.crt" | cut -d= -f2)"
+  say "next: send client.crt back to the device (runbook §4)"
+}
+
+cmd_revoke() {
+  local name="${1:-}"
+  [ -n "$name" ] || usage
+  local crt="$ISSUED/$name/client.crt"
+  [ -f "$crt" ] || die "no cert found for '$name' under $ISSUED"
+  openssl ca -config "$CA_DIR/openssl.cnf" -revoke "$crt" 2>/dev/null
+  openssl ca -config "$CA_DIR/openssl.cnf" -gencrl -crlexts crl_ext -out "$CA_DIR/ca.crl" 2>/dev/null
+  nginx -t >/dev/null 2>&1 || die "nginx -t failed after CRL refresh"
+  systemctl reload nginx
+  mv "$ISSUED/$name" "$ISSUED/$name.revoked.$(date +%s)"
+  say "revoked '$name', CRL refreshed, nginx reloaded — device is locked out immediately (enforce=on 时)"
+}
+
+cmd_list() {
+  printf '%-8s %-12s %s\n' STATUS EXPIRES NAME
+  # index.txt: status \t expiry(YYMMDDHHMMSSZ) \t [revoked] \t serial \t unknown \t /O=OddFi/CN=name
+  # 注意:变量不能叫 exp(awk 内置函数名,mawk 直接语法错,2026-06-04 实测踩坑)
+  awk -F'\t' '{
+    status = ($1=="V") ? "valid" : ($1=="R") ? "REVOKED" : $1
+    expdate = "20" substr($2,1,2) "-" substr($2,3,2) "-" substr($2,5,2)
+    cn = $NF; sub(/.*CN=/, "", cn); sub(/\/.*/, "", cn)
+    printf "%-8s %-12s %s\n", status, expdate, cn
+  }' "$CA_DIR/index.txt"
+}
+
+cmd_enforce() {
+  case "${1:-status}" in
+    on)  write_enforce on;  say "enforce ON — clients without a valid cert now get 403" ;;
+    off) write_enforce off; say "enforce OFF — observe mode, nothing blocked" ;;
+    status)
+      if grep -q 'return 403' "$ENFORCE_CONF" 2>/dev/null; then say "enforce: ON"; else say "enforce: OFF (observe)"; fi ;;
+    *) usage ;;
+  esac
+}
+
+case "${1:-}" in
+  init)    cmd_init ;;
+  issue)   shift; cmd_issue "$@" ;;
+  sign)    shift; cmd_sign "$@" ;;
+  revoke)  shift; cmd_revoke "$@" ;;
+  list)    cmd_list ;;
+  enforce) shift || true; cmd_enforce "${1:-status}" ;;
+  *) usage ;;
+esac

@@ -1,0 +1,72 @@
+# OddFi 运营后台 · 后端配置示例
+# 拷贝为 config.yaml 后填入真实值，config.yaml 不入库
+
+server:
+  host: ""                  # 监听地址。空 = 0.0.0.0（仅 dev）；prod 必须填 "127.0.0.1"，靠 Nginx 反代
+  port: 8081
+  read_timeout: 15s
+  write_timeout: 15s
+  shutdown_timeout: 30s
+  env: dev                  # dev | prod；影响日志级别和 CORS 严格度
+
+logger:
+  level: debug              # debug | info | warn | error
+  pretty: true              # dev 时输出人类可读，prod 改成 false（纯 JSON）
+
+mysql:
+  dsn: "admin:password@tcp(127.0.0.1:3306)/oddfi?charset=utf8mb4&parseTime=true&loc=Local"
+  max_open: 50
+  max_idle: 10
+  conn_max_lifetime: 1h
+
+redis:
+  addr: "127.0.0.1:6379"
+  password: ""
+  db: 1                     # 与 C 端服务用不同 DB，避免 key 冲突
+
+jwt:
+  secret: "CHANGE_ME_TO_RANDOM_32_BYTES"
+  ttl: 8h
+  issuer: "oddfi-admin"
+
+lark:
+  # App ID 不是机密（OAuth Public Client ID 语义），可入库；但 example 文件保留占位符，
+  # 真实值由 docs/lark-app-binding.md §1 维护，运行时从 config.yaml 或 ADMIN_LARK_APP_ID env 注入
+  app_id: "cli_xxxxxxxxxxxx"
+  # App Secret 必须通过环境变量 ADMIN_LARK_APP_SECRET 注入（systemd EnvironmentFile / local shell env），禁止入库
+  app_secret: "CHANGE_ME_INJECT_VIA_ENV"
+  authorize_url: "https://open.larksuite.com/open-apis/authen/v1/authorize"
+  # v2 OAuth token endpoint：accept client_id/client_secret/redirect_uri，v1 OIDC 已弃用
+  token_url: "https://open.larksuite.com/open-apis/authen/v2/oauth/token"
+  user_info_url: "https://open.larksuite.com/open-apis/authen/v1/user_info"
+  scope: "contact:user.base:readonly"
+  # 用户在 Lark 授权完成后由 Lark 回调到此地址（必须与 Lark 应用 whitelist 完全一致）
+  redirect_uri: "https://admin.oddfi.io/auth/lark/callback"
+
+frontend:
+  # 后端处理完 Lark 回调后跳回前端的地址。
+  # 真正的 URL 形式是 "<callback_url>#token=<jwt>"（fragment 不是 query），
+  # 前端从 window.location.hash 解析 token，立刻 history.replaceState 抹掉。
+  callback_url: "https://admin.oddfi.io/auth/lark/callback"
+
+cors:
+  # 生产只放行 admin.oddfi.io，dev 时可加 http://localhost:5173
+  allowed_origins:
+    - "https://admin.oddfi.io"
+    - "http://localhost:5173"
+  allow_credentials: false  # JWT 走 Authorization header，不需要 cookie
+
+rate_limit:
+  # 每 IP 每分钟最多 60 个请求
+  per_ip_per_min: 60
+
+# web-api internal 上游（presale/events proxy 用；生产凭据走 env 注入，不要明文入库）
+webapi:
+  internal_url: http://127.0.0.1:9090     # 本地联调指 mock-webapi；生产 WEBAPI_INTERNAL_URL 注入
+  service_token: dev-test                 # 生产 WEBAPI_SERVICE_TOKEN 注入
+  timeout_sec: 5
+  max_retries: 3
+  # events 模块专用上游覆盖（DD002 联调期：events 指 C 端 dev，presale 仍指生产）。
+  # 任一为空 → events 回落主上游。生产用 WEBAPI_EVENTS_INTERNAL_URL / WEBAPI_EVENTS_SERVICE_TOKEN 注入。
+  events_internal_url: ""
+  events_service_token: ""

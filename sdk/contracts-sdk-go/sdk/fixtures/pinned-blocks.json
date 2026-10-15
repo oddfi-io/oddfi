@@ -1,0 +1,7 @@
+{
+  "testnet": 0,
+  "mainnet": 0,
+  "lastBumpedAt": "2026-04-30",
+  "bumpPolicy": "quarterly + manual on contract upgrade",
+  "notes": "Set testnet to a recent block past the BettingPool deploy; mainnet stays 0 until first deploy."
+}

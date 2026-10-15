@@ -1,0 +1,27 @@
+{
+  "root": true,
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "CallExpression[callee.property.name='toFixed']",
+        "message": "Use formatAmount() from lib/decimal.ts (LESSONS §5)"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["lib/decimal.ts"],
+      "rules": {
+        "no-restricted-syntax": "off"
+      }
+    },
+    {
+      "files": ["mocks/**/*.ts"],
+      "rules": {
+        "no-restricted-syntax": "off"
+      }
+    }
+  ]
+}

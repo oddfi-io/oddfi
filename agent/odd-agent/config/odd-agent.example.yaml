@@ -1,0 +1,152 @@
+# odd_agent 的唯一运行时配置入口。
+# 当前运行时保留基础组件、Memory v3、Chat Agent、Centrifugo / Tweet Catcher，以及用户标签服务。
+# 规则：所有运行时配置只能写在本文件；不要新增 config/*.yaml、config/*.yml、TOML、JSON 或 .env 散落配置。
+
+server:
+  host: "127.0.0.1"
+  port: 3000
+  request_timeout_ms: 30000
+
+logger:
+  level: "info"
+  output: "file"
+  directory: "logs"
+  filename_prefix: "odd-agent"
+  redact_keys:
+    - "api_key"
+    - "apiKey"
+    - "authorization"
+    - "password"
+    - "token"
+
+db:
+  provider: "postgres"
+  connection_string_secret_ref: "ODD_AGENT_DATABASE_URL"
+  max_pool_size: 10
+  statement_timeout_ms: 30000
+  idle_timeout_ms: 5000
+  ssl: false
+
+redis:
+  url_secret_ref: "ODD_AGENT_REDIS_URL"
+  key_prefix: "odd_agent:dev"
+  command_timeout_ms: 3000
+  max_retries: 3
+  default_ttl_seconds: 3600
+
+# /internal/* 服务间鉴权：主后端调用必须携带 X-Service-Token，值由该 secretRef 解析。
+# dev 在 local_secrets 写本地值；生产由运维从 AWS SSM 注入同名 env var（90 天轮换）。
+internal_auth:
+  service_token_secret_ref: "SERVICE_TOKEN"
+
+centrifugo:
+  provider: "centrifugo"
+  endpoint: "http://127.0.0.1:18000/api/publish"
+  api_key_secret_ref: "ODD_AGENT_CENTRIFUGO_API_KEY"
+  channel_template_tag: "tag:{tag_name}"
+  # user 个人频道模板：命中推文 fan-out 到订阅者，必须与主后端连接 token 授权的频道逐字一致。
+  channel_template_user: "user#{user_id}"
+
+tweet_catcher:
+  websocket_endpoint: "wss://monitor-api.tweet-catcher.com/websocket"
+  api_key_secret_ref: "ODD_AGENT_TWEET_CATCHER_API_KEY"
+  ready_timeout_ms: 15000
+  event_wait_ms: 5000
+  heartbeat_interval_ms: 30000
+  reconnect_initial_delay_ms: 1000
+  reconnect_max_delay_ms: 60000
+
+user_tag:
+  snapshot_refresh_interval_ms: 60000
+  llm:
+    base_url: "https://api.minimaxi.com/v1"
+    api_key_secret_ref: "ODD_AGENT_TAG_LLM_API_KEY"
+    model: "MiniMax-M2.7"
+    model_tier: "standard"
+    temperature: 0
+    timeout_ms: 45000
+    max_retries: 0
+    log_messages: true
+
+chatllm:
+  base_url: "https://api.minimaxi.com/v1"
+  api_key_secret_ref: "ODD_AGENT_CHAT_LLM_API_KEY"
+  model: "MiniMax-M2.7"
+  model_tier: "standard"
+  temperature: 0
+  timeout_ms: 45000
+  max_retries: 0
+  log_messages: true
+
+tools:
+  max_tool_calls: 100
+  brave-search:
+    enabled: true
+    api_key_secret_ref: "ODD_AGENT_BRAVE_SEARCH_API_KEY"
+    command: "node"
+    args:
+      - "node_modules/@brave/brave-search-mcp-server/dist/index.js"
+    timeout_ms: 15000
+    max_results: 5
+    country: "US"
+    search_lang: "en"
+    ui_lang: "en-US"
+    safesearch: "moderate"
+
+memory:
+  memory_top_k: 5
+  embedding_collection_name: "oddfi"
+  embedding_dimension: 512
+  embedding_distance: "cosine"
+  default_top_k: 5
+  max_content_bytes: 65536
+  max_metadata_bytes: 16384
+  max_page_size: 100
+  min_candidate_confidence: 0.55
+  min_diff_confidence: 0.55
+  semantic_keys:
+    profile:
+      - "profile.*"
+    preference:
+      - "preference.*"
+    current_state:
+      - "current_state.*"
+    project_state:
+      - "project_state.*"
+    event:
+      - "event.*"
+  llm:
+    base_url: "https://api.minimaxi.com/v1"
+    api_key_secret_ref: "ODD_AGENT_CHAT_LLM_API_KEY"
+    model: "MiniMax-M2.7"
+    model_tier: "standard"
+    temperature: 0
+    timeout_ms: 45000
+    max_retries: 0
+    log_messages: true
+  embedding-llm:
+    base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    api_key_secret_ref: "BAILIAN_API_KEY"
+    model: "text-embedding-v4"
+    timeout_ms: 30000
+    max_retries: 1
+    dimensions: 512
+    encoding_format: "float"
+  embedding-db:
+    provider: "pinecone"
+    endpoint: "https://oddfi-9j57y2k.svc.aped-4627-b74a.pinecone.io"
+    api_key_secret_ref: "ODD_AGENT_PINECONE_API_KEY"
+    namespace: "oddfi"
+    timeout_ms: 30000
+    max_retries: 1
+
+local_secrets:
+  SERVICE_TOKEN: "replace_with_local_secret"
+  ODD_AGENT_DATABASE_URL: "postgres://odd_agent:odd_agent@127.0.0.1:55432/odd_agent"
+  ODD_AGENT_REDIS_URL: "redis://127.0.0.1:56379"
+  ODD_AGENT_CENTRIFUGO_API_KEY: "odd_agent_local_centrifugo_api_key_32"
+  ODD_AGENT_TWEET_CATCHER_API_KEY: "replace_with_local_secret"
+  ODD_AGENT_TAG_LLM_API_KEY: "replace_with_local_secret"
+  ODD_AGENT_CHAT_LLM_API_KEY: "replace_with_local_secret"
+  ODD_AGENT_PINECONE_API_KEY: "replace_with_local_secret"
+  BAILIAN_API_KEY: "replace_with_local_secret"

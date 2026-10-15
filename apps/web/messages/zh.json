@@ -1,0 +1,2285 @@
+{
+  "nav": {
+    "markets": "世界杯",
+    "pools": "庄家金库",
+    "stake": "质押",
+    "lend": "借贷",
+    "swap": "兑换",
+    "referral": "邀请",
+    "portfolio": "投资组合",
+    "home": "首页",
+    "analytics": "数据分析",
+    "leaderboard": "排行榜",
+    "oddPresale": "代币",
+    "invest": "预售",
+    "aiAgent": "AI 助手",
+    "rewards": "奖励"
+  },
+  "sidebar": {
+    "favorites": "收藏",
+    "football": "足球",
+    "basketball": "篮球",
+    "ufc": "UFC",
+    "esports": "电竞",
+    "politics": "政治",
+    "tech": "科技",
+    "expand": "展开侧边栏",
+    "collapse": "折叠侧边栏"
+  },
+  "mobileTab": {
+    "markets": "世界杯",
+    "stake": "质押",
+    "swap": "兑换",
+    "referral": "邀请",
+    "portfolio": "组合",
+    "rewards": "奖励"
+  },
+  "metadata": {
+    "siteTitle": "链上体育预测",
+    "description": "新一代链上体育预测平台——实时赛事投注、提供流动性、质押赚取收益。",
+    "pages": {
+      "markets": "市场",
+      "pools": "庄家金库",
+      "stake": "质押",
+      "lend": "借贷",
+      "swap": "兑换",
+      "referral": "邀请",
+      "rewards": "奖励"
+    }
+  },
+  "languageSwitcher": {
+    "ariaLabel": "切换语言"
+  },
+  "markets": {
+    "liveStream": {
+      "title": "直播",
+      "live": "直播中",
+      "startingSoon": "直播即将开始",
+      "sourceFallback": "线路",
+      "thirdPartyNotice": "直播由第三方提供，画质可能不稳定。",
+      "disclaimerTitle": "第三方直播免责声明",
+      "disclaimerBody": "本直播由第三方平台提供，播放后可能弹出第三方广告或跳转窗口，属第三方行为，与本站无关，请注意识别。",
+      "disclaimerConfirm": "我已知晓，继续观看"
+    },
+    "allLeagues": "全部联赛",
+    "allMatches": "所有比赛",
+    "asianHandicap": "亚洲让球",
+    "asianTotal": "亚洲大小球",
+    "away": "客",
+    "bracket": "对决",
+    "calendar": "赛程",
+    "championsLeague": "欧冠比赛",
+    "chipAll": "所有",
+    "chipAllCountries": "全部国家",
+    "chipAllTeams": "全部队伍",
+    "chipCalendar": "日历",
+    "chipFinals": "决赛",
+    "chipHot": "热门",
+    "chipLive": "直播",
+    "chipQualifiers": "预选赛",
+    "chipToday": "今天",
+    "chipTomorrow": "明天",
+    "comingSoon": "即将推出",
+    "draw": "平",
+    "errorDescription": "加载页面时发生错误，请重试。",
+    "errorTitle": "页面出错了",
+    "filterHandicap": "让球",
+    "filterTotal": "大小球",
+    "filterWinner": "胜负",
+    "fullTimeResult": "全场结果",
+    "goToSlide": "跳至第 {number} 张",
+    "home": "主",
+    "loadError": "加载赛事数据失败，请稍后重试。",
+    "match": "比赛",
+    "matchCount": "{count, plural, one {# 场比赛} other {# 场比赛}}",
+    "moneylineDraw": "平",
+    "moneylineTeaser": "Oddfi 玩家正押注 {teamCode}—下注占比 {userBetPct}%，赔率 {odds} 隐含概率仅 {impliedPct}%。",
+    "moneylineTitle": "胜负赔率",
+    "myBets": "我的投注",
+    "news": "新闻",
+    "nextSlide": "下一张",
+    "noMatches": "当前筛选条件下没有找到比赛。",
+    "noMoreMatches": "暂无更多赛事安排。",
+    "noOddsAvailable": "暂无此盘口赔率。",
+    "oddsPending": "待开盘",
+    "onchainTag": "链上",
+    "openFullPage": "全屏打开",
+    "other": "其他",
+    "otherMatches": "其他比赛",
+    "over": "大",
+    "overLine": "大 {line}",
+    "period1H": "上半场",
+    "period2H": "下半场",
+    "periodBRK": "休息",
+    "periodET": "加时",
+    "periodHT": "中场",
+    "periodINT": "中断",
+    "periodPEN": "点球",
+    "periodSUS": "暂停",
+    "prevSlide": "上一张",
+    "regionBelgium": "比利时",
+    "regionEngland": "英格兰",
+    "regionFrance": "法国",
+    "regionGermany": "德国",
+    "regionItaly": "意大利",
+    "regionJapan": "日本",
+    "regionNetherlands": "荷兰",
+    "regionNorway": "挪威",
+    "regionPortugal": "葡萄牙",
+    "regionSaudiArabia": "沙特阿拉伯",
+    "regionSpain": "西班牙",
+    "regionSweden": "瑞典",
+    "regionTurkey": "土耳其",
+    "regionUsa": "美国",
+    "retry": "重试",
+    "searchCancel": "取消",
+    "searchEmptySubtitle": "试试其他关键词或筛选条件，发现更多比赛。",
+    "searchEmptyTitle": "抱歉，没有找到匹配的比赛",
+    "searchPlaceholder": "搜索球队...",
+    "searchPopularEvents": "🔥🔥 Popular events",
+    "sidebarTitle": "市场",
+    "soccer": "足球",
+    "stageAll": "全部阶段",
+    "stageFinal": "决赛",
+    "stageGroupStage": "小组赛",
+    "stageKnockoutPlayoffs": "附加赛",
+    "stageQuarterFinals": "8 强",
+    "stageRound16": "16 强",
+    "stageRound32": "32 强",
+    "stageSemiFinals": "4 强",
+    "time": "时间",
+    "timelineLive": "直播",
+    "timelineToday": "今天",
+    "timelineTomorrow": "明天",
+    "testGroup": "测试",
+    "under": "小",
+    "underLine": "小 {line}",
+    "worldCup": "世界杯比赛",
+    "bannerDetailBack": "市场",
+    "bannerDetailEndIn": "截止还有",
+    "bannerPromoCta": "去竞猜",
+    "bettingClosed": "暂停投注",
+    "win": "胜"
+  },
+  "betSlip": {
+    "blockedRedline": "当前 outcome 已达风控红线，暂不接单",
+    "partialFill": "因接近风控红线，实际成交 {accepted} ODD / 原下注 {origin} ODD，剩余 {remain} ODD 未扣款",
+    "alertNetworkRetry": "网络异常，请稍后重试",
+    "title": "投注单",
+    "single": "单注",
+    "multi": "串关",
+    "noSelections": "暂无选择",
+    "noSelectionsHint": "点击赔率添加选项",
+    "estPayout": "预计赔付",
+    "totalOdds": "总赔率",
+    "totalBet": "总投注",
+    "potentialWin": "预计收益",
+    "blend": "组合",
+    "placeBet": "确认投注",
+    "confirming": "确认中...",
+    "placeBetSuccess": "投注成功！",
+    "placeBetFailed": "投注失败，请重试",
+    "insufficientBalance": "余额不足",
+    "conflictWarning": "同一赛事的多个选项不能组成串关投注。",
+    "settings": "设置",
+    "currency": "币种",
+    "oddsChanges": "赔率变动",
+    "acceptAnyOdds": "接受任意赔率",
+    "acceptHigherOnly": "仅接受更高赔率",
+    "noOddsChanges": "不接受赔率变动",
+    "oddsOptionYes": "是",
+    "oddsOptionBetterOnly": "仅更优",
+    "oddsOptionNo": "否",
+    "insufficientFundsTitle": "余额不足",
+    "insufficientFundsDesc": "余额不足以完成本次投注。需要 <b>{required} {symbol}</b>，当前余额 <b>{available} {symbol}</b>。",
+    "cancel": "取消",
+    "deposit": "充值",
+    "myBets": "我的投注",
+    "colBet": "投注额",
+    "colBetTime": "下注时间",
+    "colSettledTime": "结算时间",
+    "inputAmount": "输入金额",
+    "max": "最大",
+    "availableBalance": "可用余额",
+    "insufficientFundsWarning": "余额不足",
+    "depositNow": "立即充值",
+    "toContinueBetting": "以继续投注",
+    "cannotPlaceComboOrder": "无法下串关单",
+    "minBetWarning": "最低下注金额 {min} {symbol}",
+    "error": {
+      "betAmountBelowMin": "最低下注 {minimum} {symbol}（当前 {amount}）",
+      "poolLiquidityInsufficient": "资金池流动性不足（需 {requested} {symbol}，可用 {available}）",
+      "marketLocked": "盘口已锁定，暂不可投注",
+      "marketNotOpen": "盘口未开放，暂不可投注",
+      "marketClosed": "盘口已关闭",
+      "invalidQuoteGuard": "赔率已变化或报价已过期，请刷新后重试",
+      "dailyLimitExceeded": "已达每日下注上限（剩余 {remaining} {symbol}）",
+      "openPositionExceeded": "已达持仓上限（上限 {allowed} {symbol}）",
+      "matchPayoutExceeded": "已达单场赔付上限（上限 {allowed} {symbol}）",
+      "erc20InsufficientAllowance": "代币授权不足（需 {needed} {symbol}，已授权 {allowance}）",
+      "erc20InsufficientBalance": "代币余额不足（需 {needed} {symbol}，余额 {balance}）",
+      "txRevertedUnknown": "链上下注失败，请重试",
+      "contractPanic": "该下注在链上触发合约异常，暂时无法下单，请稍后再试或联系客服"
+    },
+    "signalLight": {
+      "loading": "正在校验流动性...",
+      "networkError": "网络异常，请重试",
+      "previewUnavailable": "预览不可用 — 请刷新重试",
+      "degraded": "实时赔率暂不可用，请稍后重试",
+      "red": "当前金额无法成交，最大可下 {max} ODD",
+      "orangePartial": "仅可成交 {accepted} ODD — 调整金额或接受部分成交",
+      "yellow": "提交时赔率可能微调（约 1%）",
+      "green": "可下注，锁定赔率 {odds}"
+    }
+  },
+  "common": {
+    "onchain": "链上",
+    "confirm": "确认",
+    "cancel": "取消",
+    "close": "关闭",
+    "back": "返回",
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "noData": "暂无数据",
+    "copied": "已复制！",
+    "days": "天",
+    "balance": "余额",
+    "available": "可用余额",
+    "copy": "复制",
+    "saveImage": "保存图片",
+    "share": "分享",
+    "history": "历史记录",
+    "status": "状态",
+    "amount": "数量",
+    "claim": "领取",
+    "max": "最大",
+    "oddPrice": "ODD 价格"
+  },
+  "wallet": {
+    "connectWallet": "连接钱包",
+    "connectWalletShort": "连接",
+    "deposit": "充值",
+    "switching": "切换中...",
+    "wrongNetwork": "网络错误",
+    "sheetTitle": "连接钱包",
+    "sheetSubtitle": "极致投注体验",
+    "connecting": "连接中...",
+    "lastUsed": "最后使用",
+    "termsNotice": "继续即表示您同意我们的<terms>服务条款</terms>和<privacy>隐私政策</privacy>",
+    "signAddress": "签署地址",
+    "signDescription": "您需要在钱包上签署一条信息以证明您所连接地址的所有权",
+    "checkWallet": "检查钱包",
+    "signIn": "登录",
+    "openWalletHint": "请打开钱包应用以批准签名请求",
+    "returnToWalletSign": "打开钱包签名",
+    "openWalletToConnect": "打开钱包连接",
+    "signatureCanceled": "签名已取消",
+    "signatureCanceledDesc": "您取消了签名请求，点击 Reconnect 重新尝试。",
+    "loginFailed": "登录失败",
+    "loginFailedDesc": "服务器暂时不可用，请稍后重试。",
+    "reconnect": "重新连接",
+    "modalTitle": "注册 oddfi",
+    "modalSubtitle": "极致投注体验",
+    "connectYourWallet": "连接您的钱包",
+    "signWithAddress": "使用地址签名",
+    "approveConnection": "请在钱包扩展中批准连接请求。",
+    "confirmSignature": "请在钱包中确认签名请求以登录。",
+    "checkWalletStep": "检查钱包 ({current}/{total})",
+    "termsPrefix": "继续即表示您同意我们的",
+    "termsOfService": "服务条款",
+    "and": "和",
+    "privacyPolicy": "隐私政策",
+    "startPrediction": "开始预测",
+    "connectWalletForAi": "连接钱包以使用 AI 功能",
+    "error": {
+      "user-rejected-connect": {
+        "title": "连接已取消",
+        "description": "你关闭了钱包弹窗。点击「连接」可重试。"
+      },
+      "user-rejected-switch": {
+        "title": "网络切换已取消",
+        "description": "你拒绝了切换网络。可在钱包中手动切换网络或点击「重试」。"
+      },
+      "user-rejected-sign": {
+        "title": "签名已取消",
+        "description": "你拒绝了签名。点击「重新连接」可再次尝试。"
+      },
+      "connector-not-connected": {
+        "title": "钱包连接已中断",
+        "description": "钱包在登录过程中断开。当你安装多个钱包扩展时常见此问题，可重连，或在隐身模式下仅启用 MetaMask 测试。"
+      },
+      "connector-chain-mismatch": {
+        "title": "钱包网络同步中",
+        "description": "钱包正在切换网络。稍候片刻后点击「重试」。"
+      },
+      "chain-switch-failed": {
+        "title": "网络切换失败",
+        "description": "请在钱包中手动切换网络后重试。"
+      },
+      "chain-switch-timeout": {
+        "title": "网络切换超时",
+        "description": "钱包未在规定时间内完成切换。请重试。"
+      },
+      "sign-timeout": {
+        "title": "签名超时",
+        "description": "请打开钱包 app 完成签名。"
+      },
+      "server-error": {
+        "title": "服务暂时不可用",
+        "description": "登录服务暂时故障。请几秒后重试。"
+      },
+      "network-error": {
+        "title": "网络连接失败",
+        "description": "请检查网络连接后重试。"
+      },
+      "unknown": {
+        "title": "登录失败",
+        "description": "出现未知错误。请重试，如持续失败请联系客服。"
+      }
+    }
+  },
+  "auth": {
+    "connect_wallet": "连接钱包",
+    "sign_in": "登录 Oddfi"
+  },
+  "toast": {
+    "betSubmitted": "交易已提交成功",
+    "insufficientBalance": "余额不足，请先充值后再下注。",
+    "insufficientBalanceAction": "去充值",
+    "stakingRequired": "下注超过 {amount} 需要质押 {symbol}。",
+    "stakingRequiredAction": "去质押",
+    "exceedsStakeLimit": "下注金额超出质押限额（当前上限：{maxAmount}）。",
+    "oddsChanged": "赔率已更新（{oldOdds} → {newOdds}），请确认后重新下单。",
+    "marketClosed": "该盘口已关闭，无法继续下注。",
+    "betSuccess": "下单成功 · {amount} · {selection} @ {odds}",
+    "betSuccessAndMore": "及 {count} 个",
+    "betSuccessAction": "查看订单",
+    "walletNotConnectedPrefix": "请",
+    "walletNotConnectedLink": "连接钱包",
+    "networkError": "网络错误，请重试。",
+    "betFailed": "下注失败，请重试。",
+    "betPartialSuccess": "{succeeded} 笔下注成功，{failed} 笔失败。",
+    "sessionExpired": "登录已过期，请重新登录。",
+    "betPendingOnchain": "交易已提交，请稍后到「我的注单」查看链上确认结果",
+    "betOnchainSubmitted": "下单成功，正在上链确认 · {selection}",
+    "betOnchainConfirmed": "已上链确认 · {selection}"
+  },
+  "portfolio": {
+    "title": "投资组合",
+    "assets": "资产",
+    "cash": "现金",
+    "usdt": "USDT",
+    "bet": "投注",
+    "stake": "质押",
+    "liquidity": "流动性",
+    "won": "已赢",
+    "deposit": "充值",
+    "withdraw": "提现",
+    "claim": "领取",
+    "dailyPnl": "今日收益额",
+    "tabBets": "投注",
+    "tabHistory": "历史",
+    "viewActive": "进行中",
+    "viewSettled": "已结算",
+    "colMarket": "赛事",
+    "colMatch": "比赛",
+    "colDateOfEvent": "比赛时间",
+    "colBetType": "投注玩法",
+    "colBet": "投注额",
+    "colPayout": "预期回报",
+    "colBetTime": "下注时间",
+    "colSettledTime": "结算时间",
+    "colResult": "结果",
+    "colResultH5": "结果",
+    "colPayoutSettled": "回报",
+    "resultWon": "赢",
+    "resultLost": "输",
+    "resultVoid": "无效",
+    "resultCashback": "退款",
+    "statusClaiming": "领取确认中...",
+    "colActivity": "活动",
+    "colCash": "金额",
+    "colTime": "时间",
+    "colStatus": "状态",
+    "actBet": "投注",
+    "actCashout": "已兑现",
+    "actLost": "输",
+    "actClaimed": "领取",
+    "actDeposit": "充值",
+    "actWithdraw": "提现",
+    "actStake": "质押",
+    "actUnstake": "解押",
+    "actAddLp": "添加流动性",
+    "actRemoveLp": "移除流动性",
+    "marketDeposited": "充值入账",
+    "marketWithdrew": "提现出账",
+    "marketCancelWithdraw": "取消提现",
+    "marketStake": "质押",
+    "marketUnstake": "解押",
+    "marketAddLiquidity": "存入金库",
+    "marketRemoveLiquidity": "赎回金库",
+    "marketClaimedPrize": "领取奖金",
+    "marketCancelBet": "取消下注",
+    "statusReviewing": "审核中",
+    "statusFailed": "失败",
+    "statusInProgress": "进行中",
+    "statusCompleted": "已完成",
+    "statusAppealing": "申诉中",
+    "statusCanceled": "已取消",
+    "menuCancelWithdraw": "取消提现",
+    "menuAppeal": "申诉",
+    "btnAppeal": "申诉",
+    "btnView": "查看",
+    "searchPlaceholder": "搜索...",
+    "claimTitle": "领取奖励",
+    "claimYouWon": "您赢得了",
+    "claimAll": "全部领取",
+    "claimPendingTitle": "领取中",
+    "claimPendingBtn": "领取中",
+    "signatureTitle": "签名请求",
+    "signatureMessage": "消息",
+    "readMore": "查看更多",
+    "showLess": "收起",
+    "networkFee": "BSC 网络费",
+    "youWillReceive": "你将获得",
+    "termsAgree": "交易即表示您同意",
+    "termsOfUse": "使用条款",
+    "confirm": "确认",
+    "txSuccessTitle": "交易发送成功",
+    "txSuccessDesc": "您将在几秒后收到",
+    "gotIt": "我知道了",
+    "wdReceiveAddress": "收款地址",
+    "wdUseConnected": "使用当前钱包",
+    "wdPlaceholderInput": "请输入",
+    "wdCoin": "币种",
+    "wdNetwork": "网络",
+    "wdAmount": "数量",
+    "wdAvailable": "可用",
+    "wdPriceImpact": "价格影响",
+    "wdMaxSlippage": "最大滑点",
+    "wdNetworkCost": "网络费用",
+    "wdReceiveAmount": "到账数量",
+    "wdContinue": "继续",
+    "wdClear": "清除",
+    "confirming": "确认中...",
+    "wdSuccessTitle": "提现成功",
+    "wdSuccessDesc": "资金将很快到达您的钱包",
+    "wdFailedTitle": "提现失败",
+    "wdErrFailedDesc": "申请失败，请稍后重试",
+    "wdErrSigRejected": "您已取消签名，请重新发起提现",
+    "wdGotIt": "我知道了",
+    "wdGoToHistory": "去查看",
+    "mtMatchWinner": "胜负",
+    "mtHandicap": "让球",
+    "mtOverUnder": "大小球",
+    "filterTitle": "按类型筛选",
+    "filterMenuTitle": "按状态筛选",
+    "filterAll": "全部",
+    "filterBetAll": "全部投注",
+    "filterStakeAll": "全部质押",
+    "filterLpAll": "全部金库",
+    "filterOther": "其他",
+    "filterSingle": "单注",
+    "filterParlay": "串关",
+    "filterClaim": "领奖",
+    "filterCancelBet": "取消",
+    "filterDeposit": "充值",
+    "filterWithdraw": "提现",
+    "filterCancelWithdraw": "取消提现",
+    "filterStake": "质押",
+    "filterUnstake": "解除质押",
+    "filterAddLp": "存入金库",
+    "filterRemoveLp": "赎回金库",
+    "filterResultTitle": "赛果",
+    "filterResultAll": "全部",
+    "filterResultWon": "赢",
+    "filterResultLost": "输",
+    "datePlaceholder": "年-月-日",
+    "dateFrom": "起始",
+    "dateTo": "结束",
+    "dateApply": "应用",
+    "dateReset": "重置",
+    "dateInvalid": "起始日期必须早于结束日期",
+    "loadMore": "加载更多",
+    "loadingMore": "加载中...",
+    "noResult": "没有匹配的交易记录",
+    "cancelBet": "取消",
+    "cancelling": "正在取消",
+    "cancelTitle": "取消下注",
+    "cancelDestination": "目标账户",
+    "cancelSource": "来源",
+    "cancelData": "数据",
+    "cancelSuccess": "撤单成功",
+    "cancelConfirm": "确认",
+    "claimWinnings": "领取奖金",
+    "claimRefund": "领取退款",
+    "claimWinningsTitle": "领取奖金",
+    "claimRefundTitle": "领取退款",
+    "partialRefund": "已退回 {amount}",
+    "claimConfirm": "领取",
+    "resultPush": "走水",
+    "actCancel": "撤单",
+    "actClaim": "领奖",
+    "actWon": "赢",
+    "actPush": "走水",
+    "actVoid": "退款",
+    "datePresetToday": "今天",
+    "datePreset7d": "最近 7 天",
+    "datePreset30d": "最近 30 天",
+    "datePreset6mo": "最近半年",
+    "datePreset12mo": "最近 1 年",
+    "wdErrNonceUsed": "提现申请已提交，请到提现记录查看",
+    "wdNonceReplayedTitle": "提现申请已受理"
+  },
+  "lending": {
+    "title": "仓位借贷",
+    "description": "将进行中的注单作为抵押，借取最多 50% 本金用于追加下注，无需动用账户余额。",
+    "tabBorrow": "借款",
+    "tabRepay": "还款",
+    "availablePositions": "可用抵押仓位",
+    "colMatch": "比赛 / 选项",
+    "colPrincipal": "本金",
+    "colReturn": "赔率",
+    "colCreditLimit": "可借额度",
+    "homeWin": "主队胜",
+    "draw": "平局",
+    "awayWin": "客队胜",
+    "expires": "有效至 {date}",
+    "alreadyBorrowed": "已借款",
+    "borrowed": "已借款",
+    "activeBorrows": "当前借款",
+    "statusActive": "进行中",
+    "principalFrozen": "本金冻结中",
+    "collateralLabel": "抵押：{match} · #{id}",
+    "potentialReturn": "潜在赔付 {amount}",
+    "collateralPosition": "抵押仓位",
+    "betPrincipal": "下注本金",
+    "maxBorrow": "最大可借",
+    "borrowAmount": "借款金额",
+    "usage": "使用比例",
+    "creditExpires": "额度有效至",
+    "fee": "手续费",
+    "free": "免费",
+    "repayment": "还款方式",
+    "autoDeducted": "结算时自动扣除",
+    "exceedsCreditLimit": "借款金额超出最大信用额度",
+    "enterAmount": "请输入借款金额",
+    "confirmBorrow": "确认借款 {amount} {symbol}",
+    "exceedsMax": "超出最大额度",
+    "repaymentDetails": "还款详情",
+    "creditBet": "信用注单",
+    "borrowedAmount": "已借金额",
+    "potentialReturnLabel": "潜在赔付",
+    "collateralBet": "抵押注单",
+    "profitCredited": "净利润已到账。借款本金冻结等待抵押注单结算，届时自动释放或没收，无坏账风险。",
+    "noManualRepay": "无需手动还款，借款额将在结算时自动从抵押仓位赔付中扣除。",
+    "confirmRepay": "还款",
+    "awaitingSettlement": "等待抵押注单结算",
+    "toastBorrowSubmitted": "信用借款 {amount} {symbol} 已提交，等待链上确认",
+    "toastRepayConfirmed": "还款确认，将于结算时自动扣除",
+    "colActions": "操作",
+    "noPositions": "暂无可用抵押仓位",
+    "times": "回报",
+    "netProfit": "净收益",
+    "noActiveBorrows": "暂无活跃借款",
+    "earnedSoFar": "累计收益",
+    "totalPrincipal": "借款本金",
+    "borrowing": "借款中...",
+    "confirming": "确认中...",
+    "status": "状态"
+  },
+  "referral": {
+    "heroTitle": "邀请好友，赚取奖励。",
+    "heroSubtitle": "提供流动性以匹配市场并赚取收益",
+    "betaBadge": "内测",
+    "bannerTitle": "欧冠专属激励进行中 · 4月29日 – 5月31日",
+    "bannerItem1": "首充 ODD 奖励翻倍",
+    "bannerItem2": "欧冠投注额外 +2% 返佣",
+    "bannerItem3": "邀请榜前5名获 500 ODD 奖励",
+    "myReferral": "我的邀请",
+    "myInviteLink": "我的邀请链接",
+    "myReferrer": "我的上级",
+    "inviteLinkPlaceholder": "https://www.oddfi.io/invite/xxxx 或钱包地址",
+    "copyLink": "复制链接",
+    "shareCard": "分享卡片",
+    "shareModalTitle": "分享",
+    "joinMeAtOddfi": "加入 OddFi",
+    "nextGenPrediction": "新一代预测市场",
+    "save": "保存",
+    "bind": "绑定",
+    "myRewards": "我的奖励",
+    "todaysEarnings": "今日收益",
+    "monthlyTotal": "本月累计",
+    "indirectClaimable": "可领取间推奖励",
+    "directRebate": "直推返佣",
+    "indirectRebate": "间接返佣",
+    "firstDeposit": "首充奖励",
+    "communityReward": "社区奖励",
+    "firstDepositTitle": "首充 ODD 奖励",
+    "firstDepositThreshold": "首次充值 ≥ ${amount}",
+    "inviterBonus": "邀请人 +{amount} {symbol}",
+    "firstDepositNote": "内测期奖励翻倍进行中 · ODD 奖励30天后解锁 · 需至少1笔有效投注 ≥ $10",
+    "statsTitle": "邀请统计",
+    "walletsReferred": "已邀请钱包数",
+    "totalRebates": "累计返佣收益",
+    "myLevel": "我的等级",
+    "current": "当前",
+    "indirectBonus": "间推奖励 +{percent}%",
+    "unlockCondition": "团队流水达 ${amount} 解锁",
+    "oddRelease": "ODD 释放倍数 ×{multiplier}",
+    "directRebateNote": "直推返佣 5% 单独计算",
+    "progressTo": "距 {level} 进度",
+    "progressHint": "再差 ${amount} 到达 {level}，解锁 +{percent}% 间推奖励",
+    "colDirectRebate": "直推返佣",
+    "colIndirectBonus": "间推奖励",
+    "colOddBoost": "ODD 加成",
+    "colLevel": "等级",
+    "colTeamVolume": "团队流水",
+    "colIndirectBonusOdd": "间推奖励（ODD）",
+    "directRebateOnly": "仅享 5% 直推返佣",
+    "kolPerks": "KOL 专属权益",
+    "myCommunity": "我的社区",
+    "communityLevel": "社区等级",
+    "directReferrals": "直推人数",
+    "indirectReferrals": "间推人数",
+    "myPerformance": "我的业绩",
+    "totalVolume": "总流水",
+    "personalVolume": "个人流水",
+    "directVolume": "直推流水",
+    "indirectVolume": "间接流水",
+    "teamVolume": "团队流水",
+    "historyTitle": "邀请记录",
+    "colAddress": "钱包地址",
+    "colJoined": "加入时间",
+    "colBettingVolume": "投注流水",
+    "colRebateEarned": "获得返佣",
+    "shareTitle": "分享邀请卡",
+    "exclusiveCode": "我的专属邀请码",
+    "shareSubtitle": "邀请好友，共享投注返佣",
+    "shareFeature1": "即时结算，无上限",
+    "shareFeature2": "直推返佣 5% · 团队奖励最高 +20% · 实时到账",
+    "shareExample": "邀请1位好友投注 $1,000 · 最高获得 $50 返佣",
+    "tagNoKyc": "无需实名",
+    "tagWalletConnect": "钱包连接",
+    "tagInstantPayout": "即时到账",
+    "tagBscChain": "BSC 链",
+    "toastCopied": "邀请链接已复制",
+    "toastCopyFailed": "复制失败，请手动选中复制",
+    "claim": "领取",
+    "tagDirectRebate": "5% 直推返佣",
+    "tagIndirectBonus": "4% 间接奖金",
+    "tagOddBoost": "ODD 加速 x1.2"
+  },
+  "staking": {
+    "daysShort": "天",
+    "banner": {
+      "tag": "世界杯限时活动",
+      "lead": "每日 5 万 ODD",
+      "body": "注入质押池，按质押份额分配给参与用户"
+    },
+    "title": "质押",
+    "tabStake": "质押",
+    "tabUnstake": "赎回",
+    "totalStaked": "全网总质押量",
+    "rewardPool": "收益池",
+    "days": "天",
+    "hours": "小时",
+    "estApy": "预估年化",
+    "multiplier": "倍率",
+    "available": "可用余额",
+    "max": "最大",
+    "minimum": "最少 100 {symbol}",
+    "insufficientBalance": "余额不足",
+    "stakeOdd": "质押 ODD",
+    "stakeSummary": "质押 {days} 天 · {multiplier} 倍加成",
+    "youWillEarn": "预估收益",
+    "dailyEarn": "每日收益",
+    "inUsd": "折合美元",
+    "unlockDate": "解锁日期",
+    "apyFormula": "APY =（每日做市收益 × {multiplier} / 总权重）× 365",
+    "apyDisclaimer": "实际收益取决于网络状况。",
+    "statusReady": "可赎回",
+    "statusActive": "锁定中",
+    "statusWithdrawn": "已退出",
+    "principal": "本金",
+    "rewardsEarned": "已赚收益",
+    "totalToReceive": "合计可取",
+    "unlockedOn": "解锁日期",
+    "rewardsSoFar": "当前累计收益",
+    "earlyExitReceives": "提前退出取回",
+    "rewardsForfeited": "损失收益",
+    "unstakeReceive": "赎回 · 取回 {amount} {symbol}",
+    "earlyUnstake": "提前赎回（损失 {amount} {symbol} 收益）",
+    "completed": "已完成 {count} 笔",
+    "toastStaked": "已质押 {amount} {symbol}，锁仓 {days} 天（{multiplier} 倍）",
+    "toastUnstakeRequested": "赎回申请已提交，资金约 2–3 天后可提取",
+    "toastEarlyUnstake": "提前赎回确认，已返还 {amount} {symbol}",
+    "subtitle": "锁仓 {symbol} 赚取平台收益",
+    "subtitleH5": "为比赛市场提供流动性，赚取收益",
+    "cardTitle": "ODD 质押",
+    "tabHistory": "历史",
+    "stakingDate": "质押日期",
+    "amount": "金额",
+    "inputAmount": "输入金额",
+    "enterAmount": "请输入金额",
+    "noActivePositions": "暂无活跃仓位",
+    "stakeToEarn": "质押 {symbol} 开始赚取收益",
+    "noHistory": "暂无历史记录",
+    "actionEarlyUnstake": "提前赎回",
+    "tabMyStaking": "我的质押",
+    "stakingAmount": "质押数量",
+    "earnedLabel": "已赚收益",
+    "unstakeBtn": "赎回",
+    "earlyUnstakeBtn": "提前赎回",
+    "stakedAmount": "质押数量",
+    "earnedSoFar": "当前收益",
+    "penalty": "罚金（收益的 10%）",
+    "youWillReceive": "您将收到",
+    "confirmEarlyUnstake": "确认提前赎回",
+    "earlyUnstakeTitle": "提前赎回确认",
+    "lockPeriod": "锁定期",
+    "comingSoon": "即将推出",
+    "approving": "授权中...",
+    "staking": "质押中...",
+    "confirming": "确认中...",
+    "processing": "处理中...",
+    "connectWalletToView": "请连接钱包查看质押信息",
+    "connectWalletToStake": "请连接钱包进行质押",
+    "historyEarlyForfeited": "已没收并重分配",
+    "totalActiveStake": "当前总质押",
+    "totalPendingReward": "待领奖励",
+    "vipTier": "VIP 等级",
+    "dailyBetLimit": "每日下注限额",
+    "dailyBetLimitTooltip": "根据 VIP 等级确定的每日下注上限（BettingPool）"
+  },
+  "pools": {
+    "daysShort": "天",
+    "banner": {
+      "tag": "世界杯限时活动",
+      "lead": "每日 10 万 ODD",
+      "body": "注入金库池，按做市贡献分配给存入用户"
+    },
+    "title": "庄家金库",
+    "pageTitle": "庄家金库",
+    "pageSubtitle": "为赛事市场提供流动性，赚取收益",
+    "add": "存入",
+    "matchMarketsTitle": "精选赛事池",
+    "matchMarketsSubtitle": "与玩家对赌你选择的比赛",
+    "allPoolsTitle": "全部赛事池",
+    "allPoolsSubtitle": "覆盖全场比赛，与所有玩家对赌",
+    "noMatches": "未找到匹配的比赛",
+    "colActions": "操作",
+    "colStatus": "状态",
+    "tabPositions": "我的金库",
+    "tabReturns": "收益记录",
+    "totalSupply": "总存入量",
+    "estApy": "预估年化",
+    "myBalance": "我的余额",
+    "deposit": "存入",
+    "redeem": "赎回",
+    "searchPlaceholder": "搜索比赛...",
+    "filterAll": "全部",
+    "filterFavorites": "收藏",
+    "filterSoccer": "足球",
+    "filterTennis": "网球",
+    "filterCricket": "板球",
+    "filterOthers": "其他",
+    "colMatch": "比赛",
+    "colVolume24h": "总下注量",
+    "globalPool": "全局池",
+    "matchStarted": "比赛已开赛",
+    "pendingSettlement": "等待结算中",
+    "closed": "已关闭",
+    "depositTo": "存入 {match}",
+    "depositSubtitle": "独立结算 · 本金随比赛盈亏实时浮动",
+    "depositWarning": "本金随平台赔付结果实时浮动，非保本产品，请评估风险后存入。",
+    "lockPeriod": "锁仓周期",
+    "unlocksAfterMatch": "比赛结束后自动解锁",
+    "availableAndMin": "可用：{available} {symbol} · 最少：1,000 {symbol}",
+    "poolShare": "池子占比",
+    "estPeriodReturn": "预估周期收益",
+    "unlockDate": "解锁日期",
+    "confirmDeposit": "确认存入",
+    "minimumDeposit": "最低存入量为 1,000 {symbol}",
+    "redeemTitle": "赎回 — {match}",
+    "unbondingPeriod": "2 个 Epoch 解绑周期（约 2–3 天）",
+    "currentValue": "当前价值",
+    "netPnl": "净盈亏",
+    "unbondingLabel": "解绑周期",
+    "youWillReceive": "预计到账",
+    "redeemWarning": "申请后即停止计算收益，该操作不可撤销。",
+    "confirmRedeem": "确认赎回",
+    "totalDeposited": "累计存入",
+    "readyToWithdraw": "可提取金额",
+    "activePositions": "活跃仓位",
+    "deposited": "存入金额",
+    "pnl": "盈亏",
+    "unlock": "解锁时间",
+    "statusReady": "可赎回",
+    "statusActive": "运行中",
+    "statusUnbonding": "赎回冷却中",
+    "statusWithdrawable": "可领取",
+    "statusWithdrawn": "已领取",
+    "statusLocked": "锁定",
+    "statusLiquidated": "已清算",
+    "withdraw": "领取",
+    "noPositions": "暂无持仓 · 存入开始赚取收益",
+    "totalMarginEarned": "累计 Margin 收益",
+    "totalLossAbsorbed": "累计承担亏损",
+    "houseWinRate": "平台胜率",
+    "allMatches": "全部比赛",
+    "houseWon": "平台赢",
+    "houseLost": "平台输",
+    "colDate": "日期",
+    "colResult": "结果",
+    "marginEarned": "Margin 收益",
+    "lossAbsorbed": "承担亏损",
+    "acrossAllMatches": "所有比赛",
+    "payoutLossesShared": "赔付亏损分摊",
+    "matchRatio": "{won} / {total} 场比赛",
+    "noHistory": "暂无记录",
+    "toastDepositConfirmed": "存入成功 · 已存入 {amount} {symbol}",
+    "toastRedeemSubmitted": "赎回申请已提交，约 2–3 天后可提取",
+    "depositVaultTitle": "存入 — ODD Vault",
+    "redeemVaultTitle": "赎回 — ODD Vault",
+    "amount": "数量",
+    "estDaily": "预估日收益",
+    "estMonthly": "预估月收益",
+    "apy": "年化收益率",
+    "lockBonus": "锁仓奖励",
+    "riskNotice": "风险提示：流动性池存款面临市场风险。若平台在匹配赛事中发生赔付，您的本金可能减少。历史年化不代表未来收益。",
+    "redeemAmountLabel": "赎回金额 ({symbol})",
+    "available": "可用",
+    "unbondingDays": "{days} 天",
+    "afterUnbondingPeriod": "{days} 天解绑周期后到账",
+    "addLiquidity": "存入金库",
+    "maxBtn": "最大",
+    "availableWithAmount": "可用：{amount} {symbol}",
+    "timeUntilMatchEnd": "距比赛结束",
+    "matchEnded": "比赛已结束",
+    "matchPoolRiskNotice": "若投注池产生赔付，你的余额可能下降。",
+    "depositWindowClosed": "该赛事池已关闭存入。",
+    "approvingCta": "授权中...",
+    "confirmingApproveCta": "确认授权中...",
+    "depositingCta": "存入中...",
+    "confirmingCta": "确认中...",
+    "minimumDepositDynamic": "最低存入量为 {amount} {symbol}",
+    "connectToViewPositions": "连接钱包查看仓位"
+  },
+  "userMenu": {
+    "themeDark": "深色模式",
+    "themeLight": "浅色模式",
+    "language": "语言",
+    "currency": "货币",
+    "portfolio": "投资组合",
+    "accuracy": "精度",
+    "helpCenter": "帮助中心",
+    "documentation": "文档",
+    "termsOfUse": "使用条款",
+    "disconnect": "断开连接"
+  },
+  "swap": {
+    "title": "兑换",
+    "pay": "支付",
+    "receive": "收到",
+    "connectWallet": "连接钱包",
+    "switchToBsc": "切换到 BSC",
+    "enterAmount": "输入金额",
+    "insufficientBalance": "{token} 余额不足",
+    "approving": "授权中...",
+    "swapping": "兑换中...",
+    "fetchingQuote": "获取报价...",
+    "switchingNetwork": "切换网络中...",
+    "approveAndSwap": "授权并兑换",
+    "swap": "兑换",
+    "max": "最大",
+    "fetchingRate": "获取汇率...",
+    "priceImpact": "价格影响",
+    "minReceived": "最少收到（滑点 {slippage}%）",
+    "minimumReceived": "最少收到",
+    "referenceRate": "参考汇率",
+    "routing": "路由",
+    "quoteErrorLowLiquidity": "金额过小或流动性不足，请增加金额",
+    "auto": "自动",
+    "route": "路由",
+    "loading": "加载中...",
+    "slippageSettings": "滑点设置",
+    "slippageDescription": "设置你可以接受的最大价格偏移幅度。",
+    "custom": "自定义",
+    "highSlippageWarning": "滑点过高，可能导致不利交易",
+    "currentSlippage": "当前滑点",
+    "aboutToken": "关于 {name}",
+    "overview": "概览",
+    "marketCap": "市值",
+    "volume24h": "24小时交易量",
+    "totalSupply": "总供应量",
+    "volMarketCap": "量/市值比",
+    "circulatingSupply": "流通供应量",
+    "securityCheck": "安全检查",
+    "noRisksDetected": "未检测到风险",
+    "lineChart": "折线图",
+    "candleChart": "K线图",
+    "confirm": "确认",
+    "tokenPicker": {
+      "title": "选择代币",
+      "searchPlaceholder": "搜索代币符号或合约地址",
+      "allChains": "全部",
+      "ownedAssets": "持有资产",
+      "popular": "热门",
+      "noTokensFound": "未找到代币"
+    }
+  },
+  "deposit": {
+    "title": "充值",
+    "receive": "收款",
+    "balance": "余额：",
+    "usedConnectedWallet": "已连接的钱包",
+    "wallet": "钱包",
+    "loading": "加载中...",
+    "instant": "即时",
+    "otherOptions": "其他方式",
+    "transferCrypto": "转账充值",
+    "noLimit": "无限额",
+    "failedToLoad": "加载充值地址失败。",
+    "pleaseReopen": "请关闭并重新打开充值弹窗。",
+    "receiveNetwork": "收款网络：",
+    "receiveAddress": "收款地址",
+    "noTokensFound": "未找到有余额的代币",
+    "transferToDeposit": "请向钱包转入代币以充值",
+    "crossChainSoon": "跨链充值即将推出",
+    "continue": "继续",
+    "enterAmount": "请输入金额",
+    "insufficientBalance": "余额不足",
+    "minimumAdjusted": "最低 $2 — 金额已调整",
+    "send": "发送",
+    "get": "获得",
+    "youSend": "您发送",
+    "youGet": "您获得",
+    "source": "来源",
+    "destination": "目标",
+    "estimatedTime": "预计时间",
+    "lessThan1Min": "< 1 分钟",
+    "confirm": "确认",
+    "processing": "处理中...",
+    "selectCrypto": "选择代币",
+    "inputAmount": "输入金额",
+    "oddWallet": "ODD 钱包",
+    "transactionBreakdown": "交易明细",
+    "networkCost": "网络费用",
+    "priceImpact": "价格影响",
+    "maxSlippage": "最大滑点",
+    "termsNotice": "交易即表示您同意",
+    "termsOfUse": "使用条款",
+    "depositConfirming": "充值确认中",
+    "fundsArrive": "您的资金将在几秒内到账。",
+    "continueDeposit": "继续充值",
+    "viewPortfolio": "去查看",
+    "lowBalance": "余额不足"
+  },
+  "bridge": {
+    "title": "跨链",
+    "from": "从",
+    "to": "到 (BSC)",
+    "amount": "金额",
+    "bridge": "跨链",
+    "approveBridge": "授权并跨链",
+    "bridging": "跨链转账进行中...",
+    "quoteExpired": "报价已过期，刷新中...",
+    "refundInitiated": "交易失败。已向您的钱包发起退款。",
+    "completed": "转账完成",
+    "selectSourceToken": "选择源代币",
+    "selectDestToken": "选择目标代币",
+    "enterAmount": "输入金额",
+    "fetchingQuote": "获取报价中...",
+    "failedQuote": "获取报价失败",
+    "waitingSignature": "等待签名...",
+    "relaying": "中继中...",
+    "relayingStep": "中继中...（步骤 {current}/{total}）",
+    "switchToSupported": "请切换到支持的网络",
+    "connectWallet": "连接钱包",
+    "bridgeAgain": "再次跨链",
+    "refreshingQuote": "刷新报价中...",
+    "transferComplete": "转账完成！请查看您的 BSC 钱包。",
+    "transferFailed": "交易失败。请重试。"
+  },
+  "landing": {
+    "hero": {
+      "slogans": ["AI 原生", "万物可测", "链上共建"],
+      "titleLine1": "下一代预测市场",
+      "titleLine2": "由 AI Agent 重建"
+    },
+    "predictions": {
+      "sectionTitle": "2026 年世界杯，从此在链上预测。",
+      "ctaButton": "开始预测",
+      "cardCta": "开始预测",
+      "cards": {
+        "world-cup-winner": "谁将赢得世界杯？",
+        "ronaldo-goals": "罗纳尔多总进球数",
+        "mvp": "谁会成为最有价值球员？",
+        "top-scorer": "谁将成为最佳射手？",
+        "best-goalkeeper": "谁将成为最佳门将？"
+      }
+    },
+    "mobile": {
+      "heroBadge": "AI 原生",
+      "heroTitleLine1": "下一代预测市场",
+      "heroTitleLine2": "由 AI Agent 重建",
+      "ctaStartPredict": "开始预测",
+      "predictionsTitleLine1": "2026 年世界杯",
+      "predictionsTitleLine2": "从此在链上预测",
+      "stickyConnect": "连接钱包",
+      "stickyEnter": "进入预测",
+      "headerClose": "关闭"
+    },
+    "starsNight": {
+      "title": "群星落幕夜",
+      "subtitleLine1": "时间从不吹哨，却让传奇走向终点。",
+      "subtitleLine2": "2026，群星最后同台。",
+      "ctaPredictNow": "立即预测",
+      "players": {
+        "messi": {
+          "name": "梅西 🇦🇷",
+          "description": "卫冕之王的最后一舞"
+        },
+        "mbappe": {
+          "name": "姆巴佩 🇫🇷",
+          "description": "巅峰之矛，剑指大力神杯。"
+        },
+        "yamal": {
+          "name": "亚马尔 🇪🇸",
+          "description": "18岁神童，天选之子。"
+        },
+        "ronaldo": {
+          "name": "C 罗 🇵🇹",
+          "description": "第六次出征，只为加冕。"
+        },
+        "bellingham": {
+          "name": "贝林厄姆 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+          "description": "三狮中场，皇马之王。"
+        },
+        "haaland": {
+          "name": "哈兰德 🇳🇴",
+          "description": "北欧魔人，降临世界杯。"
+        },
+        "son": {
+          "name": "孙兴慜 🇰🇷",
+          "description": "亚洲之光，最后冲锋。"
+        },
+        "vinicius": {
+          "name": "维尼修斯 🇧🇷",
+          "description": "桑巴新核，左路风暴。"
+        },
+        "kane": {
+          "name": "凯恩 🇬🇧",
+          "description": "队长+金靴，一击致命。"
+        },
+        "pedri": {
+          "name": "佩德里 🇪🇸",
+          "description": "中场大师，优雅掌控。"
+        }
+      }
+    },
+    "tradeShowcase": {
+      "title": "一个平台，多种玩法",
+      "subtitle": "从预测下注到做市收益，每个角色都能找到自己的参与方式。",
+      "card1": {
+        "title": "预测下注",
+        "description": "选择赛事，锁定赔率串关最高 6 场"
+      },
+      "card2": {
+        "title": "做市",
+        "description": "注入流动性获得协议分润",
+        "small": "预估年化收益"
+      },
+      "card3": {
+        "title": "质押",
+        "description": "质押 ODD 获得收益，解锁更高 VIP 限额",
+        "small": "预估年化收益"
+      },
+      "card4": {
+        "title": "仓位借贷",
+        "description": "仓位抵押提升资金利用率",
+        "small": "最高借出"
+      }
+    },
+    "stats": {
+      "title": "平台实时数据",
+      "totalVolume": "累计投注量",
+      "tvl": "总锁仓量 TVL",
+      "activeUsers": "活跃用户数",
+      "marketsResolved": "已结算赛事"
+    },
+    "oddToken": {
+      "title": "ODD 代币",
+      "subtitle": "让代币持有者真正参与平台收益分配。",
+      "tokenName": "代币名称",
+      "totalSupply": "总发行量",
+      "network": "所在链",
+      "dex": "DEX",
+      "buyButton": "即刻购买 ODD",
+      "flywheelCenter": "ODD 增长飞轮",
+      "flywheelStages": {
+        "userBet": "用户下注",
+        "demand": "需求增长",
+        "valueCapture": "价值捕获",
+        "scenarios": "场景扩展",
+        "liquidity": "流动性增加",
+        "experience": "体验升级"
+      }
+    },
+    "advantages": {
+      "title": "重新定义预测市场",
+      "subtitle": "从预测下注到做市收益，每个角色都能找到自己的参与方式",
+      "cards": {
+        "zero-slippage": {
+          "title": "零滑点",
+          "description": "固定赔率，所见即所得"
+        },
+        "lending": {
+          "title": "仓位借贷",
+          "description": "仓位抵押，提升资金利用率"
+        },
+        "staking": {
+          "title": "质押分润",
+          "description": "ODD 持有者共享协议收入"
+        },
+        "market-making": {
+          "title": "人人做市",
+          "description": "一键注入流动性，分享做市商收益"
+        },
+        "ai-agent": {
+          "title": "AI Agent 自主下注",
+          "description": "从分析预测到记忆复盘，全流程链上闭环"
+        },
+        "no-kyc": {
+          "title": "无 KYC",
+          "description": "连接钱包即可开始，随时出金"
+        }
+      }
+    },
+    "aiAgent": {
+      "comingSoon": "即将上线",
+      "title": "AI Agent 协议层",
+      "subtitle": "世界杯期间，让你的专属 Agent 替你预测、替你下注",
+      "ctaButton": "抢先锁定内测资格",
+      "card1": {
+        "title": "训练你的 Agent",
+        "description": "注入你的策略、偏好、风险阈值——AI 会按你的方式参与市场。"
+      },
+      "card2": {
+        "title": "自动预测世界杯",
+        "description": "7×24 持续追踪赔率、伤情、舆论，自动捕捉机会、完成下注。"
+      },
+      "card3": {
+        "title": "沉淀你的交易记忆",
+        "description": "每一笔决策都在沉淀。Agent 越用越懂你——专属于你的资产。"
+      }
+    },
+    "roadmap": {
+      "title": "我们正在构建什么",
+      "phases": {
+        "phase1": {
+          "label": "第一阶段",
+          "title": "世界杯首发",
+          "month": "2026年5月",
+          "details": ["足球预测市场上线", "ODD 代币发行", "流动性池开放", "借贷功能上线"]
+        },
+        "phase2": {
+          "label": "第二阶段",
+          "title": "AI 自主预测",
+          "month": "2026年6-7月",
+          "details": ["训练专属 Agent", "自动预测 + 自主下单", "Agent 沉淀用户记忆"]
+        },
+        "phase3": {
+          "label": "第三阶段",
+          "title": "多市场扩张",
+          "month": "2026年8月",
+          "details": ["主流体育全覆盖", "加密事件市场", "多链部署", "Agent 策略市场"]
+        },
+        "phase4": {
+          "label": "第四阶段",
+          "title": "万物皆可预测",
+          "month": "2026年9-10月",
+          "details": ["政经事件市场", "宏观经济市场", "突发事件实时市场", "专家 Agent 入驻"]
+        },
+        "phase5": {
+          "label": "第五阶段",
+          "title": "Agent 驱动的衍生品",
+          "month": "2026年11月+",
+          "details": ["链上全资产衍生品", "自动做市与定价", "Agent 跨品种交易"]
+        }
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "viewMore": "查看更多",
+      "items": [
+        {
+          "question": "OddFi 是什么？",
+          "answer": "OddFi 是部署在 BNB Smart Chain 上的去中心化体育预测市场，由 AI Agent 驱动——用户训练专属 Agent，AI 替你研究、判断、下注。资金由智能合约自托管，平台无法单方面动用；赔率推导、Margin 与结算全部链上可验证。"
+        },
+        {
+          "question": "如何开始？",
+          "answer": "① 连接 EVM 钱包（MetaMask / OKX / Bitget / WalletConnect 等） → ② 签名认证 → ③ 用任意 EVM 资产充值（系统自动跨链至 BSC） → ④ 选赛事下注。全程约 1 分钟。"
+        },
+        {
+          "question": "平台有哪些玩法?",
+          "answer": "四大玩法：下注（手动 + AI Agent 智能，支持胜负 / 让球 / 大小球，串关与提前兑现）、盘口做市（注资 LP 分享平台 Margin）、ODD 质押（解锁 VIP 限额、享派奖税分红）、仓位借贷（用待结算仓位抵押借额度再下注），另享邀请奖励（直推返佣 + 团队级差加成）。"
+        },
+        {
+          "question": "ODD 代币是什么？有哪些用途？",
+          "answer": "ODD 是 OddFi 的唯一计价代币，BEP-20 标准，总量恒定 1 亿枚。\n· 下注：所有比赛结算的唯一货币\n· AI：训练 Agent + 调用模型的 Gas\n· 质押：解锁 VIP 限额、享派奖税分红\n· 做市：注入流动性池，按份额分享 Margin 收益"
+        },
+        {
+          "question": "与 Polymarket / Kalshi 有什么区别？",
+          "answer": "我们与 Polymarket / Kalshi 的核心差异在四个维度：\n· AI Agent：业内首家原生 AI Agent——用户训练专属 Agent，自动研究、判断、下注\n· 多链无门槛：任意 EVM 资产一键参与，系统自动跨链至 BSC\n· DeFi 玩法：盘口做市、ODD 质押、仓位借贷，链上玩法完整\n· 代币经济：ODD 是结算货币 + AI Gas，闭环飞轮"
+        },
+        {
+          "question": "AI Agent 是什么？怎么用？",
+          "answer": "AI Agent 是你的专属交易代理。完成 3 步即可使用：\n· 训练：输入策略偏好、风险阈值、关注品类，5 分钟完成配置\n· 运行：Agent 7×24 自动追踪赔率、伤情、舆情，识别机会自动下注\n· 沉淀：每一次决策都被记录，Agent 越用越懂你"
+        }
+      ]
+    },
+    "cta": {
+      "title": "OddFi，下一代链上预测市场",
+      "buttonPredict": "开始预测"
+    },
+    "partners": {
+      "title": "合作伙伴"
+    },
+    "footer": {
+      "slogan": "下一代预测市场，由 AI Agent 重建。",
+      "product": "产品",
+      "resources": "资源",
+      "links": {
+        "markets": "世界杯",
+        "pools": "庄家金库",
+        "stake": "质押",
+        "lend": "借贷",
+        "swap": "兑换",
+        "referral": "邀请",
+        "docs": "帮助文档",
+        "audits": "审计报告",
+        "whitepaper": "白皮书",
+        "contracts": "合约地址",
+        "rewards": "奖励"
+      },
+      "copyright": "© 2026 OddFi. All rights reserved."
+    },
+    "calendarPage": {
+      "title": "2026 FIFA 世界杯™ 赛程",
+      "stages": {
+        "group": "小组赛",
+        "r32": "32强",
+        "r16": "16强",
+        "qf": "八强",
+        "sf": "半决赛",
+        "third": "三四名决赛",
+        "final": "决赛"
+      },
+      "sectionBanner": {
+        "groupMatches": "小组赛",
+        "day": "天",
+        "days": "天"
+      },
+      "filters": {
+        "group": "组",
+        "groupWithCount": "组 ({count})",
+        "all": "全部",
+        "comingSoon": "即将推出",
+        "cancel": "取消",
+        "apply": "确认"
+      },
+      "hover": {
+        "preOpen": "待开盘",
+        "local": "本地",
+        "groupLabel": "第{name}组"
+      }
+    }
+  },
+  "calendarPage": {
+    "title": "2026 FIFA 世界杯™ 赛程",
+    "stages": {
+      "group": "小组赛",
+      "r32": "32强",
+      "r16": "16强",
+      "qf": "八强",
+      "sf": "半决赛",
+      "third": "三四名决赛",
+      "final": "决赛"
+    },
+    "sectionBanner": {
+      "groupMatches": "小组赛",
+      "day": "天",
+      "days": "天"
+    },
+    "filters": {
+      "group": "组",
+      "groupWithCount": "组 ({count})",
+      "all": "全部",
+      "comingSoon": "即将推出",
+      "cancel": "取消",
+      "apply": "确认"
+    },
+    "hover": {
+      "preOpen": "待开盘",
+      "local": "本地",
+      "groupLabel": "{name}组"
+    }
+  },
+  "userSettings": {
+    "title": "设置",
+    "username": "用户名",
+    "usernamePlaceholder": "默认用户名",
+    "address": "地址",
+    "copy": "复制",
+    "copied": "已复制",
+    "addressHint": "请勿向此地址转入资金，此地址仅用于 API 调用",
+    "connectSocialMedia": "连接社交媒体",
+    "connect": "连接",
+    "disconnect": "断开",
+    "save": "保存",
+    "saved": "已保存",
+    "socialComingSoon": "社交账号连接即将开放",
+    "twitter": {
+      "refresh": "刷新",
+      "rateLimited": "核验过于频繁，请稍后再试",
+      "bindSuccess": "X 账号 @{username} 绑定成功",
+      "bindSuccessLoginToView": "X 账号绑定成功，登录后查看详情",
+      "bindCancelled": "已取消绑定",
+      "bindFailed": "绑定失败，请重试",
+      "bindError": {
+        "alreadyBound": "请先解绑当前的 X 账号",
+        "disabled": "X 绑定功能尚未开放",
+        "unknown": "发起 X 绑定失败，请重试"
+      },
+      "unbindConfirm": {
+        "cooldown": "解绑后，该 X 账号 {days} 天内不可被任何账号重新绑定。",
+        "confirm": "解绑",
+        "cancel": "取消"
+      },
+      "follow": {
+        "verified": "已关注 @OddFiLabs",
+        "notFollowing": "尚未关注",
+        "cta": "关注",
+        "unverified": "关注 @OddFiLabs 后点刷新核验",
+        "protected": "私密账号无法核验，请设为公开",
+        "tooMany": "暂时无法自动核验",
+        "error": "暂时无法核验，请稍后重试"
+      }
+    },
+    "errors": {
+      "tooShort": "用户名至少需要 3 个字符",
+      "tooLong": "用户名最多 20 个字符",
+      "invalidChars": "用户名只能使用字母、数字和 ._-",
+      "consecutiveSpecial": "用户名不能包含连续的特殊字符",
+      "edgeSpecial": "用户名首尾必须为字母或数字"
+    }
+  },
+  "earlyBird": {
+    "step1": {
+      "title": "早鸟登记 · 抢先解锁 Oddfi",
+      "heading": "成为首批体验 Oddfi 的玩家",
+      "formIntro": "优先填写体验表单，第一时间收到空投福利和早鸟权益",
+      "formHint": "填写仅需 1 分钟",
+      "emailLabel": "邮箱地址",
+      "emailHint": "用于接收产品上线与空投通知",
+      "emailPlaceholder": "输入",
+      "walletLabel": "BSC 链地址",
+      "walletHint": "BNB Smart Chain (BEP-20) 钱包地址，用于白名单与空投发放",
+      "walletPlaceholder": "输入",
+      "walletError": "错误：请输入有效的 BSC 钱包地址（0x... 共 42 位）",
+      "emailAlreadyRegistered": "此邮箱已加入早鸟名单",
+      "walletAlreadyRegistered": "此钱包已加入早鸟名单",
+      "emailInvalidServer": "请输入有效邮箱地址",
+      "wishTooLong": "内容过长（不超过 500 字）",
+      "requiredMissing": "请填写必填字段",
+      "captchaFailed": "人机校验失败，请刷新后重试",
+      "sourceInvalid": "请选择有效来源",
+      "tooManyRequests": "提交太频繁，请稍后再试",
+      "networkError": "网络异常，请检查连接后重试",
+      "submitError": "提交失败，请稍后再试",
+      "submitting": "提交中...",
+      "wishLabel": "最期待的功能",
+      "wishHint": "建议、问题、或其他",
+      "wishPlaceholder": "输入",
+      "submitCta": "保存",
+      "sourceLabel": "你从哪里知道的 Oddfi？",
+      "sourceHint": "帮助我们优化渠道投放",
+      "sourcePlaceholder": "请选择",
+      "sourceOption": {
+        "telegram": "Telegram",
+        "x": "X",
+        "discord": "Discord",
+        "friends": "朋友推荐",
+        "kol": "KOL 推荐",
+        "other": "其他"
+      },
+      "sourceOtherPlaceholder": "请填写具体来源",
+      "sourceOtherHint": "请填写具体来源",
+      "sourceOtherCancel": "取消"
+    },
+    "step2": {
+      "title": "早鸟通道 · 加入白名单",
+      "heading": "你已加入白名单",
+      "subheading": "上线前我们会通过邮箱与你联系。",
+      "rankBadge": "你已排到第 #{rank} 位",
+      "followIntro": "关注 X 与 Telegram，第一时间收到上线消息。",
+      "xHandle": "在 X 关注 @oddfilabs",
+      "tgHandle": "加入 Telegram @OddFi_Official",
+      "followCta": "关注",
+      "joinCta": "加入",
+      "doneCta": "知道了"
+    },
+    "mobileGate": {
+      "comingSoon": "即将上线",
+      "stayTuned": "敬请期待",
+      "notifyMe": "通知我"
+    }
+  },
+  "aiAgent": {
+    "mobileComingSoon": {
+      "title": "敬请期待"
+    },
+    "intro": {
+      "title": "AI Agent 现已上线！",
+      "cta": "去设置",
+      "skip": "以后再说"
+    },
+    "persona": {
+      "title": "正在创建你的交易画像",
+      "steps": [
+        "扫描 FIFA 数据池 (48 队 + 30+ 球星)",
+        "提取 20 个偏好向量",
+        "匹配球队风格",
+        "匹配模板风格",
+        "生成 4 行画像",
+        "完成"
+      ],
+      "result": {
+        "title": "你的专属画像已生成",
+        "cta": "开始使用"
+      }
+    },
+    "wizard": {
+      "title": "Personalize your Agent",
+      "editTitle": "编辑 Agent 参数",
+      "settingsTitle": "Agent 设置",
+      "linearTitle": "三步创建你的专属 Agent",
+      "tabs": {
+        "basics": "基础",
+        "behavior": "行为",
+        "notify": "推送",
+        "memory": "记忆",
+        "usage": "用量"
+      },
+      "actions": {
+        "reset": "重置",
+        "save": "保存",
+        "prev": "上一步",
+        "next": "下一步",
+        "createPersona": "完成创建"
+      },
+      "hint": {
+        "completeAll": "请完成所有步骤的必填项后保存"
+      },
+      "step1": {
+        "avatarLabel": "头像",
+        "changeAvatar": "更改头像",
+        "nicknameLabel": "昵称",
+        "nicknamePlaceholder": "Cat·猫",
+        "aiTypeLabel": "AI 类型",
+        "aiTypeSubtitle": "决定 AI 的性格、语气与节制风格",
+        "tones": {
+          "rational": "理性",
+          "companion": "陪伴",
+          "aggressive": "进取",
+          "strict": "严格"
+        }
+      },
+      "step2": {
+        "risk": {
+          "title": "风险偏好",
+          "subtitle": "0-10 精细调节，越右越激进，AI 推仓位也越大",
+          "ariaLabel": "风险偏好",
+          "buckets": {
+            "veryConservative": "极度保守",
+            "conservative": "保守",
+            "moderate": "中等保守",
+            "balanced": "均衡",
+            "aggressive": "进取",
+            "veryAggressive": "极度进取"
+          }
+        },
+        "stake": {
+          "title": "通常单注金额",
+          "subtitle": "AI 用此作为「常规仓位」基准；最低起注 1,000 ODD",
+          "hint": "最小起注：1,000 ODD ≈ $100。换算汇率 1 ODD = 0.10 USD（即时锁价由桥接层维护）。",
+          "ariaLabel": "通常单注金额"
+        },
+        "control": {
+          "title": "节制器",
+          "subtitle": "命中 Tilt 信号时主动反向劝阻",
+          "ariaLabel": "节制器"
+        }
+      },
+      "step3": {
+        "countries": {
+          "title": "关注国家",
+          "subtitle": "国家队相关推文优先触发推送；默认预填 10 个；点击 × 移除，回车添加新词",
+          "placeholder": "国家",
+          "addButton": "添加",
+          "defaultList": [
+            "阿根廷",
+            "巴西",
+            "英格兰",
+            "法国",
+            "西班牙",
+            "葡萄牙",
+            "德国",
+            "意大利",
+            "荷兰",
+            "比利时"
+          ]
+        },
+        "players": {
+          "title": "关注球星",
+          "subtitle": "球星相关推文优先触发推送；默认预填 10 个；点击 × 移除，回车添加新词",
+          "placeholder": "球星",
+          "addButton": "添加",
+          "defaultList": [
+            "梅西",
+            "C 罗",
+            "姆巴佩",
+            "哈兰德",
+            "贝林厄姆",
+            "内马尔",
+            "维尼修斯",
+            "萨拉赫",
+            "凯恩",
+            "莫德里奇"
+          ]
+        },
+        "channels": {
+          "title": "推送类型",
+          "subtitle": "单日软上限 4 条 / 硬上限 8 条",
+          "loginGreet": {
+            "label": "登录召唤",
+            "hint": "登录瞬间主动打招呼，最低优先级，超频会被丢弃"
+          },
+          "preMatch": {
+            "label": "赛前分析",
+            "hint": "关注比赛开赛前 4–6 小时主动推送深度分析"
+          },
+          "kickoff": {
+            "label": "临场更新",
+            "hint": "开赛前 30 分钟，最高优先级（错过即不可补）"
+          },
+          "recap": {
+            "label": "复盘",
+            "hint": "比赛结束后回顾结果与 AI 自评"
+          },
+          "highPriority": {
+            "label": "高优事件突破上限",
+            "hint": "比赛取消、阵容剧变、赔率异动等可突破软上限"
+          }
+        },
+        "sound": {
+          "title": "提示音",
+          "subtitle": "推送到达、节制器、新闻时播放",
+          "names": {
+            "ding": "叮",
+            "bell": "风铃",
+            "crisp": "清脆",
+            "guqin": "古琴",
+            "comm": "通讯"
+          },
+          "previewAria": "选择并试听 {name}",
+          "masterAria": "提示音总开关",
+          "footnote": "点击 ▶ 试听 · 高优事件与节制器命中即使关闭也保留视觉提醒"
+        }
+      },
+      "step4": {
+        "title": "AI 对你的整体认知",
+        "subtitle": "AI 会记住你的聊天内容、投注偏好、风险承受能力等信息，以便提供更个性化的建议。",
+        "summaryTitle": "记忆摘要",
+        "empty": "暂无记忆摘要",
+        "viewFull": "查看完整记忆",
+        "clear": "清除记忆",
+        "clearConfirm": "确认清除？",
+        "defaultSummary": [
+          "偏好关注欧洲五大联赛，尤其是西甲和英超",
+          "倾向于分析主队让球盘",
+          "风险偏好适中，单注金额通常在 1000-3000 ODD",
+          "喜欢在比赛开始前 2-4 小时获得分析"
+        ]
+      },
+      "step5": {
+        "creditsUsage": {
+          "title": "Credits 用量",
+          "balance": "余额",
+          "monthlyConsumption": "本月消耗"
+        },
+        "lowBalance": {
+          "title": "余额不足",
+          "desc": "当前余额偏低，建议及时充值以继续使用 AI 功能",
+          "deposit": "充值",
+          "upgrade": "升级 VIP"
+        },
+        "tiers": {
+          "title": "等级与 Credits 折扣",
+          "subtitle": "升级 VIP 即可降低 AI 调用单价",
+          "you": "◀ 你",
+          "tableHeader": {
+            "level": "等级",
+            "rate": "折扣率",
+            "unit": "1 Credit 单价",
+            "save": "节省"
+          }
+        },
+        "footnote": {
+          "baseLabel": "基础消耗：",
+          "baseDesc": "对话 1 / 赛前分析 8 / 临场更新 3 / 复盘 5 / 主动新闻 2 Credits",
+          "formulaPrefix": "实际扣减 = max(1, round(基础 × 折扣率))。例：VIP 3 调用赛前分析 = 8 × 0.85 ≈ ",
+          "formulaHighlight": "7 Credits",
+          "formulaSuffix": "。"
+        }
+      }
+    }
+  },
+  "aiChat": {
+    "header": {
+      "status": "在线·主动模式"
+    },
+    "tabs": {
+      "chat": "对话",
+      "news": "新闻",
+      "analysis": "分析"
+    },
+    "composer": {
+      "placeholder": "输入消息..."
+    },
+    "empty": "从底部输入框开始对话",
+    "quickReplies": {
+      "match": "⚽ 今天有什么比赛？",
+      "highOdds": "🔥 今天高赔率比赛有哪些？",
+      "trending": "👀 大家都在下注什么？"
+    },
+    "sidebar": {
+      "feature": "功能",
+      "recents": "最近",
+      "newChat": "新会话",
+      "search": "搜索",
+      "basics": "基础",
+      "behavior": "行为",
+      "notification": "通知",
+      "memory": "记忆",
+      "usage": "用量"
+    }
+  },
+  "invest": {
+    "hero": {
+      "badge": "ODDFI 火热预售中",
+      "title": "先认购，后起飞",
+      "countdownLabel": "距离 TGE 仅剩",
+      "cta": "即刻认购",
+      "unitDay": "天",
+      "unitHour": "时",
+      "unitMin": "分",
+      "unitSec": "秒"
+    },
+    "position": {
+      "panelTitle": "我的认购",
+      "totalHoldings": "总持仓",
+      "sourceSubscribe": "认购",
+      "sourceReferral": "邀请奖励",
+      "totalInvested": "累计投入",
+      "todayValue": "今日价值",
+      "lockedPrice": "锁定单价",
+      "todayPrice": "今日单价",
+      "claimLabel": "领取",
+      "vestingLabel": "待释放总额",
+      "claimed": "已领取",
+      "claimable": "待领取",
+      "claimBtn": "领取",
+      "notReleased": "未释放",
+      "upcomingRelease": "即将释放"
+    },
+    "subscribe": {
+      "pageTitle": "预售认购",
+      "panelTitle": "认购份额",
+      "panelHeader": "立刻认购",
+      "inputLabel": "输入认购份额",
+      "endTimeLabel": "认购结束时间",
+      "dayUnit": "天",
+      "amountLabel": "金额",
+      "balanceLabel": "余额",
+      "balanceInsufficient": "余额不足，最大 {max} USDT",
+      "maxBtn": "最大",
+      "summaryProgress": "当前轮次进度",
+      "summaryRelease": "释放节奏",
+      "summaryPrice": "单价",
+      "summaryEstimate": "预估获得数量",
+      "perTokenUnit": "枚",
+      "toggleSupplyUnit": "切换 ODD / USDT",
+      "ctaConnect": "⚡ 连接钱包",
+      "ctaEnded": "私募已结束",
+      "ctaComing": "即将开放 · {countdown}",
+      "ctaSubscribe": "认购",
+      "allEndedBanner": "<b>私募已于 2026 年 6 月 10 日 (TGE) 结束</b> · 所有轮次关闭 · 90 天解锁窗口内每日分发奖励",
+      "badgeEnded": "已结束",
+      "badgeActive": "进行中",
+      "badgeComing": "即将开放",
+      "chipTitleComing": "{date} 开放",
+      "chipTitleEnded": "轮次已结束",
+      "chipTgeDiscount": "TGE 折扣 {discount}",
+      "tgeDiscountLabel": "TGE 折扣",
+      "currentRound": "当前轮次"
+    },
+    "referral": {
+      "panelTitle": "我的邀请",
+      "marketingBadge": "🎁 推荐人得 <strong>10%</strong> 认购奖励",
+      "myLinkLabel": "我的邀请链接",
+      "connectToViewLink": "请连接钱包后查看邀请链接",
+      "copyLinkBtn": "复制链接",
+      "shareCardBtn": "分享卡片",
+      "inviteBtn": "去邀请",
+      "rewardSubtitle": "推荐人得 <b>10%</b> 认购奖励",
+      "myReferrerLabel": "我的推荐人",
+      "connectToViewReferrer": "请连接钱包后查看",
+      "inviterInputPlaceholder": "如 0x3YCBK8 或邀请链接",
+      "bindBtn": "绑定",
+      "referrerLabel": "推荐人",
+      "inviterCodeLabel": "邀请码",
+      "copyTitle": "复制",
+      "bannerLine1": "通过邀请人 <strong>{code}</strong> 进入 · 双方获 10% 额外奖励",
+      "codeLabel": "邀请码",
+      "codePlaceholder": "如 0x3YCBK8",
+      "bannerCodeRequired": "请先填写邀请码",
+      "bannerCodeBound": "✓ 邀请码已绑定",
+      "modalCodeEmpty": "请输入邀请码,或点击「暂时跳过」"
+    },
+    "vault": {
+      "panelTitle": "金库信息",
+      "panelSub": "转账前请核对接收地址与池子参数",
+      "depositAddr": "资金地址",
+      "subscribeProgress": "认购进度",
+      "tgeLabel": "TGE",
+      "auditLabel": "审计",
+      "subscribeWindow": "认购窗口",
+      "subscribeWindowFallback": "5月21日 – 6月10日"
+    },
+    "history": {
+      "txTab": "交易记录",
+      "refTab": "邀请记录",
+      "thTime": "时间",
+      "thType": "类型",
+      "thAmount": "金额",
+      "thTxHash": "交易哈希",
+      "connectToView": "请连接钱包后查看",
+      "emptyRecords": "暂无记录",
+      "typeDeposit": "认购",
+      "typeClaim": "领取",
+      "typeJoin": "加入",
+      "refThInvestor": "投资人",
+      "refThAction": "操作",
+      "refThRound": "认购轮次",
+      "refThAmount": "认购金额",
+      "refThRebate": "返佣",
+      "rebateTooltipAriaLabel": "返佣说明",
+      "rebateTooltipLine1": "被邀请人认购金额 ÷ 单价 × <strong>10%</strong> = 返佣代币数量",
+      "rebateTooltipLine2": "将在 <strong>6/10 TGE</strong> 时全额释放",
+      "refRoundsCount": "{count} 笔"
+    },
+    "toast": {
+      "copied": "已复制",
+      "addrCopied": "已复制 {addr}",
+      "vaultAddrCopied": "已复制金库地址",
+      "depositSuccess": "认购成功，资产已转入金库",
+      "referralInputEmpty": "请输入邀请链接或邀请码",
+      "referralCodeInvalid": "邀请码格式无效（如 0x3YCBK8）",
+      "referralBound": "已绑定推荐人",
+      "referralAutoBound": "已自动为您绑定推荐人",
+      "referralSkipped": "已跳过邀请码绑定",
+      "referralLinkGenerating": "邀请链接生成中…",
+      "referralLinkCopied": "邀请链接已复制",
+      "shareCardSaved": "卡片已保存到相册",
+      "twitterOpening": "正在打开 X / Twitter…"
+    },
+    "tge": {
+      "countdownLabel": "距 TGE",
+      "launched": "🎉 TGE 已启动",
+      "liveHint": "<b>TGE 已于 2026 年 6 月 10 日启动</b> · 所有轮次关闭，每日释放奖励",
+      "twitterShareText": "OddFi 早期认购进行中\n你期待 X 倍回报？\n我正在参与OddFi认购，快去参与！",
+      "twitterShareCode": "Referral code: {code}",
+      "twitterShareTag": "#oddfi"
+    },
+    "ctaBanner": {
+      "headline": "ODD 代币，让持有者真正参与平台收益分配",
+      "button": "了解更多"
+    },
+    "partnersTitle": "合作伙伴",
+    "stages": {
+      "releaseSchedule": "TGE {tgePct}% + {days} 天线性释放",
+      "tgePrice": "TGE 发行价",
+      "tgeDiscount": "TGE 折扣 {pct}%",
+      "badgeHot": "🔥 热门",
+      "roundName": {
+        "seed": "种子轮",
+        "strategic": "战略轮",
+        "ecosystem": "生态轮",
+        "public_a": "公募 A 轮",
+        "public_b": "公募 B 轮",
+        "public_c": "公募 C 轮"
+      }
+    },
+    "confirm": {
+      "title": "确认认购",
+      "subtitle": "请核对详情，资产将直接转入金库地址",
+      "labelAmount": "金额",
+      "labelStage": "轮次",
+      "labelAddress": "目标地址",
+      "labelNetwork": "网络",
+      "perUnit": "枚",
+      "signing": "请在钱包中确认转账…",
+      "reporting": "正在确认上链…（约 10s，最长 1min）",
+      "polling": "等待区块确认…（约 9s，最长 5min）",
+      "confirmed": "认购成功",
+      "pausedArrival": "该轮次认购期间暂停，份额已记录",
+      "anomalyTitle": "认购信息核对中",
+      "timeout": "确认中，稍后可在「我的认购」查看",
+      "viewOnBscScan": "在 BSCScan 查看 ↗",
+      "btnDone": "完成",
+      "btnCancel": "取消",
+      "btnRetry": "重试",
+      "btnConfirm": "确认认购"
+    },
+    "depositError": {
+      "belowMin": "认购金额低于最小值",
+      "invalidTx": "交易无效或已失败，请在 BSCScan 核对",
+      "notToVault": "收款地址不是认购金库，请勿手动转账",
+      "notUsdt": "请使用 BEP20 USDT 转账",
+      "roundNotActive": "本轮未开放 / 已结束 / 暂停",
+      "walletMismatch": "请使用登录绑定的钱包发起认购",
+      "unknown": "认购上报失败，请稍后重试"
+    },
+    "bindError": {
+      "selfReferral": "不能绑定自己的邀请码",
+      "invalidCode": "邀请码无效",
+      "alreadyBound": "已绑定邀请人，不可更改",
+      "unknown": "绑定失败，请稍后重试"
+    },
+    "anomaly": {
+      "overflow": "金额超过本轮剩余额度，运营将在 24h 内处理（部分按本轮、超出部分协商）",
+      "fromMismatch": "付款钱包与登录钱包不一致，请联系客服核对",
+      "roundMismatch": "认购轮次与实际到账轮次不符，运营核对中",
+      "lateArrival": "交易确认超时跨轮，运营 24h 内处理",
+      "nonUsdt": "检测到非 USDT 转账，请联系客服",
+      "belowMin": "金额低于最小认购，运营核对中",
+      "generic": "认购信息异常，运营 24h 内核对"
+    },
+    "validationError": {
+      "notAuthenticated": "请先连接钱包",
+      "wrongChain": "请切换到 BNB Smart Chain",
+      "invalidAmount": "请输入有效金额",
+      "roundNotActive": "本轮未开放 / 已结束",
+      "belowMin": "低于最小认购 {min} USDT",
+      "belowMinNoCtx": "低于最小认购额",
+      "exceedsRemaining": "超过本轮剩余额度",
+      "nearBoundary": "临近切轮，暂停下单",
+      "insufficientBalance": "USDT 余额不足",
+      "unknown": "无法认购，请检查输入"
+    },
+    "codeModal": {
+      "closeAriaLabel": "关闭",
+      "title": "绑定邀请码",
+      "label": "邀请码",
+      "placeholder": "如 0x3YCBK8（可选）",
+      "skipBtn": "暂时跳过",
+      "bindBtn": "绑定并继续"
+    },
+    "share": {
+      "closeAriaLabel": "关闭",
+      "title": "Share",
+      "cardHeadline": "OddFi 早期认购进行中",
+      "cardCta": "你期待 X 倍回报？",
+      "cardFooterLine1": "我正在参与OddFi认购，快去参与！",
+      "cardFooterLine2": "Referral code: {code}",
+      "copyLinkBtn": "Copy Link",
+      "saveBtn": "Save",
+      "savingBtn": "Saving…",
+      "twitterBtn": "share"
+    }
+  },
+  "token": {
+    "purchase": {
+      "title": "我的购买",
+      "subtitle": "一览你的总持仓、累计投入与解锁进度。上线 DEX 后，将同步显示实时市值。",
+      "connectHint": "连接钱包以查看你的购买",
+      "totalHoldings": "总持仓",
+      "sourcePurchase": "购买",
+      "sourceReferral": "邀请奖励",
+      "totalInvested": "累计投入",
+      "todayValue": "今日价值",
+      "lockedAvg": "锁定均价",
+      "todayPrice": "今日单价",
+      "claimTitle": "领取",
+      "claimed": "已领取",
+      "claimable": "待领取",
+      "vestingTitle": "待释放总额",
+      "notReleased": "未释放",
+      "upcomingRelease": "即将释放",
+      "releaseBreakdown": "购买 {p} · 邀请奖励 {r}"
+    },
+    "referral": {
+      "title": "邀请返佣 · 赚 10%",
+      "subtitle": "分享你的专属链接，每邀请 1 位好友完成购买，你即得其购买金额 10% 的 ODD 返佣，实时入账、上不封顶。",
+      "myInviteTitle": "我的邀请",
+      "myReferrerTitle": "我的推荐人",
+      "linkGenerating": "邀请链接生成中…",
+      "linkCopied": "邀请链接已复制",
+      "connectToViewLink": "连接钱包以查看邀请链接",
+      "connectToViewReferrer": "连接钱包以绑定推荐人",
+      "copyLinkBtn": "复制链接",
+      "inviteBtn": "去邀请",
+      "bindBtn": "绑定",
+      "inputEmpty": "请输入邀请码或邀请链接",
+      "codeInvalid": "邀请码无效",
+      "bound": "推荐人绑定成功",
+      "inviterCodeLabel": "邀请码",
+      "inviterPlaceholder": "如 0x3YCBK8 或邀请链接",
+      "invitedCount": "已邀请人数",
+      "totalReward": "累计返佣 (10%)",
+      "bindError": {
+        "selfReferral": "不能绑定自己为推荐人",
+        "invalidCode": "邀请码无效",
+        "alreadyBound": "已绑定推荐人",
+        "unknown": "绑定推荐人失败，请重试"
+      }
+    },
+    "buy": {
+      "title": "立即购买",
+      "notice": "即买即玩，ODD 到账即可下注；卖出额度自建池起 29 天阶梯解锁；下注赢得净利润随赢随提。",
+      "inputLabel": "输入购买金额",
+      "balance": "余额:",
+      "max": "最大",
+      "currentTierProgress": "当前档位进度",
+      "tierN": "(第 {n} 档)",
+      "tierRemaining": "本档剩余 {remaining} / {size} ODD",
+      "unlockCadence": "解锁节奏",
+      "unlockCadenceValue": "建池起 29 天阶梯",
+      "unitPrice": "单价",
+      "estimateGet": "预估获得",
+      "estimatePlaceholder": "-- ODD",
+      "inviteCodeOptional": "邀请码 (选填)",
+      "buy": "购买",
+      "connectAndBuy": "连接钱包并购买",
+      "soldOut": "已售罄",
+      "processing": "处理中...",
+      "successMsg": "购买成功！ODD 已到账，余额刷新中…",
+      "reconcileHint": "交易处理中，请勿重复购买，稍后在「记录」中查看结果。",
+      "insufficientBalance": "USDT 余额不足，请先充值。"
+    },
+    "vault": {
+      "title": "购买 ODD",
+      "subtitle": "建池条件：售罄 <mint>{amount} ODD</mint> 即自动创建 DEX 池，当前进度 <mint>{pct}</mint>。",
+      "infoTitle": "金库信息",
+      "poolBalance": "金库池余额(累计募资)",
+      "soldOdd": "已售出 ODD",
+      "currentTier": "当前档位",
+      "currentTierValue": "第 {n} 档·${price}",
+      "toPoolGap": "距建池还差",
+      "toPoolGapValue": "{amount} ODD",
+      "poolProgress": "建池进度",
+      "note": "所有购买资金即时进入金库池,全额用于售罄后创建 DEX 流动性池。售罄当刻链上自动建池,无固定时间表，未满全额退款。"
+    },
+    "hero": {
+      "badge": "世界杯期间，ODD 公平发售进行中",
+      "titleLine1": "真实收益驱动",
+      "titleLine2": "链上预测未来",
+      "tierHint": "当前 <mint>第 1 档 $0.01</mint> · 下一档 $0.02 · 10 档阶梯发售。售罄即上线 DEX · 未满全额退款 · 合约自动执行。",
+      "cta": "立即购买"
+    },
+    "records": {
+      "title": "记录",
+      "subtitle": "查看你的链上交易明细与邀请返佣记录，连接钱包后实时显示",
+      "tabTx": "交易记录",
+      "tabInvite": "邀请记录",
+      "colTime": "时间",
+      "colType": "类型",
+      "colAmount": "金额",
+      "colHash": "交易哈希",
+      "typeInvite": "邀请",
+      "connectHint": "连接钱包后查看你的记录",
+      "txEmpty": "暂无交易记录",
+      "inviteEmpty": "暂无邀请记录",
+      "hashCopied": "已复制",
+      "copyHash": "复制"
+    },
+    "finalCta": {
+      "title": "现在参与，锁定最低档价格",
+      "subtitle": "公平发售 10 档阶梯、从 $0.01 起，先到先得、售罄跳档：买完即时可下注，卖出额度自 DEX 建池起 29 天阶梯解锁，售罄即上线 DEX。",
+      "card1Title": "第 1 档 · $0.01",
+      "card1Desc": "最低入场价 · 即买即玩",
+      "card2Title": "售罄即上 DEX",
+      "card2Desc": "开盘价 $0.165 · 募资全额入池",
+      "card3Title": "建池后 29 天",
+      "card3Desc": "卖出额度 100% 解锁",
+      "cta": "参与公平发售"
+    },
+    "metrics": {
+      "title": "代币核心指标",
+      "items": [
+        {
+          "value": "1亿",
+          "label": "总发行量",
+          "desc": "固定供应，无增发机制"
+        },
+        {
+          "value": "$0.01–0.10",
+          "label": "10 档销售价",
+          "desc": "阶梯定价 · 越早越便宜"
+        },
+        {
+          "value": "$0.165",
+          "label": "DEX 开盘价",
+          "desc": "售罄即上线 · 募资全额入池"
+        },
+        {
+          "value": "$165万",
+          "label": "销售募资上限",
+          "desc": "3,000 万枚全部售罄"
+        }
+      ]
+    },
+    "distribution": {
+      "title": "代币分配结构",
+      "subtitle": "总量 1 亿枚，五类用途精细规划，庄家金库世界杯期间全程锁定。",
+      "centerNum": "1亿",
+      "centerSub": "总发行量",
+      "segments": ["公平发售", "DEX 流动性 (LP)", "生态激励", "庄家（做市）金库", "生态/运营金库"]
+    },
+    "unlock": {
+      "title": "代币阶梯释放计划",
+      "subtitlePre": "释放期 29 天（D1–D29，自建池起算）· 释放比例逐日递增 · 首日 0.23%",
+      "subtitlePost": "末日 6.67% · 累计 100%",
+      "phases": [
+        {
+          "title": "释放初期",
+          "desc": "每日释放 0.23%–2.30%，抛压最轻，累计释放约 12.6%。"
+        },
+        {
+          "title": "释放加速",
+          "desc": "每日释放 2.53%–4.60%，累计释放约 48.3%。"
+        },
+        {
+          "title": "释放放量",
+          "desc": "每日释放逐步抬升至 6.67%，末日（D29）累计 100% 全额解锁完毕。"
+        }
+      ],
+      "legendDaily": "当日释放（数）",
+      "legendCumulative": "累计释放（%）",
+      "chartAria": "代币逐日释放曲线：当日释放量柱状（左轴 0–2.0M）与累计释放比例折线（右轴 0–100%），末日 D29 累计 100%",
+      "curveTitle": "释放曲线",
+      "curveSubtitle": "柱状 = 当日释放量（枚） · 折线 = 累计释放比例（%）",
+      "tableTitle": "逐日释放表",
+      "headersPc": ["释放日", "当日比例", "当日释放（枚）", "累计比例", "累计释放（枚）"],
+      "headersH5": ["天数", "当日释放%", "累计%", "累计代币"],
+      "dayLabelPc": "第 {n} 天",
+      "dayLabelH5": "第{n}天",
+      "disclaimer": "本页所列释放比例、数量与时间结构为既定的代币释放规则，准确无误；释放曲线与逐日明细均为确定性数据。任何涉及价格、回本或收益的设想均依赖二级市场实际表现，不构成投资建议或回本承诺。"
+    },
+    "tier": {
+      "title": "公平发售代币阶梯释放计划",
+      "stats": [
+        {
+          "value": "即买即玩",
+          "desc": "到账即可下注 · 不误世界杯"
+        },
+        {
+          "value": "$0.01 → $0.10",
+          "desc": "10 档阶梯 · 先到先得 · 售罄跳档"
+        },
+        {
+          "value": "$0.165",
+          "desc": "DEX 开盘价 · 募资全额入池"
+        }
+      ],
+      "colTier": "档位",
+      "colPrice": "单价",
+      "colAmount": "本档数量",
+      "colSold": "累积售出",
+      "colRaised": "累计募资",
+      "colGain": "开盘收益",
+      "rowTier": "第 {n} 档",
+      "footnote": "◆ 开盘收益 = DEX 开盘价相对该档买入价的涨幅。购买的 ODD 即时到账、立刻可用于下注；卖出额度自 DEX 建池起分 29 天阶梯逐日解锁。下注赢得的净利润即时可交易、随赢随提；下注本金维持其原解锁状态。"
+    }
+  },
+  "rewards": {
+    "tabs": {
+      "ariaLabel": "奖励中心分区",
+      "taskCenter": "任务中心",
+      "myRewards": "我的奖励"
+    },
+    "hero": {
+      "tag": "世界杯限时活动",
+      "title": "做任务，赚 ODD 代币",
+      "subtitle1": "任务即代币，越早参与越多 ODD 代币。",
+      "subtitle2": "世界杯期间额外加成，解锁专属福利。",
+      "stats": {
+        "totalPool": "总奖池 (ODD)",
+        "participants": "参与人数"
+      }
+    },
+    "taskCenter": {
+      "completed": "已完成"
+    },
+    "groups": {
+      "viewRules": "查看规则",
+      "newbie": {
+        "title": "新手任务",
+        "subtitle": "做满 5 个任务，总计 250 ODD"
+      },
+      "dailySocial": {
+        "title": "每日奖励（社媒任务）",
+        "subtitle": "发推 + 每日下注，每日最高领取 100 ODD"
+      }
+    },
+    "tasks": {
+      "actions": {
+        "go": "去完成",
+        "verify": "验证"
+      },
+      "toast": {
+        "verified": "任务已验证"
+      },
+      "newbie-follow-x": {
+        "title": "关注 @oddfilabs",
+        "desc": "在 X 关注 OddFi 官方账号"
+      },
+      "newbie-join-tg": {
+        "title": "加入 Telegram 群",
+        "desc": "加官方 TG 群并通过 bot 验证"
+      },
+      "newbie-first-bet": {
+        "title": "完成首次有效下注",
+        "desc": "真实余额下注 · 赔率≥1.30 · 已结算"
+      },
+      "newbie-retweet": {
+        "title": "转发喊单推",
+        "desc": "转发指定帖子"
+      },
+      "newbie-like": {
+        "title": "给帖子点赞",
+        "desc": "点赞立得奖励"
+      },
+      "daily-tweet": {
+        "title": "发推",
+        "desc": "每日发一条带 OddFi 的推文"
+      },
+      "daily-bet": {
+        "title": "每日下注",
+        "desc": "当日完成至少一次有效下注"
+      }
+    },
+    "records": {
+      "switch": {
+        "ariaLabel": "奖励记录状态",
+        "claimable": "待领取",
+        "claimed": "已领取",
+        "expired": "已过期"
+      },
+      "notice": "领取后约 24h 内到账；体验金需跑满 1× 真实下注流水方可提现",
+      "credited": "已到账",
+      "actions": {
+        "claim": "领取",
+        "claimed": "已领取",
+        "expired": "已过期"
+      },
+      "toast": {
+        "claimed": "奖励已领取"
+      },
+      "empty": {
+        "title": "暂无奖励",
+        "desc": "完成任务即可获得 ODD 奖励，将在此展示。"
+      },
+      "items": {
+        "rec-shoutout-0612": {
+          "title": "喊单每日奖励",
+          "desc": "引用喊单推"
+        },
+        "rec-firstbet-0611": {
+          "title": "新手任务·完成下注",
+          "desc": "首次有效下注奖励"
+        },
+        "rec-connect-0610": {
+          "title": "新手任务·关注",
+          "desc": "关注官方账号"
+        },
+        "rec-deposit-0609": {
+          "title": "新手任务·加群",
+          "desc": "加入 Telegram 群"
+        },
+        "rec-daily-0605": {
+          "title": "转发喊单",
+          "desc": "过期未领取"
+        }
+      }
+    },
+    "rules": {
+      "gotIt": "我知道了",
+      "contact": "如有疑问，请前往<tg>官方 Telegram</tg>联系客服",
+      "newbie": {
+        "title": "新手任务活动规则",
+        "items": [
+          {
+            "title": "参与资格",
+            "desc": "连接 BSC 钱包后即可参与，每个地址限参与一次新手任务。"
+          },
+          {
+            "title": "奖励发放",
+            "desc": "任务完成后 24h 内发放，体验金仅限下注使用，不可直接提现。"
+          },
+          {
+            "title": "有效下注",
+            "desc": "首次下注需使用真实余额，赔率 ≥ 1.30，且已结算方视为有效。"
+          },
+          {
+            "title": "活动期限",
+            "desc": "活动有效期内完成即可领取，逾期未完成的任务奖励自动失效。"
+          },
+          {
+            "title": "最终解释",
+            "desc": "OddFi 保留对本活动的最终解释权，如有疑问请联系官方客服。"
+          }
+        ]
+      },
+      "dailySocial": {
+        "title": "每日奖励活动规则",
+        "items": [
+          {
+            "title": "参与资格",
+            "desc": "连接 BSC 钱包后即可参与，每日社媒任务每天重置。"
+          },
+          {
+            "title": "奖励发放",
+            "desc": "任务完成后 24h 内发放，每日最高领取 100 ODD。"
+          },
+          {
+            "title": "有效行为",
+            "desc": "发推内容需提及 OddFi；每日下注需使用真实余额且已结算方视为有效。"
+          },
+          {
+            "title": "每日重置",
+            "desc": "未领取的每日奖励不累计，每天 00:00 UTC 重置。"
+          },
+          {
+            "title": "最终解释",
+            "desc": "OddFi 保留对本活动的最终解释权，如有疑问请联系官方客服。"
+          }
+        ]
+      }
+    }
+  }
+}

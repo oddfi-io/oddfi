@@ -1,0 +1,60 @@
+{
+  "run_started_local_note": "2026-05-11 Asia/Shanghai",
+  "chain": "bsc-testnet",
+  "chain_id": 97,
+  "rpc_url": "RPC_URL environment value used at upgrade time",
+  "admin_address": "0x7501bCBFAAa99e6390577277D051A32ec2e64064",
+  "purpose": "Temporary testing acceleration: PrecisionConstants.SECONDS_PER_DAY = 3600",
+  "contracts": {
+    "StakingPool": {
+      "proxy": "0x65fd4A2529010693BA474d1993631e305a42E061",
+      "implementation_before": "0xef52b61d93fe066d7d2d98ea5c7496c521ddcd84",
+      "implementation_after": "0x18D9D61cFDD8a8513c5e70F5EB3160d553F7e344",
+      "implementation_deploy_tx_hash": "0x28e15c50057d41d0e6380acaadb2673903f58516ec9db0a127f11e95cf580704",
+      "upgrade_tx_hash": "0x7e2cbef86b4e2f4ad7c3063a7531e5fe4201bf26b6a2dcc10fcd4a12f89a48ce"
+    },
+    "LiquidityPool": {
+      "proxy": "0xdf0c59B387DfDf9f18969880DDCF1216BFEe318f",
+      "implementation_before": "0xa412fa32911ffceaaa9c0589f41abc72cc4eb77c",
+      "implementation_after": "0xB798c768Afda95bfF557F5649e728a10Aa303a78",
+      "implementation_deploy_tx_hash": "0xd1535b73d8d6cc750463d4e780650a38ce1f4786f56cdbb8a7659aa70e0c4b71",
+      "upgrade_tx_hash": "0x2988b2282fd5ff6ff9ad420e9f33e2e5619eca38edd974959e1aa28cc2ef4a7c"
+    },
+    "BettingPool": {
+      "proxy": "0xbbc6ef3F665Bf65Cb531172e5f2252155E80cE1F",
+      "implementation_before": "0x091c86040859033af25cb0dfa9d06ca7334c64d4",
+      "implementation_after": "0xF201d20B1Be641b38f670a7e06B8a62BB311DE37",
+      "implementation_deploy_tx_hash": "0x84cd3950e035b6fe2d65604900d5a03ae33f4834976f49ddcd6343d9f72f57fb",
+      "upgrade_tx_hash": "0x13bde1c2df5944409b031008c248fb592c6f50cbf8b4eea17e4497da6d7f0f9d"
+    },
+    "BettingSettlementModule": {
+      "address_before": "0x0a52b1172181009f8314a1Aa198990d06C10EF80",
+      "address_after": "0x742D8a6e7dD0bf97E57E57B37D288b4FfB1e8924",
+      "deploy_tx_hash": "0xb797b352b1182b26ceea2fb503ce2712c4cf8033db455b3c2d0cae73ccde92f0",
+      "set_tx_hash": "0x3103a73969f30ebdc3ab2ef667b297de4f951ad3beca81af609751b62217cdfb"
+    },
+    "BettingLibraries": {
+      "BettingOddsLib": {
+        "address": "0x939e1C8501B034C2Bd7d0747Cf9c39B5fec1FFFE",
+        "deploy_tx_hash": "0x5620e349320e857fc81cc695131f39b9a7181c445fab2f49fe0bc9b82dc0f762"
+      },
+      "BettingReferralLib": {
+        "address": "0x4C8B97647111dd0d9385B3E95d7d897711441D4A",
+        "deploy_tx_hash": "0x69df4361525bea5eb888ec633ea3490b39c94bcb25dd016ab8a6fa22a3b202a7"
+      },
+      "BettingValidationLib": {
+        "address": "0x17442DD37CcEfcDc8432E2ED8b429b90dfd8F6CD",
+        "deploy_tx_hash": "0x5746b8bc8f532815b5c818b9a477efb13d84ada2ea2e6fc02d1d95bed00cca7d"
+      }
+    }
+  },
+  "verification": {
+    "StakingPool": "verified",
+    "LiquidityPool": "verified",
+    "BettingPool": "verified",
+    "BettingSettlementModule": "verified",
+    "BettingOddsLib": "verified",
+    "BettingReferralLib": "verified",
+    "BettingValidationLib": "verified"
+  }
+}

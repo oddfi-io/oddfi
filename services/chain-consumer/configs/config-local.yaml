@@ -1,0 +1,44 @@
+# 区块链数据消费者统一配置文件
+# 全局配置
+global:
+  log_level: "debug"
+  log:
+    service_name: chain-consumer
+  consumer_group: chian-consumer-local
+
+solana:
+  kafka:
+    brokers: <SERVER_IP>:50002
+    topic: web3-stream-data-solana-block
+
+eth:
+  kafka:
+    brokers: 10.210.0.171:9092
+    topic: web3-chain-data-evm-incr-eth
+
+bsc:
+  kafka:
+    brokers: 10.210.0.171:9092
+    topic: web3-chain-data-evm-incr-bsc
+  # OddFi 链上行为/管理员审计索引（BSC 测试网 chain_id=97）
+  oddfi:
+    chain_id: 97
+    betting_pool: "0x7baa77cff4ea502f7fff554ad422dfbd957bf291"
+    staking_pool: "0x05e971c8283c1da923b07d2812c9c1af7aa8080a"
+    liquidity_pool: "0x0f7a2dc0666578e7f6456a287a50f95e40e6a3fa"
+    odd_token: "0x4655079a3b35a68443ffa90a54a4ab89e34d04d0"
+    bet_tax_bps: 100 # 下注税率(基点)，链上默认 100=1%；仅作 BET_PLACED 取不到链上 Transfer 时的兜底估算
+
+tron:
+  kafka:
+    brokers: 10.210.0.171:9092
+    topic: web3-chain-data-evm-incr-bsc
+
+mysql:
+  dsn: "user:password@tcp(127.0.0.1:3306)/dbname?charset=utf8mb4&parseTime=True&loc=Local"
+
+redis:
+  addr: "127.0.0.1:6379"
+  password: ""
+  db: 0
+  pool_size: 100

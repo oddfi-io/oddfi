@@ -1,0 +1,35 @@
+# macOS
+.DS_Store
+._*
+
+# Editors and IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Go build and test artifacts
+bin/
+dist/
+build/
+coverage.out
+coverage.txt
+*.coverprofile
+*.test
+*.prof
+*.pprof
+
+# Logs and temporary files
+*.log
+tmp/
+temp/

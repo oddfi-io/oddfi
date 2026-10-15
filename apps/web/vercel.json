@@ -1,0 +1,33 @@
+{
+  "regions": ["sin1"],
+  "redirects": [
+    {
+      "source": "/discord",
+      "destination": "https://discord.gg/hyv3thNyR",
+      "permanent": false
+    },
+    {
+      "source": "/:locale/discord",
+      "destination": "https://discord.gg/hyv3thNyR",
+      "permanent": false
+    }
+  ],
+  "headers": [
+    {
+      "source": "/images/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000, must-revalidate" }]
+    },
+    {
+      "source": "/banner/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000, must-revalidate" }]
+    },
+    {
+      "source": "/fonts/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/_next/static/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    }
+  ]
+}

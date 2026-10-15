@@ -1,0 +1,40 @@
+[Unit]
+Description=OddFi Admin Backend (Lark OAuth + RBAC)
+Documentation=https://github.com/Crypto-Barrett/oddfi-admin-backend
+After=network-online.target mysqld.service redis.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=oddfi
+Group=oddfi
+WorkingDirectory=/var/lib/oddfi-admin
+ExecStart=/usr/local/bin/oddfi-admin-server -config /etc/oddfi-admin/config.yaml
+
+# 敏感凭据通过 EnvironmentFile 注入（DB DSN / Redis 密码 / JWT secret / Lark App Secret）
+# 文件权限必须 600，root 可读；oddfi 用户通过 systemd 进程继承环境变量读取
+EnvironmentFile=/etc/oddfi-admin/env.production
+
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+
+# 沙箱：systemd 自带的最小权限
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/oddfi-admin /var/log/oddfi-admin
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+
+# 日志走 journald（与 C 端 web-api 一致）
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=oddfi-admin
+
+[Install]
+WantedBy=multi-user.target

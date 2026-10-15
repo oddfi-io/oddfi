@@ -1,0 +1,14 @@
+{
+  "name": "testnet",
+  "chainId": 97,
+  "contracts": {
+    "bettingPool": "0xCcAD84d0772262AeDe15B1B702d1Bd69D02f177D",
+    "usdt":        "0xd8f86e84b4475d7bd398788e594124429e7700cf"
+  },
+  "expectedRoles": {
+    "admin":    "0x7501bCBFAAa99e6390577277D051A32ec2e64064",
+    "multisig": "0x7501bCBFAAa99e6390577277D051A32ec2e64064"
+  },
+  "deployBlock": 0,
+  "explorer":    "https://testnet.bscscan.com"
+}

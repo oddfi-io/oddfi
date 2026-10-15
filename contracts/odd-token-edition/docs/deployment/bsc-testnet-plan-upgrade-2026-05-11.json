@@ -1,0 +1,65 @@
+{
+  "run_started_local_note": "2026-05-11 Asia/Shanghai",
+  "chain": "bsc-testnet",
+  "chain_id": 97,
+  "rpc_url": "RPC_URL environment value used at upgrade time",
+  "admin_address": "0x7501bCBFAAa99e6390577277D051A32ec2e64064",
+  "purpose": "Temporary testing plan update with PrecisionConstants.SECONDS_PER_DAY = 3600",
+  "target_config": {
+    "staking_hours_by_plan": [
+      8,
+      16,
+      24,
+      32,
+      40,
+      48
+    ],
+    "global_lp_hours_by_plan": [
+      7,
+      14,
+      21,
+      28,
+      35
+    ]
+  },
+  "contracts": {
+    "StakingPool": {
+      "proxy": "0x65fd4A2529010693BA474d1993631e305a42E061",
+      "implementation_before": "0x18D9D61cFDD8a8513c5e70F5EB3160d553F7e344",
+      "implementation_after": "0x1482f33D101487fD3320165baa11ef0817c4c861",
+      "implementation_deploy_tx_hash": "0x07512f8bad3bede3ca2cb5cf077235dc65358458e5292419d678340baf047acf",
+      "upgrade_tx_hash": "0xeadd8f7919220b6017e47855dcffaba78905eab8a3dcd38039f95e9cb3532126"
+    },
+    "LiquidityPool": {
+      "proxy": "0xdf0c59B387DfDf9f18969880DDCF1216BFEe318f",
+      "implementation_before": "0xB798c768Afda95bfF557F5649e728a10Aa303a78",
+      "implementation_after": "0xB92acb2CD02fF05cac90Cb24d7166e14AAcDE435",
+      "implementation_deploy_tx_hash": "0xdf155f92ae3a8fb1e983dec5b40d13ef2a2720ae079d8c075259aa3f950768a7",
+      "upgrade_tx_hash": "0x9e521c18c54beed82276cc2a7ef137ab4d767f4c76703a7a76b03a2ef4cb81aa"
+    }
+  },
+  "verification": {
+    "source_verification": {
+      "StakingPool": "verified",
+      "LiquidityPool": "verified"
+    },
+    "proxy_implementation_slots": "verified by cast storage after upgrade",
+    "duration_simulation": {
+      "StakingPool": {
+        "plan0_seconds": 28800,
+        "plan1_seconds": 57600,
+        "plan2_seconds": 86400,
+        "plan3_seconds": 115200,
+        "plan4_seconds": 144000,
+        "plan5_seconds": 172800
+      },
+      "LiquidityPool": {
+        "plan0_seconds": 25200,
+        "plan1_seconds": 50400,
+        "plan2_seconds": 75600,
+        "plan3_seconds": 100800,
+        "plan4_seconds": 126000
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "chains": [
+    {
+      "chain": "eth",
+      "chain_id": "1",
+      "network_id": "1",
+      "name": "Ethereum Mainnet",
+      "type": "ethereum",
+      "layer": "layer1",
+      "endpoints": [
+        "https://eth.llamarpc.com",
+        "https://rpc.ankr.com/eth",
+        "https://ethereum.publicnode.com"
+      ],
+      "native_name": "Ether",
+      "native_currency": "ETH",
+      "native_decimals": 18,
+      "explorer": "https://etherscan.io",
+      "tx_explorer": "https://etherscan.io/tx/"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": "56",
+      "network_id": "56",
+      "name": "BNB Smart Chain",
+      "type": "ethereum",
+      "layer": "layer1",
+      "endpoints": [
+        "https://bnb-mainnet.g.alchemy.com/v2/deHKMj6sxxxUn7h0uIzHt"
+      ],
+      "native_name": "BNB",
+      "native_currency": "BNB",
+      "native_decimals": 18,
+      "explorer": "https://bscscan.com",
+      "tx_explorer": "https://bscscan.com/tx/"
+    },
+    {
+      "chain": "tron",
+      "chain_id": "tron",
+      "network_id": "tron",
+      "name": "Tron Mainnet",
+      "type": "tron",
+      "layer": "layer1",
+      "endpoints": [
+        "https://tron-mainnet.g.alchemy.com/v2/deHKMj6sxxxUn7h0uIzHt"
+      ],
+      "native_name": "TRX",
+      "native_currency": "TRX",
+      "native_decimals": 6,
+      "explorer": "https://tronscan.org",
+      "tx_explorer": "https://tronscan.org/#/transaction/"
+    }
+  ]
+}

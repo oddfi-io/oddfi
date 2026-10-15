@@ -1,0 +1,454 @@
+{
+  "network": "BNB Smart Chain Testnet",
+  "chainId": 97,
+  "explorer": "https://testnet.bscscan.com",
+  "currentDeploymentDate": "2026-06-13",
+  "deploymentMode": "full ODDToken lock/source-ledger MVP redeploy + HouseVault L4 funding upgrade + odds V3 line betting module upgrade + settlement netLoss hotfix module upgrade",
+  "deployer": "0x7501bCBFAAa99e6390577277D051A32ec2e64064",
+  "script": "script/DeployBscTestnet.s.sol:DeployBscTestnet",
+  "broadcastFile": "broadcast/DeployBscTestnet.s.sol/97/run-latest.json",
+  "note": "2026-06-12 full MVP redeploy on BSC Testnet. All initial deploy contracts were verified through forge --verify. Real-chain validation found Pancake V3 SwapRouter exactInputSingle params require deadline; BettingReferralLib and BettingReferralModule were redeployed, verified, and BettingPool.referralModule() was updated to the replacement module. Later on 2026-06-12 HouseVault and BettingPool implementations were upgraded to support HouseVault.fundBettingPlatformReserve L4 funding, and both new implementations were verified through Etherscan API V2 chainid=97. A subsequent real-chain HouseVault to BettingPool platform reserve top-up of 10,000,000 ODD was executed and recorded under liveValidation.houseVaultL4TopUp10M. The same day odds V3 line support was published by replacing the BettingPool settlement/market/parlay modules and deploying a fresh BettingParlayLens; source verification and real-chain AH/OU/parlay validation passed. On 2026-06-13 the settlement netLoss hotfix was published by replacing only BettingSettlementModule and BettingParlayModule on the same BettingPool proxy; new modules and their linked BettingOddsLib are source verified, runtime logic was matched, and real-chain full-flow/cashout/parlay/query validations passed.",
+  "externalContracts": {
+    "USDT": "0x337610d27c682E347C9cD60BD4b3b107C9d34dDd",
+    "PancakeV3SwapRouter": "0x1b81D678ffb9C0263b24A97847620C99d213eB14",
+    "PancakeV3NonfungiblePositionManager": "0x427bF5b37357632377eCbEC9de3626C71A5396c1",
+    "PancakeV3Factory": "0x0BFbCF9fa4f9C56B0F40a671Ad40E0805A091865",
+    "PancakeV2RouterTestFundingOnly": "0xD99D1c33F9fC3444f8101754aBC46c52416550D1",
+    "WBNB": "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd"
+  },
+  "contracts": {
+    "ODDToken": {
+      "proxy": "0x9D3cfd96C447D45FBf3e10bf0D233C51DEb58Ad0",
+      "implementation": "0x1c35c6c048266c22390C8b6CCEec3D6e4479192c",
+      "proxyDeployTxHash": "0x2a3fa4c6571b7b56652140d4569e43b96a7fb2f565bbccec22db02ffecc1123d",
+      "implementationDeployTxHash": "0xfe0a4ff103b857b143b426ca341fef061ee624ee77c7a6d73d3daf3830817993",
+      "verification": "verified"
+    },
+    "TierSale": {
+      "proxy": "0xBe938fB7AF656B111a123B749bB724d8351497C7",
+      "implementation": "0x3E47eDe9Dd62Ed34B7c6C1590Ca2B856e8dABC9d",
+      "proxyDeployTxHash": "0xd77035edddd8ae75fbea113edf8c365b50fed567c6820365c48445d446e378b6",
+      "implementationDeployTxHash": "0x709c771e9935a58ced7a4c3e696394a119df026a03d05955983c79cccdfed680",
+      "verification": "verified"
+    },
+    "HouseVault": {
+      "proxy": "0x41e87F99f1a3dBDb09A337AEf4C4841d90b5d280",
+      "implementation": "0x7e12549BC39B25B1Df4034abEDB9a0109E700128",
+      "proxyDeployTxHash": "0x1a5181774f42e008cca48193f160abce31f6c229c35333b381dc6444b6e51e56",
+      "implementationDeployTxHash": "0x1660a90066d182dfdf889a032fc2ee1de59b57ed7f6373480e06e7e3e0be504d",
+      "implementationUpgradeTxHash": "0x1f09745b8058c3c6c683ce0108b487d3e68303ce9b0ef4fb3a4a64e7451b08ec",
+      "verification": "verified"
+    },
+    "DexLpLocker": {
+      "proxy": "0xC30d6407df0E7291dbE8A58A2c44808C92AFD3a9",
+      "implementation": "0x69B62b5Dc2a21A24340Cdb83045630B5b01C85E6",
+      "proxyDeployTxHash": "0x6e64cc913ac3c9b788a5a54521196e1eab595ca0e4729c48ba2c39169c3ce658",
+      "implementationDeployTxHash": "0xda72eff9ee24884ddacb5df70d219ad1f25f7833fc3bcbcd6582cc12adbfde64",
+      "verification": "verified"
+    },
+    "DexLaunchController": {
+      "proxy": "0x070f72Fda6eAa8335162A5A5629Fb12f9f8b6d54",
+      "implementation": "0x96faC6D3D9912D06da9Da5bF287D9CdBE23AE924",
+      "proxyDeployTxHash": "0x45922601b52f13f123c2cf2cd1269b77054fefed72ade8a8b047a6fa7f2b233f",
+      "implementationDeployTxHash": "0x6ef03e5e37791c0873a43871a69d59127efe2c75397698608a8c805e42b116d3",
+      "verification": "verified"
+    },
+    "EcosystemRewards": {
+      "proxy": "0x6c5352D01160E50C50b66dD61BD3d48Ff6B4E2ac",
+      "implementation": "0xea9215b1aDf39b3da859098DeBCA66982B4A1931",
+      "proxyDeployTxHash": "0x15a6816ede56599d95ead0b52e96da8a839d590a31168515180753ad29a7441b",
+      "implementationDeployTxHash": "0x8e2b287e5fac49e84afb5a98006955b249b19e91d8d592685e8ac30aa472d002",
+      "verification": "verified"
+    },
+    "StakingPool": {
+      "proxy": "0x9378fd8E53c3904e972bf633Dbb96aA3EF46E32F",
+      "implementation": "0x07e3246b17d4FBd0325Bb0027b71C13734b084BA",
+      "proxyDeployTxHash": "0x5a109003d9f70df6ea1dfdb9db018261956fa157c02e0681ff2bd82f4901b749",
+      "implementationDeployTxHash": "0x8f02752ef1d4149a5e61b6d427d0176b22a369a110342eec09c9b6b444e91c24",
+      "verification": "verified"
+    },
+    "LiquidityPool": {
+      "proxy": "0x2de40A5AE2eF4a3fb8168ccd357b37A9fFC04b50",
+      "implementation": "0x359b8cd8Ab5ADD99335f7ABA806c793CBf3FD870",
+      "proxyDeployTxHash": "0x0d09aad81b851414a731d39e6caf92128df813b9d202b689f73e61f9b026d02c",
+      "implementationDeployTxHash": "0xfdd82b704cd1df9dcf2066239e6b85862252e63b5872c8d326636a2adbe4a71f",
+      "verification": "verified"
+    },
+    "BettingPool": {
+      "proxy": "0x0Ce84e205EF5a131b8677F348e7d613BB1a630E3",
+      "implementation": "0x3a4845AAdDf529dd3Ee8F073EA7dE9e565df56DA",
+      "proxyDeployTxHash": "0x2ba7768c51dd55bdd410f9fb1b15278ce456e3bd1c333c1fe9d5d228c7b0aaa5",
+      "implementationDeployTxHash": "0x21d42994afa16e7409ed5f1a106562db4883bacfc64c867aee85600d6d8e5777",
+      "implementationUpgradeTxHash": "0x67e4949ff03aa47baa61f5d2cea0bc5dcb5f426af27e5a0127ea8077f5300ddf",
+      "verification": "verified"
+    },
+    "BettingSettlementModule": {
+      "address": "0xC29ebbdd68d7718f0fe1B8E187d84ae8F34bfA39",
+      "deployTxHash": "0xcc83fe3e0eea2fbccd4ebd1f7ee049a23ea8b91169b736e164ddb259ab10e6ee",
+      "verification": "verified",
+      "supersedes": "0xD05070e92F8981578e27DF3BFA32094549Ec54Dc"
+    },
+    "BettingBetModule": {
+      "address": "0xe911D8472F53f64E8B06eAb31E8Ec6Cc5B4c8825",
+      "deployTxHash": "0x04043b092c54549db5f77c72373c9580b9edd4be04a57e7f74c4227cdf737728",
+      "verification": "verified"
+    },
+    "BettingParlayModule": {
+      "address": "0xD7AcFb964C01D4be09757207034FD919dA06fE96",
+      "deployTxHash": "0x2f718917652a843232d48ba88a4e023d8f7be3c2242d310c9b38440587378c2e",
+      "verification": "verified",
+      "supersedes": "0xeDBC57c205129FDB0501cEa42Fc4bD68C1AAcBaA"
+    },
+    "BettingParlayLens": {
+      "address": "0xd139C9C041783D48A3D36aedb8Ea7d99859bD2a2",
+      "deployTxHash": "0x0ca95c36e29764b8539eaf23acc2e4c3d3e9e4e3c62221d91b61139dddbe1062",
+      "verification": "verified"
+    },
+    "BettingMarketModule": {
+      "address": "0xD786A66a77Ff137A09Aa2fa69BbD8f6AE42f79De",
+      "deployTxHash": "0x3edcca638528c0d7aa905e6f0c8f0e989607d5a952ea951afe7a071dd30b563d",
+      "verification": "verified"
+    },
+    "BettingReferralModuleInitial": {
+      "address": "0xa2A9D3015D437cDB5dDe901F546734cC775984Ea",
+      "deployTxHash": "0xbf12560898247153a137e5217325e873db99f823a27bfa377a3da27d1bd7a569",
+      "verification": "verified",
+      "status": "superseded by BettingReferralModuleCurrent after live Pancake V3 router validation"
+    },
+    "BettingReferralLibCurrent": {
+      "address": "0x41492e7D1fFa49bF0C9cf2eED8A1D134c0E6c44e",
+      "deployTxHash": "0xd31cbe0fe406f257883d76acacbf28fae419bae49d9fd2865ffcc4d1ee9f5bbb",
+      "verification": "verified"
+    },
+    "BettingReferralModuleCurrent": {
+      "address": "0x6f481A9E772AFDF85741a5FA82985DCcaC79Bb6B",
+      "deployTxHash": "0x7cf52488b1de96d44891a53eafcfb4f6873ca361de3ddef4cbb3fff69c0c8364",
+      "configureTxHash": "0xdc14f4237c160638f0d5b34c059774631dfadd0951064e7fdb9e21c8dd431535",
+      "verification": "verified",
+      "liveGetter": "BettingPool.referralModule()"
+    },
+    "BettingOddsLibCurrent": {
+      "address": "0x6d700796d862bdeb4566192f32f4f287a136a1d6",
+      "deployTxHash": "0x643e8a37f152ae9f73091f68db726ca5fb262eff0b7c514546d9d106be3723e3",
+      "verification": "verified",
+      "supersedes": "0x8143fe80565acbc809f1c1fd0d57c758495f7aa6",
+      "note": "Current BettingOddsLib linked into the 2026-06-13 settlement netLoss hotfix settlement/parlay modules. The 2026-06-12 market module remains linked to the previous BettingOddsLib."
+    }
+  },
+  "liveValidation": {
+    "date": "2026-06-12",
+    "rpcMode": "real BSC Testnet transactions only; no fork simulation used for live acceptance after user clarification",
+    "salt": "0x2026061200000000000000000000000000000000000000000000000000000001",
+    "stateChecks": {
+      "blockNumber": 112888009,
+      "oddInitialSupplyAllocated": true,
+      "oddFixedSourcesConfigured": true,
+      "stakingWhitelisted": true,
+      "liquidityWhitelisted": true,
+      "bettingWhitelisted": true,
+      "referralModule": "0x6f481A9E772AFDF85741a5FA82985DCcaC79Bb6B",
+      "referralSwapRouter": "0x1b81D678ffb9C0263b24A97847620C99d213eB14",
+      "referralUsdtToken": "0x337610d27c682E347C9cD60BD4b3b107C9d34dDd",
+      "referralSwapExpectedPool": "0x7c6b58a4FF7D3E4cFF3F7C61C6F3DbDdB748bF36",
+      "nextBetNonce": 3,
+      "nextParlayNonce": 2,
+      "referrerRewardsOddAfterFinalClaim": "0",
+      "referralClaimNonceAfterFinalClaim": 3
+    },
+    "dex": {
+      "pool": "0x7c6b58a4FF7D3E4cFF3F7C61C6F3DbDdB748bF36",
+      "lpTokenId": "35590",
+      "launchTime": 1781240838,
+      "oddUsed": "999999999999999999995",
+      "usdtUsed": "9999999999999999995",
+      "lockerBeneficiary": "0x7501bCBFAAa99e6390577277D051A32ec2e64064",
+      "lpUnlockAt": 1812776838
+    },
+    "transactions": {
+      "referralModuleSwitch": "0xdc14f4237c160638f0d5b34c059774631dfadd0951064e7fdb9e21c8dd431535",
+      "ordinaryOpenMarket": "0xacb70d9b0006c4f09697815741154624363cc91e5aa2f52637bc54dc84c34b46",
+      "ordinaryPlaceBet": "0x4aa069c4acd9de78a74696e8a0ed5cb232563535cfeafd01529c7329f23e77e6",
+      "ordinaryUSDTReferralClaim": "0x95883add5c99cba880318a10cfff1e89b6799a5596a114d0ec64edda4f246a1f",
+      "ordinarySettle": "0x04256572e0fb4500aaf6ef4a9d690034048e2940bac566c6a9b40bd6e84bb791",
+      "ordinaryFinalize": "0xcc4d16dc5487ffd63fa04fc93e4b0b4b1232021b6f89ae6edd2178e790d5d2b7",
+      "ordinaryClaimPayout": "0xb48d22013bcacbe23d08dec7494feccc0f6c523afeababd739be1de9a5c43d4c",
+      "cashoutOpenMarket": "0x8a5e04808b30d0402aaaa8098f369c1cd55af6a2347410d4c91c777a8a256205",
+      "cashoutPlaceBet": "0xd231a11c0ba191b3887b19c75893a4607032019ddaaaa2f30f6a76729408c936",
+      "cashoutUpdateOdds": "0x0f190c913faffdf147d96fff2fe970eae10bbe7e37365080d5f9f72b1e4e28af",
+      "cashout": "0xbe32adf5b28d96057433e907d9f62d6aed919ca72400e2c55ca016d3b5525cfb",
+      "cashoutOddReferralClaim": "0xe060317aab606cca4efc07b4771a8200e199d76dd4b99986c7508fc1fdd77041",
+      "parlayPlace": "0x8933fd4c4ca2b39b9c24f4d64906e976d33c5babef2eb682a6396a9aa425927a",
+      "parlaySettle": "0xf77037e1b58ccbcacb58c398e2fd6afff421efa56197ddeadab88d115eef6ecf",
+      "parlayClaimPayout": "0x7da8a4ba731e84c4be4065c2c8e973c576f73fb127bf8f3c1564fbca0f9cd47b",
+      "parlayOddReferralClaim": "0x78e6f223a8d5d93465eb0a46c7a0774806bc70dae23170a55978d56b7f76a2d3",
+      "lpGlobalDeposit": "0xbee02b6110e36497fa5771b12773bcb10003f373d1c844fc3e421a79366d8d49",
+      "lpMatchDeposit": "0x357dadd470f8e741bf0190288ad5036a69ec2a80d972d3aed2da22c86420209e",
+      "lpRequestUnbond": "0xda2be70e4c664402db333eb8e1b903b51ea36c209604ec23de950cb0785d2fa8"
+    },
+    "acceptance": [
+      "TierSale buy and force finalized launch approval completed.",
+      "Pancake V3 pool created by DexLaunchController and LP NFT locked in DexLpLocker.",
+      "Sale source, ecosystem reward source, and manual transferable source staking paths created and early unstaked.",
+      "Ordinary bet placed, USDT referral claim swapped through Pancake V3, market settled/finalized, payout claimed.",
+      "Cash Out placed and executed; ODD referral claim path validated.",
+      "Parlay placed, both leg markets settled/finalized, parlay settled, parlay payout claimed, remaining ODD referral claimed.",
+      "Global liquidity deposit and match liquidity deposit completed; match LP requestUnbond succeeded after terminal market finalization."
+    ],
+    "houseVaultL4Upgrade": {
+      "date": "2026-06-12",
+      "script": "script/BscTestnetHouseVaultL4Upgrade.s.sol:BscTestnetHouseVaultL4Upgrade",
+      "blockNumber": 112896152,
+      "houseVaultImplementationBefore": "0x1D659e3fa19c2d77dA22BCbccB409179AE86F936",
+      "houseVaultImplementationAfter": "0x7e12549BC39B25B1Df4034abEDB9a0109E700128",
+      "bettingImplementationBefore": "0x7769b3C7D2C53B3e31B33c280F77a7Fb3D85f01D",
+      "bettingImplementationAfter": "0x3a4845AAdDf529dd3Ee8F073EA7dE9e565df56DA",
+      "transactions": {
+        "houseVaultImplementationDeploy": "0x1660a90066d182dfdf889a032fc2ee1de59b57ed7f6373480e06e7e3e0be504d",
+        "bettingImplementationDeploy": "0x21d42994afa16e7409ed5f1a106562db4883bacfc64c867aee85600d6d8e5777",
+        "houseVaultUpgrade": "0x1f09745b8058c3c6c683ce0108b487d3e68303ce9b0ef4fb3a4a64e7451b08ec",
+        "bettingUpgrade": "0x67e4949ff03aa47baa61f5d2cea0bc5dcb5f426af27e5a0127ea8077f5300ddf",
+        "houseVaultL4Funding": "0x8c1c1d50283772c1d42d5b3de7291fd2f1822da23b1469047bba680faa0a21f3"
+      },
+      "l4FundAmount": "1000000000000000000",
+      "platformReserveBefore": "1000014000000000000000000",
+      "platformReserveAfter": "1000015000000000000000000",
+      "accountedBalanceBefore": "999600000000000000000000",
+      "accountedBalanceAfter": "999601000000000000000000",
+      "bettingBalanceBefore": "999600000000000000000000",
+      "bettingBalanceAfter": "999601000000000000000000",
+      "houseVaultAllowanceAfter": "0",
+      "verification": {
+        "houseVaultImplementation": "verified",
+        "bettingImplementation": "verified",
+        "verifier": "Etherscan API V2 chainid=97"
+      }
+    },
+    "houseVaultL4TopUp10M": {
+      "date": "2026-06-12",
+      "blockNumber": 112899980,
+      "transaction": "0x48f6f0314aeb3460b42448f1f983806291bd298ffd6859f4e531d5a3f7952ebf",
+      "amount": "10000000000000000000000000",
+      "houseVaultBalanceBefore": "24999999000000000000000000",
+      "houseVaultBalanceAfter": "14999999000000000000000000",
+      "platformReserveBefore": "1000021000000000000000000",
+      "platformReserveAfter": "11000021000000000000000000",
+      "accountedBalanceBefore": "999442400000000000000000",
+      "accountedBalanceAfter": "10999442400000000000000000",
+      "bettingBalanceBefore": "999442400000000000000000",
+      "bettingBalanceAfter": "10999442400000000000000000",
+      "houseVaultAllowanceAfter": "0"
+    },
+    "pendingProtocolWaits": [
+      "Staking positions were early-unstaked in validation. A mature normal withdraw path is time-locked by staking plan duration and must wait until unlockAt if separately required.",
+      "Liquidity position 2 is Unbonding with previewWithdraw amount 1000000000000000000000 and netPnL 0; final withdraw requires the configured unbond epoch to elapse."
+    ],
+    "oddsV3LineUpgrade": {
+      "date": "2026-06-12",
+      "status": "passed",
+      "script": "script/BscTestnetOddsV3LineUpgrade.s.sol:BscTestnetOddsV3LineUpgrade",
+      "validationScript": "script/BscTestnetOddsV3LineValidation.s.sol:BscTestnetOddsV3LineValidation",
+      "deployer": "0x7501bCBFAAa99e6390577277D051A32ec2e64064",
+      "bettingProxy": "0x0Ce84e205EF5a131b8677F348e7d613BB1a630E3",
+      "modulesBefore": {
+        "settlement": "0x293639b08819190be5eD3e833CAEf621030751f7",
+        "market": "0xc20Df659d6a6d13cFece34610687A878A4Cf0fcA",
+        "parlay": "0x2A3902147ED543696Be64994A1eEfD83CC4d48F2",
+        "referral": "0x6f481A9E772AFDF85741a5FA82985DCcaC79Bb6B"
+      },
+      "modulesAfter": {
+        "settlement": "0xD05070e92F8981578e27DF3BFA32094549Ec54Dc",
+        "market": "0xD786A66a77Ff137A09Aa2fa69BbD8f6AE42f79De",
+        "parlay": "0xeDBC57c205129FDB0501cEa42Fc4bD68C1AAcBaA",
+        "referral": "0x6f481A9E772AFDF85741a5FA82985DCcaC79Bb6B",
+        "parlayLens": "0xd139C9C041783D48A3D36aedb8Ea7d99859bD2a2",
+        "bettingOddsLib": "0x8143fe80565acbc809f1c1fd0d57c758495f7aa6"
+      },
+      "transactions": {
+        "deployBettingOddsLib": "0x033622570391f4068f85cfbb2d17728ec89b383b7fbce53956babf313cdb2cc4",
+        "deploySettlementModule": "0x3a94a7ff6cf6e64505cf64619fcadd6d4542dde116cefe35c59669d27d03d871",
+        "deployMarketModule": "0x3edcca638528c0d7aa905e6f0c8f0e989607d5a952ea951afe7a071dd30b563d",
+        "deployParlayModule": "0x4d7feefb6112ad48b4303f6be5d24aa40dae101d1b1b91e2f20442340ff26eb2",
+        "deployParlayLens": "0x0ca95c36e29764b8539eaf23acc2e4c3d3e9e4e3c62221d91b61139dddbe1062",
+        "setSettlementModule": "0xbf93ffd1b111a0137e504147d51f9128f8e68017a9d8e0c98a41c096132c22e6",
+        "setMarketModule": "0x3bbb22f85e0b125af7379155dd008b51f5169a64f662e61076db71ac807c68bb",
+        "setParlayModule": "0x62d2587604b2f21bf1eec5cc5432074d2d9529b4ef983a911ce43ad269f2c51d"
+      },
+      "sourceVerification": {
+        "verifier": "BscScan Testnet / Etherscan API V2 chainid=97",
+        "BettingOddsLib": "verified",
+        "BettingSettlementModule": "verified",
+        "BettingMarketModule": "verified",
+        "BettingParlayModule": "verified",
+        "BettingParlayLens": "verified"
+      },
+      "lineMatrixEthCall": {
+        "validAhLines": [
+          10,
+          11,
+          12
+        ],
+        "validOuLines": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "rejectedAhLines": [
+          13
+        ],
+        "rejectedOuLines": [
+          11
+        ]
+      },
+      "liveBetToSettlement": {
+        "salt": "0x3374ab50b41807a1bbabf335a561157c09a035dd1c0bc1b37997682439b676e6",
+        "matchStartTime": 1781254221,
+        "matchEndTime": 1781254461,
+        "approvalTxHash": "0x90debe5e07cf1cc38bb5daff78d4d28f6dd8633e77aa1b4b232c218301f3dd56",
+        "markets": {
+          "singleAh10HalfWin": "0xa97875384dd4a8ded65357826e4c574f590ae640c447140e4f3d85745f97fddd",
+          "singleOu8HalfLoss": "0xe27399217ed2ce8e257b3bb90ffb14887f84cf2c4a1884d774e1531065b39e44",
+          "singleOu10Push": "0x489cca92bb8f47d36dc17a3dfe649b31b9a063ca049605301061369a3b811af2",
+          "parlayAh10HalfWin": "0x72e4ce850e268f9a6c816ec5a8fb4f39fb90a9c182cc4f07dd796dac9065d841",
+          "parlayOu8HalfLoss": "0x84255acb46fdc441fbbce4bcd14549ac8152a8e71a7c43f31e4bf903b8ed1e18",
+          "parlayOu10Push": "0x0f05602241b6300abdf730ad15d7daa8ca2d8afe5423b3ffcb7c84ae8ec20207",
+          "parlayOneXTwoFullWin": "0xda0a8f73906547852acac28184183a56b52f3c2569443cd80cdab66f10180f48"
+        },
+        "betIds": {
+          "singleAh10HalfWin": "0x0000000000000000000000000000000000000000000000000000000000000007",
+          "singleOu8HalfLoss": "0x0000000000000000000000000000000000000000000000000000000000000008",
+          "singleOu10Push": "0x0000000000000000000000000000000000000000000000000000000000000009",
+          "parlay": "0xd94acecd0ca4b50fa6ea43022f61a624481f516f1a656b79603b087fa97a15f9"
+        },
+        "openTxs": {
+          "singleAh10HalfWin": "0x31f9ab297eaa9d31777865df5d5ab5f4fce3ab7fdcede0f1a297e27858a74472",
+          "singleOu8HalfLoss": "0x0d333d92116064b4a0cc26e207b82f220e6fbae7b5fb209a30dc1ca07984c8f2",
+          "singleOu10Push": "0x330d903b59f4ff3cd2467d6c6bffeb059f0d92d2e3fd55ef3d6366683a2bf3f3",
+          "parlayAh10HalfWin": "0xea93b94eb66b5468e6f3fdc9cb4b7eba058c47c843fcacb7dfc8af8f78ae8eae",
+          "parlayOu8HalfLoss": "0xb25f1d75bdb5e43c96f745f89162d0cea5b4ffd9dd47b7a12e4dbe961175f63d",
+          "parlayOu10Push": "0xa29c48d3077dd9302731119d0d5dec8517ca1c96da019945b0534536e3e1e1e0",
+          "parlayOneXTwoFullWin": "0x291b67bdf88f5c7ec44d1ec67905cbbb2ca18d162261eadd13a2bb31fc7761b1"
+        },
+        "placeTxs": {
+          "singleAh10HalfWin": "0x671bdf93a1e2195530b175e9bc6314ffb6d9664e195265b0079d4995a7af0bd4",
+          "singleOu8HalfLoss": "0x01740bf7605646415538422116652df7a90cadf393567be91f29b740ab60f1f8",
+          "singleOu10Push": "0xdf0ad2b8b7d9a0e3334966c6a5cf7759afc5b9d0ff65032f757b32336a41de33",
+          "parlay": "0xea914acae9a78721e073ca03639c0ca44bf169d8ee6325587d6cc1ed6a417a89"
+        },
+        "settleTxs": {
+          "singleAh10Settle": "0xfe33252ad10549474951b9dae37947bcb78f3b3813979c49723dcb5696e79b08",
+          "singleAh10Finalize": "0xb81c3e73db7d328ccd5c71df1f6c68fd452a2d511d45a575cc3d9102a085379e",
+          "singleAh10Claim": "0x2cba7c487e9cacb66e57dfdaaaf12f874b178eeab8803bf0befc33eee011789e",
+          "singleOu8Settle": "0xb7e572b3cc31f651c7907aed11d0fb664e95fe22d70c322042df7bcdd0b7bb54",
+          "singleOu8Finalize": "0x155e94124b9e22529739c86d288df701069b3da6dacbabbdd17d6c162583ffc8",
+          "singleOu10Settle": "0x35be51298c582e0628f0de4a2b63766c31161f954403e7b98d01c7c753237919",
+          "singleOu10Finalize": "0xae4faf0858c43bfc0146481be564d0df50e8d906abfed3fada5bfa2f10d5194c",
+          "parlayAh10Settle": "0x0636c8e7805103737d3147f9ce02552df0afddb2dacfdebe148c6a2d82ed86c4",
+          "parlayAh10Finalize": "0x09db1ea0dd7b518baed3c388cf41f2b38f50e3d1193e733e6d78906d0d6ea26c",
+          "parlayOu8Settle": "0x97cf86870f9e86fdf4c72798cef069ca4a8b89449434b659af12c4048e0257a5",
+          "parlayOu8Finalize": "0xbf67fe65f05f9592ef43de84404c4827bc5282d6bc355a313173db5b303d495c",
+          "parlayOu10Settle": "0x5732464476a2a613ab9c8da12c3593032989b1703e0dbbdc07fbf85a764f1eb3",
+          "parlayOu10Finalize": "0x434b0c34ad1570bcc31fd1e61fa207e5439faa4157fd99ce39b84abbd18e39d1",
+          "parlayOneXTwoSettle": "0xfdfe9c21966e0b9b8a361209bebfbd8da1bf2589dbce68dc8dbe8f1e42af5fb4",
+          "parlayOneXTwoFinalize": "0x9cf7452ccfb7e811a38841cdce2f01ee27bbd5fabe9064647d80d1b40119435d",
+          "parlaySettle": "0x93cb3551f71ba3c1b1c7f429d5ef9ae51add0a88cdd0b48686533f8948a1a0a1",
+          "parlayClaim": "0x238cafbe81c8360038217375ee3d7da26327fc6be415e0565e8f2c08f478b359"
+        },
+        "finalStates": {
+          "allMarkets": "Settled",
+          "singleAh10HalfWinBet": "WonClaimed; refundedAmount=50 ODD; claimablePayout before claim=100 ODD",
+          "singleOu8HalfLossBet": "Lost; refundedAmount=50 ODD",
+          "singleOu10PushBet": "Refunded; refundedAmount=100 ODD",
+          "parlay": "WonClaimed",
+          "parlayLegResults": [
+            "HalfWin",
+            "HalfLoss",
+            "FullPush",
+            "FullWin"
+          ]
+        }
+      }
+    },
+    "settlementNetLossHotfixUpgrade": {
+      "date": "2026-06-13",
+      "status": "passed with one aborted legacy line-matrix report caused by a BSC Testnet RPC receipt wait; dedicated odds V3 line validation, full flow, cash out, parlay, smoke, and query interface validations passed",
+      "script": "script/BscTestnetSettlementNetLossHotfixUpgrade.s.sol:BscTestnetSettlementNetLossHotfixUpgrade",
+      "validationScripts": [
+        "script/BscTestnetOddsV3LineValidation.s.sol:BscTestnetOddsV3LineValidation",
+        "script/BscTestnetSmoke.s.sol:BscTestnetSmoke",
+        "script/bsc_testnet_full_flow_report.py",
+        "script/bsc_testnet_cashout_report.py",
+        "script/bsc_testnet_parlay_report.py",
+        "script/bsc_testnet_query_interfaces_live_report.py"
+      ],
+      "deployer": "0x7501bCBFAAa99e6390577277D051A32ec2e64064",
+      "bettingProxy": "0x0Ce84e205EF5a131b8677F348e7d613BB1a630E3",
+      "modulesBefore": {
+        "settlement": "0xD05070e92F8981578e27DF3BFA32094549Ec54Dc",
+        "market": "0xD786A66a77Ff137A09Aa2fa69BbD8f6AE42f79De",
+        "parlay": "0xeDBC57c205129FDB0501cEa42Fc4bD68C1AAcBaA",
+        "referral": "0x6f481A9E772AFDF85741a5FA82985DCcaC79Bb6B"
+      },
+      "modulesAfter": {
+        "settlement": "0xC29ebbdd68d7718f0fe1B8E187d84ae8F34bfA39",
+        "market": "0xD786A66a77Ff137A09Aa2fa69BbD8f6AE42f79De",
+        "parlay": "0xD7AcFb964C01D4be09757207034FD919dA06fE96",
+        "referral": "0x6f481A9E772AFDF85741a5FA82985DCcaC79Bb6B",
+        "parlayLens": "0xd139C9C041783D48A3D36aedb8Ea7d99859bD2a2",
+        "bettingOddsLib": "0x6d700796d862bdeb4566192f32f4f287a136a1d6"
+      },
+      "transactions": {
+        "deployBettingOddsLib": "0x643e8a37f152ae9f73091f68db726ca5fb262eff0b7c514546d9d106be3723e3",
+        "deploySettlementModule": "0xcc83fe3e0eea2fbccd4ebd1f7ee049a23ea8b91169b736e164ddb259ab10e6ee",
+        "deployParlayModule": "0x2f718917652a843232d48ba88a4e023d8f7be3c2242d310c9b38440587378c2e",
+        "setSettlementModule": "0x4d9c85fa712ec74ddd125fd00efb11b3e07eaec43f021a2a590443d65044f876",
+        "setParlayModule": "0x24b740a8eb74d0d875d1de7e4a1dc76afae3c06b1b11815d582cd30ef39163e2"
+      },
+      "sourceVerification": {
+        "verifier": "BscScan Testnet / Etherscan API V2 chainid=97",
+        "BettingOddsLib": "verified",
+        "BettingSettlementModule": "verified",
+        "BettingParlayModule": "verified"
+      },
+      "bytecodeMatch": {
+        "BettingOddsLib": {
+          "fullRuntimeMatch": true,
+          "runtimeHash": "0xacce074a31e4ac78f34a5682d3770fe0f28ae91421f1db89a7e787ab1f09985f"
+        },
+        "BettingSettlementModule": {
+          "runtimeBodyMatch": true,
+          "bodyHash": "0x5fedf9e5ef5dfd8ef6fb596ab50be73fcf5614f3da3afa135a588ab901a4348e",
+          "note": "Runtime logic body matches after patching the SELF immutable address; full runtime hash differs only in immutable/metadata regions."
+        },
+        "BettingParlayModule": {
+          "runtimeBodyMatch": true,
+          "bodyHash": "0xcc5586131542fcf0e42a47a9e9862da77ac8c36e9adb969dc42f265188485fbb",
+          "note": "Runtime logic body matches after patching the SELF immutable address; full runtime hash differs only in immutable/metadata regions."
+        }
+      },
+      "validation": {
+        "deploymentCheck": "passed",
+        "oddsV3LineEthCallMatrix": "passed",
+        "oddsV3LinePrepareAndSettle": {
+          "salt": "0x2026061300000000000000000000000000000000000000000000000000000002",
+          "parlayId": "0x2fa9a6f60e8d2b355b431fefcfc02583f492dc23c099293ad28bb6096e9a018e",
+          "status": "passed"
+        },
+        "smoke": "passed",
+        "fullFlowReport": "docs/testing/2026-06-03-bsc-testnet-cashout-upgrade-full-flow-netloss-hotfix-20260613.md",
+        "cashOutReport": "docs/testing/2026-06-03-bsc-testnet-cashout-upgrade-netloss-hotfix-20260613.md",
+        "parlayReport": "docs/testing/2026-06-08-bsc-testnet-modular-entrypoint-parlay-netloss-hotfix-20260613.md",
+        "queryInterfaceReport": "docs/testing/2026-06-13-bsc-testnet-query-interfaces-netloss-hotfix-report.md",
+        "summaryReport": "docs/testing/2026-06-13-bsc-testnet-结算缺口Hotfix升级验证报告.md"
+      }
+    }
+  },
+  "warnings": [
+    "Do not publish private keys or RPC secrets in docs. This file intentionally records addresses and tx hashes only.",
+    "Historical docs/testing reports keep their original addresses and should not be interpreted as current deployment references."
+  ]
+}

@@ -1,0 +1,17 @@
+[Unit]
+Description=Centrifugo for odd_agent
+After=network-online.target docker.service
+Wants=network-online.target docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/opt/centrifugo
+ExecStartPre=-/usr/bin/docker rm -f odd-agent-centrifugo
+ExecStart=/usr/bin/docker run -d --name odd-agent-centrifugo --restart unless-stopped -p 127.0.0.1:18000:8000 -v /opt/centrifugo/config.json:/centrifugo/config.json:ro centrifugo/centrifugo:v6 centrifugo --config=/centrifugo/config.json
+ExecStop=/usr/bin/docker rm -f odd-agent-centrifugo
+TimeoutStartSec=120
+TimeoutStopSec=60
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,19 @@
+[Unit]
+Description=odd_agent user tag push service
+After=network-online.target centrifugo.service
+Wants=network-online.target centrifugo.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/odd_agent/current
+ExecStart=/usr/bin/node dist/src/main.js
+Restart=always
+RestartSec=5
+Environment=NODE_ENV=production
+Environment=TZ=UTC
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=odd-agent
+
+[Install]
+WantedBy=multi-user.target

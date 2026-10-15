@@ -1,0 +1,32 @@
+# Go build files
+*.exe
+*.test
+*.prof
+*.out
+
+# Dependencies
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Local config overrides
+internal/config/config.local.yaml
+
+# Build output
+bin/
+dist/
